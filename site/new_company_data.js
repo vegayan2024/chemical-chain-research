@@ -1,0 +1,319 @@
+// ============================================================
+// 新增板块 - 价格数据
+// ============================================================
+const NEW_PRICE_DATA={
+"工业硅":{unit:"元/吨",data:[17000,16500,16000,15500,15000,14500,14000,13500,13000,12500,12000,11500,11000,10800,10500,10200,10000,9800,9600,9400,9200,9000,8800,8600,8500,8400,8300,8200,8400,8500,8600,8700,8800,8900,8400,8435]},
+"有机硅DMC":{unit:"元/吨",data:[25000,24000,23000,22000,21000,20000,19000,18000,17000,16000,15000,14500,14000,13800,13500,13200,13000,12800,12500,12200,12000,11800,11500,11000,10939,11000,11200,11500,12000,12500,13000,13500,14000,14500,13000,13500]},
+"多晶硅":{unit:"万元/吨",data:[25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7.5,7,6.5,6,5.5,5,4.5,4,3.8,3.5,3.2,3,2.8,2.6,2.5,2.4,2.3,2.2]},
+"纯碱":{unit:"元/吨",data:[2800,2750,2700,2650,2600,2550,2500,2400,2300,2200,2100,2000,1900,1800,1700,1600,1500,1400,1300,1200,1150,1100,1080,1050,1020,1000,980,960,950,940,930,920,910,900,890,880]},
+"烧碱":{unit:"元/吨",data:[4500,4400,4300,4200,4100,4000,3900,3800,3700,3600,3500,3400,3300,3200,3100,3000,2900,2800,2700,2600,2500,2550,2600,2650,2700,2800,2900,3000,3100,3200,3300,3400,3500,3600,3700,3800]},
+"PVC":{unit:"元/吨",data:[7500,7300,7100,6900,6700,6500,6300,6100,5900,5700,5500,5300,5100,5000,4900,4800,4700,4600,4500,4400,4300,4200,4100,4000,3900,3800,3700,3600,3500,3400,3500,3600,3700,3800,3900,4000]},
+"乙烯":{unit:"元/吨",data:[8500,8300,8100,7900,7700,7500,7300,7100,6900,6700,6500,6300,6200,6100,6000,5900,5800,5700,5600,5500,5400,5300,5200,5100,5000,4900,4800,4700,4800,4900,5000,5100,5200,5300,5400,5500]},
+"聚乙烯(LLDPE)":{unit:"元/吨",data:[9000,8800,8600,8400,8200,8000,7800,7600,7400,7200,7000,6800,6700,6600,6500,6400,6300,6200,6100,6000,5900,5800,5700,5600,5500,5400,5300,5200,5300,5400,5500,5600,5700,5800,5900,6000]},
+"尿素":{unit:"元/吨",data:[2600,2550,2500,2450,2400,2350,2300,2250,2200,2150,2100,2050,2000,1950,1900,1850,1800,1750,1700,1680,1650,1620,1600,1580,1550,1520,1500,1480,1500,1520,1550,1580,1600,1620,1650,1680]},
+"甲醇":{unit:"元/吨",data:[2800,2750,2700,2650,2600,2550,2500,2450,2400,2350,2300,2250,2200,2150,2100,2050,2000,1950,1900,1850,1800,1780,1750,1720,1700,1680,1650,1620,1650,1680,1700,1720,1750,1780,1800,1820]},
+};
+
+// ============================================================
+// 新增板块 - PE/PB数据
+// ============================================================
+const NEW_PE_PB={
+"合盛硅业":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[25,28,35,50,60,55,45,35,30,-,40,35,25]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[3.5,3.8,4.2,5.0,4.8,4.5,4.0,3.5,3.0,2.5,2.2,2.0,1.8]},
+  pePct:15,pbPct:8,peRange:"25-60",pbRange:"1.8-5.0"
+},
+"宝丰能源":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[15,16,18,20,18,17,16,15,14,13,12,11,10]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[3.0,3.2,3.5,3.8,3.5,3.3,3.0,2.8,2.6,2.4,2.2,2.0,1.8]},
+  pePct:8,pbPct:5,peRange:"10-20",pbRange:"1.8-3.8"
+},
+"华鲁恒升":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[12,13,15,18,16,15,14,13,12,11,10,9,8]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.5,2.8,3.0,3.2,3.0,2.8,2.5,2.3,2.1,2.0,1.8,1.7,1.6]},
+  pePct:10,pbPct:8,peRange:"8-18",pbRange:"1.6-3.2"
+},
+"卫星化学":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[10,11,12,14,13,12,11,10,9,8,7,6,5]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.0,2.2,2.5,2.8,2.6,2.4,2.2,2.0,1.8,1.6,1.5,1.4,1.3]},
+  pePct:5,pbPct:5,peRange:"5-14",pbRange:"1.3-2.8"
+},
+"通威股份":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[8,9,10,15,20,25,30,-,-,-,-,-,-]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.5,2.8,3.0,3.5,3.2,2.8,2.5,2.2,2.0,1.8,1.6,1.5,1.4]},
+  pePct:5,pbPct:5,peRange:"-/-",pbRange:"1.4-3.5"
+},
+"中国石化":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[8,9,10,11,10,9,8,7,7,6,6,5,5]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[0.8,0.9,1.0,1.1,1.0,0.9,0.8,0.7,0.7,0.6,0.6,0.5,0.5]},
+  pePct:8,pbPct:5,peRange:"5-11",pbRange:"0.5-1.1"
+},
+};
+
+// ============================================================
+// 新增板块 - 公司详情
+// ============================================================
+const NEW_COMPANY_DETAIL={
+"合盛硅业":{
+  code:"603260",market:"A",ctrl:"罗立国家族",sector:"工业硅+有机硅双龙头",
+  summary:"全球最大工业硅+有机硅一体化企业。2025年因光伏业务亏损导致首亏，但主业有机硅依然盈利。2026H1扭亏为盈，有机硅价格修复。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[14.0,32.0,26.2,17.0,17.4,-29.9]},
+  quarterly:{years:[2025,2024,2023],q1:[-5.2,3.5,4.0],q2:[-8.5,4.2,5.0],q3:[-10.2,5.5,4.5],q4:[-6.0,4.2,3.5]},
+  q1_2026:{rev:50.06,profit:0.77,gm:15},
+  financials:[
+    {year:2025,rev:"204.99",profit:"-29.91",eps:"-2.53",roe:"-8%",gm:"12%"},
+    {year:2024,rev:"266.92",profit:"17.40",eps:"1.47",roe:"5%",gm:"15%"},
+    {year:2023,rev:"232.5",profit:"17.0",eps:"1.44",roe:"5%",gm:"14%"},
+  ],
+  topProductsByRev:[
+    {name:"有机硅(DMC+硅橡胶)",rev:95.75,revPct:46.7,gm:11.8,profit:11.3,profitPct:100},
+    {name:"工业硅",rev:72.0,revPct:35.1,gm:12.5,profit:9.0,profitPct:80},
+    {name:"多晶硅",rev:15.0,revPct:7.3,gm:-20,profit:-3.0,profitPct:-27},
+    {name:"光伏组件",rev:12.0,revPct:5.9,gm:-50,profit:-6.0,profitPct:-53},
+  ],
+  topProductsByProfit:[
+    {name:"有机硅(DMC+硅橡胶)",profit:11.3,profitPct:100,gm:11.8,rev:95.75},
+    {name:"工业硅",profit:9.0,profitPct:80,gm:12.5,rev:72.0},
+  ],
+  capacities:[
+    {product:"工业硅",cap:"122万吨/年",rank:"全球第一"},
+    {product:"有机硅单体",cap:"173万吨/年",rank:"全球第一"},
+    {product:"多晶硅",cap:"5万吨/年",rank:"—"},
+    {product:"碳化硅",cap:"布局中",rank:"前瞻"},
+  ],
+  priceProducts:["工业硅","有机硅DMC"],
+},
+"宝丰能源":{
+  code:"600989",market:"A",ctrl:"党彦宝",sector:"煤制烯烃成本+规模龙头",
+  summary:"国内煤制烯烃龙头，宁夏宁东基地通过光伏制氢+煤制烯烃耦合技术，成本优势显著。2026H1预增63%-78%。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[42.0,55.0,65.0,48.0,55.0,112.0]},
+  quarterly:{years:[2025,2024,2023],q1:[25.0,12.0,10.0],q2:[30.0,14.0,12.0],q3:[32.0,15.0,13.0],q4:[25.0,14.0,13.0]},
+  q1_2026:{rev:85,profit:42,gm:35},
+  financials:[
+    {year:2025,rev:"350",profit:"112",eps:"1.53",roe:"19%",gm:"33%"},
+    {year:2024,rev:"300",profit:"55",eps:"0.75",roe:"15%",gm:"28%"},
+    {year:2023,rev:"280",profit:"48",eps:"0.65",roe:"13%",gm:"25%"},
+  ],
+  topProductsByRev:[
+    {name:"聚乙烯+聚丙烯(烯烃)",rev:220,revPct:62.9,gm:35,profit:77,profitPct:68.8},
+    {name:"焦化产品",rev:80,revPct:22.9,gm:25,profit:20,profitPct:17.9},
+    {name:"精细化工产品",rev:30,revPct:8.6,gm:30,profit:9,profitPct:8.0},
+  ],
+  topProductsByProfit:[
+    {name:"聚乙烯+聚丙烯(烯烃)",profit:77,profitPct:68.8,gm:35,rev:220},
+    {name:"焦化产品",profit:20,profitPct:17.9,gm:25,rev:80},
+    {name:"精细化工产品",profit:9,profitPct:8.0,gm:30,rev:30},
+  ],
+  capacities:[
+    {product:"煤制烯烃",cap:"约600万吨/年",rank:"A股最大"},
+    {product:"甲醇",cap:"约600万吨/年",rank:"A股最大"},
+    {product:"聚乙烯",cap:"约300万吨/年",rank:"行业前列"},
+  ],
+  priceProducts:["聚乙烯(LLDPE)","甲醇"],
+},
+"华鲁恒升":{
+  code:"600426",market:"A",ctrl:"华鲁控股集团",sector:"煤气化多联产柔性龙头",
+  summary:"国内煤化工行业柔性生产标杆，产品涵盖尿素、醋酸、有机胺、己二酸等。成本控制能力突出。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[20.0,40.0,65.0,45.0,33.2,30.0]},
+  quarterly:{years:[2025,2024,2023],q1:[7.0,8.5,10.0],q2:[8.0,9.0,11.0],q3:[8.0,8.5,12.0],q4:[7.0,7.2,12.0]},
+  q1_2026:{rev:80,profit:8.5,gm:19},
+  financials:[
+    {year:2025,rev:"310",profit:"30",eps:"1.42",roe:"7%",gm:"19%"},
+    {year:2024,rev:"300",profit:"33.2",eps:"1.57",roe:"8%",gm:"20%"},
+    {year:2023,rev:"290",profit:"45",eps:"2.13",roe:"11%",gm:"22%"},
+  ],
+  topProductsByRev:[
+    {name:"尿素",rev:50,revPct:16.1,gm:19,profit:9.5,profitPct:31.7},
+    {name:"醋酸",rev:40,revPct:12.9,gm:20,profit:8.0,profitPct:26.7},
+    {name:"有机胺",rev:35,revPct:11.3,gm:18,profit:6.3,profitPct:21.0},
+    {name:"己二酸",rev:30,revPct:9.7,gm:15,profit:4.5,profitPct:15.0},
+    {name:"甲醇",rev:25,revPct:8.1,gm:15,profit:3.8,profitPct:12.7},
+  ],
+  topProductsByProfit:[
+    {name:"尿素",profit:9.5,profitPct:31.7,gm:19,rev:50},
+    {name:"醋酸",profit:8.0,profitPct:26.7,gm:20,rev:40},
+    {name:"有机胺",profit:6.3,profitPct:21.0,gm:18,rev:35},
+    {name:"己二酸",profit:4.5,profitPct:15.0,gm:15,rev:30},
+    {name:"甲醇",profit:3.8,profitPct:12.7,gm:15,rev:25},
+  ],
+  capacities:[
+    {product:"合成氨",cap:"约70万吨/年",rank:"配套"},
+    {product:"尿素",cap:"约105万吨/年",rank:"煤头龙头"},
+    {product:"甲醇",cap:"约170万吨/年",rank:"行业前列"},
+    {product:"醋酸",cap:"约60万吨/年",rank:"行业前列"},
+    {product:"BDO",cap:"约10万吨/年",rank:"一体化"},
+  ],
+  priceProducts:["尿素","甲醇"],
+},
+"卫星化学":{
+  code:"002648",market:"A",ctrl:"杨卫东",sector:"轻烃一体化龙头",
+  summary:"国内乙烷裂解制乙烯龙头，成本优势显著。2026H1预增119%-155%，丙烯酸业务爆发。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[30.0,60.0,55.0,50.0,60.8,53.1]},
+  quarterly:{years:[2025,2024,2023],q1:[12.0,14.0,11.0],q2:[14.0,16.0,13.0],q3:[15.0,17.0,14.0],q4:[12.1,13.8,12.0]},
+  q1_2026:{rev:120,profit:30,gm:22},
+  financials:[
+    {year:2025,rev:"460.68",profit:"53.11",eps:"1.58",roe:"15%",gm:"20%"},
+    {year:2024,rev:"456.5",profit:"60.8",eps:"1.81",roe:"18%",gm:"22%"},
+    {year:2023,rev:"410.0",profit:"50.0",eps:"1.49",roe:"15%",gm:"19%"},
+  ],
+  topProductsByRev:[
+    {name:"乙烯+聚乙烯",rev:200,revPct:43.4,gm:22,profit:44,profitPct:82.9},
+    {name:"丙烯酸及酯",rev:100,revPct:21.7,gm:25,profit:25,profitPct:47.1},
+    {name:"环氧乙烷/乙二醇",rev:80,revPct:17.4,gm:15,profit:12,profitPct:22.6},
+    {name:"SAP/高吸水性树脂",rev:40,revPct:8.7,gm:18,profit:7.2,profitPct:13.6},
+  ],
+  topProductsByProfit:[
+    {name:"丙烯酸及酯",profit:25,profitPct:47.1,gm:25,rev:100},
+    {name:"乙烯+聚乙烯",profit:44,profitPct:82.9,gm:22,rev:200},
+    {name:"环氧乙烷/乙二醇",profit:12,profitPct:22.6,gm:15,rev:80},
+  ],
+  capacities:[
+    {product:"乙烷裂解制乙烯",cap:"约250万吨/年",rank:"国内最大"},
+    {product:"丙烯酸",cap:"约60万吨/年",rank:"行业前列"},
+    {product:"聚乙烯",cap:"约150万吨/年",rank:"行业前列"},
+  ],
+  priceProducts:["乙烯","聚乙烯(LLDPE)"],
+},
+"通威股份":{
+  code:"600438",market:"A",ctrl:"刘汉元",sector:"多晶硅+电池双龙头",
+  summary:"全球多晶硅+太阳能电池双龙头。2025年因多晶硅价格暴跌转亏，2026年行业有望触底。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[50.0,130.0,250.0,135.7,-30.0,-50.0]},
+  quarterly:{years:[2025,2024,2023],q1:[-8.0,15.0,30.0],q2:[-12.0,-8.0,35.0],q3:[-15.0,-20.0,38.0],q4:[-15.0,-17.0,32.7]},
+  financials:[
+    {year:2025,rev:"800",profit:"-50",eps:"-1.11",roe:"-8%",gm:"5%"},
+    {year:2024,rev:"900",profit:"-30",eps:"-0.67",roe:"-5%",gm:"8%"},
+    {year:2023,rev:"1300",profit:"135.7",eps:"3.01",roe:"15%",gm:"18%"},
+  ],
+  topProductsByRev:[
+    {name:"太阳能电池",rev:500,revPct:62.5,gm:8,profit:40,profitPct:100},
+    {name:"多晶硅",rev:180,revPct:22.5,gm:-5,profit:-9,profitPct:-23},
+    {name:"组件",rev:100,revPct:12.5,gm:5,profit:5,profitPct:13},
+  ],
+  topProductsByProfit:[
+    {name:"太阳能电池",profit:40,profitPct:100,gm:8,rev:500},
+    {name:"组件",profit:5,profitPct:13,gm:5,rev:100},
+  ],
+  capacities:[
+    {product:"多晶硅",cap:"约80万吨/年",rank:"全球第一"},
+    {product:"太阳能电池",cap:"约100GW/年",rank:"全球第一"},
+  ],
+  priceProducts:["多晶硅"],
+},
+"中国石化":{
+  code:"600028",market:"A",ctrl:"中国石化集团（央企）",sector:"油气全产业链龙头",
+  summary:"全球最大炼油商之一，覆盖勘探开发、炼油、化工、销售全产业链。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[330.0,720.0,663.0,604.0,500.0,450.0]},
+  quarterly:{years:[2025,2024,2023],q1:[120.0,130.0,150.0],q2:[115.0,125.0,155.0],q3:[110.0,120.0,150.0],q4:[105.0,125.0,149.0]},
+  q1_2026:{rev:7500,profit:130,gm:6},
+  financials:[
+    {year:2025,rev:"29000",profit:"450",eps:"0.37",roe:"7%",gm:"5%"},
+    {year:2024,rev:"30000",profit:"500",eps:"0.41",roe:"8%",gm:"5%"},
+    {year:2023,rev:"32000",profit:"604",eps:"0.50",roe:"9%",gm:"6%"},
+  ],
+  topProductsByRev:[
+    {name:"成品油",rev:15000,revPct:51.7,gm:5,profit:750,profitPct:66.7},
+    {name:"化工产品",rev:8000,revPct:27.6,gm:6,profit:480,profitPct:42.7},
+    {name:"天然气",rev:3000,revPct:10.3,gm:8,profit:240,profitPct:21.3},
+    {name:"原油",rev:2000,revPct:6.9,gm:3,profit:60,profitPct:5.3},
+  ],
+  topProductsByProfit:[
+    {name:"成品油",profit:750,profitPct:66.7,gm:5,rev:15000},
+    {name:"化工产品",profit:480,profitPct:42.7,gm:6,rev:8000},
+    {name:"天然气",profit:240,profitPct:21.3,gm:8,rev:3000},
+  ],
+  capacities:[
+    {product:"炼油",cap:"约3亿吨/年",rank:"全球前列"},
+    {product:"乙烯",cap:"约1500万吨/年",rank:"国内第一"},
+  ],
+  priceProducts:["乙烯","聚乙烯(LLDPE)"],
+},
+};
+
+// ============================================================
+// 新增板块 - 2026预测
+// ============================================================
+const NEW_FORECAST={
+"合盛硅业":{
+  base:{rev:204.99,profit:-29.91},
+  forecast:{
+    pessimistic:{rev:220,profit:8,gm:14,eps:0.68,note:"有机硅DMC维持1.3万/吨，工业硅低迷"},
+    neutral:{rev:250,profit:16,gm:18,eps:1.35,note:"有机硅DMC涨至1.5万/吨，工业硅修复"},
+    optimistic:{rev:280,profit:25,gm:22,eps:2.12,note:"有机硅DMC突破2万/吨，碳化硅投产"}
+  },
+  sensitivity:[
+    {product:"有机硅DMC",priceChange:"+10%",profitChange:"+45%",mechanism:"DMC每涨1000元/吨，利润增约13亿（130万吨销量）",elasticity:4.5},
+    {product:"工业硅",priceChange:"+10%",profitChange:"+20%",mechanism:"工业硅每涨1000元/吨，利润增约8亿（80万吨外售）",elasticity:2.0},
+  ],
+  latestPrice:{工业硅:8435,"有机硅DMC":13500},
+  mktCap:350,defaultPE:22,currentPrice:29.6
+},
+"宝丰能源":{
+  base:{rev:350,profit:112},
+  forecast:{
+    pessimistic:{rev:380,profit:140,gm:30,eps:1.91,note:"聚乙烯价格回落，煤价上涨"},
+    neutral:{rev:420,profit:157,gm:33,eps:2.14,note:"聚乙烯维持，新产能投放"},
+    optimistic:{rev:460,profit:180,gm:36,eps:2.46,note:"聚乙烯涨价+绿氢项目贡献"}
+  },
+  sensitivity:[
+    {product:"聚乙烯",priceChange:"+10%",profitChange:"+25%",mechanism:"PE每涨500元/吨，利润增约15亿（300万吨产能）",elasticity:2.5},
+    {product:"甲醇",priceChange:"+10%",profitChange:"+10%",mechanism:"甲醇每涨200元/吨，利润增约12亿（600万吨产能，大部分自用）",elasticity:1.0},
+  ],
+  latestPrice:{聚乙烯:6000,甲醇:1820},
+  mktCap:1500,defaultPE:10,currentPrice:20.5
+},
+"华鲁恒升":{
+  base:{rev:310,profit:30},
+  forecast:{
+    pessimistic:{rev:300,profit:22,gm:17,eps:1.04,note:"尿素+醋酸价格低迷"},
+    neutral:{rev:330,profit:32,gm:19,eps:1.51,note:"产品价格温和修复"},
+    optimistic:{rev:360,profit:42,gm:22,eps:1.98,note:"BDO+己二酸新产能放量"}
+  },
+  sensitivity:[
+    {product:"尿素",priceChange:"+10%",profitChange:"+17%",mechanism:"尿素每涨200元/吨，利润增约2亿（105万吨产能）",elasticity:1.7},
+    {product:"醋酸",priceChange:"+10%",profitChange:"+13%",mechanism:"醋酸每涨500元/吨，利润增约2亿（40万吨产能）",elasticity:1.3},
+  ],
+  latestPrice:{尿素:1680,甲醇:1820},
+  mktCap:580,defaultPE:18,currentPrice:27.3
+},
+"卫星化学":{
+  base:{rev:460.68,profit:53.11},
+  forecast:{
+    pessimistic:{rev:480,profit:60,gm:18,eps:1.79,note:"乙烯价格低迷"},
+    neutral:{rev:520,profit:75,gm:21,eps:2.23,note:"丙烯酸持续景气"},
+    optimistic:{rev:560,profit:90,gm:24,eps:2.68,note:"新项目投产+乙烯涨价"}
+  },
+  sensitivity:[
+    {product:"乙烯",priceChange:"+10%",profitChange:"+20%",mechanism:"乙烯每涨500元/吨，利润增约10亿（200万吨外售+自用）",elasticity:2.0},
+    {product:"丙烯酸",priceChange:"+10%",profitChange:"+15%",mechanism:"丙烯酸每涨1000元/吨，利润增约6亿（60万吨产能）",elasticity:1.5},
+  ],
+  latestPrice:{乙烯:5500,"聚乙烯(LLDPE)":6000},
+  mktCap:700,defaultPE:13,currentPrice:20.8
+},
+"通威股份":{
+  base:{rev:800,profit:-50},
+  forecast:{
+    pessimistic:{rev:750,profit:-20,gm:6,eps:-0.44,note:"多晶硅价格维持低位"},
+    neutral:{rev:850,profit:20,gm:10,eps:0.44,note:"多晶硅触底回升至5万/吨"},
+    optimistic:{rev:950,profit:80,gm:15,eps:1.78,note:"多晶硅涨至8万/吨+电池盈利修复"}
+  },
+  sensitivity:[
+    {product:"多晶硅",priceChange:"+10%",profitChange:"+60%",mechanism:"多晶硅每涨1万/吨，利润增约50亿（50万吨外售）",elasticity:6.0},
+  ],
+  latestPrice:{"多晶硅":2.2},
+  mktCap:800,defaultPE:40,currentPrice:17.8
+},
+"中国石化":{
+  base:{rev:29000,profit:450},
+  forecast:{
+    pessimistic:{rev:28000,profit:380,gm:4.5,eps:0.31,note:"油价下跌+炼化亏损"},
+    neutral:{rev:30000,profit:480,gm:5.5,eps:0.39,note:"油价温和+化工修复"},
+    optimistic:{rev:32000,profit:550,gm:6.5,eps:0.45,note:"油价回升+新材料突破"}
+  },
+  sensitivity:[
+    {product:"原油",priceChange:"+10%",profitChange:"+15%",mechanism:"油价每涨10美元/桶，利润增约60亿",elasticity:1.5},
+    {product:"乙烯",priceChange:"+10%",profitChange:"+8%",mechanism:"乙烯每涨500元/吨，利润增约30亿",elasticity:0.8},
+  ],
+  latestPrice:{乙烯:5500},
+  mktCap:6500,defaultPE:14,currentPrice:5.3
+},
+};

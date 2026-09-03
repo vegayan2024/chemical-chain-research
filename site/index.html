@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>化工产业链 · 投研终端</title>
+<style>
+:root{--bg:#1a1a1a;--bg2:#212121;--card:#2a2a2a;--border:#3a3a3a;--accent:#ffc107;--red:#f44336;--green:#4caf50;--cyan:#26c6da;--text:#e0e0e0;--muted:#9e9e9e;--dim:#666;--blue:#42a5f5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;background:var(--bg);color:var(--text);font-size:13px;height:100vh;overflow:hidden}
+.topnav{display:flex;align-items:center;gap:16px;padding:8px 20px;background:var(--bg2);border-bottom:1px solid var(--border)}
+.logo{font-weight:700;font-size:15px;color:var(--accent);cursor:pointer;white-space:nowrap}
+.nav-tabs{display:flex;gap:4px}
+.nav-tab{padding:6px 14px;border-radius:4px;cursor:pointer;color:var(--muted);font-size:13px;transition:all .15s}
+.nav-tab:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.nav-tab.active{color:var(--accent);background:rgba(255,193,7,.1)}
+.search-input{flex:1;max-width:280px;padding:6px 12px;background:var(--card);border:1px solid var(--border);border-radius:4px;color:var(--text);font-size:12px;outline:none}
+.search-input:focus{border-color:var(--accent)}
+.stats-bar{display:flex;background:var(--bg2);border-bottom:1px solid var(--border)}
+.stat-item{flex:1;padding:8px 16px;border-right:1px solid var(--border)}
+.stat-label{font-size:10px;color:var(--dim);text-transform:uppercase}
+.stat-value{font-size:16px;font-weight:700}
+.stat-sub{font-size:11px;color:var(--muted)}
+.main{display:flex;height:calc(100vh - 86px)}
+.sidebar{width:280px;border-right:1px solid var(--border);display:flex;flex-direction:column;background:var(--bg)}
+.sidebar-header{padding:10px 12px;border-bottom:1px solid var(--border)}
+.cat-filters{display:flex;gap:3px;flex-wrap:wrap}
+.cat-btn{padding:3px 8px;border-radius:3px;cursor:pointer;font-size:10px;color:var(--muted);background:transparent;border:1px solid var(--border)}
+.cat-btn:hover{border-color:var(--accent);color:var(--text)}
+.cat-btn.active{background:var(--accent);color:#000;border-color:var(--accent);font-weight:600}
+.chain-list{flex:1;overflow-y:auto;padding:4px 0}
+.chain-item{padding:7px 12px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;border-left:2px solid transparent}
+.chain-item:hover{background:rgba(255,255,255,.03)}
+.chain-item.active{background:rgba(255,193,7,.08);border-left-color:var(--accent)}
+.chain-item-name{font-size:12px}
+.chain-item-count{font-size:10px;color:var(--dim);background:var(--card);padding:2px 6px;border-radius:3px}
+.pool-section{border-top:1px solid var(--border);max-height:30vh;overflow-y:auto}
+.pool-header{padding:8px 12px;font-size:10px;color:var(--dim);text-transform:uppercase}
+.pool-item{padding:6px 12px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.03)}
+.pool-item:hover{background:rgba(255,255,255,.04)}
+.pool-name{font-size:11px;font-weight:600}
+.pool-code{font-size:9px;color:var(--dim)}
+.pool-profit{font-size:11px;font-weight:600}
+.pool-change{font-size:9px;font-weight:600}
+.stat-change.up,.pool-change.up{color:var(--red)}
+.stat-change.down,.pool-change.down{color:var(--green)}
+.detail{flex:1;overflow-y:auto}
+.detail-inner{padding:20px 24px}
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:var(--dim)}
+.empty-icon{font-size:48px;margin-bottom:16px;opacity:.5}
+.chain-flow{display:flex;gap:0;align-items:flex-start}
+.chain-col{min-width:180px;max-width:220px;flex-shrink:0;display:flex;flex-direction:column;gap:6px;padding:0 8px}
+.chain-col-header{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;padding:4px 8px;text-align:center;border-bottom:1px solid var(--border)}
+.chain-arrow-col{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:40px;padding-top:28px}
+.chain-arrow-line{width:2px;height:20px;background:var(--border)}
+.chain-arrow-head{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--accent)}
+.chain-node{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 12px;cursor:pointer;transition:all .2s}
+.chain-node:hover{border-color:var(--accent);transform:translateY(-1px)}
+.chain-node.expanded{border-color:var(--blue);background:rgba(66,165,245,.06)}
+.chain-node-name{font-size:12px;font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.tag{font-size:8px;padding:1px 5px;border-radius:2px;font-weight:500}
+.tag-upstream{background:rgba(66,165,245,.15);color:var(--blue)}
+.tag-midstream{background:rgba(171,71,188,.15);color:#ab47bc}
+.tag-end{background:rgba(76,175,80,.15);color:var(--green)}
+.chain-node-companies{display:flex;flex-wrap:wrap;gap:3px;margin-top:6px}
+.company-tag{font-size:9px;padding:2px 6px;border-radius:3px;background:rgba(255,255,255,.06);color:var(--muted);cursor:pointer;border:1px solid transparent}
+.company-tag:hover{background:rgba(255,193,7,.12);color:var(--accent);border-color:var(--accent)}
+.rank-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:3px;vertical-align:middle}
+.rank-dot.r1{background:var(--accent)}.rank-dot.r2{background:rgba(255,193,7,.6)}.rank-dot.r3{background:rgba(255,193,7,.35)}.rank-dot.r4,.rank-dot.r5{background:var(--dim)}
+.expand-hint{font-size:9px;color:var(--dim);margin-top:4px}
+.sub-nodes{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;gap:4px}
+.sub-node{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:4px;padding:8px 10px}
+.sub-node-name{font-size:11px;font-weight:600}
+.sub-node-companies{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+.chart-popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--bg2);border:1px solid var(--accent);border-radius:8px;padding:20px;z-index:1000;width:700px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.chart-popup-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:999}
+.popup-close{position:absolute;top:8px;right:12px;font-size:18px;cursor:pointer;color:var(--dim);background:none;border:none}
+.popup-close:hover{color:var(--text)}
+.back-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:var(--card);border:1px solid var(--border);border-radius:4px;cursor:pointer;font-size:12px;color:var(--muted);margin-bottom:16px}
+.back-btn:hover{border-color:var(--accent);color:var(--text)}
+.company-header{padding:20px 24px;border-bottom:1px solid var(--border)}
+.company-header-name{font-size:22px;font-weight:700}
+.company-header-code{font-size:12px;color:var(--dim)}
+.q1-badge{font-size:9px;padding:2px 6px;border-radius:2px;background:rgba(38,198,218,.15);color:var(--cyan);margin-left:6px}
+.company-tabs{display:flex;border-bottom:1px solid var(--border);padding:0 24px;position:sticky;top:0;background:var(--bg2);z-index:10}
+.company-tab{padding:10px 16px;cursor:pointer;font-size:12px;color:var(--muted);border-bottom:2px solid transparent}
+.company-tab:hover{color:var(--text)}
+.company-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.company-section{padding:20px 24px}
+.section-title{font-size:14px;font-weight:600;margin-bottom:4px}
+.section-sub{font-size:11px;color:var(--dim);margin-bottom:16px}
+.chart-container{width:100%;height:280px;margin-bottom:20px}
+.fin-table{width:100%;border-collapse:collapse;margin-bottom:24px}
+.fin-table th{text-align:right;padding:6px 10px;font-size:10px;color:var(--dim);border-bottom:1px solid var(--border)}
+.fin-table th:first-child{text-align:left}
+.fin-table td{text-align:right;padding:8px 10px;font-size:12px;border-bottom:1px solid rgba(255,255,255,.03)}
+.fin-table td:first-child{text-align:left;color:var(--muted);font-weight:600}
+.fin-table tr:hover td{background:rgba(255,255,255,.03)}
+.data-table{width:100%;border-collapse:collapse}
+.data-table th{text-align:left;padding:8px 12px;font-size:10px;color:var(--dim);border-bottom:1px solid var(--border)}
+.data-table td{padding:10px 12px;font-size:12px;border-bottom:1px solid rgba(255,255,255,.04)}
+.data-table tr:hover td{background:rgba(255,255,255,.03)}
+.capacity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.capacity-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:12px}
+.capacity-card-name{font-size:12px;font-weight:600;margin-bottom:4px}
+.capacity-card-cap{font-size:11px;color:var(--muted)}
+.capacity-card-rank{font-size:10px;color:var(--accent);margin-top:2px}
+.val-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:12px;text-align:center}
+.val-label{font-size:10px;color:var(--dim);margin-bottom:4px}
+.val-num{font-size:18px;font-weight:700}
+.footer{position:fixed;bottom:0;left:0;right:0;padding:3px 20px;background:var(--bg2);border-top:1px solid var(--border);display:flex;gap:16px;font-size:10px;color:var(--dim)}
+.footer span::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--cyan);margin-right:4px}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <div class="logo" onclick="goHome()">⚗️ 化工产业链投研终端</div>
+  <div class="nav-tabs">
+    <div class="nav-tab active" id="navOverview" onclick="switchMainView('overview')">概览</div>
+    <div class="nav-tab" id="navPrices" onclick="switchMainView('prices')">商品价格</div>
+  </div>
+  <input class="search-input" id="globalSearch" placeholder="搜索公司 / 产品..." />
+  <div style="display:flex;align-items:center;gap:6px"><div style="width:8px;height:8px;border-radius:50%;background:var(--green)"></div><span style="font-size:11px;color:var(--dim)">本地数据</span></div>
+</div>
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-label">覆盖公司</div><div><span class="stat-value" id="statCompanies">—</span><span class="stat-sub">家</span></div></div>
+  <div class="stat-item"><div class="stat-label">节点</div><div><span class="stat-value" id="statNodes">—</span></div></div>
+  <div class="stat-item"><div class="stat-label">分类</div><div><span class="stat-value">7</span></div></div>
+  <div class="stat-item"><div class="stat-label">当前</div><div><span class="stat-value" id="statCurrent" style="font-size:13px">—</span></div></div>
+  <div class="stat-item"><div class="stat-label">数据</div><div><span class="stat-sub">2025年报+2026Q1</span></div></div>
+</div>
+<div class="main">
+  <div class="sidebar">
+    <div class="sidebar-header"><div class="cat-filters" id="catFilters"></div></div>
+    <div class="chain-list" id="chainList"></div>
+    <div class="pool-section"><div class="pool-header">公司池</div><div id="companyPool"></div></div>
+  </div>
+  <div class="detail" id="detailPanel"><div class="empty-state"><div class="empty-icon">🏭</div><div>选择左侧分类，查看产业链全景图</div></div></div>
+</div>
+<div class="footer"><span>化工产业链投研终端 v0.7</span><span>2025年报+2026Q1</span><span>7大板块</span></div>
+<script>
+const PRICE_DATA={
+"萤石":{unit:"元/吨",data:[3100,3050,3200,3150,3100,3050,2950,2900,2850,2800,2750,2700,2650,2700,2800,2900,3000,3100,3200,3300,3400,3450,3500,3550,3600,3650,3700,3750,3650,3600,3550,3500,3450,3400,3500,3600]},
+"R32":{unit:"元/吨",data:[14000,13500,13000,12800,12500,12200,12000,11800,12000,12500,13000,13500,14000,15000,16000,18000,20000,22000,24000,26000,28000,30000,32000,35000,35500,36000,36500,37000,36000,35500,35000,34500,35000,35500,36000,36500]},
+"R134a":{unit:"元/吨",data:[22000,21500,21000,20500,20000,19500,19800,20000,20500,21000,21500,22000,22500,23000,24000,25000,26000,27000,28000,29000,30000,31000,32000,33000,33500,34000,33000,32500,32000,33000,33500,34000,33000,32500,33000,33500]},
+"PTFE":{unit:"元/吨",data:[45000,44000,43000,42000,41000,40000,39000,38500,38000,38500,39000,40000,41000,42000,43000,44000,45000,46000,47000,48000,49000,50000,51000,52000,53000,54000,55000,56000,55000,54000,53000,54000,55000,56000,57000,58000]},
+"PVDF":{unit:"元/吨",data:[120000,115000,110000,105000,100000,95000,90000,85000,80000,75000,72000,70000,68000,70000,72000,75000,78000,80000,82000,85000,88000,90000,92000,95000,98000,100000,102000,105000,108000,110000,108000,105000,108000,110000,112000,115000]},
+"六氟磷酸锂":{unit:"万元/吨",data:[25,23,21,19,17,15,13,11,10,9,8,7,6.5,6,5.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,11.5,11,11.5,12,12.5,13]},
+"磷矿石":{unit:"元/吨",data:[680,670,660,650,640,630,620,610,600,610,620,630,640,650,660,680,700,720,740,760,780,800,820,840,860,880,900,920,940,960,980,1000,1020,1040,1060,1080]},
+"MAP":{unit:"元/吨",data:[2800,2750,2700,2650,2600,2550,2500,2550,2600,2650,2700,2750,2800,2900,3000,3100,3200,3300,3400,3500,3600,3700,3800,3900,4000,4100,4200,4300,4400,4476,4500,4550,4600,4650,4700,4750]},
+"DAP":{unit:"元/吨",data:[3600,3550,3500,3450,3400,3350,3300,3350,3400,3450,3500,3550,3600,3700,3800,3900,3950,4000,4050,4100,4150,4200,4250,4300,4350,4400,4450,4500,4550,4600,4650,4700,4750,4800,4850,3950]},
+"草甘膦":{unit:"元/吨",data:[28000,27000,26000,25000,24000,23000,22000,21500,21000,21500,22000,23000,24000,25000,26000,27000,28000,29000,30000,31000,32000,33000,34000,35000,36000,37000,38000,39000,40000,41000,42000,43000,44000,45000,46000,47000]},
+"磷酸铁锂":{unit:"万元/吨",data:[8.5,8.0,7.5,7.0,6.5,6.0,5.5,5.0,4.5,4.0,3.8,3.5,3.2,3.0,2.8,2.6,2.5,2.4,2.3,2.4,2.5,2.6,2.8,3.0,3.2,3.5,3.8,4.0,4.2,4.5,4.8,5.0,5.2,5.5,5.8,6.0]},
+"工业硅":{unit:"元/吨",data:[17000,16500,16000,15500,15000,14500,14000,13500,13000,12500,12000,11500,11000,10800,10500,10200,10000,9800,9600,9400,9200,9000,8800,8600,8500,8400,8300,8200,8400,8500,8600,8700,8800,8900,8400,8435]},
+"有机硅DMC":{unit:"元/吨",data:[25000,24000,23000,22000,21000,20000,19000,18000,17000,16000,15000,14500,14000,13800,13500,13200,13000,12800,12500,12200,12000,11800,11500,11000,10939,11000,11200,11500,12000,12500,13000,13500,14000,14500,13000,13500]},
+"多晶硅":{unit:"万元/吨",data:[25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7.5,7,6.5,6,5.5,5,4.5,4,3.8,3.5,3.2,3,2.8,2.6,2.5,2.4,2.3,2.2]},
+"纯碱":{unit:"元/吨",data:[2800,2750,2700,2650,2600,2550,2500,2400,2300,2200,2100,2000,1900,1800,1700,1600,1500,1400,1300,1200,1150,1100,1080,1050,1020,1000,980,960,950,940,930,920,910,900,890,880]},
+"烧碱":{unit:"元/吨",data:[4500,4400,4300,4200,4100,4000,3900,3800,3700,3600,3500,3400,3300,3200,3100,3000,2900,2800,2700,2600,2500,2550,2600,2650,2700,2800,2900,3000,3100,3200,3300,3400,3500,3600,3700,3800]},
+"PVC":{unit:"元/吨",data:[7500,7300,7100,6900,6700,6500,6300,6100,5900,5700,5500,5300,5100,5000,4900,4800,4700,4600,4500,4400,4300,4200,4100,4000,3900,3800,3700,3600,3500,3400,3500,3600,3700,3800,3900,4000]},
+"乙烯":{unit:"元/吨",data:[8500,8300,8100,7900,7700,7500,7300,7100,6900,6700,6500,6300,6200,6100,6000,5900,5800,5700,5600,5500,5400,5300,5200,5100,5000,4900,4800,4700,4800,4900,5000,5100,5200,5300,5400,5500]},
+"聚乙烯(LLDPE)":{unit:"元/吨",data:[9000,8800,8600,8400,8200,8000,7800,7600,7400,7200,7000,6800,6700,6600,6500,6400,6300,6200,6100,6000,5900,5800,5700,5600,5500,5400,5300,5200,5300,5400,5500,5600,5700,5800,5900,6000]},
+"尿素":{unit:"元/吨",data:[2600,2550,2500,2450,2400,2350,2300,2250,2200,2150,2100,2050,2000,1950,1900,1850,1800,1750,1700,1680,1650,1620,1600,1580,1550,1520,1500,1480,1500,1520,1550,1580,1600,1620,1650,1680]},
+"甲醇":{unit:"元/吨",data:[2800,2750,2700,2650,2600,2550,2500,2450,2400,2350,2300,2250,2200,2150,2100,2050,2000,1950,1900,1850,1800,1780,1750,1720,1700,1680,1650,1620,1650,1680,1700,1720,1750,1780,1800,1820]}
+};
+
+const PE_PB_DATA={
+"巨化股份":{mktCap:1012,defaultPE:17,currentPrice:37.49,
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[35,38,42,52,48,45,40,32,28,25,22,19,17]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[3.2,3.5,3.8,4.5,4.2,4.0,3.8,3.5,3.2,3.0,2.8,2.5,2.3]},
+  pePct:12,pbPct:8,peRange:"12-52",pbRange:"2.3-4.5"
+},
+"三美股份":{mktCap:349,defaultPE:12,currentPrice:57.19,
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[28,30,35,45,40,35,28,22,18,16,14,12,11]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.8,3.0,3.5,4.2,3.8,3.5,3.0,2.5,2.2,2.0,1.8,1.6,1.5]},
+  pePct:8,pbPct:5,peRange:"11-45",pbRange:"1.5-4.2"
+},
+"多氟多":{mktCap:450,defaultPE:15,currentPrice:33.0,
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[15,18,25,40,55,60,80,null,35,28,22,18,15]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.5,2.8,3.2,3.8,3.5,3.2,2.8,2.5,2.2,2.0,1.8,1.6,1.5]},
+  pePct:15,pbPct:10,peRange:"15-80",pbRange:"1.5-3.8"
+},
+"云天化":{mktCap:420,defaultPE:8,currentPrice:23.0,
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[8,9,10,12,11,10,9,8,7,7,6,6,5]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[1.8,2.0,2.2,2.5,2.3,2.2,2.0,1.8,1.6,1.5,1.4,1.3,1.2]},
+  pePct:5,pbPct:8,peRange:"5-12",pbRange:"1.2-2.5"
+},
+"兴发集团":{mktCap:210,defaultPE:11,currentPrice:16.5,
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[12,14,18,22,20,18,15,13,11,10,9,8,7]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[1.5,1.8,2.0,2.3,2.1,2.0,1.8,1.6,1.4,1.3,1.2,1.1,1.0]},
+  pePct:10,pbPct:8,peRange:"7-22",pbRange:"1.0-2.3"
+},
+"湖南裕能":{mktCap:380,defaultPE:10,currentPrice:50.0,
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[25,30,40,55,60,50,35,28,22,18,15,12,10]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[3.5,4.0,4.5,5.0,4.5,4.0,3.5,3.0,2.5,2.2,2.0,1.8,1.6]},
+  pePct:12,pbPct:8,peRange:"10-60",pbRange:"1.6-5.0"
+},
+"合盛硅业":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[25,28,35,50,60,55,45,35,30,null,40,35,25]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[3.5,3.8,4.2,5.0,4.8,4.5,4.0,3.5,3.0,2.5,2.2,2.0,1.8]},
+  pePct:15,pbPct:8,peRange:"25-60",pbRange:"1.8-5.0"
+},
+"宝丰能源":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[15,16,18,20,18,17,16,15,14,13,12,11,10]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[3.0,3.2,3.5,3.8,3.5,3.3,3.0,2.8,2.6,2.4,2.2,2.0,1.8]},
+  pePct:8,pbPct:5,peRange:"10-20",pbRange:"1.8-3.8"
+},
+"华鲁恒升":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[12,13,15,18,16,15,14,13,12,11,10,9,8]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.5,2.8,3.0,3.2,3.0,2.8,2.5,2.3,2.1,2.0,1.8,1.7,1.6]},
+  pePct:10,pbPct:8,peRange:"8-18",pbRange:"1.6-3.2"
+},
+"卫星化学":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[10,11,12,14,13,12,11,10,9,8,7,6,5]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.0,2.2,2.5,2.8,2.6,2.4,2.2,2.0,1.8,1.6,1.5,1.4,1.3]},
+  pePct:5,pbPct:5,peRange:"5-14",pbRange:"1.3-2.8"
+},
+"通威股份":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[8,9,10,15,20,25,30,null,null,null,null,null,null]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[2.5,2.8,3.0,3.5,3.2,2.8,2.5,2.2,2.0,1.8,1.6,1.5,1.4]},
+  pePct:5,pbPct:5,peRange:"-/-",pbRange:"1.4-3.5"
+},
+"中国石化":{
+  pe:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[8,9,10,11,10,9,8,7,7,6,6,5,5]},
+  pb:{quarters:["23Q1","23Q2","23Q3","23Q4","24Q1","24Q2","24Q3","24Q4","25Q1","25Q2","25Q3","25Q4","26Q1"],values:[0.8,0.9,1.0,1.1,1.0,0.9,0.8,0.7,0.7,0.6,0.6,0.5,0.5]},
+  pePct:8,pbPct:5,peRange:"5-11",pbRange:"0.5-1.1"
+}
+};
+
+const COMPANY_DETAIL={
+"巨化股份":{mktCap:1012,defaultPE:17,currentPrice:37.49,
+  code:"600160",market:"A",ctrl:"浙江省国资委（巨化集团）",sector:"氟化工全产业链龙头",
+  summary:"国内氟化工绝对龙头，拥有从萤石→AHF→制冷剂→含氟聚合物→电子化学品的完整产业链。2025年制冷剂配额制驱动利润翻倍，毛利率飙升至50.81%。2026Q1延续高景气，毛利率34.39%。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[10.5,22.3,18.6,9.4,19.6,37.8]},
+  quarterly:{years:[2025,2024,2023,2022,2021],q1:[8.5,3.2,1.5,4.8,5.1],q2:[10.2,5.8,2.3,6.2,7.8],q3:[11.5,6.2,3.1,4.5,6.2],q4:[7.6,4.4,2.5,3.1,3.2]},
+  q1_2026:{rev:60.18,profit:13.0,gm:34.39},
+  financials:[
+    {year:2025,rev:"269.91",profit:"37.83",eps:"1.39",roe:"13.5%",gm:"28.9%"},
+    {year:2024,rev:"244.6",profit:"19.6",eps:"0.72",roe:"8.5%",gm:"16.0%"},
+    {year:2023,rev:"206.4",profit:"9.4",eps:"0.35",roe:"4.2%",gm:"12.7%"},
+    {year:2022,rev:"221.3",profit:"18.6",eps:"0.69",roe:"9.8%",gm:"15.2%"},
+    {year:2021,rev:"179.8",profit:"22.3",eps:"0.82",roe:"14.5%",gm:"18.8%"},
+  ],
+  // 按收入排名前五产品
+  topProductsByRev:[
+    {name:"制冷剂",rev:128.71,revPct:47.69,gm:50.81,profit:65.4,profitPct:62.5},
+    {name:"石化材料",rev:37.52,revPct:13.90,gm:7.2,profit:2.7,profitPct:2.6},
+    {name:"基础化工产品",rev:28.90,revPct:10.71,gm:23.9,profit:6.9,profitPct:6.6},
+    {name:"含氟聚合物材料",rev:18.62,revPct:6.90,gm:4.4,profit:0.8,profitPct:0.8},
+    {name:"氟化工原料(AHF)",rev:12.29,revPct:4.55,gm:15.0,profit:1.8,profitPct:1.7},
+  ],
+  // 按利润排名前五产品
+  topProductsByProfit:[
+    {name:"制冷剂",profit:65.4,profitPct:62.5,gm:50.81,rev:128.71},
+    {name:"基础化工产品",profit:6.9,profitPct:6.6,gm:23.9,rev:28.90},
+    {name:"食品包装材料(PVDC)",profit:1.9,profitPct:1.8,gm:23.9,rev:7.86},
+    {name:"石化材料",profit:2.7,profitPct:2.6,gm:7.2,rev:37.52},
+    {name:"氟化工原料(AHF)",profit:1.8,profitPct:1.7,gm:15.0,rev:12.29},
+  ],
+  capacities:[
+    {product:"无水氢氟酸(AHF)",cap:"25万吨/年",rank:"国内前列"},
+    {product:"R22",cap:"17.8万吨/年",rank:"国内第一"},
+    {product:"R32",cap:"13万吨/年",rank:"配额第一"},
+    {product:"R134a",cap:"6万吨/年",rank:"行业前列"},
+    {product:"PTFE",cap:"2.5万吨/年",rank:"国内前列"},
+    {product:"PVDF",cap:"1万吨/年",rank:"行业前列"},
+    {product:"FKM(氟橡胶)",cap:"1.3万吨/年",rank:"行业前列"},
+    {product:"HFOs(四代制冷剂)",cap:"0.85万吨/年",rank:"前瞻布局"},
+  ],
+  priceProducts:["R32","R134a","PTFE","PVDF"],
+},
+"三美股份":{mktCap:349,defaultPE:12,currentPrice:57.19,
+  code:"603379",market:"A",ctrl:"胡荣达家族",sector:"制冷剂龙头",
+  summary:"氟碳化学品细分龙头，R134a产能行业领先，出口占比高。2025年制冷剂价格恢复性上涨驱动利润断层增长，毛利率飙升至50.60%。2026Q1延续高增。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[2.8,8.5,6.2,3.0,8.9,20.6]},
+  quarterly:{years:[2025,2024,2023,2022,2021],q1:[5.2,1.8,0.5,1.5,2.0],q2:[6.5,2.8,0.8,2.0,2.8],q3:[5.8,2.5,1.0,1.5,2.2],q4:[3.1,1.8,0.7,1.2,1.5]},
+  q1_2026:{rev:18.5,profit:8.2,gm:52.0},
+  financials:[
+    {year:2025,rev:"58.50",profit:"20.61",eps:"3.38",roe:"22.0%",gm:"50.6%"},
+    {year:2024,rev:"52.3",profit:"8.9",eps:"1.46",roe:"14.0%",gm:"27.0%"},
+    {year:2023,rev:"44.5",profit:"3.0",eps:"0.49",roe:"5.2%",gm:"15.5%"},
+    {year:2022,rev:"48.2",profit:"6.2",eps:"1.02",roe:"10.5%",gm:"18.0%"},
+    {year:2021,rev:"42.8",profit:"8.5",eps:"1.40",roe:"15.8%",gm:"22.0%"},
+  ],
+  topProductsByRev:[
+    {name:"R32",rev:18.5,revPct:31.6,gm:54.6,profit:10.1,profitPct:49.0},
+    {name:"R134a",rev:16.2,revPct:27.7,gm:48.0,profit:7.8,profitPct:37.9},
+    {name:"R125",rev:8.5,revPct:14.5,gm:45.0,profit:3.8,profitPct:18.4},
+    {name:"AHF(外售)",rev:6.8,revPct:11.6,gm:30.0,profit:2.0,profitPct:9.7},
+    {name:"R143a/R142b",rev:3.5,revPct:6.0,gm:42.0,profit:1.5,profitPct:7.3},
+  ],
+  topProductsByProfit:[
+    {name:"R32",profit:10.1,profitPct:49.0,gm:54.6,rev:18.5},
+    {name:"R134a",profit:7.8,profitPct:37.9,gm:48.0,rev:16.2},
+    {name:"R125",profit:3.8,profitPct:18.4,gm:45.0,rev:8.5},
+    {name:"AHF(外售)",profit:2.0,profitPct:9.7,gm:30.0,rev:6.8},
+    {name:"R143a/R142b",profit:1.5,profitPct:7.3,gm:42.0,rev:3.5},
+  ],
+  capacities:[
+    {product:"R32",cap:"4万吨/年",rank:"行业前列"},
+    {product:"R134a",cap:"6.5万吨/年",rank:"行业领先"},
+    {product:"R125",cap:"5.2万吨/年",rank:"行业前列"},
+    {product:"AHF",cap:"22.1万吨/年",rank:"自给配套"},
+  ],
+  priceProducts:["R32","R134a"],
+},
+"多氟多":{mktCap:450,defaultPE:15,currentPrice:33.0,
+  code:"002407",market:"A",ctrl:"李世江家族",sector:"六氟磷酸锂全球龙头",
+  summary:"全球六氟磷酸锂龙头，低成本氟硅酸工艺。2025年LiPF6价格回升带动扭亏，2026Q1延续盈利修复。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[2.5,12.8,18.5,5.2,-3.1,8.5]},
+  quarterly:{years:[2025,2024,2023,2022,2021],q1:[2.0,-1.2,1.5,5.2,3.8],q2:[2.5,-0.8,1.2,5.0,4.2],q3:[2.3,-0.5,1.5,4.5,3.5],q4:[1.7,-0.6,1.0,3.8,1.3]},
+  q1_2026:{rev:28.5,profit:3.2,gm:18.0},
+  financials:[
+    {year:2025,rev:"105.0",profit:"8.5",eps:"0.63",roe:"6.5%",gm:"15.0%"},
+    {year:2024,rev:"82.1",profit:"-3.1",eps:"-0.23",roe:"-3.0%",gm:"8.0%"},
+    {year:2023,rev:"120.3",profit:"5.2",eps:"0.39",roe:"4.5%",gm:"12.0%"},
+    {year:2022,rev:"165.8",profit:"18.5",eps:"1.37",roe:"18.0%",gm:"25.0%"},
+  ],
+  topProductsByRev:[
+    {name:"六氟磷酸锂(LiPF6)",rev:35.0,revPct:33.3,gm:18.0,profit:6.3,profitPct:74.1},
+    {name:"无水氢氟酸(AHF)",rev:22.0,revPct:21.0,gm:12.0,profit:2.6,profitPct:30.6},
+    {name:"氟化铝",rev:15.0,revPct:14.3,gm:10.0,profit:1.5,profitPct:17.6},
+    {name:"新能源电池",rev:12.0,revPct:11.4,gm:5.0,profit:0.6,profitPct:7.1},
+    {name:"电子级氢氟酸",rev:5.0,revPct:4.8,gm:25.0,profit:1.25,profitPct:14.7},
+  ],
+  topProductsByProfit:[
+    {name:"六氟磷酸锂(LiPF6)",profit:6.3,profitPct:74.1,gm:18.0,rev:35.0},
+    {name:"无水氢氟酸(AHF)",profit:2.6,profitPct:30.6,gm:12.0,rev:22.0},
+    {name:"氟化铝",profit:1.5,profitPct:17.6,gm:10.0,rev:15.0},
+    {name:"电子级氢氟酸",profit:1.25,profitPct:14.7,gm:25.0,rev:5.0},
+    {name:"新能源电池",profit:0.6,profitPct:7.1,gm:5.0,rev:12.0},
+  ],
+  capacities:[
+    {product:"六氟磷酸锂(LiPF6)",cap:"6万吨/年",rank:"全球第一"},
+    {product:"无水氢氟酸(AHF)",cap:"30万吨/年",rank:"行业领先"},
+    {product:"氟化铝",cap:"产能领先",rank:"行业龙头"},
+    {product:"电子级氢氟酸",cap:"产线已建",rank:"突破垄断"},
+  ],
+  priceProducts:["六氟磷酸锂"],
+},
+"云天化":{mktCap:420,defaultPE:8,currentPrice:23.0,
+  code:"600096",market:"A",ctrl:"云南省国资委（云天化集团）",sector:"磷化工+磷矿龙头",
+  summary:"国内最大磷矿采选企业之一，磷矿储量近8亿吨，磷酸二铵国内产能第一。2025年营收下降主因砍掉低毛利商贸业务，核心化肥主业运营稳健。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[5.8,35.2,58.2,49.5,52.5,51.6]},
+  quarterly:{years:[2025,2024,2023,2022,2021],q1:[12.8,12.5,10.2,15.8,8.5],q2:[14.5,15.2,13.5,18.2,12.5],q3:[13.2,13.8,12.8,14.5,8.2],q4:[11.1,11.0,13.0,9.7,6.0]},
+  q1_2026:{rev:115.0,profit:13.5,gm:18.5},
+  financials:[
+    {year:2025,rev:"484.15",profit:"51.56",eps:"2.82",roe:"15.5%",gm:"17.5%"},
+    {year:2024,rev:"615.4",profit:"52.5",eps:"2.87",roe:"16.0%",gm:"17.0%"},
+    {year:2023,rev:"690.2",profit:"49.5",eps:"2.70",roe:"15.5%",gm:"16.5%"},
+    {year:2022,rev:"750.5",profit:"58.2",eps:"3.18",roe:"20.0%",gm:"19.0%"},
+    {year:2021,rev:"640.8",profit:"35.2",eps:"1.92",roe:"14.0%",gm:"15.5%"},
+  ],
+  topProductsByRev:[
+    {name:"磷酸二铵(DAP)",rev:145.0,revPct:30.0,gm:20.0,profit:29.0,profitPct:56.3},
+    {name:"磷酸一铵(MAP)",rev:85.0,revPct:17.6,gm:18.0,profit:15.3,profitPct:29.7},
+    {name:"尿素",rev:65.0,revPct:13.4,gm:15.0,profit:9.8,profitPct:19.0},
+    {name:"聚甲醛",rev:25.0,revPct:5.2,gm:12.0,profit:3.0,profitPct:5.8},
+    {name:"磷矿石(外售)",rev:18.0,revPct:3.7,gm:40.0,profit:7.2,profitPct:14.0},
+  ],
+  topProductsByProfit:[
+    {name:"磷酸二铵(DAP)",profit:29.0,profitPct:56.3,gm:20.0,rev:145.0},
+    {name:"磷酸一铵(MAP)",profit:15.3,profitPct:29.7,gm:18.0,rev:85.0},
+    {name:"尿素",profit:9.8,profitPct:19.0,gm:15.0,rev:65.0},
+    {name:"磷矿石(外售)",profit:7.2,profitPct:14.0,gm:40.0,rev:18.0},
+    {name:"聚甲醛",profit:3.0,profitPct:5.8,gm:12.0,rev:25.0},
+  ],
+  capacities:[
+    {product:"磷矿石",cap:"采选1450万吨/年",rank:"国内前列"},
+    {product:"磷酸二铵(DAP)",cap:"约300万吨/年",rank:"国内第一"},
+    {product:"磷酸一铵(MAP)",cap:"约200万吨/年",rank:"行业前列"},
+    {product:"尿素",cap:"约200万吨/年",rank:"行业前列"},
+  ],
+  priceProducts:["磷矿石","MAP","DAP"],
+},
+"兴发集团":{mktCap:210,defaultPE:11,currentPrice:16.5,
+  code:"600141",market:"A",ctrl:"宜昌兴发集团（宜昌国资委）",sector:"磷化工全产业链+精细化工",
+  summary:"磷化工领军企业，草甘膦产能国内第一、全球第二。布局电子级磷酸供应中芯国际。2025年精细磷化工占比首次超60%。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[5.5,22.8,28.5,14.0,16.0,19.5]},
+  quarterly:{years:[2025,2024,2023,2022,2021],q1:[4.5,3.5,2.8,7.5,5.2],q2:[5.5,4.5,3.5,8.2,7.5],q3:[5.8,4.8,4.2,7.0,6.2],q4:[3.7,3.2,3.5,5.8,3.9]},
+  q1_2026:{rev:72.0,profit:5.0,gm:18.0},
+  financials:[
+    {year:2025,rev:"305.0",profit:"19.5",eps:"1.54",roe:"9.5%",gm:"18.5%"},
+    {year:2024,rev:"284.0",profit:"16.0",eps:"1.26",roe:"8.0%",gm:"16.2%"},
+    {year:2023,rev:"282.8",profit:"14.0",eps:"1.10",roe:"7.0%",gm:"13.1%"},
+    {year:2022,rev:"315.2",profit:"28.5",eps:"2.24",roe:"16.0%",gm:"18.0%"},
+    {year:2021,rev:"258.5",profit:"22.8",eps:"1.79",roe:"14.5%",gm:"17.5%"},
+  ],
+  topProductsByRev:[
+    {name:"草甘膦",rev:65.0,revPct:21.3,gm:18.0,profit:11.7,profitPct:60.0},
+    {name:"磷酸一铵(MAP)",rev:45.0,revPct:14.8,gm:16.0,profit:7.2,profitPct:36.9},
+    {name:"有机硅",rev:38.0,revPct:12.5,gm:10.0,profit:3.8,profitPct:19.5},
+    {name:"黄磷",rev:25.0,revPct:8.2,gm:15.0,profit:3.8,profitPct:19.5},
+    {name:"电子级磷酸",rev:12.0,revPct:3.9,gm:35.0,profit:4.2,profitPct:21.5},
+  ],
+  topProductsByProfit:[
+    {name:"草甘膦",profit:11.7,profitPct:60.0,gm:18.0,rev:65.0},
+    {name:"磷酸一铵(MAP)",profit:7.2,profitPct:36.9,gm:16.0,rev:45.0},
+    {name:"电子级磷酸",profit:4.2,profitPct:21.5,gm:35.0,rev:12.0},
+    {name:"有机硅",profit:3.8,profitPct:19.5,gm:10.0,rev:38.0},
+    {name:"黄磷",profit:3.8,profitPct:19.5,gm:15.0,rev:25.0},
+  ],
+  capacities:[
+    {product:"草甘膦",cap:"23万吨/年",rank:"国内第一"},
+    {product:"磷矿石",cap:"采选约500万吨/年",rank:"行业前列"},
+    {product:"黄磷",cap:"约10万吨/年",rank:"行业前列"},
+    {product:"电子级磷酸",cap:"产能布局",rank:"供应中芯国际"},
+  ],
+  priceProducts:["磷矿石","草甘膦"],
+},
+"湖南裕能":{mktCap:380,defaultPE:10,currentPrice:50.0,
+  code:"301358",market:"A",ctrl:"湘潭电化集团",sector:"全球LFP正极材料龙头",
+  summary:"全球磷酸铁锂正极材料龙头，产能约50万吨/年，供货宁德时代等头部电池企业。2025年前三季度利润同比+31.5%。",
+  profitTrend:{years:[2021,2022,2023,2024,2025],values:[3.2,12.5,8.5,5.9,8.5]},
+  quarterly:{years:[2025,2024,2023,2022],q1:[2.2,1.2,2.0,3.5],q2:[2.5,1.5,2.2,3.8],q3:[2.8,1.8,2.5,3.2],q4:[1.0,1.4,1.8,2.0]},
+  q1_2026:{rev:75.0,profit:3.0,gm:14.0},
+  financials:[
+    {year:2025,rev:"310.0",profit:"8.5",eps:"1.12",roe:"10.0%",gm:"14.0%"},
+    {year:2024,rev:"180.0",profit:"5.9",eps:"0.78",roe:"8.0%",gm:"12.0%"},
+    {year:2023,rev:"210.5",profit:"8.5",eps:"1.12",roe:"12.0%",gm:"10.0%"},
+    {year:2022,rev:"420.8",profit:"12.5",eps:"1.65",roe:"22.0%",gm:"15.0%"},
+  ],
+  topProductsByRev:[
+    {name:"磷酸铁锂(LFP)",rev:280.0,revPct:90.3,gm:14.5,profit:40.6,profitPct:95.0},
+    {name:"三元材料",rev:20.0,revPct:6.5,gm:8.0,profit:1.6,profitPct:3.8},
+    {name:"磷酸铁(FP)",rev:10.0,revPct:3.2,gm:12.0,profit:1.2,profitPct:2.8},
+  ],
+  topProductsByProfit:[
+    {name:"磷酸铁锂(LFP)",profit:40.6,profitPct:95.0,gm:14.5,rev:280.0},
+    {name:"三元材料",profit:1.6,profitPct:3.8,gm:8.0,rev:20.0},
+    {name:"磷酸铁(FP)",profit:1.2,profitPct:2.8,gm:12.0,rev:10.0},
+  ],
+  capacities:[{product:"磷酸铁锂(LFP)",cap:"约50万吨/年",rank:"全球第一"},{product:"磷酸铁(FP)",cap:"配套产能",rank:"一体化"}],
+  priceProducts:["磷酸铁锂"],
+},
+"川发龙蟒":{
+  code:"002312",market:"A",ctrl:"四川省国资委（四川发展）",sector:"工业级磷酸一铵龙头",
+  summary:"工业级磷酸一铵龙头，储能磷料核心供应商。磷矿→MAP→磷酸铁一体化布局。",
+  profitTrend:{years:[2021,2022,2023,2024,2025],values:[3.5,8.2,5.0,6.2,8.0]},
+  quarterly:{years:[2025,2024,2023,2022],q1:[1.8,1.2,1.0,2.2],q2:[2.2,1.8,1.3,2.5],q3:[2.3,1.8,1.5,2.0],q4:[1.7,1.4,1.2,1.5]},
+  financials:[
+    {year:2025,rev:"110.0",profit:"8.0",eps:"0.70",roe:"10.5%",gm:"18.5%"},
+    {year:2024,rev:"85.0",profit:"6.2",eps:"0.55",roe:"9.0%",gm:"17.0%"},
+    {year:2023,rev:"78.5",profit:"5.0",eps:"0.44",roe:"7.5%",gm:"15.0%"},
+  ],
+  topProductsByRev:[
+    {name:"工业级MAP",rev:55.0,revPct:50.0,gm:20.0,profit:11.0,profitPct:68.8},
+    {name:"农业级MAP/DAP",rev:30.0,revPct:27.3,gm:15.0,profit:4.5,profitPct:28.1},
+    {name:"磷酸铁",rev:12.0,revPct:10.9,gm:12.0,profit:1.4,profitPct:8.8},
+    {name:"磷矿石(外售)",rev:8.0,revPct:7.3,gm:35.0,profit:2.8,profitPct:17.5},
+  ],
+  topProductsByProfit:[
+    {name:"工业级MAP",profit:11.0,profitPct:68.8,gm:20.0,rev:55.0},
+    {name:"农业级MAP/DAP",profit:4.5,profitPct:28.1,gm:15.0,rev:30.0},
+    {name:"磷矿石(外售)",profit:2.8,profitPct:17.5,gm:35.0,rev:8.0},
+    {name:"磷酸铁",profit:1.4,profitPct:8.8,gm:12.0,rev:12.0},
+  ],
+  capacities:[{product:"磷矿石",cap:"采选约200万吨/年",rank:"自给"},{product:"工业级MAP",cap:"龙头",rank:"行业第一"},{product:"磷酸铁",cap:"约10万吨/年",rank:"一体化"}],
+  priceProducts:["MAP","磷矿石"],
+},
+"川恒股份":{
+  code:"002895",market:"A",ctrl:"段长安家族",sector:"高端磷酸盐+磷矿",
+  summary:"磷矿自给+高端磷酸盐布局，绑定新能源产业链。饲料级磷酸盐细分龙头，毛利率行业领先。",
+  profitTrend:{years:[2021,2022,2023,2024,2025],values:[2.0,6.5,5.2,7.8,10.0]},
+  quarterly:{years:[2025,2024,2023,2022],q1:[2.2,1.5,1.0,1.8],q2:[2.8,2.2,1.3,2.0],q3:[2.8,2.3,1.5,1.5],q4:[2.2,1.8,1.4,1.2]},
+  financials:[
+    {year:2025,rev:"52.0",profit:"10.0",eps:"1.82",roe:"15.5%",gm:"38.0%"},
+    {year:2024,rev:"35.0",profit:"7.8",eps:"1.42",roe:"14.0%",gm:"39.0%"},
+    {year:2023,rev:"28.5",profit:"5.2",eps:"0.95",roe:"11.0%",gm:"36.0%"},
+  ],
+  topProductsByRev:[
+    {name:"饲料级磷酸盐",rev:22.0,revPct:42.3,gm:40.0,profit:8.8,profitPct:88.0},
+    {name:"磷酸一铵(MAP)",rev:15.0,revPct:28.8,gm:35.0,profit:5.3,profitPct:53.0},
+    {name:"磷酸铁",rev:8.0,revPct:15.4,gm:20.0,profit:1.6,profitPct:16.0},
+    {name:"磷矿石(外售)",rev:5.0,revPct:9.6,gm:45.0,profit:2.3,profitPct:23.0},
+  ],
+  topProductsByProfit:[
+    {name:"饲料级磷酸盐",profit:8.8,profitPct:88.0,gm:40.0,rev:22.0},
+    {name:"磷酸一铵(MAP)",profit:5.3,profitPct:53.0,gm:35.0,rev:15.0},
+    {name:"磷矿石(外售)",profit:2.3,profitPct:23.0,gm:45.0,rev:5.0},
+    {name:"磷酸铁",profit:1.6,profitPct:16.0,gm:20.0,rev:8.0},
+  ],
+  capacities:[{product:"磷矿石",cap:"储量约1.6亿吨",rank:"在建扩产"},{product:"饲料级磷酸盐",cap:"产能领先",rank:"细分龙头"}],
+  priceProducts:["MAP","磷矿石"],
+},
+"新洋丰":{
+  code:"000902",market:"A",ctrl:"杨才学家族",sector:"复合肥龙头",
+  summary:"复合肥行业龙头，磷肥一体化布局，MAP+复合肥产能约800万吨/年。",
+  profitTrend:{years:[2021,2022,2023,2024,2025],values:[8.5,15.2,11.2,12.5,14.0]},
+  quarterly:{years:[2025,2024,2023,2022],q1:[3.0,2.5,2.0,4.0],q2:[4.0,3.5,3.0,4.5],q3:[4.2,3.8,3.5,4.0],q4:[2.8,2.7,2.7,2.7]},
+  financials:[
+    {year:2025,rev:"175.0",profit:"14.0",eps:"1.07",roe:"13.0%",gm:"17.0%"},
+    {year:2024,rev:"145.0",profit:"12.5",eps:"0.95",roe:"12.0%",gm:"16.0%"},
+    {year:2023,rev:"135.2",profit:"11.2",eps:"0.85",roe:"11.0%",gm:"14.5%"},
+  ],
+  topProductsByRev:[
+    {name:"复合肥",rev:120.0,revPct:68.6,gm:16.0,profit:19.2,profitPct:68.6},
+    {name:"磷酸一铵(MAP)",rev:35.0,revPct:20.0,gm:18.0,profit:6.3,profitPct:22.5},
+    {name:"磷酸二铵(DAP)",rev:15.0,revPct:8.6,gm:15.0,profit:2.3,profitPct:8.2},
+  ],
+  topProductsByProfit:[
+    {name:"复合肥",profit:19.2,profitPct:68.6,gm:16.0,rev:120.0},
+    {name:"磷酸一铵(MAP)",profit:6.3,profitPct:22.5,gm:18.0,rev:35.0},
+    {name:"磷酸二铵(DAP)",profit:2.3,profitPct:8.2,gm:15.0,rev:15.0},
+  ],
+  capacities:[{product:"复合肥",cap:"约800万吨/年",rank:"行业第一"},{product:"MAP",cap:"一体化",rank:"配套"}],
+  priceProducts:["MAP"],
+},
+"合盛硅业":{
+  code:"603260",market:"A",ctrl:"罗立国家族",sector:"工业硅+有机硅双龙头",
+  summary:"全球最大工业硅+有机硅一体化企业。2025年因光伏业务亏损导致首亏，但主业有机硅依然盈利。2026H1扭亏为盈，有机硅价格修复。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[14.0,32.0,26.2,17.0,17.4,-29.9]},
+  quarterly:{years:[2025,2024,2023],q1:[-5.2,3.5,4.0],q2:[-8.5,4.2,5.0],q3:[-10.2,5.5,4.5],q4:[-6.0,4.2,3.5]},
+  q1_2026:{rev:50.06,profit:0.77,gm:15},
+  financials:[
+    {year:2025,rev:"204.99",profit:"-29.91",eps:"-2.53",roe:"-8%",gm:"12%"},
+    {year:2024,rev:"266.92",profit:"17.40",eps:"1.47",roe:"5%",gm:"15%"},
+    {year:2023,rev:"232.5",profit:"17.0",eps:"1.44",roe:"5%",gm:"14%"},
+  ],
+  topProductsByRev:[
+    {name:"有机硅(DMC+硅橡胶)",rev:95.75,revPct:46.7,gm:11.8,profit:11.3,profitPct:100},
+    {name:"工业硅",rev:72.0,revPct:35.1,gm:12.5,profit:9.0,profitPct:80},
+    {name:"多晶硅",rev:15.0,revPct:7.3,gm:-20,profit:-3.0,profitPct:-27},
+    {name:"光伏组件",rev:12.0,revPct:5.9,gm:-50,profit:-6.0,profitPct:-53},
+  ],
+  topProductsByProfit:[
+    {name:"有机硅(DMC+硅橡胶)",profit:11.3,profitPct:100,gm:11.8,rev:95.75},
+    {name:"工业硅",profit:9.0,profitPct:80,gm:12.5,rev:72.0},
+  ],
+  capacities:[
+    {product:"工业硅",cap:"122万吨/年",rank:"全球第一"},
+    {product:"有机硅单体",cap:"173万吨/年",rank:"全球第一"},
+    {product:"多晶硅",cap:"5万吨/年",rank:"—"},
+    {product:"碳化硅",cap:"布局中",rank:"前瞻"},
+  ],
+  priceProducts:["工业硅","有机硅DMC"],
+},
+"宝丰能源":{
+  code:"600989",market:"A",ctrl:"党彦宝",sector:"煤制烯烃成本+规模龙头",
+  summary:"国内煤制烯烃龙头，宁夏宁东基地通过光伏制氢+煤制烯烃耦合技术，成本优势显著。2026H1预增63%-78%。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[42.0,55.0,65.0,48.0,55.0,112.0]},
+  quarterly:{years:[2025,2024,2023],q1:[25.0,12.0,10.0],q2:[30.0,14.0,12.0],q3:[32.0,15.0,13.0],q4:[25.0,14.0,13.0]},
+  q1_2026:{rev:85,profit:42,gm:35},
+  financials:[
+    {year:2025,rev:"350",profit:"112",eps:"1.53",roe:"19%",gm:"33%"},
+    {year:2024,rev:"300",profit:"55",eps:"0.75",roe:"15%",gm:"28%"},
+    {year:2023,rev:"280",profit:"48",eps:"0.65",roe:"13%",gm:"25%"},
+  ],
+  topProductsByRev:[
+    {name:"聚乙烯+聚丙烯(烯烃)",rev:220,revPct:62.9,gm:35,profit:77,profitPct:68.8},
+    {name:"焦化产品",rev:80,revPct:22.9,gm:25,profit:20,profitPct:17.9},
+    {name:"精细化工产品",rev:30,revPct:8.6,gm:30,profit:9,profitPct:8.0},
+  ],
+  topProductsByProfit:[
+    {name:"聚乙烯+聚丙烯(烯烃)",profit:77,profitPct:68.8,gm:35,rev:220},
+    {name:"焦化产品",profit:20,profitPct:17.9,gm:25,rev:80},
+    {name:"精细化工产品",profit:9,profitPct:8.0,gm:30,rev:30},
+  ],
+  capacities:[
+    {product:"煤制烯烃",cap:"约600万吨/年",rank:"A股最大"},
+    {product:"甲醇",cap:"约600万吨/年",rank:"A股最大"},
+    {product:"聚乙烯",cap:"约300万吨/年",rank:"行业前列"},
+  ],
+  priceProducts:["聚乙烯(LLDPE)","甲醇"],
+},
+"华鲁恒升":{
+  code:"600426",market:"A",ctrl:"华鲁控股集团",sector:"煤气化多联产柔性龙头",
+  summary:"国内煤化工行业柔性生产标杆，产品涵盖尿素、醋酸、有机胺、己二酸等。成本控制能力突出。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[20.0,40.0,65.0,45.0,33.2,30.0]},
+  quarterly:{years:[2025,2024,2023],q1:[7.0,8.5,10.0],q2:[8.0,9.0,11.0],q3:[8.0,8.5,12.0],q4:[7.0,7.2,12.0]},
+  q1_2026:{rev:80,profit:8.5,gm:19},
+  financials:[
+    {year:2025,rev:"310",profit:"30",eps:"1.42",roe:"7%",gm:"19%"},
+    {year:2024,rev:"300",profit:"33.2",eps:"1.57",roe:"8%",gm:"20%"},
+    {year:2023,rev:"290",profit:"45",eps:"2.13",roe:"11%",gm:"22%"},
+  ],
+  topProductsByRev:[
+    {name:"尿素",rev:50,revPct:16.1,gm:19,profit:9.5,profitPct:31.7},
+    {name:"醋酸",rev:40,revPct:12.9,gm:20,profit:8.0,profitPct:26.7},
+    {name:"有机胺",rev:35,revPct:11.3,gm:18,profit:6.3,profitPct:21.0},
+    {name:"己二酸",rev:30,revPct:9.7,gm:15,profit:4.5,profitPct:15.0},
+    {name:"甲醇",rev:25,revPct:8.1,gm:15,profit:3.8,profitPct:12.7},
+  ],
+  topProductsByProfit:[
+    {name:"尿素",profit:9.5,profitPct:31.7,gm:19,rev:50},
+    {name:"醋酸",profit:8.0,profitPct:26.7,gm:20,rev:40},
+    {name:"有机胺",profit:6.3,profitPct:21.0,gm:18,rev:35},
+    {name:"己二酸",profit:4.5,profitPct:15.0,gm:15,rev:30},
+    {name:"甲醇",profit:3.8,profitPct:12.7,gm:15,rev:25},
+  ],
+  capacities:[
+    {product:"合成氨",cap:"约70万吨/年",rank:"配套"},
+    {product:"尿素",cap:"约105万吨/年",rank:"煤头龙头"},
+    {product:"甲醇",cap:"约170万吨/年",rank:"行业前列"},
+    {product:"醋酸",cap:"约60万吨/年",rank:"行业前列"},
+    {product:"BDO",cap:"约10万吨/年",rank:"一体化"},
+  ],
+  priceProducts:["尿素","甲醇"],
+},
+"卫星化学":{
+  code:"002648",market:"A",ctrl:"杨卫东",sector:"轻烃一体化龙头",
+  summary:"国内乙烷裂解制乙烯龙头，成本优势显著。2026H1预增119%-155%，丙烯酸业务爆发。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[30.0,60.0,55.0,50.0,60.8,53.1]},
+  quarterly:{years:[2025,2024,2023],q1:[12.0,14.0,11.0],q2:[14.0,16.0,13.0],q3:[15.0,17.0,14.0],q4:[12.1,13.8,12.0]},
+  q1_2026:{rev:120,profit:30,gm:22},
+  financials:[
+    {year:2025,rev:"460.68",profit:"53.11",eps:"1.58",roe:"15%",gm:"20%"},
+    {year:2024,rev:"456.5",profit:"60.8",eps:"1.81",roe:"18%",gm:"22%"},
+    {year:2023,rev:"410.0",profit:"50.0",eps:"1.49",roe:"15%",gm:"19%"},
+  ],
+  topProductsByRev:[
+    {name:"乙烯+聚乙烯",rev:200,revPct:43.4,gm:22,profit:44,profitPct:82.9},
+    {name:"丙烯酸及酯",rev:100,revPct:21.7,gm:25,profit:25,profitPct:47.1},
+    {name:"环氧乙烷/乙二醇",rev:80,revPct:17.4,gm:15,profit:12,profitPct:22.6},
+    {name:"SAP/高吸水性树脂",rev:40,revPct:8.7,gm:18,profit:7.2,profitPct:13.6},
+  ],
+  topProductsByProfit:[
+    {name:"丙烯酸及酯",profit:25,profitPct:47.1,gm:25,rev:100},
+    {name:"乙烯+聚乙烯",profit:44,profitPct:82.9,gm:22,rev:200},
+    {name:"环氧乙烷/乙二醇",profit:12,profitPct:22.6,gm:15,rev:80},
+  ],
+  capacities:[
+    {product:"乙烷裂解制乙烯",cap:"约250万吨/年",rank:"国内最大"},
+    {product:"丙烯酸",cap:"约60万吨/年",rank:"行业前列"},
+    {product:"聚乙烯",cap:"约150万吨/年",rank:"行业前列"},
+  ],
+  priceProducts:["乙烯","聚乙烯(LLDPE)"],
+},
+"通威股份":{
+  code:"600438",market:"A",ctrl:"刘汉元",sector:"多晶硅+电池双龙头",
+  summary:"全球多晶硅+太阳能电池双龙头。2025年因多晶硅价格暴跌转亏，2026年行业有望触底。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[50.0,130.0,250.0,135.7,-30.0,-50.0]},
+  quarterly:{years:[2025,2024,2023],q1:[-8.0,15.0,30.0],q2:[-12.0,-8.0,35.0],q3:[-15.0,-20.0,38.0],q4:[-15.0,-17.0,32.7]},
+  financials:[
+    {year:2025,rev:"800",profit:"-50",eps:"-1.11",roe:"-8%",gm:"5%"},
+    {year:2024,rev:"900",profit:"-30",eps:"-0.67",roe:"-5%",gm:"8%"},
+    {year:2023,rev:"1300",profit:"135.7",eps:"3.01",roe:"15%",gm:"18%"},
+  ],
+  topProductsByRev:[
+    {name:"太阳能电池",rev:500,revPct:62.5,gm:8,profit:40,profitPct:100},
+    {name:"多晶硅",rev:180,revPct:22.5,gm:-5,profit:-9,profitPct:-23},
+    {name:"组件",rev:100,revPct:12.5,gm:5,profit:5,profitPct:13},
+  ],
+  topProductsByProfit:[
+    {name:"太阳能电池",profit:40,profitPct:100,gm:8,rev:500},
+    {name:"组件",profit:5,profitPct:13,gm:5,rev:100},
+  ],
+  capacities:[
+    {product:"多晶硅",cap:"约80万吨/年",rank:"全球第一"},
+    {product:"太阳能电池",cap:"约100GW/年",rank:"全球第一"},
+  ],
+  priceProducts:["多晶硅"],
+},
+"中国石化":{
+  code:"600028",market:"A",ctrl:"中国石化集团（央企）",sector:"油气全产业链龙头",
+  summary:"全球最大炼油商之一，覆盖勘探开发、炼油、化工、销售全产业链。",
+  profitTrend:{years:[2020,2021,2022,2023,2024,2025],values:[330.0,720.0,663.0,604.0,500.0,450.0]},
+  quarterly:{years:[2025,2024,2023],q1:[120.0,130.0,150.0],q2:[115.0,125.0,155.0],q3:[110.0,120.0,150.0],q4:[105.0,125.0,149.0]},
+  q1_2026:{rev:7500,profit:130,gm:6},
+  financials:[
+    {year:2025,rev:"29000",profit:"450",eps:"0.37",roe:"7%",gm:"5%"},
+    {year:2024,rev:"30000",profit:"500",eps:"0.41",roe:"8%",gm:"5%"},
+    {year:2023,rev:"32000",profit:"604",eps:"0.50",roe:"9%",gm:"6%"},
+  ],
+  topProductsByRev:[
+    {name:"成品油",rev:15000,revPct:51.7,gm:5,profit:750,profitPct:66.7},
+    {name:"化工产品",rev:8000,revPct:27.6,gm:6,profit:480,profitPct:42.7},
+    {name:"天然气",rev:3000,revPct:10.3,gm:8,profit:240,profitPct:21.3},
+    {name:"原油",rev:2000,revPct:6.9,gm:3,profit:60,profitPct:5.3},
+  ],
+  topProductsByProfit:[
+    {name:"成品油",profit:750,profitPct:66.7,gm:5,rev:15000},
+    {name:"化工产品",profit:480,profitPct:42.7,gm:6,rev:8000},
+    {name:"天然气",profit:240,profitPct:21.3,gm:8,rev:3000},
+  ],
+  capacities:[
+    {product:"炼油",cap:"约3亿吨/年",rank:"全球前列"},
+    {product:"乙烯",cap:"约1500万吨/年",rank:"国内第一"},
+  ],
+  priceProducts:["乙烯","聚乙烯(LLDPE)"],
+}
+};
+
+const FORECAST_2026={
+"合盛硅业":{
+  base:{rev:204.99,profit:-29.91},
+  forecast:{
+    pessimistic:{rev:220,profit:8,gm:14,eps:0.68,note:"有机硅DMC维持1.3万/吨，工业硅低迷"},
+    neutral:{rev:250,profit:16,gm:18,eps:1.35,note:"有机硅DMC涨至1.5万/吨，工业硅修复"},
+    optimistic:{rev:280,profit:25,gm:22,eps:2.12,note:"有机硅DMC突破2万/吨，碳化硅投产"}
+  },
+  sensitivity:[
+    {product:"有机硅DMC",priceChange:"+10%",profitChange:"+45%",mechanism:"DMC每涨1000元/吨，利润增约13亿（130万吨销量）",elasticity:4.5},
+    {product:"工业硅",priceChange:"+10%",profitChange:"+20%",mechanism:"工业硅每涨1000元/吨，利润增约8亿（80万吨外售）",elasticity:2.0},
+  ],
+  latestPrice:{工业硅:8435,"有机硅DMC":13500},
+  mktCap:350,defaultPE:22,currentPrice:29.6
+},
+"宝丰能源":{
+  base:{rev:350,profit:112},
+  forecast:{
+    pessimistic:{rev:380,profit:140,gm:30,eps:1.91,note:"聚乙烯价格回落，煤价上涨"},
+    neutral:{rev:420,profit:157,gm:33,eps:2.14,note:"聚乙烯维持，新产能投放"},
+    optimistic:{rev:460,profit:180,gm:36,eps:2.46,note:"聚乙烯涨价+绿氢项目贡献"}
+  },
+  sensitivity:[
+    {product:"聚乙烯",priceChange:"+10%",profitChange:"+25%",mechanism:"PE每涨500元/吨，利润增约15亿（300万吨产能）",elasticity:2.5},
+    {product:"甲醇",priceChange:"+10%",profitChange:"+10%",mechanism:"甲醇每涨200元/吨，利润增约12亿（600万吨产能，大部分自用）",elasticity:1.0},
+  ],
+  latestPrice:{聚乙烯:6000,甲醇:1820},
+  mktCap:1500,defaultPE:10,currentPrice:20.5
+},
+"华鲁恒升":{
+  base:{rev:310,profit:30},
+  forecast:{
+    pessimistic:{rev:300,profit:22,gm:17,eps:1.04,note:"尿素+醋酸价格低迷"},
+    neutral:{rev:330,profit:32,gm:19,eps:1.51,note:"产品价格温和修复"},
+    optimistic:{rev:360,profit:42,gm:22,eps:1.98,note:"BDO+己二酸新产能放量"}
+  },
+  sensitivity:[
+    {product:"尿素",priceChange:"+10%",profitChange:"+17%",mechanism:"尿素每涨200元/吨，利润增约2亿（105万吨产能）",elasticity:1.7},
+    {product:"醋酸",priceChange:"+10%",profitChange:"+13%",mechanism:"醋酸每涨500元/吨，利润增约2亿（40万吨产能）",elasticity:1.3},
+  ],
+  latestPrice:{尿素:1680,甲醇:1820},
+  mktCap:580,defaultPE:18,currentPrice:27.3
+},
+"卫星化学":{
+  base:{rev:460.68,profit:53.11},
+  forecast:{
+    pessimistic:{rev:480,profit:60,gm:18,eps:1.79,note:"乙烯价格低迷"},
+    neutral:{rev:520,profit:75,gm:21,eps:2.23,note:"丙烯酸持续景气"},
+    optimistic:{rev:560,profit:90,gm:24,eps:2.68,note:"新项目投产+乙烯涨价"}
+  },
+  sensitivity:[
+    {product:"乙烯",priceChange:"+10%",profitChange:"+20%",mechanism:"乙烯每涨500元/吨，利润增约10亿（200万吨外售+自用）",elasticity:2.0},
+    {product:"丙烯酸",priceChange:"+10%",profitChange:"+15%",mechanism:"丙烯酸每涨1000元/吨，利润增约6亿（60万吨产能）",elasticity:1.5},
+  ],
+  latestPrice:{乙烯:5500,"聚乙烯(LLDPE)":6000},
+  mktCap:700,defaultPE:13,currentPrice:20.8
+},
+"通威股份":{
+  base:{rev:800,profit:-50},
+  forecast:{
+    pessimistic:{rev:750,profit:-20,gm:6,eps:-0.44,note:"多晶硅价格维持低位"},
+    neutral:{rev:850,profit:20,gm:10,eps:0.44,note:"多晶硅触底回升至5万/吨"},
+    optimistic:{rev:950,profit:80,gm:15,eps:1.78,note:"多晶硅涨至8万/吨+电池盈利修复"}
+  },
+  sensitivity:[
+    {product:"多晶硅",priceChange:"+10%",profitChange:"+60%",mechanism:"多晶硅每涨1万/吨，利润增约50亿（50万吨外售）",elasticity:6.0},
+  ],
+  latestPrice:{"多晶硅":2.2},
+  mktCap:800,defaultPE:40,currentPrice:17.8
+},
+"中国石化":{
+  base:{rev:29000,profit:450},
+  forecast:{
+    pessimistic:{rev:28000,profit:380,gm:4.5,eps:0.31,note:"油价下跌+炼化亏损"},
+    neutral:{rev:30000,profit:480,gm:5.5,eps:0.39,note:"油价温和+化工修复"},
+    optimistic:{rev:32000,profit:550,gm:6.5,eps:0.45,note:"油价回升+新材料突破"}
+  },
+  sensitivity:[
+    {product:"原油",priceChange:"+10%",profitChange:"+15%",mechanism:"油价每涨10美元/桶，利润增约60亿",elasticity:1.5},
+    {product:"乙烯",priceChange:"+10%",profitChange:"+8%",mechanism:"乙烯每涨500元/吨，利润增约30亿",elasticity:0.8},
+  ],
+  latestPrice:{乙烯:5500},
+  mktCap:6500,defaultPE:14,currentPrice:5.3
+},
+};
+
+const DATA=[
+{cat:"氟化工",lvl:"上游",p1:"萤石",p2:"",end:"",app:"",rank:1,acode:"603505",aname:"金石资源",hcode:"",hname:"",ctrl:"宋英",cap:"40万吨/年",margin:"25%-40%",capex:"~12亿",desc:"国内最大萤石采选",rev:18.5,profit:5.2,profitChg:"+32%",roe:"18%",gm:"35%",eps:"1.24"},
+{cat:"氟化工",lvl:"上游",p1:"萤石",p2:"",end:"",app:"",rank:2,acode:"605020",aname:"永和股份",hcode:"",hname:"",ctrl:"童建国",cap:"矿+AHF一体化",margin:"18%-28%",capex:"~8亿",desc:"萤石+氢氟酸一体化",rev:32.1,profit:3.8,profitChg:"+156%",roe:"12%",gm:"22%",eps:"1.05"},
+{cat:"氟化工",lvl:"上游",p1:"萤石",p2:"",end:"",app:"",rank:3,acode:"600160",aname:"巨化股份",hcode:"",hname:"",ctrl:"浙江省国资委",cap:"AHF 25万吨/年",margin:"15%-25%",capex:"~45亿",desc:"国内最大AHF产能",rev:269.91,profit:37.83,profitChg:"+93%",roe:"13.5%",gm:"28.9%",eps:"1.39"},
+{cat:"氟化工",lvl:"中游",p1:"制冷剂",p2:"R32",end:"空调制冷剂",app:"家用空调",rank:1,acode:"600160",aname:"巨化股份",hcode:"",hname:"",ctrl:"浙江省国资委",cap:"13万吨/年",margin:"29%-51%",capex:"~45亿",desc:"R32配额第一",rev:269.91,profit:37.83,profitChg:"+93%",roe:"13.5%",gm:"50.8%",eps:"1.39"},
+{cat:"氟化工",lvl:"中游",p1:"制冷剂",p2:"R32",end:"空调制冷剂",app:"家用空调",rank:2,acode:"603379",aname:"三美股份",hcode:"",hname:"",ctrl:"胡荣达家族",cap:"4万吨/年",margin:"25%-38%",capex:"~5亿",desc:"R32出口占比高",rev:58.50,profit:20.61,profitChg:"+131%",roe:"22%",gm:"50.6%",eps:"3.38"},
+{cat:"氟化工",lvl:"中游",p1:"制冷剂",p2:"R32",end:"空调制冷剂",app:"家用空调",rank:3,acode:"605020",aname:"永和股份",hcode:"",hname:"",ctrl:"童建国",cap:"布局中",margin:"18%-28%",capex:"~8亿",desc:"四代制冷剂并行",rev:32.1,profit:3.8,profitChg:"+156%",roe:"12%",gm:"22%",eps:"1.05"},
+{cat:"氟化工",lvl:"中游",p1:"制冷剂",p2:"R134a",end:"汽车空调制冷剂",app:"汽车空调",rank:1,acode:"603379",aname:"三美股份",hcode:"",hname:"",ctrl:"胡荣达家族",cap:"6.5万吨/年",margin:"25%-38%",capex:"~5亿",desc:"R134a产能领先",rev:58.50,profit:20.61,profitChg:"+131%",roe:"22%",gm:"50.6%",eps:"3.38"},
+{cat:"氟化工",lvl:"中游",p1:"含氟聚合物",p2:"PTFE",end:"密封件/不粘涂层",app:"化工、半导体",rank:1,acode:"600160",aname:"巨化股份",hcode:"",hname:"",ctrl:"浙江省国资委",cap:"2.5万吨/年",margin:"2%-9%",capex:"~45亿",desc:"PTFE产能前列",rev:269.91,profit:37.83,profitChg:"+93%",roe:"13.5%",gm:"4.4%",eps:"1.39"},
+{cat:"氟化工",lvl:"中游",p1:"含氟聚合物",p2:"PVDF",end:"锂电粘结剂",app:"锂电池",rank:1,acode:"600160",aname:"巨化股份",hcode:"",hname:"",ctrl:"浙江省国资委",cap:"1万吨/年",margin:"2%-9%",capex:"~45亿",desc:"PVDF粉料",rev:269.91,profit:37.83,profitChg:"+93%",roe:"13.5%",gm:"4.4%",eps:"1.39"},
+{cat:"氟化工",lvl:"中游",p1:"含氟精细化学品",p2:"六氟磷酸锂",end:"电解液溶质",app:"动力电池",rank:1,acode:"002407",aname:"多氟多",hcode:"",hname:"",ctrl:"李世江家族",cap:"6万吨/年",margin:"2%-15%",capex:"~25亿",desc:"全球LiPF6龙头",rev:105,profit:8.5,profitChg:"扭亏",roe:"6.5%",gm:"15%",eps:"0.63"},
+{cat:"氟化工",lvl:"中游",p1:"含氟精细化学品",p2:"电子级氢氟酸",end:"晶圆清洗",app:"半导体",rank:1,acode:"002407",aname:"多氟多",hcode:"",hname:"",ctrl:"李世江家族",cap:"产线已建",margin:"15%-25%",capex:"~25亿",desc:"突破垄断",rev:105,profit:8.5,profitChg:"扭亏",roe:"6.5%",gm:"15%",eps:"0.63"},
+{cat:"氟化工",lvl:"中游",p1:"含氟电子特气",p2:"WF6/C4F6",end:"半导体刻蚀",app:"半导体",rank:1,acode:"688146",aname:"中船特气",hcode:"",hname:"",ctrl:"中国船舶集团",cap:"WF6 600t+C4F6 1200t",margin:"30%-45%",capex:"~15亿",desc:"电子特气龙头",rev:25.3,profit:5.8,profitChg:"+96%",roe:"15%",gm:"38%",eps:"1.52"},
+{cat:"磷化工",lvl:"上游",p1:"磷矿石",p2:"",end:"",app:"",rank:1,acode:"600096",aname:"云天化",hcode:"",hname:"",ctrl:"云南省国资委",cap:"储量近8亿吨/采选1450万吨/年",margin:"16%-20%",capex:"~30亿",desc:"磷矿储量第一",rev:484.15,profit:51.56,profitChg:"-2%",roe:"15.5%",gm:"17.5%",eps:"2.82"},
+{cat:"磷化工",lvl:"上游",p1:"磷矿石",p2:"",end:"",app:"",rank:2,acode:"600141",aname:"兴发集团",hcode:"",hname:"",ctrl:"宜昌兴发集团",cap:"储量4.61亿吨/采选约500万吨/年",margin:"16%-20%",capex:"~25亿",desc:"矿电化一体",rev:305,profit:19.5,profitChg:"+22%",roe:"9.5%",gm:"18.5%",eps:"1.54"},
+{cat:"磷化工",lvl:"中游",p1:"磷肥",p2:"MAP",end:"农业肥料",app:"农业",rank:1,acode:"002312",aname:"川发龙蟒",hcode:"",hname:"",ctrl:"四川省国资委",cap:"工业级MAP龙头",margin:"15%-20%",capex:"~18亿",desc:"储能磷料核心",rev:110,profit:8.0,profitChg:"+29%",roe:"10.5%",gm:"18.5%",eps:"0.70"},
+{cat:"磷化工",lvl:"中游",p1:"磷肥",p2:"DAP",end:"农业肥料",app:"农业",rank:1,acode:"600096",aname:"云天化",hcode:"",hname:"",ctrl:"云南省国资委",cap:"DAP约300万吨/年",margin:"20%-34%",capex:"~30亿",desc:"DAP产能第一",rev:484.15,profit:51.56,profitChg:"-2%",roe:"15.5%",gm:"17.5%",eps:"2.82"},
+{cat:"磷化工",lvl:"中游",p1:"新能源材料",p2:"磷酸铁锂",end:"正极材料",app:"动力电池",rank:1,acode:"301358",aname:"湖南裕能",hcode:"",hname:"",ctrl:"湘潭电化集团",cap:"LFP约50万吨/年",margin:"8%-15%",capex:"~40亿",desc:"全球LFP龙头",rev:310,profit:8.5,profitChg:"+44%",roe:"10%",gm:"14%",eps:"1.12"},
+{cat:"磷化工",lvl:"中游",p1:"农药",p2:"草甘膦",end:"除草剂",app:"农业",rank:1,acode:"600141",aname:"兴发集团",hcode:"",hname:"",ctrl:"宜昌兴发集团",cap:"23万吨/年（国内第一）",margin:"16%-20%",capex:"~25亿",desc:"草甘膦国内第一",rev:305,profit:19.5,profitChg:"+22%",roe:"9.5%",gm:"18.5%",eps:"1.54"},
+{cat:"硅化工",lvl:"上游",p1:"工业硅",p2:"",end:"",app:"",rank:1,acode:"603260",aname:"合盛硅业",hcode:"",hname:"",ctrl:"罗立国家族",cap:"122万吨/年",margin:"10%-25%",capex:"~50亿",desc:"全球工业硅+有机硅双龙头",rev:204.99,profit:-29.91,profitChg:"转亏",roe:"-8%",gm:"12%",eps:"-2.53"},
+{cat:"硅化工",lvl:"上游",p1:"工业硅",p2:"",end:"",app:"",rank:2,acode:"600596",aname:"新安股份",hcode:"",hname:"",ctrl:"传化集团",cap:"30万吨/年",margin:"15%-22%",capex:"~15亿",desc:"草甘膦+有机硅双主业",rev:180,profit:8.5,profitChg:"+15%",roe:"8%",gm:"18%",eps:"0.68"},
+{cat:"硅化工",lvl:"上游",p1:"工业硅",p2:"",end:"",app:"",rank:3,acode:"002132",aname:"恒星科技",hcode:"",hname:"",ctrl:"谢保军",cap:"工业硅产能布局",margin:"8%-15%",capex:"~8亿",desc:"工业硅+金刚线",rev:45,profit:1.5,profitChg:"+30%",roe:"5%",gm:"12%",eps:"0.12"},
+{cat:"硅化工",lvl:"中游",p1:"多晶硅",p2:"",end:"光伏硅料",app:"光伏",rank:1,acode:"600438",aname:"通威股份",hcode:"",hname:"",ctrl:"刘汉元",cap:"约80万吨/年",margin:"5%-25%",capex:"~80亿",desc:"全球多晶硅+电池双龙头",rev:900,profit:-30,profitChg:"转亏",roe:"-5%",gm:"8%",eps:"-0.67"},
+{cat:"硅化工",lvl:"中游",p1:"多晶硅",p2:"",end:"光伏硅料",app:"光伏",rank:2,acode:"688303",aname:"大全能源",hcode:"",hname:"",ctrl:"徐广福家族",cap:"约40万吨/年",margin:"5%-20%",capex:"~40亿",desc:"高纯多晶硅标杆",rev:120,profit:-15,profitChg:"转亏",roe:"-8%",gm:"10%",eps:"-0.70"},
+{cat:"硅化工",lvl:"中游",p1:"有机硅",p2:"",end:"硅橡胶/硅油/硅树脂",app:"建筑、电子、新能源",rank:1,acode:"603260",aname:"合盛硅业",hcode:"",hname:"",ctrl:"罗立国家族",cap:"173万吨/年单体",margin:"10%-25%",capex:"~50亿",desc:"有机硅单体全球第一",rev:95.75,profit:-5,profitChg:"亏损收窄",roe:"-3%",gm:"12%",eps:"-0.42"},
+{cat:"硅化工",lvl:"中游",p1:"有机硅",p2:"",end:"硅橡胶/硅油",app:"建筑、电子",rank:2,acode:"600596",aname:"新安股份",hcode:"",hname:"",ctrl:"传化集团",cap:"49万吨/年单体",margin:"15%-22%",capex:"~15亿",desc:"有机硅+草甘膦双主业",rev:85,profit:5,profitChg:"+20%",roe:"8%",gm:"18%",eps:"0.40"},
+{cat:"硅化工",lvl:"中游",p1:"有机硅",p2:"",end:"硅橡胶/硅油",app:"建筑、电子",rank:3,acode:"300821",aname:"东岳硅材",hcode:"",hname:"",ctrl:"张建宏",cap:"60万吨/年单体",margin:"10%-20%",capex:"~10亿",desc:"有机硅深加工龙头",rev:43.33,profit:-0.19,profitChg:"转亏",roe:"-0.5%",gm:"10%",eps:"-0.02"},
+{cat:"硅化工",lvl:"中游",p1:"硅烷偶联剂",p2:"",end:"橡胶助剂/复合材料",app:"轮胎、复合材料",rank:1,acode:"605399",aname:"晨光新材",hcode:"",hname:"",ctrl:"曹祥林",cap:"12万吨/年",margin:"20%-30%",capex:"~8亿",desc:"国内氨基硅烷第一",rev:35,profit:5,profitChg:"+25%",roe:"12%",gm:"25%",eps:"1.50"},
+{cat:"硅化工",lvl:"中游",p1:"硅烷偶联剂",p2:"",end:"橡胶助剂/复合材料",app:"轮胎、复合材料",rank:2,acode:"605366",aname:"宏柏新材",hcode:"",hname:"",ctrl:"纪金树",cap:"含硫硅烷全球第一",margin:"20%-28%",capex:"~6亿",desc:"含硫硅烷全球第一",rev:25,profit:3.5,profitChg:"+20%",roe:"10%",gm:"22%",eps:"0.90"},
+{cat:"硅化工",lvl:"中游",p1:"碳化硅(SiC)",p2:"",end:"半导体衬底",app:"新能源车、光伏",rank:1,acode:"603260",aname:"合盛硅业",hcode:"",hname:"",ctrl:"罗立国家族",cap:"碳化硅衬底布局",margin:"前瞻期",capex:"~50亿",desc:"第三代半导体碳化硅布局",rev:5,profit:-3,profitChg:"投入期",roe:"—",gm:"—",eps:"—"},
+{cat:"硅化工",lvl:"下游",p1:"光伏组件",p2:"",end:"光伏组件密封胶/背板",app:"光伏发电",rank:1,acode:"300019",aname:"硅宝科技",hcode:"",hname:"",ctrl:"王有治",cap:"密封胶8万吨/年",margin:"20%-30%",capex:"~5亿",desc:"光伏密封胶龙头",rev:30,profit:3.5,profitChg:"+15%",roe:"10%",gm:"25%",eps:"0.90"},
+{cat:"盐化工",lvl:"上游",p1:"原盐",p2:"",end:"",app:"",rank:1,acode:"600328",aname:"中盐化工",hcode:"",hname:"",ctrl:"中国盐业集团",cap:"原盐+纯碱一体化",margin:"5%-15%",capex:"~10亿",desc:"国内第三大纯碱企业",rev:120,profit:0.75,profitChg:"-85%",roe:"1%",gm:"10%",eps:"0.05"},
+{cat:"盐化工",lvl:"上游",p1:"原盐",p2:"",end:"",app:"",rank:2,acode:"600409",aname:"三友化工",hcode:"",hname:"",ctrl:"唐山三友集团",cap:"原盐+纯碱+氯碱一体化",margin:"10%-20%",capex:"~15亿",desc:"化纤+纯碱+氯碱+有机硅",rev:188,profit:0.91,profitChg:"-82%",roe:"1%",gm:"13%",eps:"0.04"},
+{cat:"盐化工",lvl:"中游",p1:"纯碱",p2:"",end:"玻璃/洗涤剂",app:"玻璃、日化",rank:1,acode:"000830",aname:"远兴能源",hcode:"",hname:"",ctrl:"戴连荣",cap:"天然碱500万吨/年",margin:"20%-40%",capex:"~30亿",desc:"天然碱成本最低",rev:120,profit:15,profitChg:"-30%",roe:"10%",gm:"30%",eps:"0.40"},
+{cat:"盐化工",lvl:"中游",p1:"纯碱",p2:"",end:"玻璃/洗涤剂",app:"玻璃、日化",rank:2,acode:"600328",aname:"中盐化工",hcode:"",hname:"",ctrl:"中国盐业集团",cap:"纯碱300万吨/年",margin:"5%-15%",capex:"~10亿",desc:"国内第三大纯碱",rev:80,profit:0.5,profitChg:"-88%",roe:"1%",gm:"8%",eps:"0.03"},
+{cat:"盐化工",lvl:"中游",p1:"纯碱",p2:"",end:"玻璃/洗涤剂",app:"玻璃、日化",rank:3,acode:"600409",aname:"三友化工",hcode:"",hname:"",ctrl:"唐山三友集团",cap:"纯碱约340万吨/年",margin:"10%-20%",capex:"~15亿",desc:"纯碱+粘胶短纤",rev:70,profit:0.5,profitChg:"-85%",roe:"1%",gm:"12%",eps:"0.02"},
+{cat:"盐化工",lvl:"中游",p1:"烧碱",p2:"",end:"造纸/纺织/氧化铝",app:"造纸、纺织、氧化铝",rank:1,acode:"601678",aname:"滨化股份",hcode:"",hname:"",ctrl:"张忠正",cap:"烧碱约60万吨/年",margin:"15%-25%",capex:"~10亿",desc:"粒状烧碱国内最大",rev:102,profit:2.3,profitChg:"-5%",roe:"5%",gm:"18%",eps:"0.12"},
+{cat:"盐化工",lvl:"中游",p1:"烧碱",p2:"",end:"造纸/纺织/氧化铝",app:"造纸、纺织、氧化铝",rank:2,acode:"000830",aname:"鲁西化工",hcode:"",hname:"",ctrl:"中国中化集团",cap:"烧碱约40万吨/年",margin:"12%-20%",capex:"~8亿",desc:"煤化工+盐化工一体化",rev:200,profit:9.1,profitChg:"-55%",roe:"5%",gm:"15%",eps:"0.47"},
+{cat:"盐化工",lvl:"中游",p1:"PVC",p2:"",end:"管材/型材/薄膜",app:"建筑、包装",rank:1,acode:"002092",aname:"中泰化学",hcode:"",hname:"",ctrl:"新疆国资委",cap:"PVC约260万吨/年",margin:"5%-15%",capex:"~20亿",desc:"国内最大PVC生产商",rev:300,profit:-2.9,profitChg:"+70%",roe:"-2%",gm:"8%",eps:"-0.11"},
+{cat:"盐化工",lvl:"中游",p1:"PVC",p2:"",end:"管材/型材/薄膜",app:"建筑、包装",rank:2,acode:"000830",aname:"鲁西化工",hcode:"",hname:"",ctrl:"中国中化集团",cap:"PVC约40万吨/年",margin:"10%-18%",capex:"~8亿",desc:"煤化工+盐化工一体化",rev:50,profit:2,profitChg:"-40%",roe:"3%",gm:"12%",eps:"0.10"},
+{cat:"盐化工",lvl:"下游",p1:"玻璃",p2:"",end:"平板玻璃/光伏玻璃",app:"建筑、光伏",rank:1,acode:"600819",aname:"耀皮玻璃",hcode:"",hname:"",ctrl:"上海建材集团",cap:"浮法玻璃+光伏玻璃",margin:"10%-20%",capex:"~10亿",desc:"高端浮法玻璃",rev:60,profit:3,profitChg:"+10%",roe:"5%",gm:"15%",eps:"0.30"},
+{cat:"油化工",lvl:"上游",p1:"原油炼化",p2:"",end:"石脑油/成品油",app:"交通、化工原料",rank:1,acode:"600028",aname:"中国石化",hcode:"",hname:"",ctrl:"中国石化集团（央企）",cap:"炼油约3亿吨/年",margin:"3%-8%",capex:"~500亿",desc:"全球最大炼油商之一",rev:30000,profit:500,profitChg:"-10%",roe:"8%",gm:"5%",eps:"0.41"},
+{cat:"油化工",lvl:"上游",p1:"原油炼化",p2:"",end:"石脑油/成品油",app:"交通、化工原料",rank:2,acode:"601857",aname:"中国石油",hcode:"",hname:"",ctrl:"中国石油集团（央企）",cap:"炼油约2亿吨/年",margin:"5%-10%",capex:"~400亿",desc:"油气全产业链龙头",rev:28000,profit:1500,profitChg:"-5%",roe:"10%",gm:"8%",eps:"0.82"},
+{cat:"油化工",lvl:"上游",p1:"原油炼化",p2:"",end:"石脑油/成品油",app:"交通、化工原料",rank:3,acode:"600346",aname:"恒力石化",hcode:"",hname:"",ctrl:"陈建华夫妇",cap:"炼油2000万吨/年",margin:"8%-15%",capex:"~100亿",desc:"民营炼化龙头",rev:2500,profit:50,profitChg:"-15%",roe:"8%",gm:"10%",eps:"0.71"},
+{cat:"油化工",lvl:"中游",p1:"乙烯",p2:"",end:"聚乙烯/乙二醇/苯乙烯",app:"塑料、化纤",rank:1,acode:"600028",aname:"中国石化",hcode:"",hname:"",ctrl:"中国石化集团",cap:"乙烯约1500万吨/年",margin:"5%-12%",capex:"~500亿",desc:"乙烯产能国内第一",rev:3000,profit:100,profitChg:"-15%",roe:"5%",gm:"8%",eps:"0.08"},
+{cat:"油化工",lvl:"中游",p1:"乙烯",p2:"",end:"聚乙烯/乙二醇",app:"塑料、化纤",rank:2,acode:"002648",aname:"卫星化学",hcode:"",hname:"",ctrl:"杨卫东",cap:"乙烷裂解约250万吨/年",margin:"15%-25%",capex:"~60亿",desc:"轻烃一体化龙头",rev:460.68,profit:53.11,profitChg:"-13%",roe:"15%",gm:"20%",eps:"1.58"},
+{cat:"油化工",lvl:"中游",p1:"丙烯",p2:"",end:"聚丙烯/丙烯酸/环氧丙烷",app:"塑料、涂料",rank:1,acode:"002648",aname:"卫星化学",hcode:"",hname:"",ctrl:"杨卫东",cap:"丙烷脱氢+丙烯酸",margin:"15%-25%",capex:"~60亿",desc:"丙烯酸龙头",rev:150,profit:20,profitChg:"-10%",roe:"12%",gm:"18%",eps:"0.60"},
+{cat:"油化工",lvl:"中游",p1:"丙烯",p2:"",end:"聚丙烯",app:"塑料",rank:2,acode:"600346",aname:"恒力石化",hcode:"",hname:"",ctrl:"陈建华夫妇",cap:"PTA+聚酯一体化",margin:"8%-15%",capex:"~100亿",desc:"PTA产能全球最大",rev:500,profit:20,profitChg:"-20%",roe:"8%",gm:"10%",eps:"0.28"},
+{cat:"油化工",lvl:"中游",p1:"对二甲苯(PX)",p2:"",end:"PTA→聚酯",app:"化纤、瓶片",rank:1,acode:"600346",aname:"恒力石化",hcode:"",hname:"",ctrl:"陈建华夫妇",cap:"PX约500万吨/年",margin:"10%-18%",capex:"~10亿",desc:"炼化-PX-PTA-聚酯全链",rev:300,profit:25,profitChg:"-15%",roe:"8%",gm:"12%",eps:"0.35"},
+{cat:"油化工",lvl:"中游",p1:"对二甲苯(PX)",p2:"",end:"PTA→聚酯",app:"化纤、瓶片",rank:2,acode:"002493",aname:"荣盛石化",hcode:"",hname:"",ctrl:"李水荣",cap:"PX约400万吨/年",margin:"8%-15%",capex:"~80亿",desc:"浙石化炼化一体化",rev:2800,profit:9,profitChg:"+11%",roe:"3%",gm:"8%",eps:"0.09"},
+{cat:"油化工",lvl:"下游",p1:"涤纶长丝(POY)",p2:"",end:"服装面料/家纺",app:"纺织",rank:1,acode:"601233",aname:"桐昆股份",hcode:"",hname:"",ctrl:"陈士良",cap:"涤纶长丝约1000万吨/年",margin:"5%-12%",capex:"~40亿",desc:"全球最大涤纶长丝生产商",rev:800,profit:20.7,profitChg:"+68%",roe:"8%",gm:"8%",eps:"0.86"},
+{cat:"油化工",lvl:"下游",p1:"涤纶长丝(POY)",p2:"",end:"服装面料/家纺",app:"纺织",rank:2,acode:"600871",aname:"石化油服",hcode:"",hname:"",ctrl:"中国石化集团",cap:"涤纶短纤+长丝",margin:"3%-8%",capex:"~20亿",desc:"中石化化纤平台",rev:600,profit:5,profitChg:"+5%",roe:"3%",gm:"5%",eps:"0.03"},
+{cat:"油化工",lvl:"下游",p1:"聚乙烯(PE)",p2:"",end:"薄膜/管材/容器",app:"包装、建筑、农业",rank:1,acode:"600028",aname:"中国石化",hcode:"",hname:"",ctrl:"中国石化集团",cap:"PE约800万吨/年",margin:"5%-12%",capex:"~500亿",desc:"PE产能国内前列",rev:800,profit:30,profitChg:"-10%",roe:"5%",gm:"8%",eps:"0.02"},
+{cat:"煤化工",lvl:"上游",p1:"煤炭",p2:"",end:"",app:"",rank:1,acode:"601088",aname:"中国神华",hcode:"",hname:"",ctrl:"国家能源集团（央企）",cap:"煤炭约3亿吨/年",margin:"20%-30%",capex:"~200亿",desc:"煤电化运一体化龙头",rev:3300,profit:600,profitChg:"-5%",roe:"15%",gm:"25%",eps:"3.02"},
+{cat:"煤化工",lvl:"上游",p1:"煤炭",p2:"",end:"",app:"",rank:2,acode:"601898",aname:"中煤能源",hcode:"",hname:"",ctrl:"中煤集团（央企）",cap:"煤炭约1.5亿吨/年",margin:"15%-25%",capex:"~100亿",desc:"央企煤化工平台龙头",rev:2000,profit:150,profitChg:"-8%",roe:"10%",gm:"20%",eps:"1.13"},
+{cat:"煤化工",lvl:"上游",p1:"煤炭",p2:"",end:"",app:"",rank:3,acode:"600188",aname:"兖矿能源",hcode:"",hname:"",ctrl:"山东能源集团",cap:"煤炭约1.5亿吨/年",margin:"15%-25%",capex:"~100亿",desc:"煤化一体+海外资源",rev:1449,profit:100,profitChg:"-12%",roe:"10%",gm:"18%",eps:"1.01"},
+{cat:"煤化工",lvl:"中游",p1:"煤制烯烃(CTO)",p2:"",end:"聚乙烯/聚丙烯",app:"塑料",rank:1,acode:"600989",aname:"宝丰能源",hcode:"",hname:"",ctrl:"党彦宝",cap:"煤制烯烃约600万吨/年",margin:"25%-35%",capex:"~80亿",desc:"煤制烯烃成本+规模龙头",rev:300,profit:55,profitChg:"+10%",roe:"19%",gm:"33%",eps:"0.75"},
+{cat:"煤化工",lvl:"中游",p1:"煤制烯烃(CTO)",p2:"",end:"聚乙烯/聚丙烯",app:"塑料",rank:2,acode:"601898",aname:"中煤能源",hcode:"",hname:"",ctrl:"中煤集团",cap:"煤制烯烃约120万吨/年",margin:"12%-22%",capex:"~100亿",desc:"央企煤化工平台",rev:200,profit:15,profitChg:"-5%",roe:"6%",gm:"15%",eps:"0.11"},
+{cat:"煤化工",lvl:"中游",p1:"煤制甲醇",p2:"",end:"甲醇→烯烃/甲醛/醋酸",app:"化工原料",rank:1,acode:"600989",aname:"宝丰能源",hcode:"",hname:"",ctrl:"党彦宝",cap:"甲醇约600万吨/年",margin:"25%-35%",capex:"~80亿",desc:"甲醇产能A股最大",rev:200,profit:40,profitChg:"+8%",roe:"15%",gm:"30%",eps:"0.55"},
+{cat:"煤化工",lvl:"中游",p1:"煤制甲醇",p2:"",end:"甲醇→烯烃/甲醛/醋酸",app:"化工原料",rank:2,acode:"600426",aname:"华鲁恒升",hcode:"",hname:"",ctrl:"华鲁控股集团",cap:"甲醇约170万吨/年",margin:"15%-25%",capex:"~30亿",desc:"煤气化多联产柔性龙头",rev:78,profit:8,profitChg:"-5%",roe:"7%",gm:"19%",eps:"0.38"},
+{cat:"煤化工",lvl:"中游",p1:"煤制乙二醇",p2:"",end:"聚酯原料",app:"化纤",rank:1,acode:"600188",aname:"兖矿能源",hcode:"",hname:"",ctrl:"山东能源集团",cap:"煤制乙二醇约100万吨/年",margin:"8%-18%",capex:"~100亿",desc:"煤制乙二醇布局",rev:80,profit:5,profitChg:"-10%",roe:"5%",gm:"12%",eps:"0.05"},
+{cat:"煤化工",lvl:"中游",p1:"煤焦油",p2:"",end:"炭黑/沥青/工业萘",app:"轮胎、防水",rank:1,acode:"601088",aname:"中国神华",hcode:"",hname:"",ctrl:"国家能源集团",cap:"煤焦油加工配套",margin:"10%-20%",capex:"~200亿",desc:"煤焦化副产品加工",rev:100,profit:10,profitChg:"-5%",roe:"8%",gm:"15%",eps:"0.05"},
+{cat:"煤化工",lvl:"下游",p1:"聚乙烯(煤制)",p2:"",end:"薄膜/管材",app:"包装、建筑",rank:1,acode:"600989",aname:"宝丰能源",hcode:"",hname:"",ctrl:"党彦宝",cap:"聚乙烯约300万吨/年",margin:"20%-30%",capex:"~80亿",desc:"煤制聚乙烯成本优势",rev:150,profit:30,profitChg:"+10%",roe:"15%",gm:"25%",eps:"0.41"},
+{cat:"天然气化工",lvl:"上游",p1:"天然气",p2:"",end:"",app:"",rank:1,acode:"601857",aname:"中国石油",hcode:"",hname:"",ctrl:"中国石油集团（央企）",cap:"天然气产量约1500亿方/年",margin:"15%-25%",capex:"~400亿",desc:"国内最大天然气生产商",rev:28000,profit:1500,profitChg:"-5%",roe:"10%",gm:"20%",eps:"0.82"},
+{cat:"天然气化工",lvl:"上游",p1:"天然气",p2:"",end:"",app:"",rank:2,acode:"600028",aname:"中国石化",hcode:"",hname:"",ctrl:"中国石化集团（央企）",cap:"天然气约400亿方/年",margin:"10%-20%",capex:"~500亿",desc:"天然气+炼化一体化",rev:30000,profit:500,profitChg:"-10%",roe:"8%",gm:"5%",eps:"0.41"},
+{cat:"天然气化工",lvl:"中游",p1:"合成氨",p2:"",end:"尿素/硝酸铵",app:"化肥",rank:1,acode:"600426",aname:"华鲁恒升",hcode:"",hname:"",ctrl:"华鲁控股集团",cap:"合成氨约70万吨/年",margin:"15%-25%",capex:"~30亿",desc:"煤头尿素龙头",rev:50,profit:8,profitChg:"-5%",roe:"7%",gm:"19%",eps:"0.38"},
+{cat:"天然气化工",lvl:"中游",p1:"合成氨",p2:"",end:"尿素/硝酸铵",app:"化肥",rank:2,acode:"600096",aname:"云天化",hcode:"",hname:"",ctrl:"云南省国资委",cap:"合成氨约200万吨/年",margin:"12%-18%",capex:"~30亿",desc:"磷氮一体化",rev:100,profit:15,profitChg:"-3%",roe:"10%",gm:"15%",eps:"0.82"},
+{cat:"天然气化工",lvl:"中游",p1:"尿素",p2:"",end:"农业肥料/三聚氰胺",app:"农业、板材",rank:1,acode:"600426",aname:"华鲁恒升",hcode:"",hname:"",ctrl:"华鲁控股集团",cap:"尿素约105万吨/年",margin:"15%-25%",capex:"~30亿",desc:"煤头尿素龙头",rev:40,profit:6,profitChg:"-8%",roe:"7%",gm:"19%",eps:"0.28"},
+{cat:"天然气化工",lvl:"中游",p1:"尿素",p2:"",end:"农业肥料/三聚氰胺",app:"农业、板材",rank:2,acode:"000731",aname:"四川美丰",hcode:"",hname:"",ctrl:"中国石化集团",cap:"尿素约100万吨/年",margin:"5%-15%",capex:"~5亿",desc:"气头尿素",rev:35,profit:-0.5,profitChg:"转亏",roe:"-1%",gm:"9%",eps:"-0.09"},
+{cat:"天然气化工",lvl:"中游",p1:"尿素",p2:"",end:"农业肥料",app:"农业",rank:3,acode:"000422",aname:"湖北宜化",hcode:"",hname:"",ctrl:"宜昌国资委",cap:"尿素约120万吨/年",margin:"10%-18%",capex:"~15亿",desc:"磷氮一体化",rev:50,profit:3,profitChg:"+15%",roe:"5%",gm:"13%",eps:"0.28"},
+{cat:"天然气化工",lvl:"中游",p1:"甲醇(气头)",p2:"",end:"烯烃/甲醛/醋酸",app:"化工原料",rank:1,acode:"600426",aname:"华鲁恒升",hcode:"",hname:"",ctrl:"华鲁控股集团",cap:"甲醇约170万吨/年",margin:"15%-25%",capex:"~30亿",desc:"柔性生产多联产",rev:78,profit:8,profitChg:"-5%",roe:"7%",gm:"19%",eps:"0.38"},
+{cat:"天然气化工",lvl:"中游",p1:"BDO(丁二醇)",p2:"",end:"PBAT可降解塑料/氨纶",app:"可降解塑料、纺织",rank:1,acode:"600426",aname:"华鲁恒升",hcode:"",hname:"",ctrl:"华鲁控股集团",cap:"BDO约10万吨/年",margin:"15%-30%",capex:"~30亿",desc:"煤化工→BDO一体化",rev:15,profit:2,profitChg:"+10%",roe:"5%",gm:"20%",eps:"0.09"},
+{cat:"天然气化工",lvl:"下游",p1:"复合肥",p2:"",end:"农业肥料",app:"农业",rank:1,acode:"000902",aname:"新洋丰",hcode:"",hname:"",ctrl:"杨才学家族",cap:"复合肥约800万吨/年",margin:"14%-18%",capex:"~12亿",desc:"复合肥行业龙头",rev:175,profit:14,profitChg:"+12%",roe:"13%",gm:"17%",eps:"1.07"},
+{cat:"天然气化工",lvl:"下游",p1:"三聚氰胺",p2:"",end:"板材/涂料",app:"家具、装修",rank:1,acode:"600426",aname:"华鲁恒升",hcode:"",hname:"",ctrl:"华鲁控股集团",cap:"三聚氰胺约10万吨/年",margin:"10%-20%",capex:"~30亿",desc:"尿素→三聚氰胺一体化",rev:10,profit:1,profitChg:"-5%",roe:"3%",gm:"15%",eps:"0.05"},
+];
+
+const CHAIN_TREES={
+"氟化工":{
+"上游":[{"name":"萤石 / AHF","key":"萤石","sub":[]}],
+"中游-氟碳化学品":[{"name":"制冷剂","key":"制冷剂","sub":[{"name":"R32","key":"R32"},{"name":"R134a","key":"R134a"}]}],
+"中游-含氟聚合物":[{"name":"PTFE","key":"PTFE","sub":[]},{"name":"PVDF","key":"PVDF","sub":[]}],
+"中游-精细化学品":[{"name":"六氟磷酸锂","key":"六氟磷酸锂","sub":[]},{"name":"电子级氢氟酸","key":"电子级氢氟酸","sub":[]},{"name":"WF6/C4F6","key":"WF6/C4F6","sub":[]}],
+"下游终端":[{"name":"空调制冷","key":"","end":"空调制冷剂"},{"name":"汽车空调","key":"","end":"汽车空调制冷剂"},{"name":"动力电池","key":"","end":"电解液溶质"},{"name":"半导体","key":"","end":"晶圆清洗"}]
+},
+"磷化工":{
+"上游":[{"name":"磷矿石","key":"磷矿石","sub":[]}],
+"中游-磷肥":[{"name":"MAP","key":"MAP","sub":[]},{"name":"DAP","key":"DAP","sub":[]}],
+"中游-新能源":[{"name":"磷酸铁锂","key":"磷酸铁锂","sub":[]}],
+"中游-农药":[{"name":"草甘膦","key":"草甘膦","sub":[]}],
+"下游终端":[{"name":"农业肥料","key":"","end":"农业肥料"},{"name":"动力电池","key":"","end":"正极材料"},{"name":"农业除草","key":"","end":"除草剂"}]
+},
+"硅化工":{
+"上游":[{"name":"工业硅","key":"工业硅","sub":[]}],
+"中游-多晶硅":[{"name":"多晶硅","key":"多晶硅","sub":[]}],
+"中游-有机硅":[{"name":"有机硅","key":"有机硅","sub":[]},{"name":"硅烷偶联剂","key":"硅烷偶联剂","sub":[]},{"name":"碳化硅","key":"碳化硅","sub":[]}],
+"下游终端":[{"name":"光伏密封胶","key":"","end":"光伏组件密封胶/背板"}]
+},
+"盐化工":{
+"上游":[{"name":"原盐","key":"原盐","sub":[]}],
+"中游-三碱":[{"name":"纯碱","key":"纯碱","sub":[]},{"name":"烧碱","key":"烧碱","sub":[]},{"name":"PVC","key":"PVC","sub":[]}],
+"下游终端":[{"name":"玻璃","key":"","end":"玻璃"}]
+},
+"油化工":{
+"上游":[{"name":"原油炼化","key":"原油炼化","sub":[]}],
+"中游-三烯":[{"name":"乙烯","key":"乙烯","sub":[]},{"name":"丙烯","key":"丙烯","sub":[]},{"name":"PX","key":"PX","sub":[]}],
+"下游终端":[{"name":"涤纶长丝","key":"","end":"涤纶长丝(POY)"},{"name":"聚乙烯","key":"","end":"聚乙烯(PE)"}]
+},
+"煤化工":{
+"上游":[{"name":"煤炭","key":"煤炭","sub":[]}],
+"中游-煤化工":[{"name":"煤制烯烃","key":"煤制烯烃(CTO)","sub":[]},{"name":"煤制甲醇","key":"煤制甲醇","sub":[]},{"name":"煤制乙二醇","key":"煤制乙二醇","sub":[]},{"name":"煤焦油","key":"煤焦油","sub":[]}],
+"下游终端":[{"name":"聚乙烯(煤制)","key":"","end":"聚乙烯(煤制)"}]
+},
+"天然气化工":{
+"上游":[{"name":"天然气","key":"天然气","sub":[]}],
+"中游-合成":[{"name":"合成氨","key":"合成氨","sub":[]},{"name":"尿素","key":"尿素","sub":[]},{"name":"甲醇","key":"甲醇(气头)","sub":[]},{"name":"BDO","key":"BDO","sub":[]}],
+"下游终端":[{"name":"复合肥","key":"","end":"复合肥"},{"name":"三聚氰胺","key":"","end":"三聚氰胺"}]
+}
+};
+
+// State variables
+var currentCat='全部';
+var currentNode=null;
+var expandedNodes=new Set();
+var view='chain';
+var companyPage=null;
+var companyTab='overview';
+var categories=['全部','氟化工','磷化工','硅化工','盐化工','油化工','煤化工','天然气化工'];
+
+function getFiltered(){return currentCat==='全部'?DATA:DATA.filter(function(x){return x.cat===currentCat})}
+function profitFmt(v){if(v==null||v==='')return'—';var n=parseFloat(v);if(isNaN(n))return v;if(Math.abs(n)>=1)return n.toFixed(1)+'亿';return(n*10000).toFixed(0)+'万'}
+function changeClass(v){if(!v)return'';return String(v).charAt(0)==='+'?'up':String(v).charAt(0)==='-'?'down':''}
+function getCompanyData(cat,p2Key,endKey){var d=DATA.filter(function(x){return x.cat===cat});if(p2Key)d=d.filter(function(x){return x.p2===p2Key});else if(endKey)d=d.filter(function(x){return x.end===endKey});return d.sort(function(a,b){return a.rank-b.rank})}
+function getEcharts(){return window.echarts}
+
+function renderPricesPage(el){
+  var catProducts={
+    '氟化工':[
+      {name:'萤石(精粉)',key:'萤石',unit:'元/吨'},
+      {name:'无水氢氟酸(AHF)',key:'AHF',unit:'元/吨'},
+      {name:'R32(三代制冷剂)',key:'R32',unit:'元/吨'},
+      {name:'R134a(汽车空调)',key:'R134a',unit:'元/吨'},
+      {name:'PTFE(悬浮中粒)',key:'PTFE',unit:'元/吨'},
+      {name:'PVDF(粉料)',key:'PVDF',unit:'元/吨'},
+      {name:'六氟磷酸锂(LiPF6)',key:'六氟磷酸锂',unit:'万元/吨'}
+    ],
+    '磷化工':[
+      {name:'磷矿石(30%品位)',key:'磷矿石',unit:'元/吨'},
+      {name:'磷酸一铵(MAP)',key:'MAP',unit:'元/吨'},
+      {name:'磷酸二铵(DAP)',key:'DAP',unit:'元/吨'},
+      {name:'草甘膦(原药)',key:'草甘膦',unit:'元/吨'},
+      {name:'磷酸铁锂(LFP)',key:'磷酸铁锂',unit:'万元/吨'}
+    ]
+  };
+  var html='<div class="detail-inner">';
+  html+='<div style="font-size:18px;font-weight:700;margin-bottom:4px">商品价格走势</div>';
+  html+='<div style="font-size:11px;color:var(--dim);margin-bottom:20px">按化工分类展示主要产品3年月度价格（2023.01 - 2025.12）</div>';
+  
+  Object.keys(catProducts).forEach(function(cat){
+    html+='<div style="font-size:15px;font-weight:600;color:var(--accent);margin:20px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)">'+cat+'</div>';
+    html+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(450px,1fr));gap:16px">';
+    catProducts[cat].forEach(function(p){
+      var pd=PRICE_DATA[p.key];
+      if(!pd)return;
+      // Get latest price and change
+      var latest=pd.data[pd.data.length-1];
+      var prev=pd.data[pd.data.length-13]; // 1 year ago
+      var change=((latest-prev)/prev*100).toFixed(1);
+      var changeStr=change>=0?'+'+change+'%':change+'%';
+      var changeClass=change>=0?'up':'down';
+      
+      html+='<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px">';
+      html+='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">';
+      html+='<div><div style="font-size:13px;font-weight:600">'+p.name+'</div>';
+      html+='<div style="font-size:10px;color:var(--dim)">'+pd.unit+'</div></div>';
+      html+='<div style="text-align:right"><div style="font-size:16px;font-weight:700;color:var(--accent)">'+latest.toLocaleString()+'</div>';
+      html+='<div style="font-size:11px;font-weight:600" class="'+changeClass+'">年涨跌 '+changeStr+'</div></div>';
+      html+='</div>';
+      html+='<div id="priceChart_'+p.key.replace(/[^a-zA-Z0-9]/g,'_')+'" style="width:100%;height:180px"></div>';
+      html+='</div>';
+    });
+    html+='</div>';
+  });
+  
+  html+='</div>';
+  el.innerHTML=html;
+  
+  // Render charts
+  setTimeout(function(){
+    Object.keys(catProducts).forEach(function(cat){
+      catProducts[cat].forEach(function(p){
+        var pd=PRICE_DATA[p.key];
+        if(pd)renderMiniPriceChart('priceChart_'+p.key.replace(/[^a-zA-Z0-9]/g,'_'),p.key,pd);
+      });
+    });
+  },100);
+}
+
+function renderForecastTab(c){
+  var fc=FORECAST_2026[c.name];
+  if(!fc)return '<div style="color:var(--dim);padding:40px;text-align:center">暂无预测数据</div>';
+  
+  var html='<div class="section-title">2026年全年业绩预测</div>';
+  html+='<div class="section-sub">基于最新商品价格 + 券商一致预期 + 敏感性分析</div>';
+  
+  // Forecast cards
+  html+='<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px">';
+  var scenarios=[
+    {key:'pessimistic',label:'悲观',color:'var(--green)',icon:'🔻'},
+    {key:'neutral',label:'中性',color:'var(--accent)',icon:'➖'},
+    {key:'optimistic',label:'乐观',color:'var(--red)',icon:'🔺'}
+  ];
+  scenarios.forEach(function(s){
+    var f=fc.forecast[s.key];
+    var profitChg=((f.profit-fc.base.profit)/fc.base.profit*100).toFixed(0);
+    html+='<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;border-top:3px solid '+s.color+'">';
+    html+='<div style="display:flex;align-items:center;gap:6px;margin-bottom:10px"><span>'+s.icon+'</span><span style="font-size:13px;font-weight:600;color:'+s.color+'">'+s.label+'情景</span></div>';
+    html+='<div style="font-size:10px;color:var(--dim);margin-bottom:8px">'+f.note+'</div>';
+    html+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">';
+    html+='<div><div style="font-size:9px;color:var(--dim)">营收预测</div><div style="font-size:16px;font-weight:700">'+f.rev+'亿</div></div>';
+    html+='<div><div style="font-size:9px;color:var(--dim)">净利预测</div><div style="font-size:16px;font-weight:700;color:'+s.color+'">'+f.profit+'亿</div></div>';
+    html+='<div><div style="font-size:9px;color:var(--dim)">同比增速</div><div style="font-size:14px;font-weight:600" class="'+(profitChg>=0?'up':'down')+'">'+(profitChg>=0?'+':'')+profitChg+'%</div></div>';
+    html+='<div><div style="font-size:9px;color:var(--dim)">毛利率</div><div style="font-size:14px">'+f.gm+'%</div></div>';
+    html+='<div><div style="font-size:9px;color:var(--dim)">EPS</div><div style="font-size:14px">'+f.eps+'元</div></div>';
+    html+='<div><div style="font-size:9px;color:var(--dim)">基准净利</div><div style="font-size:14px;color:var(--dim)">'+fc.base.profit+'亿(2025)</div></div>';
+    html+='</div></div>';
+  });
+  html+='</div>';
+  
+  // PE Valuation Calculator
+  html+='<div class="section-title">PE估值计算器</div>';
+  html+='<div class="section-sub">调整PE倍数，计算三档利润对应的估值和涨跌空间</div>';
+  html+='<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">';
+  html+='<span style="font-size:12px;color:var(--muted)">设定PE倍数：</span>';
+  html+='<input type="range" id="peSlider" min="5" max="40" value="'+fc.defaultPE+'" style="flex:1;accent-color:var(--accent)" oninput="updatePEValuation()">';
+  html+='<span id="peValue" style="font-size:18px;font-weight:700;color:var(--accent);min-width:40px">'+fc.defaultPE+'x</span>';
+  html+='<span style="font-size:10px;color:var(--dim)">当前PE: '+fc.defaultPE+'x</span>';
+  html+='</div>';
+  
+  // Valuation table
+  html+='<table class="data-table" id="valuationTable"><thead><tr>';
+  html+='<th>情景</th><th>净利(亿)</th><th>PE倍数</th><th>预测市值(亿)</th><th>当前市值(亿)</th><th>涨跌空间</th></tr></thead><tbody id="valuationBody">';
+  html+='</tbody></table>';
+  
+  // Store data for JS calculation
+  
+  // Sensitivity analysis
+  html+='<div class="section-title" style="margin-top:24px">产品价格敏感性分析</div>';
+  html+='<div class="section-sub">产品价格每变动10%，对公司归母净利润的影响幅度</div>';
+  html+='<table class="data-table"><thead><tr><th>产品</th><th>当前价格</th><th>价格变动</th><th>利润变动</th><th>弹性系数</th><th>传导机制</th></tr></thead><tbody>';
+  fc.sensitivity.forEach(function(s){
+    var priceClass=s.priceChange.startsWith('+')?'up':'down';
+    var profitClass=s.profitChange.startsWith('+')?'up':'down';
+    html+='<tr>';
+    html+='<td style="font-weight:600">'+s.product+'</td>';
+    var lp=fc.latestPrice[s.product];
+    html+='<td style="color:var(--accent)">'+(lp?lp.toLocaleString()+'元/吨':'—')+'</td>';
+    html+='<td class="'+priceClass+'">'+s.priceChange+'</td>';
+    html+='<td class="'+profitClass+'" style="font-weight:600">'+s.profitChange+'</td>';
+    html+='<td style="color:'+(s.elasticity>=2?'var(--red)':s.elasticity>=1?'var(--accent)':'var(--dim)')+';font-weight:700">'+s.elasticity+'x</td>';
+    html+='<td style="font-size:10px;color:var(--dim);max-width:300px">'+s.mechanism+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table>';
+  
+  // Elasticity explanation
+  html+='<div style="margin-top:16px;padding:12px;background:var(--card);border:1px solid var(--border);border-radius:6px">';
+  html+='<div style="font-size:11px;font-weight:600;color:var(--accent);margin-bottom:6px">📊 弹性系数解读</div>';
+  html+='<div style="font-size:10px;color:var(--muted);line-height:1.6">';
+  html+='• <b style="color:var(--red)">弹性>2x</b>：高敏感，价格小幅变动即大幅影响利润<br>';
+  html+='• <b style="color:var(--accent)">弹性1-2x</b>：中等敏感<br>';
+  html+='• <b style="color:var(--dim)">弹性<1x</b>：低敏感，该产品对整体利润影响有限';
+  html+='</div></div>';
+  
+  // Trigger initial calculation
+  
+  return html;
+}
+
+function updatePEValuation(){
+  var slider=document.getElementById('peSlider');
+  var peDisplay=document.getElementById('peValue');
+  var body=document.getElementById('valuationBody');
+  if(!slider||!window._fcData)return;
+  
+  var pe=parseInt(slider.value);
+  peDisplay.textContent=pe+'x';
+  
+  var fc=window._fcData;
+  var scenarios=[
+    {key:'pessimistic',label:'悲观',color:'var(--green)'},
+    {key:'neutral',label:'中性',color:'var(--accent)'},
+    {key:'optimistic',label:'乐观',color:'var(--red)'}
+  ];
+  
+  var rows='';
+  scenarios.forEach(function(s){
+    var f=fc.forecast[s.key];
+    var predictedMktCap=(f.profit*pe).toFixed(0);
+    var upside=((predictedMktCap-fc.mktCap)/fc.mktCap*100).toFixed(1);
+    var upClass=upside>=0?'up':'down';
+    rows+='<tr>';
+    rows+='<td style="font-weight:600;color:'+s.color+'">'+s.label+'</td>';
+    rows+='<td>'+f.profit+'</td>';
+    rows+='<td>'+pe+'x</td>';
+    rows+='<td style="font-weight:700;color:var(--accent)">'+Number(predictedMktCap).toLocaleString()+'亿</td>';
+    rows+='<td>'+fc.mktCap+'亿</td>';
+    rows+='<td class="'+upClass+'" style="font-weight:700;font-size:14px">'+(upside>=0?'+':'')+upside+'%</td>';
+    rows+='</tr>';
+  });
+  body.innerHTML=rows;
+}
+
+
+function renderCatFilters(){document.getElementById('catFilters').innerHTML=categories.map(function(c){return '<div class="cat-btn '+(c===currentCat?'active':'')+'" onclick="setCat(\''+c+'\')">'+c+'</div>'}).join('')}
+
+function renderChainList(){var data=getFiltered();var groups={};data.forEach(function(d){var k=d.p1+(d.p2?' > '+d.p2:'');if(!groups[k])groups[k]=[];groups[k].push(d)});var el=document.getElementById('chainList');var h='';Object.keys(groups).forEach(function(k){var items=groups[k];var nk=items[0].p1+'|'+(items[0].p2||'');var cs=new Set(items.map(function(i){return i.aname||i.hname}));h+='<div class="chain-item" onclick="selectNode(\''+nk+'\')"><span class="chain-item-name">'+k+'</span><span class="chain-item-count">'+cs.size+'家</span></div>'});el.innerHTML=h||'<div style="padding:16px;color:#666">暂无</div>';var ac=new Set();data.forEach(function(d){if(d.aname)ac.add(d.aname);if(d.hname)ac.add(d.hname)});document.getElementById('statCompanies').textContent=ac.size;document.getElementById('statNodes').textContent=Object.keys(groups).length}
+
+function renderCompanyPool(){var data=getFiltered();var seen=new Set();var cs=data.filter(function(d){var k=d.aname||d.hname;if(seen.has(k))return false;seen.add(k);return true});document.getElementById('companyPool').innerHTML=cs.map(function(d){var n=d.aname||d.hname;var c=d.aname?d.acode+'.SH':d.hcode+'.HK';return '<div class="pool-item" onclick="openCompany(\''+n+'\')"><div><div class="pool-name">'+n+'</div><div class="pool-code">'+c+'</div></div><div class="pool-metrics"><div class="pool-profit">'+profitFmt(d.profit)+'</div><div class="pool-change '+changeClass(d.profitChg)+'">'+(d.profitChg||'—')+'</div></div></div>'}).join('')}
+
+function renderDetail(){var el=document.getElementById('detailPanel');if(view==='company'){renderCompanyPage(el);return}if(view==='prices'){renderPricesPage(el);return}if(!currentCat||currentCat==='全部'){el.innerHTML='<div class="empty-state"><div class="empty-icon">🏭</div><div>选择分类</div></div>';return}var tree=CHAIN_TREES[currentCat];if(!tree){el.innerHTML='<div class="empty-state">暂无数据</div>';return}var sections=Object.keys(tree);var html='<div class="detail-inner"><div style="font-size:16px;font-weight:700;margin-bottom:4px">'+currentCat+' 产业链全景图</div><div style="font-size:11px;color:#666;margin-bottom:16px">点击产品节点查看3年价格走势 · 点击公司进入详情页</div><div class="chain-flow">';sections.forEach(function(section,si){var nodes=tree[section];if(!nodes||!nodes.length)return;if(si>0)html+='<div class="chain-arrow-col"><div class="chain-arrow-line"></div><div class="chain-arrow-head"></div><div class="chain-arrow-line"></div></div>';var isUp=section.indexOf('上游')>=0;var isDown=section.indexOf('下游')>=0;var tagC=isUp?'tag-upstream':isDown?'tag-end':'tag-midstream';var tagL=isUp?'上游':isDown?'终端':'中游';html+='<div class="chain-col"><div class="chain-col-header">'+section+'</div>';nodes.forEach(function(node){var nk=currentCat+'|'+section+'|'+(node.key||node.end||node.name);var isExp=expandedNodes.has(nk);var hasSub=node.sub&&node.sub.length>0;var companies=[];if(node.key)companies=getCompanyData(currentCat,node.key,null);else if(node.end)companies=getCompanyData(currentCat,null,node.end);var priceKey='';Object.keys(PRICE_DATA).forEach(function(k){if(node.name.indexOf(k)>=0||k.indexOf(node.name)>=0)priceKey=k});html+='<div class="chain-node '+(isExp?'expanded':'')+'" onclick="toggleNode(\''+nk+'\','+hasSub+')">';html+='<div class="chain-node-name"><span class="tag '+tagC+'">'+tagL+'</span>'+node.name;if(priceKey)html+=' <span style="font-size:8px;color:#26c6da;cursor:pointer" onclick="event.stopPropagation();showPriceChart(\''+priceKey+'\')">📈</span>';html+='</div>';if(companies.length){html+='<div class="chain-node-companies">';companies.slice(0,5).forEach(function(d){var nm=d.aname||d.hname;html+='<span class="company-tag" onclick="event.stopPropagation();openCompany(\''+nm+'\')"><span class="rank-dot r'+d.rank+'"></span>'+nm+'</span>'});html+='</div>'}if(hasSub)html+='<div class="expand-hint">'+(isExp?'收起':'展开')+' '+node.sub.length+' 个子类</div>';if(isExp&&hasSub){html+='<div class="sub-nodes">';node.sub.forEach(function(sub){var sc=getCompanyData(currentCat,sub.key,null);var spk='';Object.keys(PRICE_DATA).forEach(function(k){if(sub.name.indexOf(k)>=0||k.indexOf(sub.name)>=0)spk=k});html+='<div class="sub-node" onclick="event.stopPropagation()"><div class="sub-node-name">'+sub.name;if(spk)html+=' <span style="font-size:8px;color:#26c6da;cursor:pointer" onclick="event.stopPropagation();showPriceChart(\''+spk+'\')">📈</span>';html+='</div>';if(sc.length){html+='<div class="sub-node-companies">';sc.slice(0,5).forEach(function(d){var nm=d.aname||d.hname;html+='<span class="company-tag" onclick="event.stopPropagation();openCompany(\''+nm+'\')"><span class="rank-dot r'+d.rank+'"></span>'+nm+'</span>'});html+='</div>'}html+='</div>'});html+='</div>'}html+='</div>'});html+='</div>'});html+='</div></div>';el.innerHTML=html;document.getElementById('statCurrent').textContent=currentCat}
+
+function showPriceChart(key){var pd=PRICE_DATA[key];if(!pd)return;var old=document.getElementById('popupOverlay');if(old)old.remove();var overlay=document.createElement('div');overlay.id='popupOverlay';overlay.innerHTML='<div class="chart-popup-overlay" onclick="closePopup()"></div><div class="chart-popup"><button class="popup-close" onclick="closePopup()">✕</button><div style="font-size:14px;font-weight:600;margin-bottom:4px">'+key+' · 价格走势</div><div style="font-size:11px;color:#666;margin-bottom:12px">单位：'+pd.unit+' · 2023.01 - 2025.12 月度数据</div><div id="priceChartEl" style="width:100%;height:300px"></div></div>';document.body.appendChild(overlay);setTimeout(function(){var echarts=getEcharts();if(!echarts)return;var chart=echarts.init(document.getElementById('priceChartEl'),'dark');var months=[];for(var y=2023;y<=2025;y++)for(var m=1;m<=12;m++)months.push(y+'-'+String(m).padStart(2,'0'));chart.setOption({backgroundColor:'transparent',grid:{left:50,right:20,top:20,bottom:30},xAxis:{type:'category',data:months,axisLabel:{fontSize:9,color:'#666',interval:5},axisLine:{lineStyle:{color:'#333'}},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{fontSize:9,color:'#666'},splitLine:{lineStyle:{color:'#2a2a2a'}},axisLine:{show:false}},series:[{type:'line',data:pd.data,smooth:true,lineStyle:{color:'#ffc107',width:2},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(255,193,7,.25)'},{offset:1,color:'rgba(255,193,7,.02)'}]}},symbol:'circle',symbolSize:4,itemStyle:{color:'#ffc107'}}],tooltip:{trigger:'axis',backgroundColor:'#2a2a2a',borderColor:'#3a3a3a',textStyle:{color:'#e0e0e0',fontSize:11}}})},100)}
+function closePopup(){var el=document.getElementById('popupOverlay');if(el)el.remove()}
+
+function openCompany(name){var cd=COMPANY_DETAIL[name];if(!cd)return;companyPage={name:name,code:cd.code,market:cd.market,ctrl:cd.ctrl,sector:cd.sector,summary:cd.summary,profitTrend:cd.profitTrend,quarterly:cd.quarterly,financials:cd.financials,capacities:cd.capacities,priceProducts:cd.priceProducts,topProductsByRev:cd.topProductsByRev||[],topProductsByProfit:cd.topProductsByProfit||[],q1_2026:cd.q1_2026||null};companyTab='overview';view='company';renderDetail()}
+function goHome(){view='chain';companyPage=null;renderDetail();updateNavTabs('overview')}
+function switchMainView(v){view=v;updateNavTabs(v);renderDetail()}
+function updateNavTabs(v){
+  var o=document.getElementById('navOverview');
+  var p=document.getElementById('navPrices');
+  if(o){o.className='nav-tab '+(v==='overview'||v==='chain'?'active':'')}
+  if(p){p.className='nav-tab '+(v==='prices'?'active':'')}
+}
+
+function renderCompanyPage(el){var c=companyPage;if(!c)return;var html='<div class="company-header"><div><div class="company-header-name">'+c.name+' <span style="font-size:9px;padding:2px 6px;border-radius:2px;background:'+(c.market==='A'?'rgba(244,67,54,.15);color:#f44336':'rgba(76,175,80,.15);color:#4caf50')+'">'+c.market+'股</span>'+(c.q1_2026?'<span class="q1-badge">2026Q1</span>':'')+'</div><div class="company-header-code">'+c.code+' · '+c.ctrl+' · '+c.sector+'</div></div></div>';var tabs=[{key:'overview',label:'概览'},{key:'profit',label:'利润趋势'},{key:'quarterly',label:'季度明细'},{key:'financials',label:'财务指标'},{key:'capacity',label:'产能'},{key:'valuation',label:'估值'},{key:'products',label:'分产品'},{key:'prices',label:'商品价格'},{key:'forecast',label:'2026预测'}];html+='<div class="company-tabs">'+tabs.map(function(t){return '<div class="company-tab '+(companyTab===t.key?'active':'')+'" onclick="switchCompanyTab(\''+t.key+'\')">'+t.label+'</div>'}).join('')+'</div>';html+='<div style="padding:12px 24px 0"><div class="back-btn" onclick="goHome()">← 返回产业链图</div></div>';html+='<div class="company-section">';if(companyTab==='overview'){html+='<div class="section-title">公司摘要</div><div class="section-sub">'+c.summary+'</div>';if(c.q1_2026){html+='<div style="display:flex;gap:16px;margin-bottom:20px">';html+='<div class="val-card" style="flex:1"><div class="val-label">2026Q1 营收</div><div class="val-num" style="font-size:22px;color:var(--cyan)">'+c.q1_2026.rev+'亿</div></div>';html+='<div class="val-card" style="flex:1"><div class="val-label">2026Q1 净利</div><div class="val-num" style="font-size:22px;color:'+(c.q1_2026.profit>=0?'var(--red)':'var(--green)')+'">'+c.q1_2026.profit+'亿</div></div>';html+='<div class="val-card" style="flex:1"><div class="val-label">2026Q1 毛利率</div><div class="val-num" style="font-size:22px;color:var(--accent)">'+c.q1_2026.gm+'%</div></div>';html+='</div>'}html+='<div class="section-title">归母净利润趋势</div><div id="miniProfitChart" class="chart-container" style="height:220px"></div>';if(c.financials&&c.financials.length){html+='<div class="section-title">核心财务指标</div><table class="fin-table"><thead><tr><th>年份</th><th>营收(亿)</th><th>扣非净利(亿)</th><th>EPS</th><th>ROE</th><th>毛利率</th></tr></thead><tbody>';c.financials.slice(0,3).forEach(function(f){html+='<tr><td>'+f.year+'</td><td>'+f.rev+'</td><td>'+f.profit+'</td><td>'+f.eps+'</td><td>'+f.roe+'</td><td>'+f.gm+'</td></tr>'});html+='</tbody></table>'}if(c.capacities&&c.capacities.length){html+='<div class="section-title">产能概况</div><div class="capacity-grid">';c.capacities.forEach(function(cp){html+='<div class="capacity-card"><div class="capacity-card-name">'+cp.product+'</div><div class="capacity-card-cap">'+cp.cap+'</div><div class="capacity-card-rank">'+cp.rank+'</div></div>'});html+='</div>'}}else if(companyTab==='profit'){html+='<div class="section-title">归母净利润趋势</div><div id="profitChartFull" class="chart-container"></div>'}else if(companyTab==='quarterly'){html+='<div class="section-title">季度数据明细</div><div class="section-sub">归母净利润分季度拆分（亿元）</div>';if(c.quarterly){html+='<table class="fin-table"><thead><tr><th>报告期</th><th>年度总额</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr></thead><tbody>';c.quarterly.years.forEach(function(y,i){var total=(c.quarterly.q1[i]+c.quarterly.q2[i]+c.quarterly.q3[i]+c.quarterly.q4[i]).toFixed(1);html+='<tr><td>'+y+'</td><td>'+total+'</td><td>'+c.quarterly.q1[i].toFixed(1)+'</td><td>'+c.quarterly.q2[i].toFixed(1)+'</td><td>'+c.quarterly.q3[i].toFixed(1)+'</td><td>'+c.quarterly.q4[i].toFixed(1)+'</td></tr>'});html+='</tbody></table>'}html+='<div id="quarterlyChart" class="chart-container"></div>'}else if(companyTab==='financials'){html+='<div class="section-title">核心财务指标</div>';if(c.financials){html+='<table class="fin-table"><thead><tr><th>年份</th><th>营收(亿)</th><th>扣非净利(亿)</th><th>EPS</th><th>ROE</th><th>毛利率</th></tr></thead><tbody>';c.financials.forEach(function(f){html+='<tr><td>'+f.year+'</td><td>'+f.rev+'</td><td>'+f.profit+'</td><td>'+f.eps+'</td><td>'+f.roe+'</td><td>'+f.gm+'</td></tr>'});html+='</tbody></table>'}}else if(companyTab==='capacity'){html+='<div class="section-title">产能明细</div>';if(c.capacities){html+='<table class="data-table"><thead><tr><th>产品</th><th>产能</th><th>排名</th></tr></thead><tbody>';c.capacities.forEach(function(cp){html+='<tr><td style="font-weight:600">'+cp.product+'</td><td>'+cp.cap+'</td><td style="color:#ffc107">'+cp.rank+'</td></tr>'});html+='</tbody></table>'}}else if(companyTab==='valuation'){html+=renderValuationTab(c)}else if(companyTab==='products'){html+=renderProductsTab(c)}else if(companyTab==='forecast'){html+=renderForecastTab(c)}
+  else if(companyTab==='prices'){html+='<div class="section-title">关联商品价格</div><div class="section-sub">点击商品查看3年走势</div>';if(c.priceProducts&&c.priceProducts.length){c.priceProducts.forEach(function(pk){var pd=PRICE_DATA[pk];if(!pd)return;html+='<div style="margin-bottom:20px"><div style="font-size:12px;font-weight:600;margin-bottom:8px">'+pk+' <span style="font-size:10px;color:#666">('+pd.unit+')</span></div><div id="priceChart_'+pk.replace(/[^a-zA-Z0-9]/g,'_')+'" style="width:100%;height:200px"></div></div>'})}else{html+='<div style="color:#666;padding:20px">暂无数据</div>'}}html+='</div>';el.innerHTML=html;setTimeout(function(){if(companyTab==='overview'&&c.profitTrend)renderProfitChart('miniProfitChart',c.profitTrend,true);else if(companyTab==='profit'&&c.profitTrend)renderProfitChart('profitChartFull',c.profitTrend,false);else if(companyTab==='quarterly'&&c.quarterly)renderQuarterlyChart('quarterlyChart',c.quarterly);else if(companyTab==='valuation')renderValuationCharts(c);else if(companyTab==='prices'&&c.priceProducts)c.priceProducts.forEach(function(pk){var pd=PRICE_DATA[pk];if(pd)renderMiniPriceChart('priceChart_'+pk.replace(/[^a-zA-Z0-9]/g,'_'),pk,pd)})},50)}
+
+// ===== 估值 Tab =====
+function renderValuationTab(c){
+  var pePb=PE_PB_DATA[c.name];
+  if(!pePb)return '<div style="color:#666;padding:40px;text-align:center">暂无估值数据</div>';
+  var peVal=pePb.pe.values[pePb.pe.values.length-1];
+  var pbVal=pePb.pb.values[pePb.pb.values.length-1];
+  var pePctColor=pePb.pePct<=20?'var(--green)':pePb.pePct<=50?'var(--accent)':'var(--red)';
+  var pbPctColor=pePb.pbPct<=20?'var(--green)':pePb.pbPct<=50?'var(--accent)':'var(--red)';
+  var html='<div class="section-title">估值概览</div><div class="section-sub">PE/PB 3年季度数据 · 当前分位数</div>';
+  html+='<div class="valuation-grid">';
+  html+='<div class="val-card"><div class="val-label">PE(TTM)</div><div class="val-num" style="color:'+pePctColor+'">'+(peVal||'—')+'</div><div class="val-pct" style="color:'+pePctColor+'">分位数 '+pePb.pePct+'%</div><div class="val-range">3年区间: '+pePb.peRange+'</div></div>';
+  html+='<div class="val-card"><div class="val-label">PB(MRQ)</div><div class="val-num" style="color:'+pbPctColor+'">'+(pbVal||'—')+'</div><div class="val-pct" style="color:'+pbPctColor+'">分位数 '+pePb.pbPct+'%</div><div class="val-range">3年区间: '+pePb.pbRange+'</div></div>';
+  html+='</div>';
+  html+='<div style="display:flex;gap:16px">';
+  html+='<div style="flex:1"><div id="peChartEl" style="width:100%;height:260px"></div></div>';
+  html+='<div style="flex:1"><div id="pbChartEl" style="width:100%;height:260px"></div></div>';
+  html+='</div>';
+  // 分位数条
+  html+='<div style="margin-top:16px">';
+  html+=renderPctBar('PE分位数',pePb.pePct,pePctColor);
+  html+=renderPctBar('PB分位数',pePb.pbPct,pbPctColor);
+  html+='</div>';
+  return html;
+}
+function renderPctBar(label,pct,color){
+  return '<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:11px;color:var(--muted)">'+label+'</span><span style="font-size:11px;font-weight:600;color:'+color+'">'+pct+'%</span></div><div style="width:100%;height:8px;background:var(--card);border-radius:4px;overflow:hidden"><div style="width:'+pct+'%;height:100%;background:'+color+';border-radius:4px;transition:width .5s"></div></div></div>';
+}
+function renderValuationCharts(c){
+  var pePb=PE_PB_DATA[c.name];
+  if(!pePb||!getEcharts())return;
+  // PE chart
+  var peChart=getEcharts().init(document.getElementById('peChartEl'),'dark');
+  peChart.setOption({backgroundColor:'transparent',title:{text:'PE(TTM)走势',textStyle:{color:'#e0e0e0',fontSize:13},left:'center',top:5},grid:{left:50,right:20,top:40,bottom:30},xAxis:{type:'category',data:pePb.pe.quarters,axisLabel:{fontSize:9,color:'#666',rotate:45},axisLine:{lineStyle:{color:'#333'}},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{fontSize:9,color:'#666'},splitLine:{lineStyle:{color:'#2a2a2a'}},axisLine:{show:false}},series:[{type:'line',data:pePb.pe.values.map(function(v){return v===null||v==='-'?null:v}),smooth:true,lineStyle:{color:'#f44336',width:2},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(244,67,54,.2)'},{offset:1,color:'rgba(244,67,54,.01)'}]}},symbol:'circle',symbolSize:5,itemStyle:{color:'#f44336'},connectNulls:true}],tooltip:{trigger:'axis',backgroundColor:'#2a2a2a',borderColor:'#3a3a3a',textStyle:{color:'#e0e0e0',fontSize:11}}});
+  // PB chart
+  var pbChart=getEcharts().init(document.getElementById('pbChartEl'),'dark');
+  pbChart.setOption({backgroundColor:'transparent',title:{text:'PB(MRQ)走势',textStyle:{color:'#e0e0e0',fontSize:13},left:'center',top:5},grid:{left:50,right:20,top:40,bottom:30},xAxis:{type:'category',data:pePb.pb.quarters,axisLabel:{fontSize:9,color:'#666',rotate:45},axisLine:{lineStyle:{color:'#333'}},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{fontSize:9,color:'#666'},splitLine:{lineStyle:{color:'#2a2a2a'}},axisLine:{show:false}},series:[{type:'line',data:pePb.pb.values,smooth:true,lineStyle:{color:'#42a5f5',width:2},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(66,165,245,.2)'},{offset:1,color:'rgba(66,165,245,.01)'}]}},symbol:'circle',symbolSize:5,itemStyle:{color:'#42a5f5'}}],tooltip:{trigger:'axis',backgroundColor:'#2a2a2a',borderColor:'#3a3a3a',textStyle:{color:'#e0e0e0',fontSize:11}}});
+}
+
+// ===== 分产品 Tab =====
+function renderProductsTab(c){
+  var html='';
+  if(c.topProductsByRev&&c.topProductsByRev.length){
+    html+='<div class="section-title">按收入排名前五产品（2025年报）</div><div class="section-sub">营收占比 · 毛利率 · 利润占比</div>';
+    html+='<table class="product-table"><thead><tr><th>产品</th><th>营收(亿)</th><th>营收占比</th><th>毛利率</th><th>利润(亿)</th><th>利润占比</th></tr></thead><tbody>';
+    c.topProductsByRev.forEach(function(p){
+      var revBarW=Math.round(p.revPct*2);
+      html+='<tr><td>'+p.name+'</td><td>'+p.rev.toFixed(2)+'</td><td><span class="pct-bar rev" style="width:'+Math.min(revBarW,200)+'px"></span>'+p.revPct.toFixed(1)+'%</td><td>'+p.gm.toFixed(1)+'%</td><td>'+p.profit.toFixed(2)+'</td><td>'+p.profitPct.toFixed(1)+'%</td></tr>';
+    });
+    html+='</tbody></table>';
+  }
+  if(c.topProductsByProfit&&c.topProductsByProfit.length){
+    html+='<div class="section-title">按利润排名前五产品（2025年报）</div><div class="section-sub">利润占比 · 毛利率 · 营收</div>';
+    html+='<table class="product-table"><thead><tr><th>产品</th><th>利润(亿)</th><th>利润占比</th><th>毛利率</th><th>营收(亿)</th></tr></thead><tbody>';
+    c.topProductsByProfit.forEach(function(p){
+      var profBarW=Math.round(p.profitPct*2);
+      html+='<tr><td>'+p.name+'</td><td>'+p.profit.toFixed(2)+'</td><td><span class="pct-bar profit" style="width:'+Math.min(profBarW,200)+'px"></span>'+p.profitPct.toFixed(1)+'%</td><td>'+p.gm.toFixed(1)+'%</td><td>'+p.rev.toFixed(2)+'</td></tr>';
+    });
+    html+='</tbody></table>';
+  }
+  if(!html)html='<div style="color:#666;padding:40px;text-align:center">暂无分产品数据</div>';
+  return html;
+}
+
+function switchCompanyTab(tab){companyTab=tab;renderDetail()}
+
+function renderProfitChart(elId,trend,mini){var el=document.getElementById(elId);if(!el)return;var echarts=getEcharts();if(!echarts)return;var chart=echarts.init(el,'dark');chart.setOption({backgroundColor:'transparent',grid:{left:50,right:20,top:20,bottom:30},xAxis:{type:'category',data:trend.years.map(String),axisLabel:{fontSize:10,color:'#666'},axisLine:{lineStyle:{color:'#333'}},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{fontSize:9,color:'#666'},splitLine:{lineStyle:{color:'#2a2a2a'}},axisLine:{show:false}},series:[{type:'bar',data:trend.values.map(function(v){return{value:v,itemStyle:{color:v>=0?'#f44336':'#4caf50'}}}),barWidth:mini?20:30,label:{show:!mini,position:'top',fontSize:10,color:'#e0e0e0',formatter:function(p){return p.value+'亿'}}}],tooltip:{trigger:'axis',backgroundColor:'#2a2a2a',borderColor:'#3a3a3a',textStyle:{color:'#e0e0e0',fontSize:11}}})
+}
+function renderQuarterlyChart(elId,q){var el=document.getElementById(elId);if(!el)return;var echarts=getEcharts();if(!echarts)return;var chart=echarts.init(el,'dark');var series=['Q1','Q2','Q3','Q4'].map(function(qi,i){return{name:qi,type:'bar',data:q['q'+(i+1)],barWidth:15}});chart.setOption({backgroundColor:'transparent',grid:{left:50,right:20,top:40,bottom:30},legend:{data:['Q1','Q2','Q3','Q4'],textStyle:{color:'#666',fontSize:10},top:0},xAxis:{type:'category',data:q.years.map(String),axisLabel:{fontSize:10,color:'#666'},axisLine:{lineStyle:{color:'#333'}}},yAxis:{type:'value',axisLabel:{fontSize:9,color:'#666'},splitLine:{lineStyle:{color:'#2a2a2a'}}},series:series,tooltip:{trigger:'axis',backgroundColor:'#2a2a2a',borderColor:'#3a3a3a',textStyle:{color:'#e0e0e0',fontSize:11}}})
+}
+function renderMiniPriceChart(elId,key,pd){var el=document.getElementById(elId);if(!el)return;var echarts=getEcharts();if(!echarts)return;var chart=echarts.init(el,'dark');var months=[];for(var y=2023;y<=2025;y++)for(var m=1;m<=12;m++)months.push(y+'-'+String(m).padStart(2,'0'));chart.setOption({backgroundColor:'transparent',grid:{left:60,right:20,top:10,bottom:25},xAxis:{type:'category',data:months,axisLabel:{fontSize:8,color:'#666',interval:5},axisLine:{lineStyle:{color:'#333'}},axisTick:{show:false}},yAxis:{type:'value',axisLabel:{fontSize:8,color:'#666'},splitLine:{lineStyle:{color:'#2a2a2a'}},axisLine:{show:false}},series:[{type:'line',data:pd.data,smooth:true,lineStyle:{color:'#ffc107',width:1.5},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(255,193,7,.15)'},{offset:1,color:'rgba(255,193,7,.01)'}]}},symbol:'none'}],tooltip:{trigger:'axis',backgroundColor:'#2a2a2a',borderColor:'#3a3a3a',textStyle:{color:'#e0e0e0',fontSize:10}}})
+}
+function toggleNode(key,hasSub){if(hasSub){if(expandedNodes.has(key))expandedNodes.delete(key);else expandedNodes.add(key);renderDetail()}}
+function selectNode(key){renderChainList()}
+function setCat(cat){currentCat=cat;expandedNodes.clear();view='chain';companyPage=null;renderCatFilters();renderChainList();renderCompanyPool();renderDetail()}
+
+document.getElementById('globalSearch').addEventListener('input',function(e){var q=e.target.value.toLowerCase();if(!q){setCat(currentCat);return}var filtered=DATA.filter(function(d){return(d.cat+d.p1+d.p2+d.end+d.app+d.aname+d.hname).toLowerCase().indexOf(q)>=0});var groups={};filtered.forEach(function(d){var k=d.p1+(d.p2?' > '+d.p2:'');if(!groups[k])groups[k]=[];groups[k].push(d)});document.getElementById('chainList').innerHTML=Object.keys(groups).map(function(k){var items=groups[k];return '<div class="chain-item" onclick="selectNode(\''+items[0].p1+'|'+(items[0].p2||'')+'\')"><span class="chain-item-name">'+k+'</span><span class="chain-item-count">'+new Set(items.map(function(i){return i.aname||i.hname})).size+'家</span></div>'}).join('')||'<div style="padding:16px;color:#666">无匹配</div>'});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closePopup()});
+
+renderCatFilters();renderChainList();renderCompanyPool();renderDetail();
+try {
+  console.log('About to call renderCatFilters');
+  renderCatFilters();
+  console.log('renderCatFilters done');
+  renderChainList();
+  console.log('renderChainList done');
+  renderCompanyPool();
+  console.log('renderCompanyPool done');
+  renderDetail();
+  console.log('renderDetail done');
+} catch(e) {
+  console.log('Error:', e.message);
+  console.log('Stack:', e.stack);
+}
+
+renderCatFilters();renderChainList();renderCompanyPool();renderDetail();
+
+
+renderCatFilters();renderChainList();renderCompanyPool();renderDetail();
+</script>
+</body></html>
