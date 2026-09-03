@@ -1,4 +1,4 @@
-import type { DivergenceSignal } from "../types";
+import type { DivergenceSignal, AdvancedDivergenceSignal, FuturesBasisData } from "../types";
 
 /**
  * 计算两个价格序列的 Pearson 相关系数
@@ -134,13 +134,11 @@ export function detectDivergence(
     divergenceThreshold = 0.3;
   }
   const returnThreshold = 0.10;
+  const isDecoupled = correlation < divergenceThreshold;
+  const isOppositeReturns = stockCumReturn * commodityCumReturn < 0;
+  const isReturnSignificant = Math.abs(stockCumReturn) > returnThreshold && Math.abs(commodityCumReturn) > returnThreshold;
 
-  if (
-    Math.abs(correlation) < divergenceThreshold &&
-    stockCumReturn * commodityCumReturn < 0 &&
-    Math.abs(stockCumReturn) > returnThreshold &&
-    Math.abs(commodityCumReturn) > returnThreshold
-  ) {
+  if (isDecoupled && isOppositeReturns && isReturnSignificant) {
     const divergenceType = stockCumReturn > 0 ? "negative" : "positive";
     const divergenceScore = Math.abs(stockCumReturn - commodityCumReturn);
 
@@ -202,3 +200,259 @@ export function calculateZScore(values: number[]): number[] {
 
   return values.map((v) => (v - mean) / std);
 }
+
+/**
+ * 简单 OLS 回归: y = alpha + beta * x
+ * @returns { alpha, beta, residuals, rSquared }
+ */
+export function calculateOLS(
+  x: number[],
+  y: number[],
+): { alpha: number; beta: number; residuals: number[]; rSquared: number } {
+  const n = Math.min(x.length, y.length);
+  if (n < 2) return { alpha: 0, beta: 0, residuals: [], rSquared: 0 };
+
+  const xSlice = x.slice(0, n);
+  const ySlice = y.slice(0, n);
+
+  const xMean = xSlice.reduce((a, b) => a + b, 0) / n;
+  const yMean = ySlice.reduce((a, b) => a + b, 0) / n;
+
+  let sxx = 0;
+  let sxy = 0;
+  let syy = 0;
+
+  for (let i = 0; i < n; i++) {
+    const xd = xSlice[i]! - xMean;
+    const yd = ySlice[i]! - yMean;
+    sxx += xd * xd;
+    sxy += xd * yd;
+    syy += yd * yd;
+  }
+
+  const beta = sxx === 0 ? 0 : sxy / sxx;
+  const alpha = yMean - beta * xMean;
+
+  const residuals: number[] = [];
+  let ssRes = 0;
+  for (let i = 0; i < n; i++) {
+    const pred = alpha + beta * xSlice[i]!;
+    const res = ySlice[i]! - pred;
+    residuals.push(res);
+    ssRes += res * res;
+  }
+
+  const rSquared = syy === 0 ? 0 : Math.max(0, 1 - ssRes / syy);
+
+  return { alpha, beta, residuals, rSquared };
+}
+
+/**
+ * 协整残差 Z-Score 偏离度检测 (Engle-Granger 长期均衡定价误差模型)
+ * ln(Stock) = alpha + beta * ln(Spread or Commodity) + e_t
+ * 若最新残差偏离均值超过 2.0 倍标准差，说明当前存在强均值回归背离压力。
+ */
+export function calculateCointegrationZScore(
+  stockPrices: number[],
+  commodityPrices: number[],
+  windowSize: number = 120,
+): { currentZScore: number; beta: number; rSquared: number; residuals: number[] } {
+  const n = Math.min(stockPrices.length, commodityPrices.length);
+  if (n < windowSize || windowSize < 10) {
+    return { currentZScore: 0, beta: 0, rSquared: 0, residuals: [] };
+  }
+
+  const recentStock = stockPrices.slice(-windowSize);
+  const recentComm = commodityPrices.slice(-windowSize);
+
+  // 对数化以稳定方差并拟合弹性
+  const logStock = recentStock.map((p) => Math.log(Math.max(p, 0.0001)));
+  const logComm = recentComm.map((p) => Math.log(Math.max(p, 0.0001)));
+
+  const { beta, residuals, rSquared } = calculateOLS(logComm, logStock);
+  const zScores = calculateZScore(residuals);
+  const currentZScore = zScores[zScores.length - 1] ?? 0;
+
+  return { currentZScore, beta, rSquared, residuals };
+}
+
+/**
+ * 领先滞后互相关分析 (Lead-Lag Cross-Correlation)
+ * 计算商品变化对股票收益率的最优时滞阶数
+ * @param commodityReturns 商品日度变化率
+ * @param stockReturns 股票日度收益率
+ * @param maxLag 最大时滞搜索范围 (天)
+ * @returns { optimalLag, maxCorrelation }
+ *   optimalLag > 0 表示商品领先股票该天数；optimalLag < 0 表示股票先行反应
+ */
+export function calculateLeadLag(
+  commodityReturns: number[],
+  stockReturns: number[],
+  maxLag: number = 15,
+): { optimalLag: number; maxCorrelation: number; lagCorrelations: Record<number, number> } {
+  const n = Math.min(commodityReturns.length, stockReturns.length);
+  if (n < maxLag * 2 + 5) {
+    return { optimalLag: 0, maxCorrelation: 0, lagCorrelations: {} };
+  }
+
+  let bestLag = 0;
+  let maxAbsCorr = -1;
+  let signedCorr = 0;
+  const lagCorrelations: Record<number, number> = {};
+
+  for (let lag = -maxLag; lag <= maxLag; lag++) {
+    let commSlice: number[];
+    let stockSlice: number[];
+
+    if (lag >= 0) {
+      // comm[t - lag] vs stock[t]: 商品先发生
+      commSlice = commodityReturns.slice(0, n - lag);
+      stockSlice = stockReturns.slice(lag, n);
+    } else {
+      // comm[t] vs stock[t - |lag|]: 股票先发生
+      const absLag = Math.abs(lag);
+      commSlice = commodityReturns.slice(absLag, n);
+      stockSlice = stockReturns.slice(0, n - absLag);
+    }
+
+    const corr = calculateCorrelation(commSlice, stockSlice);
+    lagCorrelations[lag] = corr;
+
+    if (Math.abs(corr) > maxAbsCorr) {
+      maxAbsCorr = Math.abs(corr);
+      bestLag = lag;
+      signedCorr = corr;
+    }
+  }
+
+  return { optimalLag: bestLag, maxCorrelation: signedCorr, lagCorrelations };
+}
+
+/**
+ * 分析期货基差结构 (Basis Analysis & Convenience Yield)
+ * @param spotPrice 现货价格
+ * @param futuresPrice 主力期货合约价格
+ */
+export function analyzeFuturesBasis(
+  spotPrice: number,
+  futuresPrice: number,
+): FuturesBasisData & { isBackwardation: boolean; isContango: boolean } {
+  const basis = spotPrice - futuresPrice;
+  const basisRate = futuresPrice === 0 ? 0 : basis / futuresPrice;
+
+  let structure: "backwardation" | "contango" | "flat" = "flat";
+  if (basisRate > 0.015) {
+    structure = "backwardation"; // 现货溢价 / 极度紧缺
+  } else if (basisRate < -0.015) {
+    structure = "contango"; // 期货升水 / 供给过剩或投机溢价
+  }
+
+  return {
+    commodityKey: "",
+    spotPrice,
+    futuresPrice,
+    basis,
+    basisRate,
+    structure,
+    isBackwardation: structure === "backwardation",
+    isContango: structure === "contango",
+  };
+}
+
+/**
+ * 高级背离信号确认器 (结合协整残差、基差验证与置信度打分)
+ */
+export function detectAdvancedDivergence(
+  stockPrices: number[],
+  commodityPrices: number[],
+  dates: string[],
+  futuresPrices?: number[],
+  spreadPrices?: number[],
+  windowSize: number = 52,
+): AdvancedDivergenceSignal[] {
+  // 1. 获取基础背离信号
+  let baseSignals = detectDivergence(stockPrices, commodityPrices, dates, windowSize);
+
+  // 2. 协整残差 Z-Score 检验 (长期均衡定价误差模型)
+  const targetCommoditySeries = spreadPrices && spreadPrices.length === commodityPrices.length
+    ? spreadPrices
+    : commodityPrices;
+  const { currentZScore } = calculateCointegrationZScore(stockPrices, targetCommoditySeries, Math.min(windowSize, 120));
+
+  const recentStockPrices = stockPrices.slice(-windowSize);
+  const recentCommodityPrices = commodityPrices.slice(-windowSize);
+  const stockReturns = calculateReturns(recentStockPrices);
+  const commodityReturns = calculateReturns(recentCommodityPrices);
+  const stockCumReturn = stockReturns.reduce((a, b) => a + b, 0);
+  const commodityCumReturn = commodityReturns.reduce((a, b) => a + b, 0);
+
+  // 若基础短线相关性未检出，但长期协整残差发生统计显著偏离且累计走势异号，补充协整强背离信号
+  if (baseSignals.length === 0 && stockCumReturn * commodityCumReturn < 0 && Math.abs(currentZScore) >= 1.5) {
+    const divergenceType = stockCumReturn > 0 ? "negative" : "positive";
+    const divergenceScore = Math.abs(stockCumReturn - commodityCumReturn);
+    baseSignals = [{
+      code: "",
+      name: "",
+      productName: "",
+      commodityName: "",
+      divergenceType,
+      divergenceScore,
+      correlation: calculateCorrelation(stockReturns, commodityReturns),
+      stockChange: stockCumReturn,
+      commodityChange: commodityCumReturn,
+      startDate: dates[dates.length - windowSize] ?? "",
+      endDate: dates[dates.length - 1] ?? "",
+      signalStrength: divergenceScore > 0.3 ? "strong" : "medium",
+    }];
+  }
+
+  if (baseSignals.length === 0) return [];
+
+  // 3. 期货基差验证
+  let confirmedByFutures = false;
+  let basisStructure: "backwardation" | "contango" | "flat" = "flat";
+  if (futuresPrices && futuresPrices.length > 0) {
+    const latestSpot = commodityPrices[commodityPrices.length - 1] ?? 0;
+    const latestFutures = futuresPrices[futuresPrices.length - 1] ?? latestSpot;
+    const basisInfo = analyzeFuturesBasis(latestSpot, latestFutures);
+    basisStructure = basisInfo.structure;
+
+    // 若为正向背离（商品/价差强，股价弱），若基差呈现货溢价(Backwardation)，则属于最真实的供需偏紧驱动，验证通过！
+    confirmedByFutures = basisInfo.isBackwardation || Math.abs(basisInfo.basisRate) < 0.05;
+  } else {
+    // 无期货合约标的时默认依据价差残差
+    confirmedByFutures = Math.abs(currentZScore) >= 1.5;
+  }
+
+  // 4. 计算前瞻领先天数
+  const stockRet = calculateReturns(stockPrices.slice(-windowSize));
+  const commRet = calculateReturns(commodityPrices.slice(-windowSize));
+  const { optimalLag } = calculateLeadLag(commRet, stockRet, 15);
+
+  // 5. 置信度评级 (AAA: 协整残差>2.0且期货现货溢价共振; AA: 残差>1.5; A: 基础背离且非Contango; B: 普通)
+  return baseSignals.map((sig) => {
+    let confidenceGrade: "AAA" | "AA" | "A" | "B" = "B";
+
+    const isExtremeCointegration = Math.abs(currentZScore) >= 2.0;
+    const isModerateCointegration = Math.abs(currentZScore) >= 1.4;
+
+    if (isExtremeCointegration && confirmedByFutures && basisStructure === "backwardation") {
+      confidenceGrade = "AAA";
+    } else if (isModerateCointegration && confirmedByFutures) {
+      confidenceGrade = "AA";
+    } else if (confirmedByFutures || isModerateCointegration) {
+      confidenceGrade = "A";
+    }
+
+    return {
+      ...sig,
+      spreadChange: spreadPrices ? calculateReturns(spreadPrices.slice(-windowSize)).reduce((a, b) => a + b, 0) : undefined,
+      basisStructure,
+      cointegrationZScore: Number(currentZScore.toFixed(2)),
+      leadLagDays: optimalLag,
+      confirmedByFutures,
+      confidenceGrade,
+    };
+  });
+}
+

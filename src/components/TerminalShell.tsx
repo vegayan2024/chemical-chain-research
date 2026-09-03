@@ -47,12 +47,16 @@ export default function TerminalShell({ data, children }: TerminalShellProps) {
       <nav className="c-navbar">
         <div className="c-navbar__brand">
           <Monitor size={18} />
-          <span className="c-navbar__brand-name">价格背离信号终端</span>
+          <span className="c-navbar__brand-name">化工产业链 × 价格背离终端</span>
         </div>
         <div className="c-navbar__menu">
           <NavLink className={({ isActive }) => (isActive ? "is-active" : "")} to="/">
             <span className="c-navbar__label c-navbar__label--full">仪表盘</span>
             <span className="c-navbar__label c-navbar__label--short">仪表盘</span>
+          </NavLink>
+          <NavLink className={({ isActive }) => (isActive ? "is-active" : "")} to="/chains">
+            <span className="c-navbar__label c-navbar__label--full">产业链全景</span>
+            <span className="c-navbar__label c-navbar__label--short">产业链</span>
           </NavLink>
           <NavLink className={({ isActive }) => (isActive ? "is-active" : "")} to="/alerts">
             <span className="c-navbar__label c-navbar__label--full">预警</span>

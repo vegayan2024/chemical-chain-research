@@ -83,6 +83,38 @@ export interface AppData {
   stockPrices: Record<string, PricePoint[]>;
   valuationData: Record<string, ValuationData>;
   financialData: Record<string, FinancialData>;
+  spreadData?: Record<string, ProductSpread>;
+  futuresData?: Record<string, FuturesBasisData>;
+}
+
+/** 期货与基差数据 */
+export interface FuturesBasisData {
+  commodityKey: string;
+  spotPrice: number;
+  futuresPrice: number;
+  basis: number; // spot - futures
+  basisRate: number; // (spot - futures) / futures
+  structure: "backwardation" | "contango" | "flat"; // 现货溢价 (供需偏紧) vs 期货升水 (远期乐观/贴水炒作)
+}
+
+/** 产品理论价差 (Crack / Product Spread 剪刀差) */
+export interface ProductSpread {
+  productKey: string;
+  productName: string;
+  spreadHistory: PricePoint[];
+  currentSpread: number;
+  spreadPercentile: number; // 历史价差分位数
+  spreadStatus: "expanding" | "contracting" | "neutral";
+}
+
+/** 高级协整与背离确认结果 (学术前沿增强) */
+export interface AdvancedDivergenceSignal extends DivergenceSignal {
+  spreadChange?: number; // 理论价差变动
+  basisStructure?: "backwardation" | "contango" | "flat"; // 基差期限结构
+  cointegrationZScore?: number; // 协整残差 Z-Score 偏离度
+  leadLagDays?: number; // 互相关测算得到的领先/滞后天数
+  confirmedByFutures: boolean; // 是否通过期货基差共振确认 (过滤假突破)
+  confidenceGrade: "AAA" | "AA" | "A" | "B"; // 综合胜率置信度评级
 }
 
 /** 主题模式 */

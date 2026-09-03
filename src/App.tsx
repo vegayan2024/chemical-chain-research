@@ -8,6 +8,7 @@ import type { AppData } from "./types";
 const DashboardPage = lazy(() => import("./pages/DashboardPage"));
 const DivergenceDetailPage = lazy(() => import("./pages/DivergenceDetailPage"));
 const AlertsPage = lazy(() => import("./pages/AlertsPage"));
+const ChemicalChainPage = lazy(() => import("./pages/ChemicalChainPage"));
 
 function RouteLoadingScreen() {
   return (
@@ -64,6 +65,7 @@ export default function App() {
       <Suspense fallback={<RouteLoadingScreen />}>
         <Routes key={themeMode}>
           <Route path="/" element={<DashboardPage data={data} />} />
+          <Route path="/chains" element={<ChemicalChainPage data={data} />} />
           <Route path="/divergence/:code" element={<DivergenceDetailPage data={data} />} />
           <Route path="/alerts" element={<AlertsPage data={data} />} />
         </Routes>

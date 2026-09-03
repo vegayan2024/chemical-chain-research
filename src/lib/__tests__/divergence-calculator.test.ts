@@ -6,6 +6,11 @@ import {
   detectDivergence,
   calculateZScore,
   percentile,
+  calculateOLS,
+  calculateCointegrationZScore,
+  calculateLeadLag,
+  analyzeFuturesBasis,
+  detectAdvancedDivergence,
 } from '../divergence-calculator';
 
 describe('calculateCorrelation', () => {
@@ -231,3 +236,70 @@ describe('calculateZScore', () => {
     });
   });
 });
+
+describe('calculateOLS & Cointegration', () => {
+  it('should correctly calculate OLS regression parameters', () => {
+    const x = [1, 2, 3, 4, 5];
+    const y = [3, 5, 7, 9, 11]; // y = 1 + 2x
+    const res = calculateOLS(x, y);
+    expect(res.beta).toBeCloseTo(2, 5);
+    expect(res.alpha).toBeCloseTo(1, 5);
+    expect(res.rSquared).toBeCloseTo(1, 5);
+  });
+
+  it('should detect cointegration Z-Score appropriately', () => {
+    // 60 data points where stock closely tracks commodity
+    const comm = Array.from({ length: 60 }, (_, i) => 100 + i * 2);
+    const stock = Array.from({ length: 60 }, (_, i) => 10 + i * 0.2);
+    // At the end, stock plummets while commodity continues rising (strong divergence)
+    stock[59] = 5;
+
+    const res = calculateCointegrationZScore(stock, comm, 50);
+    expect(res.currentZScore).toBeLessThan(-1.5);
+  });
+});
+
+describe('analyzeFuturesBasis', () => {
+  it('should detect backwardation (spot > futures, tight supply)', () => {
+    const basis = analyzeFuturesBasis(1050, 1000);
+    expect(basis.structure).toBe('backwardation');
+    expect(basis.isBackwardation).toBe(true);
+    expect(basis.basisRate).toBeCloseTo(0.05, 4);
+  });
+
+  it('should detect contango (futures > spot, oversupply)', () => {
+    const basis = analyzeFuturesBasis(950, 1000);
+    expect(basis.structure).toBe('contango');
+    expect(basis.isContango).toBe(true);
+    expect(basis.basisRate).toBeCloseTo(-0.05, 4);
+  });
+});
+
+describe('calculateLeadLag', () => {
+  it('should identify when commodity leads stock by N days', () => {
+    // comm leads stock by 2 days
+    const baseSignals = [0.01, -0.02, 0.03, 0.04, -0.01, 0.02, -0.03, 0.05, -0.02, 0.01, 0.03, -0.02, 0.01, 0.04, -0.01, 0.02, 0.03, -0.01];
+    const commReturns = [...baseSignals, 0.02, 0.01];
+    const stockReturns = [0, 0, ...baseSignals]; // shifted by 2
+
+    const leadLag = calculateLeadLag(commReturns, stockReturns, 5);
+    expect(leadLag.optimalLag).toBe(2);
+    expect(leadLag.maxCorrelation).toBeGreaterThan(0.8);
+  });
+});
+
+describe('detectAdvancedDivergence', () => {
+  it('should upgrade confidence grade to AAA when cointegration and backwardation align', () => {
+    // 52 weeks of data: stock drops 30%, commodity gains 30%
+    const stockPrices = Array.from({ length: 52 }, (_, i) => 100 - i * 0.6);
+    const commodityPrices = Array.from({ length: 52 }, (_, i) => 100 + i * 0.6);
+    const dates = Array.from({ length: 52 }, (_, i) => `2024-W${String(i + 1).padStart(2, '0')}`);
+    const futuresPrices = Array.from({ length: 52 }, (_, i) => 90 + i * 0.5); // futures lower than spot (backwardation)
+
+    const signals = detectAdvancedDivergence(stockPrices, commodityPrices, dates, futuresPrices, undefined, 52);
+    expect(signals.length).toBeGreaterThan(0);
+    expect(signals[0]?.confirmedByFutures).toBe(true);
+    expect(signals[0]?.confidenceGrade).toBe('AAA');
+  });
+});
+
