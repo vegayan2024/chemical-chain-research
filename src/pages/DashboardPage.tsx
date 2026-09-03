@@ -4,15 +4,16 @@ import type { AppData, DivergenceSignal, WeightType } from "../types";
 import GroupedSignalTable from "../components/GroupedSignalTable";
 import CorrelationHeatmap from "../components/CorrelationHeatmap";
 import CompanyListTable from "../components/CompanyListTable";
+import CommodityMarketTable from "../components/CommodityMarketTable";
 
 interface DashboardPageProps {
   data: AppData;
 }
 
-type Tab = "signals" | "heatmap" | "all";
+type Tab = "commodities" | "signals" | "all" | "heatmap";
 
 export default function DashboardPage({ data }: DashboardPageProps) {
-  const [activeTab, setActiveTab] = useState<Tab>("signals");
+  const [activeTab, setActiveTab] = useState<Tab>("commodities");
   const [weightType, setWeightType] = useState<WeightType>("revenue");
   const navigate = useNavigate();
 
@@ -27,11 +28,17 @@ export default function DashboardPage({ data }: DashboardPageProps) {
   return (
     <div className="page-dashboard">
       <div className="page-header">
-        <h1>价格背离信号仪表盘</h1>
-        <p className="text-muted">监控股票价格与商品价格的背离信号</p>
+        <h1>价格背离信号与大宗化工数据库</h1>
+        <p className="text-muted">全景跟踪 600+ 化工品最新价格、价差、开工率及多周期（1月/3月/6月/1年）走势与股票背离信号</p>
       </div>
 
       <div className="c-tabs">
+        <button
+          className={`c-tab ${activeTab === "commodities" ? "c-tab--active" : ""}`}
+          onClick={() => setActiveTab("commodities")}
+        >
+          最新商品市场 (600+品种)
+        </button>
         <button
           className={`c-tab ${activeTab === "signals" ? "c-tab--active" : ""}`}
           onClick={() => setActiveTab("signals")}
@@ -71,6 +78,7 @@ export default function DashboardPage({ data }: DashboardPageProps) {
       )}
 
       <div className="tab-content">
+        {activeTab === "commodities" && <CommodityMarketTable />}
         {activeTab === "signals" && (
           <GroupedSignalTable
             signals={data.signals}
@@ -95,3 +103,4 @@ export default function DashboardPage({ data }: DashboardPageProps) {
     </div>
   );
 }
+
