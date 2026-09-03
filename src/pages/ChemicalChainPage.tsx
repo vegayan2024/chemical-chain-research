@@ -56,20 +56,40 @@ export default function ChemicalChainPage({ data }: ChemicalChainPageProps) {
         </p>
       </div>
 
-      {/* 7大分类选择标签 */}
-      <div className="c-segment" style={{ overflowX: "auto", marginBottom: "20px" }}>
+      {/* 7大分类选择标签 - 支持移动端自适应平滑横向滚动 */}
+      <div
+        className="c-segment"
+        style={{
+          display: "flex",
+          overflowX: "auto",
+          whiteSpace: "nowrap",
+          scrollbarWidth: "none",
+          marginBottom: "20px",
+          maxWidth: "100%",
+          padding: "2px",
+        }}
+      >
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
             type="button"
             className={`c-segment__item ${activeCategory === cat ? "c-segment__item--active" : ""}`}
             onClick={() => setActiveCategory(cat)}
-            style={{ padding: "8px 16px", fontSize: "14px", fontWeight: 600 }}
+            style={{
+              padding: "8px 16px",
+              fontSize: "14px",
+              fontWeight: 600,
+              whiteSpace: "nowrap",
+              flexShrink: 0,
+              height: "auto",
+              minHeight: "34px",
+            }}
           >
             {cat}
           </button>
         ))}
       </div>
+
 
       {/* 产业链拓扑结构与对应公司 */}
       <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>

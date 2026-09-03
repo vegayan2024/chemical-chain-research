@@ -34,9 +34,11 @@
   align-items: center;
   gap: var(--space-4);
   padding: 0 var(--space-4);
-  height: 48px;
+  min-height: 48px;
   background: var(--bg-panel);
   border-bottom: 1px solid var(--border);
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .c-navbar__brand {
@@ -46,25 +48,39 @@
   color: var(--brand);
   font-weight: var(--fw-semibold);
   font-size: var(--fs-body);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .c-navbar__brand-name {
   color: var(--text-strong);
+  white-space: nowrap;
 }
 
 .c-navbar__menu {
   display: flex;
+  align-items: center;
   gap: var(--space-1);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  flex: 1 1 auto;
+}
+.c-navbar__menu::-webkit-scrollbar {
+  display: none;
 }
 
 .c-navbar__menu a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: var(--space-2) var(--space-3);
   color: var(--text-muted);
   font-size: var(--fs-small);
   border-radius: var(--radius-1);
   transition: all var(--dur-fast) var(--ease);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .c-navbar__menu a:hover {
@@ -84,36 +100,52 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  flex-shrink: 0;
 }
 
-/* Ticker */
+/* Ticker - 平滑横向滚动，彻底杜绝内容折行与叠合 */
 .c-ticker {
   display: flex;
+  align-items: center;
   gap: var(--space-6);
   padding: var(--space-2) var(--space-4);
   background: var(--bg-panel);
   border-bottom: 1px solid var(--border);
   font-size: var(--fs-caption);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+.c-ticker::-webkit-scrollbar {
+  display: none;
 }
 
 .c-ticker__item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--space-2);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .c-ticker__label {
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .c-ticker__value {
   color: var(--text-strong);
   font-weight: var(--fw-medium);
+  white-space: nowrap;
 }
 
 .c-ticker__change {
   font-size: var(--fs-tiny);
+  white-space: nowrap;
 }
+
 
 /* 主内容区 */
 .terminal-main {
@@ -126,11 +158,15 @@
 .c-statusbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
   padding: var(--space-2) var(--space-4);
   background: var(--bg-panel);
   border-top: 1px solid var(--border);
   font-size: var(--fs-tiny);
   color: var(--text-muted);
+  width: 100%;
 }
 
 /* 圆点指示器 */
@@ -139,6 +175,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .c-dot--brand { background: var(--brand); }
@@ -155,24 +192,34 @@
   50% { opacity: 0.5; }
 }
 
-/* 分段控件 */
+/* 分段控件 - 响应式弹性，支持图标或文字标签 */
 .c-segment {
   display: inline-flex;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-1);
-  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  scrollbar-width: none;
+}
+.c-segment::-webkit-scrollbar {
+  display: none;
 }
 
 .c-segment__item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
+  min-width: 28px;
+  width: auto;
   height: 28px;
+  padding: 0 var(--space-2);
   background: transparent;
   border: none;
   color: var(--text-muted);
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all var(--dur-fast) var(--ease);
 }
 
@@ -186,13 +233,18 @@
   color: var(--brand-fg);
 }
 
-/* 表格 */
-.c-table-wrap {
+/* 表格容器与单元格 - 严格防文字叠合 */
+.c-table-wrap,
+.c-table-container {
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c-table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
   font-size: var(--fs-small);
 }
@@ -202,7 +254,10 @@
   padding: var(--space-3) var(--space-4);
   text-align: left;
   border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  vertical-align: middle;
 }
+
 
 .c-table th {
   background: var(--bg-raised);

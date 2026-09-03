@@ -28,11 +28,20 @@
   margin-top: var(--space-4);
 }
 
-/* 选项卡 */
+/* 选项卡 - 支持移动端/窄屏横向平滑滚动，防止Tab上下折叠叠合 */
 .c-tabs {
   display: flex;
+  align-items: center;
   gap: var(--space-1);
   border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+.c-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .c-tab {
@@ -44,8 +53,11 @@
   font-size: var(--fs-small);
   font-weight: var(--fw-medium);
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all var(--dur-fast) var(--ease);
 }
+
 
 .c-tab:hover {
   color: var(--text);
@@ -517,18 +529,94 @@
   font-weight: var(--fw-bold);
 }
 
-/* 响应式 */
+/* ============================================================
+   Hallmark 规范 · 响应式与防文字叠合设计 (320px / 375px / 414px / 768px / 1024px)
+   ============================================================ */
+@media (max-width: 900px) {
+  .c-navbar__brand-name {
+    font-size: var(--fs-small);
+  }
+}
+
 @media (max-width: 768px) {
+  .terminal-main {
+    padding: var(--space-3) var(--space-3);
+  }
+
+  .c-navbar {
+    padding: 0 var(--space-2);
+    gap: var(--space-2);
+  }
+
   .c-navbar__label--full { display: none; }
   .c-navbar__label--short { display: inline; }
 
+  .c-navbar__brand-name {
+    display: inline-block;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .page-header h1 {
+    font-size: var(--fs-h2);
+    overflow-wrap: anywhere;
+    line-height: 1.25;
+  }
+
+  .page-header p {
+    font-size: var(--fs-small);
+    line-height: 1.4;
+  }
+
   .c-ticker {
-    overflow-x: auto;
-    flex-wrap: nowrap;
+    padding: var(--space-2) var(--space-2);
+    gap: var(--space-4);
+  }
+
+  .alert-card__header {
+    flex-wrap: wrap;
+    gap: var(--space-2);
   }
 
   .alert-card__metrics {
-    flex-wrap: wrap;
-    gap: var(--space-3);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .chart-card {
+    padding: var(--space-3);
   }
 }
+
+@media (max-width: 480px) {
+  .c-navbar__brand-name {
+    display: none;
+  }
+
+  .c-navbar__menu a {
+    padding: var(--space-1) var(--space-2);
+    font-size: 12px;
+  }
+
+  .page-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .alert-card__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .c-tab {
+    padding: var(--space-2) var(--space-3);
+    font-size: 12px;
+  }
+}
+

@@ -188,14 +188,26 @@ export default function CommodityMarketTable() {
         </div>
       </div>
 
-      {/* 排序快捷切换指示条 */}
-      <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "13px" }}>
-        <span style={{ color: "var(--text-muted, #888)" }}>快捷排序维度:</span>
+      {/* 排序快捷切换指示条 - 支持移动端横向平滑滑动，防止换行叠合 */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          fontSize: "13px",
+          overflowX: "auto",
+          whiteSpace: "nowrap",
+          paddingBottom: "4px",
+          scrollbarWidth: "none",
+        }}
+      >
+
+        <span style={{ color: "var(--text-muted, #888)", flexShrink: 0 }}>快捷排序:</span>
         <button
           type="button"
           className={`c-btn ${sortField === "change1M" ? "c-btn--primary" : "c-btn--secondary"}`}
           onClick={() => handleSort("change1M")}
-          style={{ padding: "4px 10px", fontSize: "12px" }}
+          style={{ padding: "4px 10px", fontSize: "12px", flexShrink: 0, whiteSpace: "nowrap" }}
         >
           按 1 个月涨跌 {renderSortIcon("change1M")}
         </button>
@@ -203,7 +215,7 @@ export default function CommodityMarketTable() {
           type="button"
           className={`c-btn ${sortField === "change3M" ? "c-btn--primary" : "c-btn--secondary"}`}
           onClick={() => handleSort("change3M")}
-          style={{ padding: "4px 10px", fontSize: "12px" }}
+          style={{ padding: "4px 10px", fontSize: "12px", flexShrink: 0, whiteSpace: "nowrap" }}
         >
           按 3 个月涨跌 {renderSortIcon("change3M")}
         </button>
@@ -211,7 +223,7 @@ export default function CommodityMarketTable() {
           type="button"
           className={`c-btn ${sortField === "change6M" ? "c-btn--primary" : "c-btn--secondary"}`}
           onClick={() => handleSort("change6M")}
-          style={{ padding: "4px 10px", fontSize: "12px" }}
+          style={{ padding: "4px 10px", fontSize: "12px", flexShrink: 0, whiteSpace: "nowrap" }}
         >
           按 6 个月涨跌 {renderSortIcon("change6M")}
         </button>
@@ -219,14 +231,15 @@ export default function CommodityMarketTable() {
           type="button"
           className={`c-btn ${sortField === "change1Y" ? "c-btn--primary" : "c-btn--secondary"}`}
           onClick={() => handleSort("change1Y")}
-          style={{ padding: "4px 10px", fontSize: "12px" }}
+          style={{ padding: "4px 10px", fontSize: "12px", flexShrink: 0, whiteSpace: "nowrap" }}
         >
           按 1 年涨跌 {renderSortIcon("change1Y")}
         </button>
-        <span style={{ marginLeft: "auto", fontSize: "12px", color: "var(--text-muted, #888)" }}>
-          显示 <b>{filteredAndSorted.length}</b> / {items.length} 个化工商品指标
+        <span style={{ marginLeft: "auto", fontSize: "12px", color: "var(--text-muted, #888)", flexShrink: 0, paddingLeft: "8px" }}>
+          共 <b>{filteredAndSorted.length}</b> 个品种
         </span>
       </div>
+
 
       {/* 核心数据表格 */}
       <div className="c-table-container" style={{ overflowX: "auto", borderRadius: "8px", border: "1px solid var(--border-color, rgba(255, 255, 255, 0.08))" }}>
