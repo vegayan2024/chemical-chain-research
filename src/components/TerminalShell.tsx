@@ -84,18 +84,23 @@ export default function TerminalShell({ data, children }: TerminalShellProps) {
           <span className="c-ticker__value num">{strongSignals}</span>
           <span className="c-ticker__change num t-fall">个</span>
         </div>
+        <div className="c-ticker__item" style={{ marginLeft: "auto", display: "flex", gap: "8px", alignItems: "center" }}>
+          <span className="c-ticker__label">权威高置信信源:</span>
+          <span style={{ fontSize: "11px", background: "rgba(16, 185, 129, 0.15)", color: "#10b981", padding: "1px 6px", borderRadius: "3px", fontWeight: 600 }}>Tushare Pro [高置信度]</span>
+          <span style={{ fontSize: "11px", background: "rgba(16, 185, 129, 0.15)", color: "#10b981", padding: "1px 6px", borderRadius: "3px", fontWeight: 600 }}>AKShare [高置信度]</span>
+        </div>
       </div>
 
       <main className="terminal-main">{children}</main>
 
-      <div className="c-statusbar">
+      <div className="c-statusbar" style={{ display: "flex", justifyContent: "space-between", fontSize: "11px" }}>
         <span className="row gap-3">
           <BarChart3 size={12} />
-          价格背离监测
+          化工产业链 × 价格背离监测终端
         </span>
         <span className="row gap-3">
           <Activity size={12} />
-          延迟 · 本地
+          数据信源: <b>Tushare</b> (A股K线·财务) + <b>AKShare</b> (大宗现货·主力期货) · 状态: 实时校验
         </span>
       </div>
     </div>

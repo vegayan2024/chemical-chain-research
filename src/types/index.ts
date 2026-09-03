@@ -1,7 +1,24 @@
+/** 信源置信度等级 */
+export type SourceConfidenceLevel = "HIGH" | "MEDIUM" | "LOW";
+
+/** 数据信源元数据 */
+export interface DataSourceInfo {
+  id: "tushare" | "akshare" | "broker_excel";
+  name: string;
+  category: "stock" | "commodity" | "futures" | "financial";
+  confidence: SourceConfidenceLevel;
+  confidenceScore: number; // 1-100
+  description: string;
+  status: "active" | "standby";
+  refreshRate: string;
+}
+
 /** 价格数据点 */
 export interface PricePoint {
   date: string;
   value: number;
+  source?: string;
+  confidence?: SourceConfidenceLevel;
 }
 
 /** 公司基本信息 */

@@ -103,5 +103,7 @@ export function mapKlineRows(rows) {
     low: toNumber(row.low),
     volume: toNumber(row.vol),
     amount: toNumber(row.amount),
+    source: "Tushare",
+    confidence: "HIGH",
   }));
 }

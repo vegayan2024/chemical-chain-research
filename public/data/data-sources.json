@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "tushare",
+      "name": "Tushare Pro",
+      "category": "stock",
+      "confidence": "HIGH",
+      "confidenceScore": 98,
+      "description": "官方直连金融大数据平台，提供A股高频复权日K线、财务报表披露、资产负债率及扣非净利润等高置信度底层数据。",
+      "status": "active",
+      "refreshRate": "交易日收盘自动更新 (日频)"
+    },
+    {
+      "id": "akshare",
+      "name": "AKShare",
+      "category": "commodity",
+      "confidence": "HIGH",
+      "confidenceScore": 96,
+      "description": "权威大宗商品开源金融数据库，直连交易所主力期货（上期所/大商所/郑商所）及生意社/卓创现货报价，提供现货溢价基差与高频大宗商品行情。",
+      "status": "active",
+      "refreshRate": "实时 / 每日收盘更新"
+    },
+    {
+      "id": "broker_excel",
+      "name": "券商行业研报 (长江化工 / 兴业证券)",
+      "category": "financial",
+      "confidence": "MEDIUM",
+      "confidenceScore": 75,
+      "description": "头部券商研究所周度大宗价格跟踪与行业景气度预测表，用于细分非标化学品价格交叉验证与业绩敏感性参考。",
+      "status": "active",
+      "refreshRate": "周频 / 不定期发布"
+    }
+  ]
+}
