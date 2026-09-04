@@ -55,8 +55,8 @@ export default function TerminalShell({ data, children }: TerminalShellProps) {
             <span className="c-navbar__label c-navbar__label--short">仪表盘</span>
           </NavLink>
           <NavLink className={({ isActive }) => (isActive ? "is-active" : "")} to="/chains">
-            <span className="c-navbar__label c-navbar__label--full">产业链全景</span>
-            <span className="c-navbar__label c-navbar__label--short">产业链</span>
+            <span className="c-navbar__label c-navbar__label--full">行业与产业链</span>
+            <span className="c-navbar__label c-navbar__label--short">行业</span>
           </NavLink>
           <NavLink className={({ isActive }) => (isActive ? "is-active" : "")} to="/alerts">
             <span className="c-navbar__label c-navbar__label--full">预警</span>

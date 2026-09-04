@@ -18,6 +18,7 @@ import {
   type IndustryCompanyNode,
   type CompanyDetailProfile
 } from "../lib/industry-chain-data";
+import CycleFrameworkBanner from "../components/CycleFrameworkBanner";
 import type { AppData } from "../types";
 
 interface ChemicalChainPageProps {
@@ -132,6 +133,20 @@ export default function ChemicalChainPage({ data }: ChemicalChainPageProps) {
         </p>
       </div>
 
+      {/* 周期品顶层研究框架汇总 (能源 · 金属 · 化工) */}
+      <CycleFrameworkBanner
+        onSelectChemicalCategory={(cat) => {
+          if (CATEGORIES.includes(cat)) {
+            setActiveCategory(cat);
+            setSelectedNodeKey(null);
+            const tabsElem = document.getElementById("chemicalCategoryTabs");
+            if (tabsElem) {
+              tabsElem.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }
+        }}
+      />
+
       {/* 核心态势指标栏 (Stats Bar) */}
       <div
         className="c-card"
@@ -179,6 +194,7 @@ export default function ChemicalChainPage({ data }: ChemicalChainPageProps) {
 
       {/* 7 大分类选择标签条 (支持横向平滑滚动) */}
       <div
+        id="chemicalCategoryTabs"
         className="c-tabs"
         style={{
           borderBottom: "1px solid var(--border)",
