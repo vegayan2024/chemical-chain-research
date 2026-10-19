@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-28T14:56:48.519902",
-    "cjSource": "cj-chemical-prices-20260712.xlsx",
-    "xyzqSource": "xyzq-chemical-prices-20260705.xlsx",
+    "generatedAt": "2026-10-19T14:12:32.590337",
+    "xyzqSource": "xyzq-chemical-prices-20261008.xlsx",
+    "gthtSource": "gtht-chemical-prices-20261017.xls",
     "totalCompanies": 69,
     "totalProducts": 206,
-    "matchedProducts": 148,
-    "matchRate": 71.8
+    "matchedProducts": 137,
+    "matchRate": 66.5
   },
   "companies": [
     {
@@ -17,25 +17,25 @@
         {
           "productName": "汽油",
           "commodityKey": "xyzq:price:中国92#汽油(镇海炼化)",
-          "latestPrice": 9673.0,
+          "latestPrice": 10558.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "柴油",
           "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
-          "latestPrice": 8085.0,
+          "latestPrice": 8890.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "液化气",
           "commodityKey": "xyzq:price:液化气(华东)",
-          "latestPrice": 5600.0,
+          "latestPrice": 7900.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -48,25 +48,25 @@
         {
           "productName": "尿素",
           "commodityKey": "xyzq:price:尿素(山东)",
-          "latestPrice": 1790.0,
+          "latestPrice": 1737.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "复合肥",
           "commodityKey": "xyzq:price:复合肥",
-          "latestPrice": 3000.0,
+          "latestPrice": 3300.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "三聚氰胺",
           "commodityKey": "xyzq:price:三聚氰胺(四川)",
-          "latestPrice": 5550.0,
+          "latestPrice": 5900.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -79,25 +79,25 @@
         {
           "productName": "氯化钾",
           "commodityKey": "xyzq:price:氯化钾(60%粉,青海挂牌)",
-          "latestPrice": 3100.0,
+          "latestPrice": 2920.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "碳酸锂",
           "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
-          "latestPrice": 160000.0,
+          "latestPrice": 118000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "纯碱",
           "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-          "latestPrice": 1050.0,
+          "latestPrice": 1000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -110,25 +110,25 @@
         {
           "productName": "聚丙烯",
           "commodityKey": "xyzq:price:聚丙烯(PP)",
-          "latestPrice": 8050.0,
-          "unit": "元/吨",
-          "source": "cj",
+          "latestPrice": 1311.0,
+          "unit": "美元/吨",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "MTBE",
           "commodityKey": "cj:price:MTBE",
-          "latestPrice": 5150.0,
+          "latestPrice": 8417.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "液化气",
           "commodityKey": "xyzq:price:液化气(华东)",
-          "latestPrice": 5600.0,
+          "latestPrice": 7900.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -141,17 +141,17 @@
         {
           "productName": "尿素",
           "commodityKey": "xyzq:price:尿素(山东)",
-          "latestPrice": 1790.0,
+          "latestPrice": 1737.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "复合肥",
           "commodityKey": "xyzq:price:复合肥",
-          "latestPrice": 3000.0,
+          "latestPrice": 3300.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -164,25 +164,25 @@
         {
           "productName": "淀粉糖",
           "commodityKey": "cj:price:葡萄糖",
-          "latestPrice": 3095.0,
+          "latestPrice": 3145.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "味精",
           "commodityKey": "xyzq:price:味精(国内)",
-          "latestPrice": 7183.0,
+          "latestPrice": 6794.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "氨基酸",
           "commodityKey": "cj:price:赖氨酸",
-          "latestPrice": 6.5,
+          "latestPrice": 6.475,
           "unit": "元/千克",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -195,25 +195,25 @@
         {
           "productName": "甲醇",
           "commodityKey": "xyzq:price:甲醇(华东)",
-          "latestPrice": 2525.0,
+          "latestPrice": 4040.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "聚烯烃",
           "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
-          "latestPrice": 9400.0,
+          "latestPrice": 9690.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "清洁能源",
           "commodityKey": "cj:price:LNG",
-          "latestPrice": 12.3591,
-          "unit": "美元/MMBtu",
-          "source": "xyzq",
+          "latestPrice": 3.22,
+          "unit": "",
+          "source": "兴业证券/国泰海通时序",
           "status": "matched"
         }
       ]
@@ -226,25 +226,25 @@
         {
           "productName": "PVC",
           "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-          "latestPrice": 4355.0,
+          "latestPrice": 4750.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "烧碱",
           "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "粘胶短纤",
           "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
-          "latestPrice": 14150.0,
+          "latestPrice": 14600.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -257,25 +257,25 @@
         {
           "productName": "饲料",
           "commodityKey": "cj:price:豆粕",
-          "latestPrice": 2917.11,
+          "latestPrice": 3420.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "生猪",
           "commodityKey": "xyzq:price:生猪价格",
-          "latestPrice": 12255.0,
+          "latestPrice": 10680.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "兽药",
           "commodityKey": "cj:price:VE",
-          "latestPrice": 76.0,
+          "latestPrice": 70.0,
           "unit": "元/千克",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -288,24 +288,24 @@
         {
           "productName": "钛白粉",
           "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
-          "latestPrice": 16700.0,
+          "latestPrice": 15800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "磷酸铁的生产",
           "commodityKey": "xyzq:price:磷酸铁",
-          "latestPrice": 14900.0,
+          "latestPrice": 16100.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "销售",
           "commodityKey": "unknown:销售",
           "latestPrice": null,
-          "status": "unknown"
+          "status": "not_found"
         }
       ]
     },
@@ -317,9 +317,9 @@
         {
           "productName": "草铵膦",
           "commodityKey": "xyzq:price:草铵膦",
-          "latestPrice": 48000.0,
+          "latestPrice": 59500.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -344,25 +344,25 @@
         {
           "productName": "甲乙酮",
           "commodityKey": "xyzq:price:丁酮(华东)",
-          "latestPrice": 6550.0,
+          "latestPrice": 9250.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "顺酐",
           "commodityKey": "xyzq:price:顺酐(华东)",
-          "latestPrice": 6350.0,
+          "latestPrice": 10100.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "丁二烯",
           "commodityKey": "xyzq:price:丁二烯(华东)",
-          "latestPrice": 8625.0,
+          "latestPrice": 14025.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -375,9 +375,9 @@
         {
           "productName": "草甘膦",
           "commodityKey": "xyzq:price:草甘膦(华东)",
-          "latestPrice": 26500.0,
+          "latestPrice": 28000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -389,9 +389,9 @@
         {
           "productName": "有机硅",
           "commodityKey": "cj:price:DMC",
-          "latestPrice": 14000.0,
+          "latestPrice": 6250.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -404,25 +404,25 @@
         {
           "productName": "PTA",
           "commodityKey": "xyzq:price:PTA(华东)",
-          "latestPrice": 5645.0,
+          "latestPrice": 7070.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "聚酯",
           "commodityKey": "cj:price:涤纶POY（华东）",
-          "latestPrice": 8000.0,
+          "latestPrice": 9700.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "PX",
           "commodityKey": "xyzq:price:PX(华东)",
-          "latestPrice": 7900.0,
+          "latestPrice": 10500.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -437,23 +437,23 @@
           "commodityKey": "cj:price:安赛蜜",
           "latestPrice": 3.6,
           "unit": "万元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "三氯蔗糖",
           "commodityKey": "xyzq:price:三氯蔗糖",
-          "latestPrice": 10.0,
+          "latestPrice": 9.5,
           "unit": "万元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "甲乙基麦芽酚",
           "commodityKey": "cj:price:乙基麦芽酚",
-          "latestPrice": 7.8,
+          "latestPrice": 8.2,
           "unit": "万元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -491,25 +491,25 @@
         {
           "productName": "丙烯酸",
           "commodityKey": "xyzq:price:丙烯酸(华东)",
-          "latestPrice": 6200.0,
+          "latestPrice": 1311.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "丙烯酸酯",
           "commodityKey": "cj:price:丙烯酸丁酯",
-          "latestPrice": 6800.0,
+          "latestPrice": 1311.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "C3产品",
           "commodityKey": "cj:price:丙烯（汇丰石化）",
-          "latestPrice": 7635.0,
+          "latestPrice": 1311.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -522,25 +522,25 @@
         {
           "productName": "烧碱",
           "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "液氯",
           "commodityKey": "xyzq:price:液氯(山东)",
-          "latestPrice": -150.0,
+          "latestPrice": 100.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "双氧水",
           "commodityKey": "cj:price:双氧水",
-          "latestPrice": 650.0,
+          "latestPrice": 660.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -559,14 +559,18 @@
         {
           "productName": "高性能材料",
           "commodityKey": "cj:price:聚氨酯",
-          "latestPrice": null,
-          "status": "not_found"
+          "latestPrice": 17850.0,
+          "unit": "元/吨",
+          "source": "兴业证券",
+          "status": "matched"
         },
         {
           "productName": "中间体",
           "commodityKey": "cj:price:色酚",
-          "latestPrice": null,
-          "status": "not_found"
+          "latestPrice": 36800.0,
+          "unit": "吨",
+          "source": "兴业证券",
+          "status": "matched"
         }
       ]
     },
@@ -578,25 +582,25 @@
         {
           "productName": "甲醛",
           "commodityKey": "xyzq:price:甲醛(河北)",
-          "latestPrice": 1250.0,
+          "latestPrice": 1740.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "多聚甲醛",
           "commodityKey": "cj:price:多聚甲醛",
-          "latestPrice": 1450.0,
+          "latestPrice": 1740.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "氯化物",
           "commodityKey": "cj:price:三氯甲醛",
-          "latestPrice": 1450.0,
+          "latestPrice": 1740.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -609,25 +613,25 @@
         {
           "productName": "原油",
           "commodityKey": "xyzq:price:WTI期货(主连合约)",
-          "latestPrice": 68.82,
+          "latestPrice": 91.11,
           "unit": "美元/桶",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "汽油",
           "commodityKey": "xyzq:price:中国92#汽油(镇海炼化)",
-          "latestPrice": 9673.0,
+          "latestPrice": 10558.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "柴油",
           "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
-          "latestPrice": 8085.0,
+          "latestPrice": 8890.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -640,25 +644,25 @@
         {
           "productName": "制冷剂",
           "commodityKey": "xyzq:price:R32(浙江)",
-          "latestPrice": 64000.0,
+          "latestPrice": 65000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "含氟聚合物",
           "commodityKey": "cj:price:PVDF",
-          "latestPrice": 62000.0,
+          "latestPrice": 55000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "基础化工",
           "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -671,25 +675,25 @@
         {
           "productName": "TDI",
           "commodityKey": "xyzq:price:TDI(T80,华东)",
-          "latestPrice": 25750.0,
-          "unit": "",
-          "source": "xyzq_detail",
+          "latestPrice": 17450.0,
+          "unit": "元/吨",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "聚碳酸酯",
           "commodityKey": "xyzq:price:聚碳酸酯PC(科思创2805,华东)",
-          "latestPrice": 15950.0,
+          "latestPrice": 16250.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "烧碱",
           "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -702,25 +706,25 @@
         {
           "productName": "蛋氨酸",
           "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
-          "latestPrice": 33.5,
+          "latestPrice": 23.2,
           "unit": "元/千克",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "维生素A",
           "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
-          "latestPrice": 60.5,
+          "latestPrice": 57.0,
           "unit": "元/千克",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "维生素E",
           "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-          "latestPrice": 74.0,
+          "latestPrice": 70.0,
           "unit": "元/千克",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -733,25 +737,25 @@
         {
           "productName": "蛋氨酸",
           "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
-          "latestPrice": 33.5,
+          "latestPrice": 23.2,
           "unit": "元/千克",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "维生素A",
           "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
-          "latestPrice": 60.5,
+          "latestPrice": 57.0,
           "unit": "元/千克",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "维生素E",
           "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-          "latestPrice": 74.0,
+          "latestPrice": 70.0,
           "unit": "元/千克",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -764,25 +768,25 @@
         {
           "productName": "纯碱",
           "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-          "latestPrice": 1050.0,
+          "latestPrice": 1000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "烧碱",
           "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "PVC",
           "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-          "latestPrice": 4355.0,
+          "latestPrice": 4750.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -795,9 +799,9 @@
         {
           "productName": "染料",
           "commodityKey": "cj:price:分散染料",
-          "latestPrice": 24.0,
-          "unit": "元/千克",
-          "source": "cj",
+          "latestPrice": 31.0,
+          "unit": "元/公斤",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -809,8 +813,10 @@
         {
           "productName": "中间体",
           "commodityKey": "cj:price:间苯二胺",
-          "latestPrice": null,
-          "status": "not_found"
+          "latestPrice": 36800.0,
+          "unit": "吨",
+          "source": "兴业证券",
+          "status": "matched"
         }
       ]
     },
@@ -822,17 +828,17 @@
         {
           "productName": "制冷剂",
           "commodityKey": "xyzq:price:R32(浙江)",
-          "latestPrice": 64000.0,
+          "latestPrice": 65000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "含氟聚合物",
           "commodityKey": "cj:price:PTFE",
-          "latestPrice": 810.0,
-          "unit": "美元/吨",
-          "source": "cj",
+          "latestPrice": 1161.0,
+          "unit": "元/吨",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
@@ -851,25 +857,25 @@
         {
           "productName": "纯碱",
           "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-          "latestPrice": 1050.0,
+          "latestPrice": 1000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "粘胶短纤",
           "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
-          "latestPrice": 14150.0,
+          "latestPrice": 14600.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "PVC",
           "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-          "latestPrice": 4355.0,
+          "latestPrice": 4750.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -882,25 +888,25 @@
         {
           "productName": "醋酸",
           "commodityKey": "xyzq:price:醋酸(华东)",
-          "latestPrice": 3020.0,
+          "latestPrice": 4792.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "DMF",
           "commodityKey": "xyzq:price:DMF(华东)",
-          "latestPrice": 4550.0,
+          "latestPrice": 5675.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "己二酸",
           "commodityKey": "xyzq:price:己二酸(华东)",
-          "latestPrice": 7500.0,
+          "latestPrice": 10000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -913,9 +919,9 @@
         {
           "productName": "草甘膦",
           "commodityKey": "xyzq:price:草甘膦(华东)",
-          "latestPrice": 26500.0,
+          "latestPrice": 28000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -923,7 +929,7 @@
           "commodityKey": "cj:price:高效氯氟氰菊酯",
           "latestPrice": 106000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -931,7 +937,7 @@
           "commodityKey": "cj:price:多菌灵",
           "latestPrice": 35500.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -944,9 +950,9 @@
         {
           "productName": "电解铜箔",
           "commodityKey": "lme:price:铜",
-          "latestPrice": 12.56,
+          "latestPrice": 13.0625,
           "unit": "万元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -958,9 +964,9 @@
         {
           "productName": "高分子材料",
           "commodityKey": "cj:price:聚烯烃",
-          "latestPrice": 7900.0,
+          "latestPrice": 12600.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -973,25 +979,25 @@
         {
           "productName": "环氧树脂",
           "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
-          "latestPrice": 13500.0,
+          "latestPrice": 15000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "橡胶助剂",
           "commodityKey": "cj:price:防老剂",
-          "latestPrice": 17750.0,
+          "latestPrice": 25250.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "工程塑料",
           "commodityKey": "cj:price:PA66",
-          "latestPrice": 17500.0,
-          "unit": "元/吨",
-          "source": "cj",
+          "latestPrice": 18800.0,
+          "unit": "",
+          "source": "兴业证券/国泰海通时序",
           "status": "matched"
         }
       ]
@@ -1004,17 +1010,17 @@
         {
           "productName": "醋酸",
           "commodityKey": "xyzq:price:醋酸(华东)",
-          "latestPrice": 3020.0,
+          "latestPrice": 4792.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "氯碱",
           "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1022,7 +1028,7 @@
           "commodityKey": "xyzq:price:硫酸(98%,长三角)",
           "latestPrice": 2750.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1035,9 +1041,9 @@
         {
           "productName": "味精",
           "commodityKey": "xyzq:price:味精(国内)",
-          "latestPrice": 7183.0,
+          "latestPrice": 6794.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1062,25 +1068,25 @@
         {
           "productName": "苯酚",
           "commodityKey": "xyzq:price:苯酚(华东)",
-          "latestPrice": 7675.0,
+          "latestPrice": 1261.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "丙酮",
           "commodityKey": "xyzq:price:丙酮(华东)",
-          "latestPrice": 4725.0,
+          "latestPrice": 8450.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "双酚A",
           "commodityKey": "xyzq:price:双酚A(华东)",
-          "latestPrice": 8275.0,
+          "latestPrice": 11200.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1093,25 +1099,25 @@
         {
           "productName": "工程服务",
           "commodityKey": "cj:price:MDI",
-          "latestPrice": 16700.0,
+          "latestPrice": 5720.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "化工品贸易",
           "commodityKey": "cj:price:轻质纯碱（华东）",
-          "latestPrice": 1050.0,
+          "latestPrice": 1000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "设计咨询",
           "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1124,17 +1130,17 @@
         {
           "productName": "天然橡胶",
           "commodityKey": "xyzq:price:天然橡胶(国产5号标胶)",
-          "latestPrice": 16786.0,
+          "latestPrice": 2550.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "轮胎",
           "commodityKey": "cj:price:全钢胎",
-          "latestPrice": 39.95,
+          "latestPrice": 31.37,
           "unit": "天",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1153,25 +1159,25 @@
         {
           "productName": "PVC",
           "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-          "latestPrice": 4355.0,
+          "latestPrice": 4750.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "烧碱",
           "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "电石",
           "commodityKey": "xyzq:price:电石(西北)",
-          "latestPrice": 2612.0,
+          "latestPrice": 2748.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1184,25 +1190,25 @@
         {
           "productName": "涤纶长丝",
           "commodityKey": "xyzq:price:涤纶长丝(POY)",
-          "latestPrice": 8000.0,
+          "latestPrice": 9700.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "PTA",
           "commodityKey": "xyzq:price:PTA(华东)",
-          "latestPrice": 5645.0,
+          "latestPrice": 7070.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "聚酯切片",
           "commodityKey": "xyzq:price:聚酯切片(瓶级)",
-          "latestPrice": 6900.0,
+          "latestPrice": 8745.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1215,25 +1221,25 @@
         {
           "productName": "烧碱",
           "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-          "latestPrice": 640.0,
+          "latestPrice": 623.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "环氧丙烷",
           "commodityKey": "xyzq:price:环氧丙烷(华东)",
-          "latestPrice": 7950.0,
+          "latestPrice": 1040.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
           "productName": "三氯乙烯",
           "commodityKey": "cj:price:三氯乙烯",
-          "latestPrice": 5900.0,
+          "latestPrice": 1161.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -1246,25 +1252,25 @@
         {
           "productName": "原油",
           "commodityKey": "xyzq:price:WTI期货(主连合约)",
-          "latestPrice": 68.82,
+          "latestPrice": 91.11,
           "unit": "美元/桶",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "天然气",
           "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
-          "latestPrice": 3.196,
+          "latestPrice": 2.967,
           "unit": "美元/MMBtu",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "成品油",
           "commodityKey": "cj:price:92#汽油",
-          "latestPrice": 9673.0,
+          "latestPrice": 10558.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1277,9 +1283,9 @@
         {
           "productName": "维生素E",
           "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-          "latestPrice": 74.0,
+          "latestPrice": 70.0,
           "unit": "元/千克",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1291,9 +1297,9 @@
         {
           "productName": "新材料",
           "commodityKey": "cj:price:PPS",
-          "latestPrice": 9400.0,
+          "latestPrice": 12150.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1308,23 +1314,23 @@
           "commodityKey": "xyzq:price:多菌灵(98%,华东)",
           "latestPrice": 35500.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "甲基硫菌灵",
           "commodityKey": "xyzq:price:甲基硫菌",
-          "latestPrice": 31000.0,
+          "latestPrice": 29000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "敌草隆",
           "commodityKey": "xyzq:price:敌草隆",
-          "latestPrice": 42500.0,
+          "latestPrice": 35000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1337,17 +1343,17 @@
         {
           "productName": "热力",
           "commodityKey": "cj:price:动力煤",
-          "latestPrice": 712.0,
+          "latestPrice": 728.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "天然气",
           "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
-          "latestPrice": 3.196,
+          "latestPrice": 2.967,
           "unit": "美元/MMBtu",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1372,9 +1378,9 @@
         {
           "productName": "气相白炭黑",
           "commodityKey": "cj:price:气相白炭黑",
-          "latestPrice": 7400.0,
+          "latestPrice": 10444.0,
           "unit": "元/吨",
-          "source": "cj",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1399,17 +1405,17 @@
         {
           "productName": "钛白粉",
           "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
-          "latestPrice": 16700.0,
+          "latestPrice": 15800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "钛精矿",
           "commodityKey": "cj:price:钛精矿",
-          "latestPrice": 1390.0,
+          "latestPrice": 1150.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1447,17 +1453,15 @@
         {
           "productName": "铜",
           "commodityKey": "xyzq:price:铜",
-          "latestPrice": 12.56,
-          "unit": "万元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "黄金",
           "commodityKey": "xyzq:price:黄金",
-          "latestPrice": 4164.15,
+          "latestPrice": 4190.05,
           "unit": "美元/盎司",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1501,18 +1505,14 @@
         {
           "productName": "锡",
           "commodityKey": "xyzq:price:锡",
-          "latestPrice": 60920.524326877654,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "锌",
           "commodityKey": "xyzq:price:锌",
-          "latestPrice": 30500.0,
-          "unit": "元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "铟",
@@ -1580,9 +1580,9 @@
         {
           "productName": "黄金",
           "commodityKey": "xyzq:price:黄金",
-          "latestPrice": 4164.15,
+          "latestPrice": 4190.05,
           "unit": "美元/盎司",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1594,10 +1594,8 @@
         {
           "productName": "电解铜",
           "commodityKey": "lme:price:铜",
-          "latestPrice": 12.56,
-          "unit": "万元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         }
       ]
     },
@@ -1609,17 +1607,17 @@
         {
           "productName": "PVA",
           "commodityKey": "xyzq:price:PVA(1799,四川维尼纶)",
-          "latestPrice": 11900.0,
+          "latestPrice": 13000.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "醋酸乙烯",
           "commodityKey": "xyzq:price:醋酸乙烯(华东)",
-          "latestPrice": 5850.0,
+          "latestPrice": 1161.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         },
         {
@@ -1650,10 +1648,8 @@
         {
           "productName": "抛光粉",
           "commodityKey": "cj:price:氧化铈",
-          "latestPrice": 2212.7420878601793,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         }
       ]
     },
@@ -1665,18 +1661,14 @@
         {
           "productName": "锡",
           "commodityKey": "xyzq:price:锡",
-          "latestPrice": 60920.524326877654,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "锌",
           "commodityKey": "xyzq:price:锌",
-          "latestPrice": 30500.0,
-          "unit": "元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "锑",
@@ -1706,9 +1698,9 @@
         {
           "productName": "钛",
           "commodityKey": "cj:price:钛精矿",
-          "latestPrice": 1390.0,
+          "latestPrice": 1150.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1721,26 +1713,20 @@
         {
           "productName": "铂",
           "commodityKey": "xyzq:price:铂",
-          "latestPrice": 58.1601322626358,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "钯",
           "commodityKey": "xyzq:price:钯",
-          "latestPrice": 45.76051015588096,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "铑",
           "commodityKey": "xyzq:price:铑",
-          "latestPrice": 303.34789796882376,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         }
       ]
     },
@@ -1764,10 +1750,8 @@
         {
           "productName": "钴",
           "commodityKey": "xyzq:price:钴",
-          "latestPrice": 37.85,
-          "unit": "万元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         }
       ]
     },
@@ -1779,10 +1763,8 @@
         {
           "productName": "锌",
           "commodityKey": "xyzq:price:锌",
-          "latestPrice": 30500.0,
-          "unit": "元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "铟",
@@ -1793,9 +1775,9 @@
         {
           "productName": "金银",
           "commodityKey": "lme:price:黄金",
-          "latestPrice": 4164.15,
+          "latestPrice": 4190.05,
           "unit": "美元/盎司",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1814,10 +1796,8 @@
         {
           "productName": "铜",
           "commodityKey": "xyzq:price:铜",
-          "latestPrice": 12.56,
-          "unit": "万元/吨",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "铁矿石",
@@ -1841,18 +1821,14 @@
         {
           "productName": "原铝",
           "commodityKey": "lme:price:铝",
-          "latestPrice": 14.0,
-          "unit": "元/平方米",
-          "source": "xyzq",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         },
         {
           "productName": "镓",
           "commodityKey": "xyzq:price:金属镓",
-          "latestPrice": 282.6818611242324,
-          "unit": "",
-          "source": "wind",
-          "status": "matched"
+          "latestPrice": null,
+          "status": "not_found"
         }
       ]
     },
@@ -1870,15 +1846,17 @@
         {
           "productName": "三元材料",
           "commodityKey": "cj:price:NCM811",
-          "latestPrice": null,
-          "status": "not_found"
+          "latestPrice": 15250.0,
+          "unit": "万元/吨",
+          "source": "国泰海通 / 兴业证券",
+          "status": "matched"
         },
         {
           "productName": "磷酸铁锂",
           "commodityKey": "xyzq:price:磷酸铁锂正极材料",
           "latestPrice": 5.24,
           "unit": "万元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         }
       ]
@@ -1891,9 +1869,9 @@
         {
           "productName": "工业炸药",
           "commodityKey": "cj:price:硝酸铵",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1918,9 +1896,9 @@
         {
           "productName": "工业炸药",
           "commodityKey": "cj:price:硝酸铵",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -1945,25 +1923,25 @@
         {
           "productName": "工业炸药",
           "commodityKey": "cj:price:硝酸铵",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "硝酸铵",
           "commodityKey": "xyzq:price:硝酸铵(山东)",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "复合肥",
           "commodityKey": "xyzq:price:复合肥",
-          "latestPrice": 3000.0,
+          "latestPrice": 3300.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "国泰海通 / 兴业证券",
           "status": "matched"
         }
       ]
@@ -1976,17 +1954,17 @@
         {
           "productName": "工业炸药",
           "commodityKey": "cj:price:硝酸铵",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
           "productName": "硝酸铵",
           "commodityKey": "xyzq:price:硝酸铵(山东)",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {
@@ -2005,9 +1983,9 @@
         {
           "productName": "工业炸药",
           "commodityKey": "cj:price:硝酸铵",
-          "latestPrice": 2000.0,
+          "latestPrice": 1800.0,
           "unit": "元/吨",
-          "source": "xyzq",
+          "source": "兴业证券",
           "status": "matched"
         },
         {

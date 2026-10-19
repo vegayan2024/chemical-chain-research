@@ -9,3 +9,4 @@ dist
 data/sources/*.xlsx
 data/sources/*.xls
 data/sources/*.csv
+scratch/

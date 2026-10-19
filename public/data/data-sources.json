@@ -11,24 +11,30 @@
       "refreshRate": "交易日收盘自动更新 (日频)"
     },
     {
-      "id": "akshare",
-      "name": "AKShare",
+      "id": "gtht_weekly",
+      "name": "国泰海通证券 (石油化工行业周报)",
+      "category": "commodity",
+      "confidence": "HIGH",
+      "confidenceScore": 97,
+      "description": "国泰海通证券石化团队高频周报数据库（最新更新至2026-10-17），提供原油、天然气、大宗石化品最新日频现货与33项全产业链成本价差模型。",
+      "status": "active",
+      "refreshRate": "周频 / 跟踪至 2026-10-16"
+    },
+    {
+      "id": "xyzq_database",
+      "name": "兴业证券 (化工行业全品类数据库)",
       "category": "commodity",
       "confidence": "HIGH",
       "confidenceScore": 96,
-      "description": "权威大宗商品开源金融数据库，直连交易所主力期货（上期所/大商所/郑商所）及生意社/卓创现货报价，提供现货溢价基差与高频大宗商品行情。",
+      "description": "兴证化工团队全品类化工数据库（2026-10-08），覆盖591种细分无机、精细、化纤、农药、聚氨酯、氟磷硅化工价格、开工率与历史百分位数据。",
       "status": "active",
-      "refreshRate": "实时 / 每日收盘更新"
-    },
-    {
-      "id": "broker_excel",
-      "name": "券商行业研报 (长江化工 / 兴业证券)",
-      "category": "financial",
-      "confidence": "MEDIUM",
-      "confidenceScore": 75,
-      "description": "头部券商研究所周度大宗价格跟踪与行业景气度预测表，用于细分非标化学品价格交叉验证与业绩敏感性参考。",
-      "status": "active",
-      "refreshRate": "周频 / 不定期发布"
+      "refreshRate": "周频 / 跟踪至 2026-10-02"
     }
-  ]
+  ],
+  "lastFullUpdate": "2026-10-19T14:12:39.653126",
+  "databaseCoverage": {
+    "totalCommodities": 591,
+    "totalTimeSeries": 547,
+    "latestDataDate": "2026-10-16"
+  }
 }
