@@ -1,0 +1,1650 @@
+{
+  "600426.SH": [
+    {
+      "displayName": "尿素",
+      "sourceKey": "cj:price:尿素（华鲁恒升小颗粒）"
+    },
+    {
+      "displayName": "DMF",
+      "sourceKey": "cj:price:DMF（华东）"
+    },
+    {
+      "displayName": "异辛醇",
+      "sourceKey": "xyzq:price:异辛醇(华东)"
+    },
+    {
+      "displayName": "正丁醇",
+      "sourceKey": "xyzq:price:正丁醇(华东)"
+    },
+    {
+      "displayName": "乙二醇",
+      "sourceKey": "xyzq:price:乙二醇(华东)"
+    },
+    {
+      "displayName": "己二酸",
+      "sourceKey": "xyzq:price:己二酸(华东)"
+    },
+    {
+      "displayName": "一甲胺",
+      "sourceKey": "xyzq:price:一甲胺(华鲁)"
+    },
+    {
+      "displayName": "二甲胺",
+      "sourceKey": "xyzq:price:二甲胺(华鲁)"
+    },
+    {
+      "displayName": "三甲胺",
+      "sourceKey": "xyzq:price:三甲胺(华鲁)"
+    }
+  ],
+  "000830.SZ": [
+    {
+      "displayName": "尿素",
+      "sourceKey": "cj:price:尿素（华鲁恒升小颗粒）"
+    },
+    {
+      "displayName": "己内酰胺(CPL)",
+      "sourceKey": "cj:price:己内酰胺（CPL）"
+    },
+    {
+      "displayName": "双酚A",
+      "sourceKey": "cj:price:双酚A（华东）"
+    },
+    {
+      "displayName": "聚碳酸酯PC",
+      "sourceKey": "cj:price:PC"
+    },
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "甲酸(国内)",
+      "sourceKey": "xyzq:price:甲酸(国内)"
+    },
+    {
+      "displayName": "二氯甲烷",
+      "sourceKey": "cj:price:二氯甲烷（华东）"
+    },
+    {
+      "displayName": "三氯甲烷",
+      "sourceKey": "xyzq:price:三氯甲烷(华东)"
+    },
+    {
+      "displayName": "双氧水",
+      "sourceKey": "xyzq:price:双氧水(27.5%，山东)"
+    }
+  ],
+  "002408.SZ": [
+    {
+      "displayName": "顺酐",
+      "sourceKey": "cj:price:顺酐"
+    },
+    {
+      "displayName": "顺酐(华东)",
+      "sourceKey": "xyzq:price:顺酐(华东)"
+    },
+    {
+      "displayName": "丁酮",
+      "sourceKey": "xyzq:price:丁酮(华东)"
+    },
+    {
+      "displayName": "丁二烯",
+      "sourceKey": "xyzq:price:丁二烯(华东)"
+    },
+    {
+      "displayName": "MTBE",
+      "sourceKey": "xyzq:price:MTBE(石大胜华)"
+    },
+    {
+      "displayName": "MMA",
+      "sourceKey": "xyzq:price:MMA(华东)"
+    },
+    {
+      "displayName": "顺丁橡胶",
+      "sourceKey": "xyzq:price:顺丁橡胶(BR9000,高桥石化)"
+    }
+  ],
+  "600500.SH": [
+    {
+      "displayName": "双酚A",
+      "sourceKey": "cj:price:双酚A（华东）"
+    },
+    {
+      "displayName": "环氧树脂(E51)",
+      "sourceKey": "xyzq:price:环氧树脂(E51,华东)"
+    },
+    {
+      "displayName": "聚碳酸酯PC",
+      "sourceKey": "cj:price:PC"
+    },
+    {
+      "displayName": "防老剂4020",
+      "sourceKey": "xyzq:price:防老剂4020(华北)"
+    },
+    {
+      "displayName": "防老剂RD",
+      "sourceKey": "xyzq:price:防老剂RD(华北)"
+    }
+  ],
+  "600028.SH": [
+    {
+      "displayName": "WTI原油",
+      "sourceKey": "cj:price:WTI原油"
+    },
+    {
+      "displayName": "布伦特原油",
+      "sourceKey": "cj:price:布伦特原油"
+    },
+    {
+      "displayName": "乙烯(东南亚)",
+      "sourceKey": "cj:price:乙烯（东南亚CFR）"
+    },
+    {
+      "displayName": "对二甲苯PX",
+      "sourceKey": "cj:price:对二甲苯（PX）"
+    },
+    {
+      "displayName": "92#汽油",
+      "sourceKey": "xyzq:price:中国92#汽油(镇海炼化)"
+    },
+    {
+      "displayName": "0#柴油",
+      "sourceKey": "xyzq:price:中国0#柴油(镇海炼化)"
+    }
+  ],
+  "601857.SH": [
+    {
+      "displayName": "WTI原油",
+      "sourceKey": "cj:price:WTI原油"
+    },
+    {
+      "displayName": "布伦特原油",
+      "sourceKey": "cj:price:布伦特原油"
+    },
+    {
+      "displayName": "NYMEX天然气",
+      "sourceKey": "cj:price:NYMEX天然气"
+    },
+    {
+      "displayName": "0#柴油",
+      "sourceKey": "xyzq:price:中国0#柴油(镇海炼化)"
+    }
+  ],
+  "601088.SH": [
+    {
+      "displayName": "动力煤",
+      "sourceKey": "cj:price:永城无烟末煤"
+    },
+    {
+      "displayName": "煤焦油",
+      "sourceKey": "cj:price:煤焦油（山西）"
+    },
+    {
+      "displayName": "LLDPE(煤制烯烃)",
+      "sourceKey": "cj:price:LLDPE（CFR中国）"
+    },
+    {
+      "displayName": "PP聚丙烯",
+      "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）"
+    }
+  ],
+  "000819.SZ": [
+    {
+      "displayName": "丙烯",
+      "sourceKey": "cj:price:丙烯（汇丰石化）"
+    },
+    {
+      "displayName": "聚丙烯PP",
+      "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）"
+    },
+    {
+      "displayName": "MTBE",
+      "sourceKey": "xyzq:price:MTBE(石大胜华)"
+    },
+    {
+      "displayName": "液化气",
+      "sourceKey": "xyzq:price:液化气(华东)"
+    }
+  ],
+  "000554.SZ": [
+    {
+      "displayName": "92#汽油",
+      "sourceKey": "xyzq:price:中国92#汽油(镇海炼化)"
+    },
+    {
+      "displayName": "0#柴油",
+      "sourceKey": "xyzq:price:中国0#柴油(镇海炼化)"
+    }
+  ],
+  "600063.SH": [
+    {
+      "displayName": "丙烯",
+      "sourceKey": "cj:price:丙烯（汇丰石化）"
+    },
+    {
+      "displayName": "聚丙烯PP",
+      "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）"
+    },
+    {
+      "displayName": "苯乙烯",
+      "sourceKey": "cj:price:苯乙烯（华东）"
+    },
+    {
+      "displayName": "丁二烯",
+      "sourceKey": "xyzq:price:丁二烯(华东)"
+    },
+    {
+      "displayName": "ABS树脂",
+      "sourceKey": "xyzq:price:ABS(PA-757K,华东)"
+    }
+  ],
+  "600160.SH": [
+    {
+      "displayName": "炭黑(N330)",
+      "sourceKey": "cj:price:炭黑（黑猫N330）"
+    },
+    {
+      "displayName": "煤焦油",
+      "sourceKey": "cj:price:煤焦油（山西）"
+    },
+    {
+      "displayName": "炭黑价差",
+      "sourceKey": "cj:spread:炭黑价差"
+    }
+  ],
+  "603599.SH": [
+    {
+      "displayName": "顺酐",
+      "sourceKey": "cj:price:顺酐"
+    },
+    {
+      "displayName": "顺酐(华东)",
+      "sourceKey": "xyzq:price:顺酐(华东)"
+    },
+    {
+      "displayName": "异辛醇",
+      "sourceKey": "xyzq:price:异辛醇(华东)"
+    },
+    {
+      "displayName": "正丁醇",
+      "sourceKey": "xyzq:price:正丁醇(华东)"
+    },
+    {
+      "displayName": "DOP",
+      "sourceKey": "xyzq:price:DOP(华东)"
+    }
+  ],
+  "000990.SZ": [
+    {
+      "displayName": "甲醇",
+      "sourceKey": "cj:price:甲醇（长三角）"
+    },
+    {
+      "displayName": "乙烯",
+      "sourceKey": "cj:price:乙烯（东南亚CFR）"
+    },
+    {
+      "displayName": "丁二烯",
+      "sourceKey": "xyzq:price:丁二烯(华东)"
+    },
+    {
+      "displayName": "异辛醇",
+      "sourceKey": "xyzq:price:异辛醇(华东)"
+    },
+    {
+      "displayName": "DOP",
+      "sourceKey": "xyzq:price:DOP(华东)"
+    }
+  ],
+  "600230.SH": [
+    {
+      "displayName": "尿素",
+      "sourceKey": "cj:price:尿素（华鲁恒升小颗粒）"
+    },
+    {
+      "displayName": "三聚氰胺",
+      "sourceKey": "cj:price:三聚氰胺（长三角）"
+    },
+    {
+      "displayName": "甲醇",
+      "sourceKey": "cj:price:甲醇（长三角）"
+    }
+  ],
+  "000930.SZ": [
+    {
+      "displayName": "玉米淀粉",
+      "sourceKey": "xyzq:price:玉米淀粉(滨州,出厂价)"
+    }
+  ],
+  "002096.SZ": [
+    {
+      "displayName": "硝酸原料",
+      "sourceKey": "cj:price:硝酸（安徽淮化）"
+    }
+  ],
+  "000707.SZ": [
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "重质纯碱",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "农用氯化铵",
+      "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)"
+    },
+    {
+      "displayName": "纯碱氨碱法价差",
+      "sourceKey": "cj:spread:纯碱-氨碱法价差"
+    }
+  ],
+  "600409.SH": [
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "重质纯碱",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "纯碱(重质,华东)",
+      "sourceKey": "xyzq:price:纯碱(重质,华东)"
+    },
+    {
+      "displayName": "PVC(电石法)",
+      "sourceKey": "cj:price:PVC（华东电石法）"
+    },
+    {
+      "displayName": "二甲基环硅氧烷(DMC)",
+      "sourceKey": "xyzq:price:二甲基环硅氧烷(DMC)(华东)"
+    }
+  ],
+  "600328.SH": [
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "重质纯碱",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "纯碱(重质,华东)",
+      "sourceKey": "xyzq:price:纯碱(重质,华东)"
+    },
+    {
+      "displayName": "PVC(电石法)",
+      "sourceKey": "cj:price:PVC（华东电石法）"
+    },
+    {
+      "displayName": "烧碱(32%离子膜)",
+      "sourceKey": "xyzq:price:烧碱(32%离子膜,华北)"
+    }
+  ],
+  "600929.SH": [
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "重质纯碱",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "氯化铵",
+      "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)"
+    },
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "工业纯盐",
+      "sourceKey": "cj:price:原盐（山东海盐）"
+    }
+  ],
+  "603299.SH": [
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "重质纯碱",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "氯化铵",
+      "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)"
+    },
+    {
+      "displayName": "工业纯盐",
+      "sourceKey": "cj:price:原盐（山东海盐）"
+    }
+  ],
+  "600618.SH": [
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "离子膜烧碱",
+      "sourceKey": "cj:price:离子膜烧碱（99%）"
+    },
+    {
+      "displayName": "PVC(电石法)",
+      "sourceKey": "cj:price:PVC（华东电石法）"
+    },
+    {
+      "displayName": "二氯乙烷EDC",
+      "sourceKey": "cj:price:EDC（CFR东南亚）"
+    }
+  ],
+  "601568.SH": [
+    {
+      "displayName": "PVC(电石法)",
+      "sourceKey": "cj:price:PVC（华东电石法）"
+    },
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "电石法PVC价差",
+      "sourceKey": "cj:spread:电石法PVC电石法价差"
+    }
+  ],
+  "603213.SH": [
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "PVC(电石法)",
+      "sourceKey": "cj:price:PVC（华东电石法）"
+    },
+    {
+      "displayName": "环氧氯丙烷ECH",
+      "sourceKey": "cj:price:环氧氯丙烷（华东）"
+    }
+  ],
+  "002053.SZ": [
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "工业原盐",
+      "sourceKey": "cj:price:原盐（山东海盐）"
+    },
+    {
+      "displayName": "NYMEX天然气",
+      "sourceKey": "cj:price:NYMEX天然气"
+    }
+  ],
+  "002092.SZ": [
+    {
+      "displayName": "PVC",
+      "sourceKey": "cj:price:PVC（华东电石法）"
+    },
+    {
+      "displayName": "烧碱",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "粘胶短纤",
+      "sourceKey": "cj:price:粘胶短纤（华东）"
+    },
+    {
+      "displayName": "粘胶短纤价差",
+      "sourceKey": "cj:spread:粘胶短纤价差"
+    }
+  ],
+  "600955.SH": [
+    {
+      "displayName": "工业原盐",
+      "sourceKey": "cj:price:原盐（山东海盐）"
+    },
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "烧碱(隔膜32%)",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "氯化铵",
+      "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)"
+    }
+  ],
+  "600746.SH": [
+    {
+      "displayName": "纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "煤炭",
+      "sourceKey": "cj:price:永城无烟末煤"
+    }
+  ],
+  "600378.SH": [
+    {
+      "displayName": "R22",
+      "sourceKey": "xyzq:price:R22(浙江)"
+    },
+    {
+      "displayName": "R32",
+      "sourceKey": "xyzq:price:R32(浙江)"
+    },
+    {
+      "displayName": "R125",
+      "sourceKey": "xyzq:price:R125(浙江)"
+    },
+    {
+      "displayName": "R134a",
+      "sourceKey": "xyzq:price:R134a(浙江)"
+    },
+    {
+      "displayName": "聚四氟乙烯",
+      "sourceKey": "xyzq:price:聚四氟乙烯(浙江巨化)"
+    },
+    {
+      "displayName": "PVDF",
+      "sourceKey": "xyzq:price:PVDF(粉料，东岳集团)"
+    },
+    {
+      "displayName": "六氟丙烯",
+      "sourceKey": "xyzq:price:六氟丙烯(鲁西化工)"
+    }
+  ],
+  "600299.SH": [
+    {
+      "displayName": "有机硅DMC",
+      "sourceKey": "xyzq:price:二甲基环硅氧烷(DMC)(华东)"
+    },
+    {
+      "displayName": "聚四氟乙烯PTFE",
+      "sourceKey": "xyzq:price:聚四氟乙烯(浙江巨化)"
+    }
+  ],
+  "300927.SZ": [
+    {
+      "displayName": "有机硅DMC",
+      "sourceKey": "xyzq:price:二甲基环硅氧烷(DMC)(华东)"
+    },
+    {
+      "displayName": "金属硅原料",
+      "sourceKey": "cj:price:金属硅"
+    },
+    {
+      "displayName": "有机硅价差",
+      "sourceKey": "cj:spread:有机硅价差"
+    }
+  ],
+  "002748.SZ": [
+    {
+      "displayName": "有机硅DMC",
+      "sourceKey": "xyzq:price:二甲基环硅氧烷(DMC)(华东)"
+    },
+    {
+      "displayName": "有机硅价差",
+      "sourceKey": "cj:spread:有机硅价差"
+    }
+  ],
+  "600499.SH": [
+    {
+      "displayName": "草甘膦",
+      "sourceKey": "cj:price:草甘膦（长三角95%）"
+    },
+    {
+      "displayName": "有机硅DMC",
+      "sourceKey": "xyzq:price:二甲基环硅氧烷(DMC)(华东)"
+    },
+    {
+      "displayName": "甘氨酸原料",
+      "sourceKey": "cj:price:甘氨酸（山东）"
+    }
+  ],
+  "000792.SZ": [
+    {
+      "displayName": "氯化钾",
+      "sourceKey": "cj:price:氯化钾（青海盐湖60%）"
+    },
+    {
+      "displayName": "工业级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(工业级,四川)"
+    },
+    {
+      "displayName": "电池级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)"
+    }
+  ],
+  "000893.SZ": [
+    {
+      "displayName": "氯化钾(青海盐湖60%)",
+      "sourceKey": "cj:price:氯化钾（青海盐湖60%）"
+    },
+    {
+      "displayName": "氯化钾(62%白钾市场价)",
+      "sourceKey": "xyzq:price:氯化钾(62%白钾，市场价)"
+    }
+  ],
+  "000731.SZ": [
+    {
+      "displayName": "尿素",
+      "sourceKey": "cj:price:尿素（华鲁恒升小颗粒）"
+    },
+    {
+      "displayName": "复合肥",
+      "sourceKey": "xyzq:price:复合肥(45%CL,湖北)"
+    },
+    {
+      "displayName": "三聚氰胺",
+      "sourceKey": "cj:price:三聚氰胺（长三角）"
+    },
+    {
+      "displayName": "硝酸",
+      "sourceKey": "cj:price:硝酸（安徽淮化）"
+    }
+  ],
+  "002312.SZ": [
+    {
+      "displayName": "磷酸一铵MAP",
+      "sourceKey": "cj:price:MAP（四川金河55%）"
+    },
+    {
+      "displayName": "磷酸二铵DAP",
+      "sourceKey": "cj:price:DAP（西南工厂64%褐色）"
+    },
+    {
+      "displayName": "金红石型钛白粉",
+      "sourceKey": "cj:price:钛白粉（金红石型）"
+    },
+    {
+      "displayName": "磷酸一铵价差",
+      "sourceKey": "cj:spread:MAP价差"
+    }
+  ],
+  "000629.SZ": [
+    {
+      "displayName": "钛白粉(金红石型)",
+      "sourceKey": "cj:price:钛白粉（金红石型）"
+    },
+    {
+      "displayName": "钛白粉(锐钛型)",
+      "sourceKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）"
+    },
+    {
+      "displayName": "钛白粉价差",
+      "sourceKey": "cj:spread:钛白粉价差"
+    }
+  ],
+  "002136.SZ": [
+    {
+      "displayName": "金红石型钛白粉",
+      "sourceKey": "cj:price:钛白粉（金红石型）"
+    },
+    {
+      "displayName": "锐钛型钛白粉",
+      "sourceKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）"
+    },
+    {
+      "displayName": "钛白粉价差",
+      "sourceKey": "cj:spread:钛白粉价差"
+    }
+  ],
+  "600727.SH": [
+    {
+      "displayName": "金红石型钛白粉",
+      "sourceKey": "cj:price:钛白粉（金红石型）"
+    },
+    {
+      "displayName": "锐钛型钛白粉",
+      "sourceKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）"
+    },
+    {
+      "displayName": "磷酸二铵DAP",
+      "sourceKey": "cj:price:DAP（西南工厂64%褐色）"
+    },
+    {
+      "displayName": "二氯甲烷",
+      "sourceKey": "cj:price:二氯甲烷（华东）"
+    },
+    {
+      "displayName": "三氯甲烷",
+      "sourceKey": "xyzq:price:三氯甲烷(华东)"
+    }
+  ],
+  "600486.SH": [
+    {
+      "displayName": "草甘膦",
+      "sourceKey": "cj:price:草甘膦（长三角95%）"
+    },
+    {
+      "displayName": "高效氯氟氰菊酯",
+      "sourceKey": "xyzq:price:高效氯氟氰菊酯"
+    },
+    {
+      "displayName": "联苯菊酯",
+      "sourceKey": "cj:price:联苯菊酯"
+    },
+    {
+      "displayName": "麦草畏",
+      "sourceKey": "cj:price:麦草畏"
+    }
+  ],
+  "002597.SZ": [
+    {
+      "displayName": "草甘膦",
+      "sourceKey": "cj:price:草甘膦（长三角95%）"
+    },
+    {
+      "displayName": "敌草隆",
+      "sourceKey": "xyzq:price:敌草隆"
+    },
+    {
+      "displayName": "多菌灵",
+      "sourceKey": "xyzq:price:多菌灵(98%,华东)"
+    },
+    {
+      "displayName": "双甘膦",
+      "sourceKey": "xyzq:price:双甘膦(98%,华东)"
+    }
+  ],
+  "002258.SZ": [
+    {
+      "displayName": "草甘膦",
+      "sourceKey": "cj:price:草甘膦（长三角95%）"
+    },
+    {
+      "displayName": "代森锰锌",
+      "sourceKey": "cj:price:代森锰锌"
+    }
+  ],
+  "603970.SH": [
+    {
+      "displayName": "草甘膦",
+      "sourceKey": "cj:price:草甘膦（长三角95%）"
+    },
+    {
+      "displayName": "吡虫啉",
+      "sourceKey": "cj:price:吡虫啉"
+    },
+    {
+      "displayName": "代森锰锌",
+      "sourceKey": "cj:price:代森锰锌"
+    },
+    {
+      "displayName": "草甘膦价差",
+      "sourceKey": "cj:spread:草甘膦价差"
+    }
+  ],
+  "601233.SH": [
+    {
+      "displayName": "涤纶长丝POY",
+      "sourceKey": "xyzq:price:涤纶长丝(POY)"
+    },
+    {
+      "displayName": "涤纶长丝DTY",
+      "sourceKey": "xyzq:price:涤纶长丝(DTY-150D)"
+    },
+    {
+      "displayName": "涤纶长丝FDY",
+      "sourceKey": "xyzq:price:涤纶长丝(FDY68D)"
+    },
+    {
+      "displayName": "PTA原料",
+      "sourceKey": "cj:price:PTA（华东）"
+    }
+  ],
+  "301090.SZ": [
+    {
+      "displayName": "聚酯切片PET",
+      "sourceKey": "cj:price:PET切片（华东）"
+    },
+    {
+      "displayName": "瓶级聚酯切片",
+      "sourceKey": "xyzq:price:聚酯切片(瓶级)"
+    },
+    {
+      "displayName": "PTA原料",
+      "sourceKey": "cj:price:PTA（华东）"
+    },
+    {
+      "displayName": "PET瓶级价差",
+      "sourceKey": "xyzq:spread:PET瓶级-PTA-MEG价差"
+    }
+  ],
+  "601678.SH": [
+    {
+      "displayName": "锦纶长丝FDY",
+      "sourceKey": "cj:price:锦纶FDY（华东70D/24F）"
+    },
+    {
+      "displayName": "锦纶切片",
+      "sourceKey": "cj:price:锦纶切片（华东）"
+    },
+    {
+      "displayName": "己内酰胺原料",
+      "sourceKey": "cj:price:己内酰胺（CPL）"
+    },
+    {
+      "displayName": "尼龙6",
+      "sourceKey": "xyzq:price:尼龙6(高速纺半光)"
+    }
+  ],
+  "603227.SH": [
+    {
+      "displayName": "锦纶长丝FDY",
+      "sourceKey": "cj:price:锦纶FDY（华东70D/24F）"
+    },
+    {
+      "displayName": "己内酰胺原料",
+      "sourceKey": "cj:price:己内酰胺（CPL）"
+    }
+  ],
+  "601216.SH": [
+    {
+      "displayName": "BDO",
+      "sourceKey": "xyzq:price:丁二醇BDO(华东)"
+    },
+    {
+      "displayName": "PTMEG",
+      "sourceKey": "cj:price:PTMEG（华东）"
+    },
+    {
+      "displayName": "氨纶40D",
+      "sourceKey": "cj:price:氨纶40D（华东）"
+    },
+    {
+      "displayName": "纯MDI原料",
+      "sourceKey": "xyzq:price:纯MDI(华东)"
+    }
+  ],
+  "688295.SH": [
+    {
+      "displayName": "丙烯腈原料",
+      "sourceKey": "cj:price:丙烯腈"
+    },
+    {
+      "displayName": "丙烯腈价差",
+      "sourceKey": "xyzq:spread:丙烯腈-丙烯-合成氨价差"
+    }
+  ],
+  "600352.SH": [
+    {
+      "displayName": "分散黑ECT",
+      "sourceKey": "xyzq:price:分散黑(ECT300%,华东)"
+    },
+    {
+      "displayName": "活性黑WNN",
+      "sourceKey": "xyzq:price:活性黑(WNN200%,华东)"
+    },
+    {
+      "displayName": "对硝基氯化苯",
+      "sourceKey": "xyzq:price:对硝基氯化苯"
+    },
+    {
+      "displayName": "邻硝基氯化苯",
+      "sourceKey": "xyzq:price:邻硝基氯化苯"
+    }
+  ],
+  "605399.SH": [
+    {
+      "displayName": "对硝基氯化苯",
+      "sourceKey": "xyzq:price:对硝基氯化苯"
+    },
+    {
+      "displayName": "邻硝基氯化苯",
+      "sourceKey": "xyzq:price:邻硝基氯化苯"
+    }
+  ],
+  "002493.SZ": [
+    {
+      "displayName": "丙烯酸",
+      "sourceKey": "xyzq:price:丙烯酸(华东)"
+    },
+    {
+      "displayName": "丙烯酸丁酯",
+      "sourceKey": "xyzq:price:丙烯酸丁酯(华东)"
+    },
+    {
+      "displayName": "双酚A",
+      "sourceKey": "cj:price:双酚A（华东）"
+    },
+    {
+      "displayName": "聚碳酸酯PC",
+      "sourceKey": "cj:price:PC"
+    },
+    {
+      "displayName": "高吸水性树脂SAP",
+      "sourceKey": "xyzq:price:SAP(日系,华南)"
+    }
+  ],
+  "603077.SH": [
+    {
+      "displayName": "一甲胺",
+      "sourceKey": "xyzq:price:一甲胺(华鲁)"
+    },
+    {
+      "displayName": "二甲胺",
+      "sourceKey": "xyzq:price:二甲胺(华鲁)"
+    },
+    {
+      "displayName": "三甲胺",
+      "sourceKey": "xyzq:price:三甲胺(华鲁)"
+    },
+    {
+      "displayName": "环氧乙烷",
+      "sourceKey": "cj:price:环氧乙烷"
+    }
+  ],
+  "300758.SZ": [
+    {
+      "displayName": "环氧树脂(E51)",
+      "sourceKey": "xyzq:price:环氧树脂(E51,华东)"
+    },
+    {
+      "displayName": "双酚A",
+      "sourceKey": "cj:price:双酚A（华东）"
+    },
+    {
+      "displayName": "双酚A价差",
+      "sourceKey": "cj:spread:双酚A价差"
+    }
+  ],
+  "002648.SZ": [
+    {
+      "displayName": "三氯蔗糖",
+      "sourceKey": "xyzq:price:三氯蔗糖"
+    },
+    {
+      "displayName": "安赛蜜",
+      "sourceKey": "xyzq:price:安赛蜜(华东)"
+    },
+    {
+      "displayName": "甲基麦芽酚",
+      "sourceKey": "xyzq:price:甲基麦芽酚(安徽)"
+    }
+  ],
+  "603968.SH": [
+    {
+      "displayName": "二氯甲烷",
+      "sourceKey": "cj:price:二氯甲烷（华东）"
+    },
+    {
+      "displayName": "三氯甲烷",
+      "sourceKey": "xyzq:price:三氯甲烷(华东)"
+    },
+    {
+      "displayName": "四氯乙烯",
+      "sourceKey": "xyzq:price:四氯乙烯(华东)"
+    },
+    {
+      "displayName": "苯胺",
+      "sourceKey": "cj:price:苯胺（华东）"
+    }
+  ],
+  "002226.SZ": [
+    {
+      "displayName": "双酚A",
+      "sourceKey": "cj:price:双酚A（华东）"
+    },
+    {
+      "displayName": "聚碳酸酯PC",
+      "sourceKey": "cj:price:PC"
+    },
+    {
+      "displayName": "环氧树脂",
+      "sourceKey": "xyzq:price:环氧树脂(E51,华东)"
+    }
+  ],
+  "002783.SZ": [
+    {
+      "displayName": "硬泡聚醚",
+      "sourceKey": "xyzq:price:硬泡聚醚(华东)"
+    },
+    {
+      "displayName": "环氧丙烷",
+      "sourceKey": "xyzq:price:环氧丙烷(华东)"
+    }
+  ],
+  "688778.SH": [
+    {
+      "displayName": "工业级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(工业级,四川)"
+    },
+    {
+      "displayName": "电池级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)"
+    },
+    {
+      "displayName": "四氧化三钴",
+      "sourceKey": "xyzq:price:四氧化三钴(安泰科,国产)"
+    },
+    {
+      "displayName": "硫酸钴",
+      "sourceKey": "xyzq:price:硫酸钴21%(安泰科,国产)"
+    }
+  ],
+  "688779.SH": [
+    {
+      "displayName": "工业级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(工业级,四川)"
+    },
+    {
+      "displayName": "电池级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)"
+    },
+    {
+      "displayName": "硫酸钴",
+      "sourceKey": "xyzq:price:硫酸钴21%(安泰科,国产)"
+    }
+  ],
+  "002155.SZ": [
+    {
+      "displayName": "沪金连续",
+      "sourceKey": "tushare:price:沪金"
+    }
+  ],
+  "002237.SZ": [
+    {
+      "displayName": "沪金连续",
+      "sourceKey": "tushare:price:沪金"
+    },
+    {
+      "displayName": "沪银连续",
+      "sourceKey": "tushare:price:沪银"
+    }
+  ],
+  "600459.SH": [
+    {
+      "displayName": "沪银连续",
+      "sourceKey": "tushare:price:沪银"
+    }
+  ],
+  "2689.HK": [
+    {
+      "displayName": "废旧黄板纸",
+      "sourceKey": "wind:price:废旧黄板纸"
+    },
+    {
+      "displayName": "箱板纸",
+      "sourceKey": "wind:price:箱板纸"
+    },
+    {
+      "displayName": "瓦楞纸-玖龙",
+      "sourceKey": "wind:price:瓦楞纸-玖龙"
+    },
+    {
+      "displayName": "白卡纸",
+      "sourceKey": "wind:price:白卡纸"
+    }
+  ],
+  "600356.SH": [
+    {
+      "displayName": "白卡纸",
+      "sourceKey": "wind:price:白卡纸"
+    },
+    {
+      "displayName": "双胶纸",
+      "sourceKey": "wind:price:双胶纸"
+    }
+  ],
+  "600819.SH": [
+    {
+      "displayName": "重质纯碱原料",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "轻质纯碱",
+      "sourceKey": "cj:price:轻质纯碱（华东）"
+    },
+    {
+      "displayName": "纯碱氨碱法价差",
+      "sourceKey": "cj:spread:纯碱-氨碱法价差"
+    }
+  ],
+  "600876.SH": [
+    {
+      "displayName": "重质纯碱原料",
+      "sourceKey": "cj:price:重质纯碱（华东）"
+    },
+    {
+      "displayName": "纯碱氨碱法价差",
+      "sourceKey": "cj:spread:纯碱-氨碱法价差"
+    }
+  ],
+  "000762.SZ": [
+    {
+      "displayName": "电池级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)"
+    },
+    {
+      "displayName": "工业级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(工业级,四川)"
+    }
+  ],
+  "000878.SZ": [
+    {
+      "displayName": "冶炼副产硫酸",
+      "sourceKey": "cj:price:硫酸（浙江巨化98%）"
+    },
+    {
+      "displayName": "沪金连续",
+      "sourceKey": "tushare:price:沪金"
+    },
+    {
+      "displayName": "沪银连续",
+      "sourceKey": "tushare:price:沪银"
+    },
+    {
+      "displayName": "电池级铜箔",
+      "sourceKey": "xyzq:price:铜箔(电池级,8μm)"
+    }
+  ],
+  "601600.SH": [
+    {
+      "displayName": "氟化铝",
+      "sourceKey": "cj:price:多氟多氟化铝"
+    },
+    {
+      "displayName": "冰晶石",
+      "sourceKey": "cj:price:多氟多冰晶石"
+    },
+    {
+      "displayName": "氧化铝辅料烧碱",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "阳极原料煤焦油",
+      "sourceKey": "cj:price:煤焦油（山西）"
+    }
+  ],
+  "600549.SH": [
+    {
+      "displayName": "四氧化三钴",
+      "sourceKey": "xyzq:price:四氧化三钴(安泰科,国产)"
+    },
+    {
+      "displayName": "硫酸钴",
+      "sourceKey": "xyzq:price:硫酸钴21%(安泰科,国产)"
+    },
+    {
+      "displayName": "金属钴",
+      "sourceKey": "xyzq:price:金属钴(安泰科,国产)"
+    },
+    {
+      "displayName": "电池级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)"
+    }
+  ],
+  "600456.SH": [
+    {
+      "displayName": "海绵钛",
+      "sourceKey": "cj:price:海绵钛（≥99.6%国产）"
+    },
+    {
+      "displayName": "钛精矿",
+      "sourceKey": "cj:price:钛精矿（四川攀钢）"
+    }
+  ],
+  "688750.SH": [
+    {
+      "displayName": "海绵钛原料",
+      "sourceKey": "cj:price:海绵钛（≥99.6%国产）"
+    }
+  ],
+  "002149.SZ": [
+    {
+      "displayName": "海绵钛原料",
+      "sourceKey": "cj:price:海绵钛（≥99.6%国产）"
+    }
+  ],
+  "688122.SH": [
+    {
+      "displayName": "海绵钛原料",
+      "sourceKey": "cj:price:海绵钛（≥99.6%国产）"
+    }
+  ],
+  "600392.SH": [
+    {
+      "displayName": "钛精矿副产",
+      "sourceKey": "cj:price:钛精矿（四川攀钢）"
+    }
+  ],
+  "000960.SZ": [
+    {
+      "displayName": "副产工业硫酸",
+      "sourceKey": "cj:price:硫酸（浙江巨化98%）"
+    }
+  ],
+  "600961.SH": [
+    {
+      "displayName": "冶炼副产硫酸",
+      "sourceKey": "cj:price:硫酸（浙江巨化98%）"
+    }
+  ],
+  "000657.SZ": [
+    {
+      "displayName": "金属钴辅料",
+      "sourceKey": "xyzq:price:金属钴(安泰科,国产)"
+    }
+  ],
+  "300034.SZ": [
+    {
+      "displayName": "金属钴原料",
+      "sourceKey": "xyzq:price:金属钴(安泰科,国产)"
+    },
+    {
+      "displayName": "硫酸镍原料",
+      "sourceKey": "xyzq:price:硫酸镍(电池级,安泰科,国产)"
+    }
+  ],
+  "601618.SH": [
+    {
+      "displayName": "金属钴",
+      "sourceKey": "xyzq:price:金属钴(安泰科,国产)"
+    },
+    {
+      "displayName": "四氧化三钴",
+      "sourceKey": "xyzq:price:四氧化三钴(安泰科,国产)"
+    },
+    {
+      "displayName": "硫酸镍",
+      "sourceKey": "xyzq:price:硫酸镍(电池级,安泰科,国产)"
+    }
+  ],
+  "600282.SH": [
+    {
+      "displayName": "冶金焦",
+      "sourceKey": "xyzq:price:冶金焦(一级，华北)"
+    },
+    {
+      "displayName": "焦炭",
+      "sourceKey": "cj:price:焦炭（山西美锦）"
+    },
+    {
+      "displayName": "煤焦油",
+      "sourceKey": "cj:price:煤焦油（山西）"
+    },
+    {
+      "displayName": "焦精煤",
+      "sourceKey": "xyzq:price:焦精煤(太原)"
+    }
+  ],
+  "600731.SH": [
+    {
+      "displayName": "代森锰锌",
+      "sourceKey": "cj:price:代森锰锌"
+    },
+    {
+      "displayName": "液氯原料",
+      "sourceKey": "cj:price:液氯（华东）"
+    },
+    {
+      "displayName": "烧碱原料",
+      "sourceKey": "cj:price:32%隔膜烧碱（华东）"
+    },
+    {
+      "displayName": "甲醇原料",
+      "sourceKey": "xyzq:price:甲醇(华东)"
+    }
+  ],
+  "600298.SH": [
+    {
+      "displayName": "葡萄糖碳源",
+      "sourceKey": "xyzq:price:葡萄糖(国内)"
+    },
+    {
+      "displayName": "玉米淀粉原料",
+      "sourceKey": "xyzq:price:玉米淀粉(滨州,出厂价)"
+    }
+  ],
+  "002100.SZ": [
+    {
+      "displayName": "玉米淀粉饲料原料",
+      "sourceKey": "xyzq:price:玉米淀粉(滨州,出厂价)"
+    }
+  ],
+  "600866.SH": [
+    {
+      "displayName": "味精",
+      "sourceKey": "xyzq:price:味精(国内)"
+    },
+    {
+      "displayName": "赖氨酸",
+      "sourceKey": "xyzq:price:赖氨酸(98.5%,国产)"
+    },
+    {
+      "displayName": "苏氨酸",
+      "sourceKey": "xyzq:price:苏氨酸(99%,国产)"
+    },
+    {
+      "displayName": "玉米淀粉原料",
+      "sourceKey": "xyzq:price:玉米淀粉(滨州,出厂价)"
+    }
+  ],
+  "002683.SZ": [
+    {
+      "displayName": "硝酸铵原料",
+      "sourceKey": "cj:price:硝酸铵（兴化）"
+    },
+    {
+      "displayName": "硝酸原料",
+      "sourceKey": "cj:price:硝酸（安徽淮化）"
+    },
+    {
+      "displayName": "硝酸铵价差",
+      "sourceKey": "cj:spread:硝酸铵价差"
+    }
+  ],
+  "603977.SH": [
+    {
+      "displayName": "硝酸铵原料",
+      "sourceKey": "cj:price:硝酸铵（兴化）"
+    },
+    {
+      "displayName": "硝酸原料",
+      "sourceKey": "cj:price:硝酸（安徽淮化）"
+    },
+    {
+      "displayName": "硝酸铵价差",
+      "sourceKey": "cj:spread:硝酸铵价差"
+    }
+  ],
+  "601975.SH": [
+    {
+      "displayName": "布伦特原油",
+      "sourceKey": "cj:price:布伦特原油"
+    },
+    {
+      "displayName": "WTI原油",
+      "sourceKey": "cj:price:WTI原油"
+    },
+    {
+      "displayName": "0#柴油",
+      "sourceKey": "xyzq:price:中国0#柴油(镇海炼化)"
+    }
+  ],
+  "600509.SH": [
+    {
+      "displayName": "发电燃料无烟煤",
+      "sourceKey": "cj:price:永城无烟末煤"
+    },
+    {
+      "displayName": "NYMEX天然气",
+      "sourceKey": "cj:price:NYMEX天然气"
+    }
+  ],
+  "601117.SH": [
+    {
+      "displayName": "己内酰胺(CPL)",
+      "sourceKey": "cj:price:己内酰胺（CPL）"
+    },
+    {
+      "displayName": "己二酸(华东)",
+      "sourceKey": "xyzq:price:己二酸(华东)"
+    }
+  ],
+  "600217.SH": [
+    {
+      "displayName": "再生塑料对标PP",
+      "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）"
+    }
+  ],
+  "601118.SH": [
+    {
+      "displayName": "天然橡胶",
+      "sourceKey": "cj:price:天然橡胶（上海地区）"
+    },
+    {
+      "displayName": "丁苯橡胶",
+      "sourceKey": "cj:price:丁苯橡胶（华东1502）"
+    },
+    {
+      "displayName": "顺丁橡胶",
+      "sourceKey": "cj:price:顺丁橡胶（华东）"
+    }
+  ],
+  "600309.SH": [
+    {
+      "displayName": "纯MDI",
+      "sourceKey": "cj:price:纯MDI（华东）"
+    },
+    {
+      "displayName": "聚合MDI",
+      "sourceKey": "cj:price:聚合MDI（华东）"
+    },
+    {
+      "displayName": "TDI",
+      "sourceKey": "cj:price:TDI（华东）"
+    },
+    {
+      "displayName": "聚碳酸酯PC",
+      "sourceKey": "cj:price:PC"
+    },
+    {
+      "displayName": "纯MDI价差",
+      "sourceKey": "cj:spread:纯MDI-纯MDI价差"
+    },
+    {
+      "displayName": "聚合MDI价差",
+      "sourceKey": "cj:spread:聚合MDI-聚合MDI价差"
+    },
+    {
+      "displayName": "TDI价差",
+      "sourceKey": "cj:spread:TDI价差"
+    }
+  ],
+  "002601.SZ": [
+    {
+      "displayName": "金红石型钛白粉",
+      "sourceKey": "cj:price:钛白粉（金红石型）"
+    },
+    {
+      "displayName": "锐钛型钛白粉",
+      "sourceKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）"
+    },
+    {
+      "displayName": "钛白粉价差",
+      "sourceKey": "cj:spread:钛白粉价差"
+    },
+    {
+      "displayName": "海绵钛",
+      "sourceKey": "cj:price:海绵钛（≥99.6%国产）"
+    },
+    {
+      "displayName": "钛精矿",
+      "sourceKey": "cj:price:钛精矿（四川攀钢）"
+    }
+  ],
+  "600096.SH": [
+    {
+      "displayName": "磷酸二铵DAP",
+      "sourceKey": "cj:price:DAP（西南工厂64%褐色）"
+    },
+    {
+      "displayName": "磷酸一铵MAP",
+      "sourceKey": "cj:price:MAP（四川金河55%）"
+    },
+    {
+      "displayName": "尿素",
+      "sourceKey": "cj:price:尿素（华鲁恒升小颗粒）"
+    },
+    {
+      "displayName": "磷酸一铵价差",
+      "sourceKey": "cj:spread:MAP价差"
+    },
+    {
+      "displayName": "黄磷",
+      "sourceKey": "cj:price:黄磷（四川）"
+    }
+  ],
+  "600989.SH": [
+    {
+      "displayName": "LLDPE(煤制烯烃)",
+      "sourceKey": "cj:price:LLDPE（CFR中国）"
+    },
+    {
+      "displayName": "PP聚丙烯",
+      "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）"
+    },
+    {
+      "displayName": "甲醇",
+      "sourceKey": "cj:price:甲醇（长三角）"
+    },
+    {
+      "displayName": "焦炭",
+      "sourceKey": "cj:price:焦炭（山西美锦）"
+    },
+    {
+      "displayName": "煤头甲醇价差",
+      "sourceKey": "cj:spread:煤头甲醇价差"
+    }
+  ],
+  "600141.SH": [
+    {
+      "displayName": "黄磷",
+      "sourceKey": "cj:price:黄磷（四川）"
+    },
+    {
+      "displayName": "草甘膦",
+      "sourceKey": "cj:price:草甘膦（长三角95%）"
+    },
+    {
+      "displayName": "磷酸二铵DAP",
+      "sourceKey": "cj:price:DAP（西南工厂64%褐色）"
+    },
+    {
+      "displayName": "三聚磷酸钠",
+      "sourceKey": "cj:price:三聚磷酸钠（兴发集团工业级95%）"
+    },
+    {
+      "displayName": "有机硅DMC",
+      "sourceKey": "cj:price:甲基环硅氧烷"
+    },
+    {
+      "displayName": "磷矿石",
+      "sourceKey": "cj:price:磷矿石（湖北28%）"
+    }
+  ],
+  "600346.SH": [
+    {
+      "displayName": "PTA",
+      "sourceKey": "cj:price:PTA（华东）"
+    },
+    {
+      "displayName": "对二甲苯PX",
+      "sourceKey": "cj:price:对二甲苯（PX）"
+    },
+    {
+      "displayName": "PET切片",
+      "sourceKey": "cj:price:PET切片（华东）"
+    },
+    {
+      "displayName": "涤纶长丝POY",
+      "sourceKey": "xyzq:price:涤纶长丝(POY)"
+    },
+    {
+      "displayName": "PTA价差",
+      "sourceKey": "cj:spread:PTA价差"
+    }
+  ],
+  "000703.SZ": [
+    {
+      "displayName": "PTA",
+      "sourceKey": "cj:price:PTA（华东）"
+    },
+    {
+      "displayName": "己内酰胺(CPL)",
+      "sourceKey": "cj:price:己内酰胺（CPL）"
+    },
+    {
+      "displayName": "PET切片",
+      "sourceKey": "cj:price:PET切片（华东）"
+    },
+    {
+      "displayName": "涤纶长丝POY",
+      "sourceKey": "xyzq:price:涤纶长丝(POY)"
+    }
+  ],
+  "603225.SH": [
+    {
+      "displayName": "PTA",
+      "sourceKey": "cj:price:PTA（华东）"
+    },
+    {
+      "displayName": "PET切片",
+      "sourceKey": "cj:price:PET切片（华东）"
+    },
+    {
+      "displayName": "涤纶长丝POY",
+      "sourceKey": "xyzq:price:涤纶长丝(POY)"
+    }
+  ],
+  "002064.SZ": [
+    {
+      "displayName": "纯MDI原料",
+      "sourceKey": "cj:price:纯MDI（华东）"
+    },
+    {
+      "displayName": "己二酸",
+      "sourceKey": "xyzq:price:己二酸(华东)"
+    },
+    {
+      "displayName": "氨纶40D",
+      "sourceKey": "cj:price:氨纶40D（华东）"
+    },
+    {
+      "displayName": "氨纶价差",
+      "sourceKey": "cj:spread:氨纶价差"
+    }
+  ],
+  "603260.SH": [
+    {
+      "displayName": "金属硅",
+      "sourceKey": "cj:price:金属硅"
+    },
+    {
+      "displayName": "有机硅DMC",
+      "sourceKey": "cj:price:甲基环硅氧烷"
+    },
+    {
+      "displayName": "有机硅价差",
+      "sourceKey": "cj:spread:有机硅价差"
+    }
+  ],
+  "002709.SZ": [
+    {
+      "displayName": "电池级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)"
+    },
+    {
+      "displayName": "工业级碳酸锂",
+      "sourceKey": "xyzq:price:碳酸锂(工业级,四川)"
+    },
+    {
+      "displayName": "磷酸铁锂电解液",
+      "sourceKey": "xyzq:price:磷酸铁锂电解液"
+    }
+  ],
+  "002001.SZ": [
+    {
+      "displayName": "维生素A",
+      "sourceKey": "cj:price:维生素A（国产50万IU/g）"
+    },
+    {
+      "displayName": "维生素E",
+      "sourceKey": "cj:price:维生素E（国产50%）"
+    },
+    {
+      "displayName": "甲基麦芽酚",
+      "sourceKey": "xyzq:price:甲基麦芽酚(安徽)"
+    }
+  ]
+}

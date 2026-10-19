@@ -6,7 +6,7 @@
       "category": "stock",
       "confidence": "HIGH",
       "confidenceScore": 98,
-      "description": "官方直连金融大数据平台，提供A股高频复权日K线、财务报表披露、资产负债率及扣非净利润等高置信度底层数据。",
+      "description": "官方直连金融大数据平台，提供141家纳管A股/H股周期核心标的高频复权K线、财务报表披露与估值体系底层数据。",
       "status": "active",
       "refreshRate": "交易日收盘自动更新 (日频)"
     },
@@ -31,10 +31,12 @@
       "refreshRate": "周频 / 跟踪至 2026-10-02"
     }
   ],
-  "lastFullUpdate": "2026-10-19T14:12:39.653126",
+  "lastFullUpdate": "2026-10-19T16:06:00.000000",
   "databaseCoverage": {
+    "totalCompanies": 141,
     "totalCommodities": 591,
     "totalTimeSeries": 547,
+    "totalDivergenceSignals": 93,
     "latestDataDate": "2026-10-16"
   }
 }

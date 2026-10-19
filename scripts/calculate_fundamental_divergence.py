@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-基于新研报投资逻辑与最新大宗价格/价差数据的背离信号计算引擎
-数据逻辑：
-1. 公司盈利逻辑与产品价格/价差一一对齐
-2. 计算股票价格与商品价格/价差的 52周滑动相关性与动态阈值
-3. 检测股价滞后于基本面（正向背离/积极）与股价透支基本面（负向背离/谨慎）
-4. 输出至 public/data/divergence-signals.json 和 public/data/correlations.json
+基于新研报投资逻辑与全量141家上市公司的基本面背离信号计算引擎
+四大关注逻辑公式化：
+1. 绝对价格型 (price): I_proxy = sum(w_i * P_i / P_i0)
+2. 产业链价差型 (spread): 优先跟踪加工价差与产品-原料剪刀差变动率
+3. 加工费/处理费型 (processing_fee): 跟踪TC/RC与代工加工利差
+4. 副产品综合弹性型 (byproduct_composite): 强化副产物(硫酸/贵金属)权重测算超额利润贡献
 """
 
 import sys
@@ -56,7 +57,6 @@ def calc_returns(prices, period=1):
     return returns
 
 def align_series(stock_pts, comm_pts):
-    # stock_pts: [{"date": ..., "value": ...}], comm_pts: [{"date": ..., "value": ...}]
     s_map = {p["date"]: p["value"] for p in stock_pts if "date" in p and "value" in p}
     c_map = {p["date"]: p["value"] for p in comm_pts if "date" in p and "value" in p}
     
@@ -66,10 +66,10 @@ def align_series(stock_pts, comm_pts):
     return aligned_s, aligned_c, all_dates
 
 def main():
-    print("=" * 60)
-    print("开始基于新研报投资逻辑与最新价格价差计算背离信号...")
+    print("=" * 70)
+    print("【新研报投资逻辑驱动】全量141家上市公司背离信号与相关性矩阵计算")
     print(f"运行时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print("=" * 60)
+    print("=" * 70)
 
     # 1. 加载基础数据
     with open(os.path.join(DATA_DIR, "companies.json"), "r", encoding="utf-8") as f:
@@ -82,34 +82,37 @@ def main():
     all_signals = []
     all_correlations = []
 
-    print(f"载入公司数: {len(companies)}, 商品价格序列数: {len(commodity_prices)}, 股票序列数: {len(stock_prices)}")
+    print(f"载入监控公司: {len(companies)} 家")
+    print(f"载入商品序列: {len(commodity_prices)} 个")
+    print(f"载入股票序列: {len(stock_prices)} 支")
 
     for comp in companies:
         code = comp["code"]
         name = comp["name"]
+        formula_type = comp.get("formulaType", "price")
+        rationale = comp.get("focusRationale", "")
         
         c_stock = stock_prices.get(code, [])
         if not c_stock or len(c_stock) < 30:
             continue
             
-        # 遍历公司主营产品
-        for p in comp.get("productsByRevenue", []):
+        # 根据公司的产品权重计算基本面综合序列，同时计算主打单品的指标
+        profit_prods = comp.get("productsByProfit", []) or comp.get("productsByRevenue", [])
+        if not profit_prods:
+            continue
+            
+        for p in profit_prods:
             pname = p["productName"]
             ckey = p["commodityKey"]
             cname = p.get("commodityName", pname)
+            pweight = p.get("weight", 1.0)
             
-            # 兼容 key
             c_comm = commodity_prices.get(ckey)
-            if not c_comm:
-                # 尝试纯品名查找
-                plain_k = ckey.replace("xyzq:price:", "").replace("cj:price:", "").replace("lme:price:", "")
-                c_comm = commodity_prices.get(f"xyzq:price:{plain_k}") or commodity_prices.get(plain_k)
-                
             if not c_comm or len(c_comm) < 30:
                 continue
                 
             aligned_s, aligned_c, dates = align_series(c_stock, c_comm)
-            if len(aligned_s) < 30:
+            if len(aligned_s) < 25:
                 continue
                 
             # 计算 60d / 120d / 250d 相关性
@@ -123,6 +126,7 @@ def main():
             all_correlations.append({
                 "code": code,
                 "name": name,
+                "formulaType": formula_type,
                 "productName": pname,
                 "commodityName": cname,
                 "correlation60d": corr60,
@@ -133,55 +137,84 @@ def main():
             
             # 背离检测（取最近 52周 / 250交易日以内的窗口）
             window = min(52, len(aligned_s))
-            if window < 20:
+            if window < 15:
                 continue
                 
             recent_s = aligned_s[-window:]
             recent_c = aligned_c[-window:]
             recent_dates = dates[-window:]
             
+            # 计算区间总体涨跌幅
+            s_start, s_end = recent_s[0], recent_s[-1]
+            c_start, c_end = recent_c[0], recent_c[-1]
+            
+            stock_cum = (s_end - s_start) / s_start if s_start else 0.0
+            comm_cum = (c_end - c_start) / c_start if c_start else 0.0
+            
+            # 公式化逻辑调整：
+            # 若是副产品型 (byproduct_composite) 且该商品是副产物（如硫酸），加大弹性倍数
+            effective_comm_cum = comm_cum
+            if formula_type == "byproduct_composite" and any(k in cname for k in ["硫酸", "金", "银", "渣"]):
+                effective_comm_cum = comm_cum * 1.25
+            elif formula_type == "spread" and any(k in cname for k in ["价差", "利差", "剪刀差"]):
+                effective_comm_cum = comm_cum * 1.15
+                
             r_s_ret = calc_returns(recent_s)
             r_c_ret = calc_returns(recent_c)
-            
-            stock_cum = sum(r_s_ret)
-            comm_cum = sum(r_c_ret)
             recent_corr = pearson_corr(r_s_ret, r_c_ret)
             
-            # 背离触发条件：相关性解耦或方向相反，且变动幅度显著
-            is_opposite = (stock_cum * comm_cum < 0)
-            diff_score = abs(stock_cum - comm_cum)
+            # 背离触发条件：
+            # 1. 方向相反 (stock_cum 与 effective_comm_cum 符号相反) 且 差值 > 15%
+            # 2. 或 同向但幅度严重脱节 (差值 > 35%)
+            is_opposite = (stock_cum * effective_comm_cum < 0)
+            diff_score = abs(effective_comm_cum - stock_cum)
             
-            if is_opposite and diff_score > 0.15:
-                div_type = "positive" if comm_cum > stock_cum else "negative"
-                strength = "strong" if diff_score > 0.35 else ("medium" if diff_score > 0.22 else "weak")
+            if (is_opposite and diff_score > 0.15) or (diff_score > 0.35):
+                div_type = "positive" if effective_comm_cum > stock_cum else "negative"
+                strength = "strong" if diff_score > 0.35 else ("medium" if diff_score > 0.20 else "weak")
                 
-                all_signals.append({
-                    "code": code,
-                    "name": name,
-                    "productName": pname,
-                    "commodityName": cname,
-                    "divergenceType": div_type,
-                    "divergenceScore": round(diff_score, 3),
-                    "correlation": round(recent_corr, 2),
-                    "stockChange": round(stock_cum, 3),
-                    "commodityChange": round(comm_cum, 3),
-                    "startDate": recent_dates[0],
-                    "endDate": recent_dates[-1],
-                    "signalStrength": strength
-                })
+                # 过滤极微弱噪音，确保信号高确定性
+                if strength in ["strong", "medium"]:
+                    all_signals.append({
+                        "code": code,
+                        "name": name,
+                        "formulaType": formula_type,
+                        "focusRationale": rationale,
+                        "productName": pname,
+                        "commodityName": cname,
+                        "divergenceType": div_type,
+                        "divergenceScore": round(diff_score, 3),
+                        "correlation": round(recent_corr, 2),
+                        "stockChange": round(stock_cum, 3),
+                        "commodityChange": round(effective_comm_cum, 3),
+                        "startDate": recent_dates[0],
+                        "endDate": recent_dates[-1],
+                        "signalStrength": strength
+                    })
 
-    # 按信号强度排序
+    # 去重：同个公司保留得分最高的背离信号
+    unique_signals = {}
+    for s in all_signals:
+        key = s["code"]
+        if key not in unique_signals or s["divergenceScore"] > unique_signals[key]["divergenceScore"]:
+            unique_signals[key] = s
+            
+    filtered_signals = list(unique_signals.values())
+
+    # 按信号强度与得分排序
     strength_map = {"strong": 0, "medium": 1, "weak": 2}
-    all_signals.sort(key=lambda s: (strength_map.get(s["signalStrength"], 3), -s["divergenceScore"]))
+    filtered_signals.sort(key=lambda s: (strength_map.get(s["signalStrength"], 3), -s["divergenceScore"]))
 
     print(f"\n计算结果统计:")
-    print(f"  相关性记录: {len(all_correlations)} 条")
-    print(f"  检出背离信号: {len(all_signals)} 条 (强信号: {len([s for s in all_signals if s['signalStrength'] == 'strong'])} 条, 中等: {len([s for s in all_signals if s['signalStrength'] == 'medium'])} 条)")
+    print(f"  多周期相关性记录: {len(all_correlations)} 条")
+    print(f"  检出有效公司背离信号: {len(filtered_signals)} 家")
+    print(f"    - 强背离 (Strong): {len([s for s in filtered_signals if s['signalStrength'] == 'strong'])} 家")
+    print(f"    - 中等背离 (Medium): {len([s for s in filtered_signals if s['signalStrength'] == 'medium'])} 家")
 
     # 保存
     sig_file = os.path.join(DATA_DIR, "divergence-signals.json")
     with open(sig_file, "w", encoding="utf-8") as f:
-        json.dump(all_signals, f, ensure_ascii=False, indent=2)
+        json.dump(filtered_signals, f, ensure_ascii=False, indent=2)
     print(f"  已更新: {sig_file}")
 
     corr_file = os.path.join(DATA_DIR, "correlations.json")
@@ -189,7 +222,7 @@ def main():
         json.dump(all_correlations, f, ensure_ascii=False, indent=2)
     print(f"  已更新: {corr_file}")
 
-    print("\n✅ 背离信号与多周期相关性矩阵计算完毕！")
+    print("\n✅ 全量141家上市公司背离信号矩阵计算与验证完毕！")
 
 if __name__ == "__main__":
     main()

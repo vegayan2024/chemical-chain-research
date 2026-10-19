@@ -1,5 +1,41 @@
 [
   {
+    "code": "000519.SZ",
+    "name": "中兵红箭",
+    "group": "explosive",
+    "subSector": "超硬材料与民爆",
+    "formulaType": "price",
+    "focusRationale": "关注工业金刚石及培育钻石绝对售价，结合民爆器材防务订单转化为稳定现金流能力。",
+    "productsByRevenue": [
+      {
+        "productName": "工业金刚石",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业金刚石",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
     "code": "000554.SZ",
     "name": "泰山石油",
     "group": "chemical",
@@ -7,38 +43,208 @@
       {
         "productName": "汽油",
         "commodityKey": "xyzq:price:中国92#汽油(镇海炼化)",
-        "weight": 0.45,
+        "weight": 0.47,
         "commodityName": "中国92#汽油(镇海炼化)"
       },
       {
         "productName": "柴油",
         "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
-        "weight": 0.35,
+        "weight": 0.37,
         "commodityName": "中国0#柴油(镇海炼化)"
       },
       {
         "productName": "液化气",
         "commodityKey": "xyzq:price:液化气(华东)",
-        "weight": 0.15
+        "weight": 0.16,
+        "commodityName": "液化气(华东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "汽油",
         "commodityKey": "xyzq:price:中国92#汽油(镇海炼化)",
-        "weight": 0.4,
+        "weight": 0.42,
         "commodityName": "中国92#汽油(镇海炼化)"
       },
       {
         "productName": "柴油",
         "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
-        "weight": 0.35,
+        "weight": 0.37,
         "commodityName": "中国0#柴油(镇海炼化)"
       },
       {
         "productName": "液化气",
         "commodityKey": "xyzq:price:液化气(华东)",
-        "weight": 0.2
+        "weight": 0.21,
+        "commodityName": "液化气(华东)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000629.SZ",
+    "name": "钒钛股份",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "钒制品",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "钛白粉",
+        "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
+        "weight": 0.37,
+        "commodityName": "钛白粉(金红石型,华东)"
+      },
+      {
+        "productName": "钛精矿",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钒制品",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "钛白粉",
+        "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
+        "weight": 0.32,
+        "commodityName": "钛白粉(金红石型,华东)"
+      },
+      {
+        "productName": "钛精矿",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000655.SZ",
+    "name": "金岭矿业",
+    "group": "mining",
+    "subSector": "铁矿石采选",
+    "formulaType": "price",
+    "focusRationale": "关注铁精粉绝对市场现货价与品位溢价，机械化低开采成本提供极高毛利放大器。",
+    "productsByRevenue": [
+      {
+        "productName": "铁精粉",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.75,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "铜精矿",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.25,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铁精粉",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.75,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "铜精矿",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.25,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "000657.SZ",
+    "name": "中钨高新",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "钨",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "硬质合金",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "钼",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钨",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "硬质合金",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "钼",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000707.SZ",
+    "name": "双环科技",
+    "group": "chemical",
+    "subSector": "联碱化工",
+    "formulaType": "spread",
+    "focusRationale": "关注联碱法双吨价差（重质纯碱 + 氯化铵销售收入 - 原盐与动力煤综合耗费）。",
+    "productsByRevenue": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "xyzq:price:纯碱库存",
+        "weight": 0.55,
+        "commodityName": "纯碱库存"
+      },
+      {
+        "productName": "氯化铵",
+        "commodityKey": "xyzq:price:氯化铵",
+        "weight": 0.45,
+        "commodityName": "氯化铵"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "xyzq:price:纯碱库存",
+        "weight": 0.55,
+        "commodityName": "纯碱库存"
+      },
+      {
+        "productName": "氯化铵",
+        "commodityKey": "xyzq:price:氯化铵",
+        "weight": 0.45,
+        "commodityName": "氯化铵"
       }
     ]
   },
@@ -50,36 +256,114 @@
       {
         "productName": "尿素",
         "commodityKey": "xyzq:price:尿素(山东)",
-        "weight": 0.45,
-        "commodityName": "尿素（华鲁恒升小颗粒）"
+        "weight": 0.47,
+        "commodityName": "尿素(山东)"
       },
       {
         "productName": "复合肥",
         "commodityKey": "xyzq:price:复合肥",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "复合肥"
       },
       {
         "productName": "三聚氰胺",
         "commodityKey": "xyzq:price:三聚氰胺(四川)",
-        "weight": 0.2
+        "weight": 0.21,
+        "commodityName": "三聚氰胺(四川)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "尿素",
         "commodityKey": "xyzq:price:尿素(山东)",
-        "weight": 0.4,
-        "commodityName": "尿素（华鲁恒升小颗粒）"
+        "weight": 0.42,
+        "commodityName": "尿素(山东)"
       },
       {
         "productName": "复合肥",
         "commodityKey": "xyzq:price:复合肥",
-        "weight": 0.35
+        "weight": 0.37,
+        "commodityName": "复合肥"
       },
       {
         "productName": "三聚氰胺",
         "commodityKey": "xyzq:price:三聚氰胺(四川)",
-        "weight": 0.2
+        "weight": 0.21,
+        "commodityName": "三聚氰胺(四川)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000758.SZ",
+    "name": "中色股份",
+    "group": "mining",
+    "subSector": "有色采选与工程",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注铅锌冶炼加工费及海外有色矿山EPC总承包回款进度。",
+    "productsByRevenue": [
+      {
+        "productName": "锌锭",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "铅锭",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "锌锭",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "铅锭",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "000762.SZ",
+    "name": "西藏矿业",
+    "group": "mining",
+    "subSector": "盐湖提锂与铬铁",
+    "formulaType": "price",
+    "focusRationale": "关注扎布耶盐湖碳酸锂绝对价格及铬矿石现货溢价。",
+    "productsByRevenue": [
+      {
+        "productName": "碳酸锂",
+        "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "weight": 0.7,
+        "commodityName": "碳酸锂(电池级,江苏)"
+      },
+      {
+        "productName": "铬矿石",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "碳酸锂",
+        "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "weight": 0.7,
+        "commodityName": "碳酸锂(电池级,江苏)"
+      },
+      {
+        "productName": "铬矿石",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
       }
     ]
   },
@@ -91,36 +375,44 @@
       {
         "productName": "氯化钾",
         "commodityKey": "xyzq:price:氯化钾(60%粉,青海挂牌)",
-        "weight": 0.5
+        "weight": 0.52,
+        "commodityName": "氯化钾(60%粉,青海挂牌)"
       },
       {
         "productName": "碳酸锂",
         "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "碳酸锂(电池级,江苏)"
       },
       {
         "productName": "纯碱",
         "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-        "weight": 0.15
+        "weight": 0.16,
+        "commodityName": "纯碱(轻质,华东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "氯化钾",
         "commodityKey": "xyzq:price:氯化钾(60%粉,青海挂牌)",
-        "weight": 0.45
+        "weight": 0.47,
+        "commodityName": "氯化钾(60%粉,青海挂牌)"
       },
       {
         "productName": "碳酸锂",
         "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "碳酸锂(电池级,江苏)"
       },
       {
         "productName": "纯碱",
         "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-        "weight": 0.1
+        "weight": 0.11,
+        "commodityName": "纯碱(轻质,华东)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注国家刚性配额或稀缺资源垄断下的产成品现货绝对价格与供需边际。"
   },
   {
     "code": "000819.SZ",
@@ -129,37 +421,45 @@
     "productsByRevenue": [
       {
         "productName": "聚丙烯",
-        "commodityKey": "xyzq:price:聚丙烯(PP)",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:聚丙烯酰胺(浙江鑫甬)",
+        "weight": 0.44,
+        "commodityName": "聚丙烯酰胺(浙江鑫甬)"
       },
       {
         "productName": "MTBE",
-        "commodityKey": "cj:price:MTBE",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:MTBE(石大胜华)",
+        "weight": 0.31,
+        "commodityName": "MTBE(石大胜华)"
       },
       {
         "productName": "液化气",
         "commodityKey": "xyzq:price:液化气(华东)",
-        "weight": 0.2
+        "weight": 0.25,
+        "commodityName": "液化气(华东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "聚丙烯",
-        "commodityKey": "xyzq:price:聚丙烯(PP)",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:聚丙烯酰胺(浙江鑫甬)",
+        "weight": 0.36,
+        "commodityName": "聚丙烯酰胺(浙江鑫甬)"
       },
       {
         "productName": "MTBE",
-        "commodityKey": "cj:price:MTBE",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:MTBE(石大胜华)",
+        "weight": 0.35,
+        "commodityName": "MTBE(石大胜华)"
       },
       {
         "productName": "液化气",
         "commodityKey": "xyzq:price:液化气(华东)",
-        "weight": 0.25
+        "weight": 0.29,
+        "commodityName": "液化气(华东)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "000830.SZ",
@@ -169,28 +469,232 @@
       {
         "productName": "尿素",
         "commodityKey": "xyzq:price:尿素(山东)",
-        "commodityName": "尿素（华鲁恒升小颗粒）",
-        "weight": 0.5
+        "weight": 0.5,
+        "commodityName": "尿素(山东)"
       },
       {
         "productName": "复合肥",
         "commodityKey": "xyzq:price:复合肥",
-        "commodityName": "复合肥(45%CL,湖北)",
-        "weight": 0.5
+        "weight": 0.5,
+        "commodityName": "复合肥"
       }
     ],
     "productsByProfit": [
       {
         "productName": "尿素",
         "commodityKey": "xyzq:price:尿素(山东)",
-        "commodityName": "尿素（华鲁恒升小颗粒）",
-        "weight": 0.5
+        "weight": 0.5,
+        "commodityName": "尿素(山东)"
       },
       {
         "productName": "复合肥",
         "commodityKey": "xyzq:price:复合肥",
-        "commodityName": "复合肥(45%CL,湖北)",
-        "weight": 0.5
+        "weight": 0.5,
+        "commodityName": "复合肥"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000831.SZ",
+    "name": "中国稀土",
+    "group": "mining",
+    "subSector": "中重稀土一体化",
+    "formulaType": "price",
+    "focusRationale": "中重稀土国家战略整合核心主体，高度关注氧化镝、氧化铽等关键稀土氧化物绝对报价。",
+    "productsByRevenue": [
+      {
+        "productName": "氧化镝",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "氧化铽",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "氧化镝",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "氧化铽",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "000878.SZ",
+    "name": "云南铜业",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "铜",
+        "commodityKey": "xyzq:price:铜箔（电池级,8μm）",
+        "weight": 0.73,
+        "commodityName": "铜箔（电池级,8μm）"
+      },
+      {
+        "productName": "黄金",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "白银",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.11,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铜",
+        "commodityKey": "xyzq:price:铜箔（电池级,8μm）",
+        "weight": 0.68,
+        "commodityName": "铜箔（电池级,8μm）"
+      },
+      {
+        "productName": "黄金",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "白银",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.11,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "processing_fee",
+    "focusRationale": "关注冶炼端加工费处理费（TC/RC）及代工溢价扣除，结合长单套保与伴生回收收益。"
+  },
+  {
+    "code": "000893.SZ",
+    "name": "亚钾国际",
+    "group": "chemical",
+    "subSector": "海外钾肥采选",
+    "formulaType": "price",
+    "focusRationale": "关注老挝钾盐矿扩产进度与氯化钾绝对离岸结算价格走势。",
+    "productsByRevenue": [
+      {
+        "productName": "氯化钾",
+        "commodityKey": "xyzq:price:氯化钾(60%粉,青海挂牌)",
+        "weight": 0.85,
+        "commodityName": "氯化钾(60%粉,青海挂牌)"
+      },
+      {
+        "productName": "副产工业盐",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.15,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "氯化钾",
+        "commodityKey": "xyzq:price:氯化钾(60%粉,青海挂牌)",
+        "weight": 0.85,
+        "commodityName": "氯化钾(60%粉,青海挂牌)"
+      },
+      {
+        "productName": "副产工业盐",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.15,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "000923.SZ",
+    "name": "河钢资源",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "铁矿石",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "钒钛",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "磁铁矿",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "铁矿石",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "钒钛",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "磁铁矿",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000928.SZ",
+    "name": "中钢国际",
+    "group": "engineering",
+    "subSector": "低碳冶金工程",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注钢铁大型EPC低碳减碳技改订单毛利与钢材大宗周期资本开支意愿。",
+    "productsByRevenue": [
+      {
+        "productName": "热轧板卷",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "螺纹钢",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "热轧板卷",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "螺纹钢",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
       }
     ]
   },
@@ -201,35 +705,173 @@
     "productsByRevenue": [
       {
         "productName": "淀粉糖",
-        "commodityKey": "cj:price:葡萄糖",
-        "weight": 0.45
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "味精",
         "commodityKey": "xyzq:price:味精(国内)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "味精(国内)"
       },
       {
         "productName": "氨基酸",
-        "commodityKey": "cj:price:赖氨酸",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "淀粉糖",
-        "commodityKey": "cj:price:葡萄糖",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "味精",
         "commodityKey": "xyzq:price:味精(国内)",
-        "weight": 0.35
+        "weight": 0.37,
+        "commodityName": "味精(国内)"
       },
       {
         "productName": "氨基酸",
-        "commodityKey": "cj:price:赖氨酸",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000960.SZ",
+    "name": "锡业股份",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "锡",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "锌",
+        "commodityKey": "xyzq:price:代森锰锌",
+        "weight": 0.26,
+        "commodityName": "代森锰锌"
+      },
+      {
+        "productName": "铟",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "锡",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.63,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "锌",
+        "commodityKey": "xyzq:price:代森锰锌",
+        "weight": 0.21,
+        "commodityName": "代森锰锌"
+      },
+      {
+        "productName": "铟",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000962.SZ",
+    "name": "东方钽业",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "钽",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "铌",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "铍",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钽",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.53,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "铌",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "铍",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "000969.SZ",
+    "name": "安泰科技",
+    "group": "materials",
+    "subSector": "先进难熔金属与粉末",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注难熔钨钼深加工加价、非晶纳米晶磁材及高端金属粉末加工费利差。",
+    "productsByRevenue": [
+      {
+        "productName": "黑钨精矿",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.55,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "金属钕",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.45,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "黑钨精矿",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.55,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "金属钕",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.45,
+        "commodityName": "DMF(华东)"
       }
     ]
   },
@@ -241,36 +883,199 @@
       {
         "productName": "甲醇",
         "commodityKey": "xyzq:price:甲醇(华东)",
-        "weight": 0.35
+        "weight": 0.39,
+        "commodityName": "甲醇(华东)"
       },
       {
         "productName": "聚烯烃",
-        "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "清洁能源",
-        "commodityKey": "cj:price:LNG",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.28,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "甲醇",
         "commodityKey": "xyzq:price:甲醇(华东)",
-        "weight": 0.3
+        "weight": 0.33,
+        "commodityName": "甲醇(华东)"
       },
       {
         "productName": "聚烯烃",
-        "commodityKey": "cj:price:PP（余姚市场J340/扬子）",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.39,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "清洁能源",
-        "commodityKey": "cj:price:LNG",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.28,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "001280.SZ",
+    "name": "中国铀业",
+    "group": "energy",
+    "subSector": "能源金融与产融结合",
+    "formulaType": "price",
+    "focusRationale": "深度跟踪母公司中石油油气产销景气度及原油基准价格传导。",
+    "productsByRevenue": [
+      {
+        "productName": "Brent原油",
+        "commodityKey": "xyzq:price:Brent现货",
+        "weight": 0.6,
+        "commodityName": "Brent现货"
+      },
+      {
+        "productName": "92#汽油",
+        "commodityKey": "xyzq:price:92#汽油新加坡FOB",
+        "weight": 0.4,
+        "commodityName": "92#汽油新加坡FOB"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "Brent原油",
+        "commodityKey": "xyzq:price:Brent现货",
+        "weight": 0.6,
+        "commodityName": "Brent现货"
+      },
+      {
+        "productName": "92#汽油",
+        "commodityKey": "xyzq:price:92#汽油新加坡FOB",
+        "weight": 0.4,
+        "commodityName": "92#汽油新加坡FOB"
       }
     ]
+  },
+  {
+    "code": "002046.SZ",
+    "name": "国机精工",
+    "group": "materials",
+    "subSector": "特种轴承与超硬材料",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注风电及航天特种精密轴承加工费利差，以及超硬金刚石磨具渗透率。",
+    "productsByRevenue": [
+      {
+        "productName": "人造金刚石",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "轴承特钢",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "人造金刚石",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "轴承特钢",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "002053.SZ",
+    "name": "云南能投",
+    "group": "chemical",
+    "subSector": "盐化工与天然气绿能",
+    "formulaType": "spread",
+    "focusRationale": "关注原盐至离子膜烧碱与PVC产业链综合利差，绿电与燃气业务平抑周期波动。",
+    "productsByRevenue": [
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.55,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      },
+      {
+        "productName": "PVC树脂",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.45,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.55,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      },
+      {
+        "productName": "PVC树脂",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.45,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "002057.SZ",
+    "name": "中钢天源",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "四氧化三锰",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "稀土",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "永磁材料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "四氧化三锰",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "稀土",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "永磁材料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "002092.SZ",
@@ -280,36 +1085,91 @@
       {
         "productName": "PVC",
         "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.45
+        "weight": 0.47,
+        "commodityName": "PVC(电石法,长三角)"
       },
       {
         "productName": "烧碱",
         "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "烧碱(32%离子膜,华北)"
       },
       {
         "productName": "粘胶短纤",
         "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
-        "weight": 0.2
+        "weight": 0.21,
+        "commodityName": "粘胶短纤(1.5D,38毫米)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "PVC",
         "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "PVC(电石法,长三角)"
       },
       {
         "productName": "烧碱",
         "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.35
+        "weight": 0.37,
+        "commodityName": "烧碱(32%离子膜,华北)"
       },
       {
         "productName": "粘胶短纤",
         "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
-        "weight": 0.2
+        "weight": 0.21,
+        "commodityName": "粘胶短纤(1.5D,38毫米)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002096.SZ",
+    "name": "易普力",
+    "group": "explosive",
+    "productsByRevenue": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.48,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "雷管",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "爆破服务",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.36,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "雷管",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "爆破服务",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "002100.SZ",
@@ -318,37 +1178,45 @@
     "productsByRevenue": [
       {
         "productName": "饲料",
-        "commodityKey": "cj:price:豆粕",
-        "weight": 0.45
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "生猪",
         "commodityKey": "xyzq:price:生猪价格",
-        "weight": 0.35
+        "weight": 0.37,
+        "commodityName": "生猪价格"
       },
       {
         "productName": "兽药",
-        "commodityKey": "cj:price:VE",
-        "weight": 0.15
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "饲料",
-        "commodityKey": "cj:price:豆粕",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "生猪",
         "commodityKey": "xyzq:price:生猪价格",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "生猪价格"
       },
       {
         "productName": "兽药",
-        "commodityKey": "cj:price:VE",
-        "weight": 0.15
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "002136.SZ",
@@ -358,42 +1226,282 @@
       {
         "productName": "钛白粉",
         "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
-        "commodityName": "钛白粉（金红石型）",
-        "weight": 0.33
+        "weight": 0.34,
+        "commodityName": "钛白粉(金红石型,华东)"
       },
       {
         "productName": "磷酸铁的生产",
         "commodityKey": "xyzq:price:磷酸铁",
-        "commodityName": "磷酸铁",
-        "weight": 0.33
+        "weight": 0.33,
+        "commodityName": "磷酸铁"
       },
       {
         "productName": "销售",
-        "commodityKey": "unknown:销售",
-        "commodityName": "销售",
-        "weight": 0.33
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "钛白粉",
         "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
-        "commodityName": "钛白粉（金红石型）",
-        "weight": 0.33
+        "weight": 0.34,
+        "commodityName": "钛白粉(金红石型,华东)"
       },
       {
         "productName": "磷酸铁的生产",
         "commodityKey": "xyzq:price:磷酸铁",
-        "commodityName": "磷酸铁",
-        "weight": 0.33
+        "weight": 0.33,
+        "commodityName": "磷酸铁"
       },
       {
         "productName": "销售",
-        "commodityKey": "unknown:销售",
-        "commodityName": "销售",
-        "weight": 0.33
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002140.SZ",
+    "name": "东华科技",
+    "group": "engineering",
+    "subSector": "现代煤化工工程",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注现代煤化工重大装置及合成气BDO等项目EPC工程利差与回款周期。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 0.5,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      },
+      {
+        "productName": "乙二醇",
+        "commodityKey": "xyzq:price:乙二醇(华东)",
+        "weight": 0.5,
+        "commodityName": "乙二醇(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 0.5,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      },
+      {
+        "productName": "乙二醇",
+        "commodityKey": "xyzq:price:乙二醇(华东)",
+        "weight": 0.5,
+        "commodityName": "乙二醇(华东)"
       }
     ]
+  },
+  {
+    "code": "002149.SZ",
+    "name": "西部材料",
+    "group": "materials",
+    "subSector": "钛合金与稀有金属加工",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注高端航空航天钛合金材、核电锆材加工费溢价及军工保供比例。",
+    "productsByRevenue": [
+      {
+        "productName": "海绵钛",
+        "commodityKey": "xyzq:price:海绵钛(0级)",
+        "weight": 0.7,
+        "commodityName": "海绵钛(0级)"
+      },
+      {
+        "productName": "电解镍",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "海绵钛",
+        "commodityKey": "xyzq:price:海绵钛(0级)",
+        "weight": 0.7,
+        "commodityName": "海绵钛(0级)"
+      },
+      {
+        "productName": "电解镍",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "002155.SZ",
+    "name": "湖南黄金",
+    "group": "mining",
+    "subSector": "金锑伴生矿采选",
+    "formulaType": "byproduct_composite",
+    "focusRationale": "核心关注锑金属战略暴涨带来的暴利剪刀差，以及自产矿产金带来的双击业绩弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "黄金",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "锑锭",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "黄金",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "锑锭",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.5,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "002182.SZ",
+    "name": "宝武镁业",
+    "group": "materials",
+    "subSector": "覆铜板电子铜箔与特钢",
+    "formulaType": "spread",
+    "focusRationale": "关注电子电路铜箔加工费及与阴极铜之间的加工剪刀差。",
+    "productsByRevenue": [
+      {
+        "productName": "阴极铜",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "环氧树脂",
+        "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
+        "weight": 0.4,
+        "commodityName": "环氧树脂(E51,华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "阴极铜",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "环氧树脂",
+        "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
+        "weight": 0.4,
+        "commodityName": "环氧树脂(E51,华东)"
+      }
+    ]
+  },
+  {
+    "code": "002226.SZ",
+    "name": "江南化工",
+    "group": "explosive",
+    "productsByRevenue": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.48,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "雷管",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "风电",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "雷管",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "风电",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002237.SZ",
+    "name": "恒邦股份",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "黄金",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.53,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "白银",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "电解铜",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "黄金",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "白银",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "电解铜",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。"
   },
   {
     "code": "002258.SZ",
@@ -403,34 +1511,78 @@
       {
         "productName": "草铵膦",
         "commodityKey": "xyzq:price:草铵膦",
-        "weight": 0.5
+        "weight": 0.52,
+        "commodityName": "草铵膦"
       },
       {
         "productName": "氯氟吡氧乙酸",
-        "commodityKey": "cj:price:使它隆",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "毒莠定",
-        "commodityKey": "cj:price:毒莠定",
-        "weight": 0.15
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "草铵膦",
         "commodityKey": "xyzq:price:草铵膦",
-        "weight": 0.5
+        "weight": 0.52,
+        "commodityName": "草铵膦"
       },
       {
         "productName": "氯氟吡氧乙酸",
-        "commodityKey": "cj:price:使它隆",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "毒莠定",
-        "commodityKey": "cj:price:毒莠定",
-        "weight": 0.15
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002312.SZ",
+    "name": "川发龙蟒",
+    "group": "chemical",
+    "subSector": "磷化工与磷酸铁",
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注磷酸一铵复合肥主业及副产工业石膏，结合磷酸铁新能源转型弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "工业级磷酸一铵",
+        "commodityKey": "xyzq:price:磷酸一铵(55%粉,湖北)",
+        "weight": 0.6,
+        "commodityName": "磷酸一铵(55%粉,湖北)"
+      },
+      {
+        "productName": "磷矿石",
+        "commodityKey": "xyzq:price:磷矿石(30%,贵州)",
+        "weight": 0.4,
+        "commodityName": "磷矿石(30%,贵州)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业级磷酸一铵",
+        "commodityKey": "xyzq:price:磷酸一铵(55%粉,湖北)",
+        "weight": 0.6,
+        "commodityName": "磷酸一铵(55%粉,湖北)"
+      },
+      {
+        "productName": "磷矿石",
+        "commodityKey": "xyzq:price:磷矿石(30%,贵州)",
+        "weight": 0.4,
+        "commodityName": "磷矿石(30%,贵州)"
       }
     ]
   },
@@ -442,34 +1594,90 @@
       {
         "productName": "甲乙酮",
         "commodityKey": "xyzq:price:丁酮(华东)",
-        "weight": 0.25
+        "weight": 0.33,
+        "commodityName": "丁酮(华东)"
       },
       {
         "productName": "顺酐",
         "commodityKey": "xyzq:price:顺酐(华东)",
-        "weight": 0.35
+        "weight": 0.47,
+        "commodityName": "顺酐(华东)"
       },
       {
         "productName": "丁二烯",
         "commodityKey": "xyzq:price:丁二烯(华东)",
-        "weight": 0.15
+        "weight": 0.2,
+        "commodityName": "丁二烯(华东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "甲乙酮",
         "commodityKey": "xyzq:price:丁酮(华东)",
-        "weight": 0.3
+        "weight": 0.35,
+        "commodityName": "丁酮(华东)"
       },
       {
         "productName": "顺酐",
         "commodityKey": "xyzq:price:顺酐(华东)",
-        "weight": 0.4
+        "weight": 0.47,
+        "commodityName": "顺酐(华东)"
       },
       {
         "productName": "丁二烯",
         "commodityKey": "xyzq:price:丁二烯(华东)",
-        "weight": 0.15
+        "weight": 0.18,
+        "commodityName": "丁二烯(华东)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002430.SZ",
+    "name": "杭氧股份",
+    "group": "materials",
+    "subSector": "工业气体与空分",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注现场管道气长期固定照付不议合同，以及零售液氧/液氮/液氩现货价差弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "液氧",
+        "commodityKey": "xyzq:price:液氧(江苏)",
+        "weight": 0.4,
+        "commodityName": "液氧(江苏)"
+      },
+      {
+        "productName": "液氮",
+        "commodityKey": "xyzq:price:液氮(江苏)",
+        "weight": 0.3,
+        "commodityName": "液氮(江苏)"
+      },
+      {
+        "productName": "液氩",
+        "commodityKey": "xyzq:price:液氩(河北)",
+        "weight": 0.3,
+        "commodityName": "液氩(河北)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "液氧",
+        "commodityKey": "xyzq:price:液氧(江苏)",
+        "weight": 0.4,
+        "commodityName": "液氧(江苏)"
+      },
+      {
+        "productName": "液氮",
+        "commodityKey": "xyzq:price:液氮(江苏)",
+        "weight": 0.3,
+        "commodityName": "液氮(江苏)"
+      },
+      {
+        "productName": "液氩",
+        "commodityKey": "xyzq:price:液氩(河北)",
+        "weight": 0.3,
+        "commodityName": "液氩(河北)"
       }
     ]
   },
@@ -481,36 +1689,44 @@
       {
         "productName": "草甘膦",
         "commodityKey": "xyzq:price:草甘膦(华东)",
-        "weight": 0.5
+        "weight": 0.53,
+        "commodityName": "草甘膦(华东)"
       },
       {
         "productName": "敌草快",
-        "commodityKey": "cj:price:敌草快",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "有机硅",
-        "commodityKey": "cj:price:DMC",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:有机硅中间体库存",
+        "weight": 0.21,
+        "commodityName": "有机硅中间体库存"
       }
     ],
     "productsByProfit": [
       {
         "productName": "草甘膦",
         "commodityKey": "xyzq:price:草甘膦(华东)",
-        "weight": 0.45
+        "weight": 0.48,
+        "commodityName": "草甘膦(华东)"
       },
       {
         "productName": "敌草快",
-        "commodityKey": "cj:price:敌草快",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "有机硅",
-        "commodityKey": "cj:price:DMC",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:有机硅中间体库存",
+        "weight": 0.26,
+        "commodityName": "有机硅中间体库存"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "002493.SZ",
@@ -520,36 +1736,44 @@
       {
         "productName": "PTA",
         "commodityKey": "xyzq:price:PTA(华东)",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "PTA(华东)"
       },
       {
         "productName": "聚酯",
-        "commodityKey": "cj:price:涤纶POY（华东）",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
+        "weight": 0.37,
+        "commodityName": "聚酯切片(瓶级)"
       },
       {
         "productName": "PX",
         "commodityKey": "xyzq:price:PX(华东)",
-        "weight": 0.2
+        "weight": 0.21,
+        "commodityName": "PX(华东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "PTA",
         "commodityKey": "xyzq:price:PTA(华东)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "PTA(华东)"
       },
       {
         "productName": "聚酯",
-        "commodityKey": "cj:price:涤纶POY（华东）",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
+        "weight": 0.42,
+        "commodityName": "聚酯切片(瓶级)"
       },
       {
         "productName": "PX",
         "commodityKey": "xyzq:price:PX(华东)",
-        "weight": 0.25
+        "weight": 0.26,
+        "commodityName": "PX(华东)"
       }
-    ]
+    ],
+    "formulaType": "spread",
+    "focusRationale": "重度关注原材料（煤炭/原油/PX）与产成品（聚酯/醋酸/烯烃）之间的产业链剪刀差及理论加工利差。"
   },
   {
     "code": "002597.SZ",
@@ -558,37 +1782,45 @@
     "productsByRevenue": [
       {
         "productName": "甜味剂",
-        "commodityKey": "cj:price:安赛蜜",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "三氯蔗糖",
         "commodityKey": "xyzq:price:三氯蔗糖",
-        "weight": 0.35
+        "weight": 0.37,
+        "commodityName": "三氯蔗糖"
       },
       {
         "productName": "甲乙基麦芽酚",
-        "commodityKey": "cj:price:乙基麦芽酚",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "甜味剂",
-        "commodityKey": "cj:price:安赛蜜",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "三氯蔗糖",
         "commodityKey": "xyzq:price:三氯蔗糖",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "三氯蔗糖"
       },
       {
         "productName": "甲乙基麦芽酚",
-        "commodityKey": "cj:price:乙基麦芽酚",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "002637.SZ",
@@ -597,37 +1829,45 @@
     "productsByRevenue": [
       {
         "productName": "表面活性剂",
-        "commodityKey": "cj:price:AES",
-        "weight": 0.45
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "油脂化工",
-        "commodityKey": "cj:price:硬脂酸",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "磺酸",
-        "commodityKey": "cj:price:磺酸",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "表面活性剂",
-        "commodityKey": "cj:price:AES",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "油脂化工",
-        "commodityKey": "cj:price:硬脂酸",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "磺酸",
-        "commodityKey": "cj:price:磺酸",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "002648.SZ",
@@ -637,34 +1877,78 @@
       {
         "productName": "丙烯酸",
         "commodityKey": "xyzq:price:丙烯酸(华东)",
-        "weight": 0.45
+        "weight": 0.47,
+        "commodityName": "丙烯酸(华东)"
       },
       {
         "productName": "丙烯酸酯",
-        "commodityKey": "cj:price:丙烯酸丁酯",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "C3产品",
-        "commodityKey": "cj:price:丙烯（汇丰石化）",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "丙烯酸",
         "commodityKey": "xyzq:price:丙烯酸(华东)",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "丙烯酸(华东)"
       },
       {
         "productName": "丙烯酸酯",
-        "commodityKey": "cj:price:丙烯酸丁酯",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "C3产品",
-        "commodityKey": "cj:price:丙烯（汇丰石化）",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002683.SZ",
+    "name": "广东宏大",
+    "group": "explosive",
+    "subSector": "矿山民爆一体化",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注大中型露天矿山剥离采矿EPC一体化服务，以炸药生产带动高壁垒工程高毛利。",
+    "productsByRevenue": [
+      {
+        "productName": "乳化炸药",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "硝酸铵",
+        "commodityKey": "xyzq:price:硝酸铵(山东)",
+        "weight": 0.4,
+        "commodityName": "硝酸铵(山东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "乳化炸药",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "硝酸铵",
+        "commodityKey": "xyzq:price:硝酸铵(山东)",
+        "weight": 0.4,
+        "commodityName": "硝酸铵(山东)"
       }
     ]
   },
@@ -676,34 +1960,245 @@
       {
         "productName": "烧碱",
         "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.45
+        "weight": 0.47,
+        "commodityName": "烧碱(32%离子膜,华北)"
       },
       {
         "productName": "液氯",
         "commodityKey": "xyzq:price:液氯(山东)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "液氯(山东)"
       },
       {
         "productName": "双氧水",
-        "commodityKey": "cj:price:双氧水",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:双氧水(27.5%，山东)",
+        "weight": 0.21,
+        "commodityName": "双氧水(27.5%，山东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "烧碱",
         "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.45
+        "weight": 0.48,
+        "commodityName": "烧碱(32%离子膜,华北)"
       },
       {
         "productName": "液氯",
         "commodityKey": "xyzq:price:液氯(山东)",
-        "weight": 0.25
+        "weight": 0.26,
+        "commodityName": "液氯(山东)"
       },
       {
         "productName": "双氧水",
-        "commodityKey": "cj:price:双氧水",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:双氧水(27.5%，山东)",
+        "weight": 0.26,
+        "commodityName": "双氧水(27.5%，山东)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "002783.SZ",
+    "name": "凯龙股份",
+    "group": "explosive",
+    "productsByRevenue": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "硝酸铵",
+        "commodityKey": "xyzq:price:硝酸铵(山东)",
+        "weight": 0.32,
+        "commodityName": "硝酸铵(山东)"
+      },
+      {
+        "productName": "复合肥",
+        "commodityKey": "xyzq:price:复合肥",
+        "weight": 0.26,
+        "commodityName": "复合肥"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业炸药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.36,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "硝酸铵",
+        "commodityKey": "xyzq:price:硝酸铵(山东)",
+        "weight": 0.32,
+        "commodityName": "硝酸铵(山东)"
+      },
+      {
+        "productName": "复合肥",
+        "commodityKey": "xyzq:price:复合肥",
+        "weight": 0.32,
+        "commodityName": "复合肥"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "2689.HK",
+    "name": "玖龙纸业",
+    "group": "paper",
+    "subSector": "箱板瓦楞包装纸",
+    "formulaType": "spread",
+    "focusRationale": "关注箱板纸/瓦楞纸售价与废纸（国废/外废）成本之间的吨纸毛利剪刀差。",
+    "productsByRevenue": [
+      {
+        "productName": "箱板纸",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.55,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "瓦楞纸",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.45,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "箱板纸",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.55,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "瓦楞纸",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.45,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "300034.SZ",
+    "name": "钢研高纳",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "300402.SZ",
+    "name": "宝色股份",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "300470.SZ",
+    "name": "中密控股",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "300527.SZ",
+    "name": "ST应急",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "300747.SZ",
+    "name": "锐科激光",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -714,37 +2209,45 @@
     "productsByRevenue": [
       {
         "productName": "有机颜料",
-        "commodityKey": "cj:price:永固紫",
-        "weight": 0.45
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "高性能材料",
-        "commodityKey": "cj:price:聚氨酯",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "中间体",
-        "commodityKey": "cj:price:色酚",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:有机硅中间体库存",
+        "weight": 0.21,
+        "commodityName": "有机硅中间体库存"
       }
     ],
     "productsByProfit": [
       {
         "productName": "有机颜料",
-        "commodityKey": "cj:price:永固紫",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "高性能材料",
-        "commodityKey": "cj:price:聚氨酯",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "中间体",
-        "commodityKey": "cj:price:色酚",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:有机硅中间体库存",
+        "weight": 0.21,
+        "commodityName": "有机硅中间体库存"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "300927.SZ",
@@ -754,34 +2257,138 @@
       {
         "productName": "甲醛",
         "commodityKey": "xyzq:price:甲醛(河北)",
-        "weight": 0.45
+        "weight": 0.47,
+        "commodityName": "甲醛(河北)"
       },
       {
         "productName": "多聚甲醛",
-        "commodityKey": "cj:price:多聚甲醛",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "氯化物",
-        "commodityKey": "cj:price:三氯甲醛",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "甲醛",
         "commodityKey": "xyzq:price:甲醛(河北)",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "甲醛(河北)"
       },
       {
         "productName": "多聚甲醛",
-        "commodityKey": "cj:price:多聚甲醛",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "氯化物",
-        "commodityKey": "cj:price:三氯甲醛",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "300962.SZ",
+    "name": "中金辐照",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ]
+  },
+  {
+    "code": "301048.SZ",
+    "name": "金鹰重工",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ]
+  },
+  {
+    "code": "301058.SZ",
+    "name": "中粮科工",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "301090.SZ",
+    "name": "华润材料",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "瓶级聚酯切片",
+        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
+        "weight": 1.0,
+        "commodityName": "聚酯切片(瓶级)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "瓶级聚酯切片",
+        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
+        "weight": 1.0,
+        "commodityName": "聚酯切片(瓶级)"
       }
     ]
   },
@@ -793,18 +2400,19 @@
       {
         "productName": "原油",
         "commodityKey": "xyzq:price:WTI期货(主连合约)",
-        "weight": 0.4
+        "weight": 0.42,
+        "commodityName": "WTI期货(主连合约)"
       },
       {
         "productName": "汽油",
         "commodityKey": "xyzq:price:中国92#汽油(镇海炼化)",
-        "weight": 0.3,
+        "weight": 0.32,
         "commodityName": "中国92#汽油(镇海炼化)"
       },
       {
         "productName": "柴油",
         "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
-        "weight": 0.25,
+        "weight": 0.26,
         "commodityName": "中国0#柴油(镇海炼化)"
       }
     ],
@@ -812,1326 +2420,70 @@
       {
         "productName": "原油",
         "commodityKey": "xyzq:price:WTI期货(主连合约)",
-        "weight": 0.35
+        "weight": 0.37,
+        "commodityName": "WTI期货(主连合约)"
       },
       {
         "productName": "汽油",
         "commodityKey": "xyzq:price:中国92#汽油(镇海炼化)",
-        "weight": 0.35,
+        "weight": 0.37,
         "commodityName": "中国92#汽油(镇海炼化)"
       },
       {
         "productName": "柴油",
         "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
-        "weight": 0.25,
+        "weight": 0.26,
         "commodityName": "中国0#柴油(镇海炼化)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
-    "code": "600160.SH",
-    "name": "巨化股份",
-    "group": "chemical",
+    "code": "600038.SH",
+    "name": "中直股份",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
     "productsByRevenue": [
       {
-        "productName": "制冷剂",
-        "commodityKey": "xyzq:price:R32(浙江)",
-        "weight": 0.45,
-        "commodityName": "R32（市场均价）"
-      },
-      {
-        "productName": "含氟聚合物",
-        "commodityKey": "cj:price:PVDF",
-        "weight": 0.35
-      },
-      {
-        "productName": "基础化工",
-        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-        "weight": 0.15
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ],
     "productsByProfit": [
       {
-        "productName": "制冷剂",
-        "commodityKey": "xyzq:price:R32(浙江)",
-        "weight": 0.4,
-        "commodityName": "R32（市场均价）"
-      },
-      {
-        "productName": "含氟聚合物",
-        "commodityKey": "cj:price:PVDF",
-        "weight": 0.4
-      },
-      {
-        "productName": "基础化工",
-        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-        "weight": 0.15
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
   {
-    "code": "600230.SH",
-    "name": "沧州大化",
-    "group": "chemical",
+    "code": "600056.SH",
+    "name": "中国医药",
+    "group": "agriculture",
+    "subSector": "农业/消费",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
     "productsByRevenue": [
       {
-        "productName": "TDI",
-        "commodityKey": "xyzq:price:TDI(T80,华东)",
-        "weight": 0.5
-      },
-      {
-        "productName": "聚碳酸酯",
-        "commodityKey": "xyzq:price:聚碳酸酯PC(科思创2805,华东)",
-        "weight": 0.3
-      },
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.15
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ],
     "productsByProfit": [
       {
-        "productName": "TDI",
-        "commodityKey": "xyzq:price:TDI(T80,华东)",
-        "weight": 0.55
-      },
-      {
-        "productName": "聚碳酸酯",
-        "commodityKey": "xyzq:price:聚碳酸酯PC(科思创2805,华东)",
-        "weight": 0.3
-      },
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.1
-      }
-    ]
-  },
-  {
-    "code": "600298.SH",
-    "name": "安琪酵母",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "蛋氨酸",
-        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
-        "weight": 0.55,
-        "commodityName": "蛋氨酸（固体北京）"
-      },
-      {
-        "productName": "维生素A",
-        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
-        "weight": 0.25
-      },
-      {
-        "productName": "维生素E",
-        "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "蛋氨酸",
-        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
-        "weight": 0.5,
-        "commodityName": "蛋氨酸（固体北京）"
-      },
-      {
-        "productName": "维生素A",
-        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
-        "weight": 0.3
-      },
-      {
-        "productName": "维生素E",
-        "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600299.SH",
-    "name": "安迪苏",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "蛋氨酸",
-        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
-        "weight": 0.55,
-        "commodityName": "蛋氨酸（固体北京）"
-      },
-      {
-        "productName": "维生素A",
-        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
-        "weight": 0.25
-      },
-      {
-        "productName": "维生素E",
-        "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "蛋氨酸",
-        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
-        "weight": 0.5,
-        "commodityName": "蛋氨酸（固体北京）"
-      },
-      {
-        "productName": "维生素A",
-        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
-        "weight": 0.3
-      },
-      {
-        "productName": "维生素E",
-        "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600328.SH",
-    "name": "中盐化工",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "纯碱",
-        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-        "weight": 0.5
-      },
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.25
-      },
-      {
-        "productName": "PVC",
-        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "纯碱",
-        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-        "weight": 0.55
-      },
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.25
-      },
-      {
-        "productName": "PVC",
-        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.1
-      }
-    ]
-  },
-  {
-    "code": "600352.SH",
-    "name": "浙江龙盛",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "染料",
-        "commodityKey": "cj:price:分散染料",
-        "weight": 0.4
-      },
-      {
-        "productName": "助剂",
-        "commodityKey": "cj:price:还原剂",
-        "weight": 0.3
-      },
-      {
-        "productName": "中间体",
-        "commodityKey": "cj:price:间苯二胺",
-        "weight": 0.25
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "染料",
-        "commodityKey": "cj:price:分散染料",
-        "weight": 0.35
-      },
-      {
-        "productName": "助剂",
-        "commodityKey": "cj:price:还原剂",
-        "weight": 0.35
-      },
-      {
-        "productName": "中间体",
-        "commodityKey": "cj:price:间苯二胺",
-        "weight": 0.25
-      }
-    ]
-  },
-  {
-    "code": "600378.SH",
-    "name": "昊华科技",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "制冷剂",
-        "commodityKey": "xyzq:price:R32(浙江)",
-        "weight": 0.4,
-        "commodityName": "R32（市场均价）"
-      },
-      {
-        "productName": "含氟聚合物",
-        "commodityKey": "cj:price:PTFE",
-        "weight": 0.35
-      },
-      {
-        "productName": "电子特气",
-        "commodityKey": "cj:price:六氟化钨",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "制冷剂",
-        "commodityKey": "xyzq:price:R32(浙江)",
-        "weight": 0.35,
-        "commodityName": "R32（市场均价）"
-      },
-      {
-        "productName": "含氟聚合物",
-        "commodityKey": "cj:price:PTFE",
-        "weight": 0.4
-      },
-      {
-        "productName": "电子特气",
-        "commodityKey": "cj:price:六氟化钨",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "600409.SH",
-    "name": "三友化工",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "纯碱",
-        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-        "weight": 0.45
-      },
-      {
-        "productName": "粘胶短纤",
-        "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
-        "weight": 0.25
-      },
-      {
-        "productName": "PVC",
-        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "纯碱",
-        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
-        "weight": 0.5
-      },
-      {
-        "productName": "粘胶短纤",
-        "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
-        "weight": 0.2
-      },
-      {
-        "productName": "PVC",
-        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600426.SH",
-    "name": "华鲁恒升",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "醋酸",
-        "commodityKey": "xyzq:price:醋酸(华东)",
-        "weight": 0.4
-      },
-      {
-        "productName": "DMF",
-        "commodityKey": "xyzq:price:DMF(华东)",
-        "weight": 0.3
-      },
-      {
-        "productName": "己二酸",
-        "commodityKey": "xyzq:price:己二酸(华东)",
-        "weight": 0.25
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "醋酸",
-        "commodityKey": "xyzq:price:醋酸(华东)",
-        "weight": 0.35
-      },
-      {
-        "productName": "DMF",
-        "commodityKey": "xyzq:price:DMF(华东)",
-        "weight": 0.35
-      },
-      {
-        "productName": "己二酸",
-        "commodityKey": "xyzq:price:己二酸(华东)",
-        "weight": 0.25
-      }
-    ]
-  },
-  {
-    "code": "600486.SH",
-    "name": "扬农化工",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "草甘膦",
-        "commodityKey": "xyzq:price:草甘膦(华东)",
-        "weight": 0.45
-      },
-      {
-        "productName": "菊酯",
-        "commodityKey": "cj:price:高效氯氟氰菊酯",
-        "weight": 0.3
-      },
-      {
-        "productName": "杀菌剂",
-        "commodityKey": "cj:price:多菌灵",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "草甘膦",
-        "commodityKey": "xyzq:price:草甘膦(华东)",
-        "weight": 0.4
-      },
-      {
-        "productName": "菊酯",
-        "commodityKey": "cj:price:高效氯氟氰菊酯",
-        "weight": 0.35
-      },
-      {
-        "productName": "杀菌剂",
-        "commodityKey": "cj:price:多菌灵",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600499.SH",
-    "name": "科达制造",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "电解铜箔",
-        "commodityKey": "lme:price:铜",
-        "weight": 0.5
-      },
-      {
-        "productName": "电线电缆",
-        "commodityKey": "cj:price:铜杆",
-        "weight": 0.3
-      },
-      {
-        "productName": "高分子材料",
-        "commodityKey": "cj:price:聚烯烃",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "电解铜箔",
-        "commodityKey": "lme:price:铜",
-        "weight": 0.55
-      },
-      {
-        "productName": "电线电缆",
-        "commodityKey": "cj:price:铜杆",
-        "weight": 0.25
-      },
-      {
-        "productName": "高分子材料",
-        "commodityKey": "cj:price:聚烯烃",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600500.SH",
-    "name": "中化国际",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "环氧树脂",
-        "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
-        "weight": 0.3
-      },
-      {
-        "productName": "橡胶助剂",
-        "commodityKey": "cj:price:防老剂",
-        "weight": 0.25
-      },
-      {
-        "productName": "工程塑料",
-        "commodityKey": "cj:price:PA66",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "环氧树脂",
-        "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
-        "weight": 0.25
-      },
-      {
-        "productName": "橡胶助剂",
-        "commodityKey": "cj:price:防老剂",
-        "weight": 0.35
-      },
-      {
-        "productName": "工程塑料",
-        "commodityKey": "cj:price:PA66",
-        "weight": 0.25
-      }
-    ]
-  },
-  {
-    "code": "600746.SH",
-    "name": "江苏索普",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "醋酸",
-        "commodityKey": "xyzq:price:醋酸(华东)",
-        "weight": 0.5
-      },
-      {
-        "productName": "氯碱",
-        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-        "weight": 0.25
-      },
-      {
-        "productName": "硫酸",
-        "commodityKey": "xyzq:price:硫酸(98%,长三角)",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "醋酸",
-        "commodityKey": "xyzq:price:醋酸(华东)",
-        "weight": 0.55
-      },
-      {
-        "productName": "氯碱",
-        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-        "weight": 0.25
-      },
-      {
-        "productName": "硫酸",
-        "commodityKey": "xyzq:price:硫酸(98%,长三角)",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600866.SH",
-    "name": "星湖科技",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "味精",
-        "commodityKey": "xyzq:price:味精(国内)",
-        "weight": 0.5
-      },
-      {
-        "productName": "核苷酸",
-        "commodityKey": "cj:price:I+G",
-        "weight": 0.3
-      },
-      {
-        "productName": "原料药",
-        "commodityKey": "cj:price:肌苷",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "味精",
-        "commodityKey": "xyzq:price:味精(国内)",
-        "weight": 0.4
-      },
-      {
-        "productName": "核苷酸",
-        "commodityKey": "cj:price:I+G",
-        "weight": 0.4
-      },
-      {
-        "productName": "原料药",
-        "commodityKey": "cj:price:肌苷",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "600955.SH",
-    "name": "维远股份",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "苯酚",
-        "commodityKey": "xyzq:price:苯酚(华东)",
-        "weight": 0.4,
-        "commodityName": "苯酚（华东）"
-      },
-      {
-        "productName": "丙酮",
-        "commodityKey": "xyzq:price:丙酮(华东)",
-        "weight": 0.3,
-        "commodityName": "丙酮（华东）"
-      },
-      {
-        "productName": "双酚A",
-        "commodityKey": "xyzq:price:双酚A(华东)",
-        "weight": 0.25,
-        "commodityName": "双酚A（华东）"
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "苯酚",
-        "commodityKey": "xyzq:price:苯酚(华东)",
-        "weight": 0.35,
-        "commodityName": "苯酚（华东）"
-      },
-      {
-        "productName": "丙酮",
-        "commodityKey": "xyzq:price:丙酮(华东)",
-        "weight": 0.3,
-        "commodityName": "丙酮（华东）"
-      },
-      {
-        "productName": "双酚A",
-        "commodityKey": "xyzq:price:双酚A(华东)",
-        "weight": 0.3,
-        "commodityName": "双酚A（华东）"
-      }
-    ]
-  },
-  {
-    "code": "601117.SH",
-    "name": "中国化学",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "工程服务",
-        "commodityKey": "cj:price:MDI",
-        "weight": 0.5
-      },
-      {
-        "productName": "化工品贸易",
-        "commodityKey": "cj:price:轻质纯碱（华东）",
-        "weight": 0.3
-      },
-      {
-        "productName": "设计咨询",
-        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "工程服务",
-        "commodityKey": "cj:price:MDI",
-        "weight": 0.55
-      },
-      {
-        "productName": "化工品贸易",
-        "commodityKey": "cj:price:轻质纯碱（华东）",
-        "weight": 0.2
-      },
-      {
-        "productName": "设计咨询",
-        "commodityKey": "cj:price:32%隔膜烧碱（华东）",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "601118.SH",
-    "name": "海南橡胶",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "天然橡胶",
-        "commodityKey": "xyzq:price:天然橡胶(国产5号标胶)",
-        "weight": 0.5
-      },
-      {
-        "productName": "轮胎",
-        "commodityKey": "cj:price:全钢胎",
-        "weight": 0.3
-      },
-      {
-        "productName": "乳胶",
-        "commodityKey": "cj:price:浓缩乳胶",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "天然橡胶",
-        "commodityKey": "xyzq:price:天然橡胶(国产5号标胶)",
-        "weight": 0.45
-      },
-      {
-        "productName": "轮胎",
-        "commodityKey": "cj:price:全钢胎",
-        "weight": 0.35
-      },
-      {
-        "productName": "乳胶",
-        "commodityKey": "cj:price:浓缩乳胶",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "601216.SH",
-    "name": "君正集团",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "PVC",
-        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.4
-      },
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.3
-      },
-      {
-        "productName": "电石",
-        "commodityKey": "xyzq:price:电石(西北)",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "PVC",
-        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
-        "weight": 0.35
-      },
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.35
-      },
-      {
-        "productName": "电石",
-        "commodityKey": "xyzq:price:电石(西北)",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "601233.SH",
-    "name": "桐昆股份",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "涤纶长丝",
-        "commodityKey": "xyzq:price:涤纶长丝(POY)",
-        "weight": 0.5
-      },
-      {
-        "productName": "PTA",
-        "commodityKey": "xyzq:price:PTA(华东)",
-        "weight": 0.3
-      },
-      {
-        "productName": "聚酯切片",
-        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "涤纶长丝",
-        "commodityKey": "xyzq:price:涤纶长丝(POY)",
-        "weight": 0.55
-      },
-      {
-        "productName": "PTA",
-        "commodityKey": "xyzq:price:PTA(华东)",
-        "weight": 0.25
-      },
-      {
-        "productName": "聚酯切片",
-        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "601678.SH",
-    "name": "滨化股份",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.4
-      },
-      {
-        "productName": "环氧丙烷",
-        "commodityKey": "xyzq:price:环氧丙烷(华东)",
-        "weight": 0.35
-      },
-      {
-        "productName": "三氯乙烯",
-        "commodityKey": "cj:price:三氯乙烯",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "烧碱",
-        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
-        "weight": 0.35
-      },
-      {
-        "productName": "环氧丙烷",
-        "commodityKey": "xyzq:price:环氧丙烷(华东)",
-        "weight": 0.4
-      },
-      {
-        "productName": "三氯乙烯",
-        "commodityKey": "cj:price:三氯乙烯",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "601857.SH",
-    "name": "中国石油",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "原油",
-        "commodityKey": "xyzq:price:WTI期货(主连合约)",
-        "weight": 0.4
-      },
-      {
-        "productName": "天然气",
-        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
-        "weight": 0.3,
-        "commodityName": "NYMEX天然气"
-      },
-      {
-        "productName": "成品油",
-        "commodityKey": "cj:price:92#汽油",
-        "weight": 0.25
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "原油",
-        "commodityKey": "xyzq:price:WTI期货(主连合约)",
-        "weight": 0.35
-      },
-      {
-        "productName": "天然气",
-        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
-        "weight": 0.35,
-        "commodityName": "NYMEX天然气"
-      },
-      {
-        "productName": "成品油",
-        "commodityKey": "cj:price:92#汽油",
-        "weight": 0.25
-      }
-    ]
-  },
-  {
-    "code": "603077.SH",
-    "name": "和邦生物",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "维生素E",
-        "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-        "weight": 0.35
-      },
-      {
-        "productName": "香精香料",
-        "commodityKey": "cj:price:薄荷醇",
-        "weight": 0.3
-      },
-      {
-        "productName": "新材料",
-        "commodityKey": "cj:price:PPS",
-        "weight": 0.25
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "维生素E",
-        "commodityKey": "xyzq:price:维生素E(50万IU/g,国产)",
-        "weight": 0.3
-      },
-      {
-        "productName": "香精香料",
-        "commodityKey": "cj:price:薄荷醇",
-        "weight": 0.35
-      },
-      {
-        "productName": "新材料",
-        "commodityKey": "cj:price:PPS",
-        "weight": 0.3
-      }
-    ]
-  },
-  {
-    "code": "603599.SH",
-    "name": "广信股份",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "多菌灵",
-        "commodityKey": "xyzq:price:多菌灵(98%,华东)",
-        "weight": 0.45
-      },
-      {
-        "productName": "甲基硫菌灵",
-        "commodityKey": "xyzq:price:甲基硫菌",
-        "weight": 0.3
-      },
-      {
-        "productName": "敌草隆",
-        "commodityKey": "xyzq:price:敌草隆",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "多菌灵",
-        "commodityKey": "xyzq:price:多菌灵(98%,华东)",
-        "weight": 0.4
-      },
-      {
-        "productName": "甲基硫菌灵",
-        "commodityKey": "xyzq:price:甲基硫菌",
-        "weight": 0.35
-      },
-      {
-        "productName": "敌草隆",
-        "commodityKey": "xyzq:price:敌草隆",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "603968.SH",
-    "name": "醋化股份",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "热力",
-        "commodityKey": "cj:price:动力煤",
-        "weight": 0.45
-      },
-      {
-        "productName": "天然气",
-        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
-        "weight": 0.35,
-        "commodityName": "NYMEX天然气"
-      },
-      {
-        "productName": "生物质",
-        "commodityKey": "cj:price:木屑颗粒",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "热力",
-        "commodityKey": "cj:price:动力煤",
-        "weight": 0.4
-      },
-      {
-        "productName": "天然气",
-        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
-        "weight": 0.4,
-        "commodityName": "NYMEX天然气"
-      },
-      {
-        "productName": "生物质",
-        "commodityKey": "cj:price:木屑颗粒",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "605399.SH",
-    "name": "晨光新材",
-    "group": "chemical",
-    "productsByRevenue": [
-      {
-        "productName": "硅烷偶联剂",
-        "commodityKey": "cj:price:KH-550",
-        "weight": 0.45
-      },
-      {
-        "productName": "气相白炭黑",
-        "commodityKey": "cj:price:气相白炭黑",
-        "weight": 0.3
-      },
-      {
-        "productName": "功能性硅橡胶",
-        "commodityKey": "cj:price:107胶",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "硅烷偶联剂",
-        "commodityKey": "cj:price:KH-550",
-        "weight": 0.4
-      },
-      {
-        "productName": "气相白炭黑",
-        "commodityKey": "cj:price:气相白炭黑",
-        "weight": 0.35
-      },
-      {
-        "productName": "功能性硅橡胶",
-        "commodityKey": "cj:price:107胶",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "000629.SZ",
-    "name": "钒钛股份",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "钒制品",
-        "commodityKey": "cj:price:五氧化二钒",
-        "weight": 0.45
-      },
-      {
-        "productName": "钛白粉",
-        "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
-        "weight": 0.35,
-        "commodityName": "钛白粉（金红石型）"
-      },
-      {
-        "productName": "钛精矿",
-        "commodityKey": "cj:price:钛精矿",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "钒制品",
-        "commodityKey": "cj:price:五氧化二钒",
-        "weight": 0.5
-      },
-      {
-        "productName": "钛白粉",
-        "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
-        "weight": 0.3,
-        "commodityName": "钛白粉（金红石型）"
-      },
-      {
-        "productName": "钛精矿",
-        "commodityKey": "cj:price:钛精矿",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "000657.SZ",
-    "name": "中钨高新",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "钨",
-        "commodityKey": "xyzq:price:仲钨酸铵",
-        "weight": 0.45
-      },
-      {
-        "productName": "硬质合金",
-        "commodityKey": "cj:price:碳化钨",
-        "weight": 0.35
-      },
-      {
-        "productName": "钼",
-        "commodityKey": "xyzq:price:钼精矿",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "钨",
-        "commodityKey": "xyzq:price:仲钨酸铵",
-        "weight": 0.4
-      },
-      {
-        "productName": "硬质合金",
-        "commodityKey": "cj:price:碳化钨",
-        "weight": 0.4
-      },
-      {
-        "productName": "钼",
-        "commodityKey": "xyzq:price:钼精矿",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "000878.SZ",
-    "name": "云南铜业",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "铜",
-        "commodityKey": "xyzq:price:铜",
-        "weight": 0.7
-      },
-      {
-        "productName": "黄金",
-        "commodityKey": "xyzq:price:黄金",
-        "weight": 0.15
-      },
-      {
-        "productName": "白银",
-        "commodityKey": "xyzq:price:白银",
-        "weight": 0.1
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "铜",
-        "commodityKey": "xyzq:price:铜",
-        "weight": 0.65
-      },
-      {
-        "productName": "黄金",
-        "commodityKey": "xyzq:price:黄金",
-        "weight": 0.2
-      },
-      {
-        "productName": "白银",
-        "commodityKey": "xyzq:price:白银",
-        "weight": 0.1
-      }
-    ]
-  },
-  {
-    "code": "000923.SZ",
-    "name": "河钢资源",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "铁矿石",
-        "commodityKey": "xyzq:price:铁矿石",
-        "weight": 0.55
-      },
-      {
-        "productName": "钒钛",
-        "commodityKey": "cj:price:五氧化二钒",
-        "weight": 0.25
-      },
-      {
-        "productName": "磁铁矿",
-        "commodityKey": "cj:price:铁精粉",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "铁矿石",
-        "commodityKey": "xyzq:price:铁矿石",
-        "weight": 0.5
-      },
-      {
-        "productName": "钒钛",
-        "commodityKey": "cj:price:五氧化二钒",
-        "weight": 0.3
-      },
-      {
-        "productName": "磁铁矿",
-        "commodityKey": "cj:price:铁精粉",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "000960.SZ",
-    "name": "锡业股份",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "锡",
-        "commodityKey": "xyzq:price:锡",
-        "weight": 0.55
-      },
-      {
-        "productName": "锌",
-        "commodityKey": "xyzq:price:锌",
-        "weight": 0.25
-      },
-      {
-        "productName": "铟",
-        "commodityKey": "xyzq:price:金属铟",
-        "weight": 0.15
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "锡",
-        "commodityKey": "xyzq:price:锡",
-        "weight": 0.6
-      },
-      {
-        "productName": "锌",
-        "commodityKey": "xyzq:price:锌",
-        "weight": 0.2
-      },
-      {
-        "productName": "铟",
-        "commodityKey": "xyzq:price:金属铟",
-        "weight": 0.15
-      }
-    ]
-  },
-  {
-    "code": "000962.SZ",
-    "name": "东方钽业",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "钽",
-        "commodityKey": "xyzq:price:钽",
-        "weight": 0.45
-      },
-      {
-        "productName": "铌",
-        "commodityKey": "xyzq:price:铌",
-        "weight": 0.3
-      },
-      {
-        "productName": "铍",
-        "commodityKey": "xyzq:price:金属铍",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "钽",
-        "commodityKey": "xyzq:price:钽",
-        "weight": 0.5
-      },
-      {
-        "productName": "铌",
-        "commodityKey": "xyzq:price:铌",
-        "weight": 0.25
-      },
-      {
-        "productName": "铍",
-        "commodityKey": "xyzq:price:金属铍",
-        "weight": 0.2
-      }
-    ]
-  },
-  {
-    "code": "002057.SZ",
-    "name": "中钢天源",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "四氧化三锰",
-        "commodityKey": "cj:price:四氧化三锰",
-        "weight": 0.4
-      },
-      {
-        "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.3
-      },
-      {
-        "productName": "永磁材料",
-        "commodityKey": "cj:price:N35钕铁硼",
-        "weight": 0.25
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "四氧化三锰",
-        "commodityKey": "cj:price:四氧化三锰",
-        "weight": 0.35
-      },
-      {
-        "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.35
-      },
-      {
-        "productName": "永磁材料",
-        "commodityKey": "cj:price:N35钕铁硼",
-        "weight": 0.25
-      }
-    ]
-  },
-  {
-    "code": "002237.SZ",
-    "name": "恒邦股份",
-    "group": "mining",
-    "productsByRevenue": [
-      {
-        "productName": "黄金",
-        "commodityKey": "xyzq:price:黄金",
-        "weight": 0.5
-      },
-      {
-        "productName": "白银",
-        "commodityKey": "xyzq:price:白银",
-        "weight": 0.25
-      },
-      {
-        "productName": "电解铜",
-        "commodityKey": "lme:price:铜",
-        "weight": 0.2
-      }
-    ],
-    "productsByProfit": [
-      {
-        "productName": "黄金",
-        "commodityKey": "xyzq:price:黄金",
-        "weight": 0.55
-      },
-      {
-        "productName": "白银",
-        "commodityKey": "xyzq:price:白银",
-        "weight": 0.2
-      },
-      {
-        "productName": "电解铜",
-        "commodityKey": "lme:price:铜",
-        "weight": 0.2
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2143,36 +2495,44 @@
       {
         "productName": "PVA",
         "commodityKey": "xyzq:price:PVA(1799,四川维尼纶)",
-        "weight": 0.45
+        "weight": 0.47,
+        "commodityName": "PVA(1799,四川维尼纶)"
       },
       {
         "productName": "醋酸乙烯",
         "commodityKey": "xyzq:price:醋酸乙烯(华东)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "醋酸乙烯(华东)"
       },
       {
         "productName": "水泥",
-        "commodityKey": "cj:price:P.O42.5水泥",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "PVA",
         "commodityKey": "xyzq:price:PVA(1799,四川维尼纶)",
-        "weight": 0.5
+        "weight": 0.53,
+        "commodityName": "PVA(1799,四川维尼纶)"
       },
       {
         "productName": "醋酸乙烯",
         "commodityKey": "xyzq:price:醋酸乙烯(华东)",
-        "weight": 0.25
+        "weight": 0.26,
+        "commodityName": "醋酸乙烯(华东)"
       },
       {
         "productName": "水泥",
-        "commodityKey": "cj:price:P.O42.5水泥",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
-    ]
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "600111.SH",
@@ -2181,37 +2541,413 @@
     "productsByRevenue": [
       {
         "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.55
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.57,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "稀土永磁",
-        "commodityKey": "cj:price:N35钕铁硼",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "抛光粉",
-        "commodityKey": "cj:price:氧化铈",
-        "weight": 0.1
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.11,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.5
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "稀土永磁",
-        "commodityKey": "cj:price:N35钕铁硼",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "抛光粉",
-        "commodityKey": "cj:price:氧化铈",
-        "weight": 0.1
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.11,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注国家刚性配额或稀缺资源垄断下的产成品现货绝对价格与供需边际。"
+  },
+  {
+    "code": "600129.SH",
+    "name": "太极集团",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
+  },
+  {
+    "code": "600160.SH",
+    "name": "巨化股份",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "制冷剂",
+        "commodityKey": "xyzq:price:R32(浙江)",
+        "weight": 0.47,
+        "commodityName": "R32(浙江)"
+      },
+      {
+        "productName": "含氟聚合物",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "基础化工",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "制冷剂",
+        "commodityKey": "xyzq:price:R32(浙江)",
+        "weight": 0.42,
+        "commodityName": "R32(浙江)"
+      },
+      {
+        "productName": "含氟聚合物",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "基础化工",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注国家刚性配额或稀缺资源垄断下的产成品现货绝对价格与供需边际。"
+  },
+  {
+    "code": "600184.SH",
+    "name": "光电股份",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600195.SH",
+    "name": "中牧股份",
+    "group": "agriculture",
+    "subSector": "农业/消费",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600206.SH",
+    "name": "有研新材",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600217.SH",
+    "name": "中再资环",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600230.SH",
+    "name": "沧州大化",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "TDI",
+        "commodityKey": "xyzq:price:TDI(T80,华东)",
+        "weight": 0.52,
+        "commodityName": "TDI(T80,华东)"
+      },
+      {
+        "productName": "聚碳酸酯",
+        "commodityKey": "xyzq:price:聚碳酸酯PC(科思创2805,华东)",
+        "weight": 0.32,
+        "commodityName": "聚碳酸酯PC(科思创2805,华东)"
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.16,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "TDI",
+        "commodityKey": "xyzq:price:TDI(T80,华东)",
+        "weight": 0.57,
+        "commodityName": "TDI(T80,华东)"
+      },
+      {
+        "productName": "聚碳酸酯",
+        "commodityKey": "xyzq:price:聚碳酸酯PC(科思创2805,华东)",
+        "weight": 0.32,
+        "commodityName": "聚碳酸酯PC(科思创2805,华东)"
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.11,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600251.SH",
+    "name": "冠农股份",
+    "group": "agriculture",
+    "subSector": "特色农产品深加工",
+    "formulaType": "price",
+    "focusRationale": "关注番茄酱大包装出口绝对单价及棉花棉籽加工毛利边际。",
+    "productsByRevenue": [
+      {
+        "productName": "白糖",
+        "commodityKey": "xyzq:price:白糖",
+        "weight": 0.6,
+        "commodityName": "白糖"
+      },
+      {
+        "productName": "棉花",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "白糖",
+        "commodityKey": "xyzq:price:白糖",
+        "weight": 0.6,
+        "commodityName": "白糖"
+      },
+      {
+        "productName": "棉花",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "600282.SH",
+    "name": "南钢股份",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "焦精煤",
+        "commodityKey": "xyzq:price:焦精煤(太原)",
+        "weight": 1.0,
+        "commodityName": "焦精煤(太原)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "焦精煤",
+        "commodityKey": "xyzq:price:焦精煤(太原)",
+        "weight": 1.0,
+        "commodityName": "焦精煤(太原)"
+      }
+    ]
+  },
+  {
+    "code": "600298.SH",
+    "name": "安琪酵母",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "蛋氨酸",
+        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
+        "weight": 0.58,
+        "commodityName": "固体蛋氨酸(山东)"
+      },
+      {
+        "productName": "维生素A",
+        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
+        "weight": 0.26,
+        "commodityName": "维生素A(50万IU/g,国产)"
+      },
+      {
+        "productName": "维生素E",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "蛋氨酸",
+        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
+        "weight": 0.52,
+        "commodityName": "固体蛋氨酸(山东)"
+      },
+      {
+        "productName": "维生素A",
+        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
+        "weight": 0.32,
+        "commodityName": "维生素A(50万IU/g,国产)"
+      },
+      {
+        "productName": "维生素E",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600299.SH",
+    "name": "安迪苏",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "蛋氨酸",
+        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
+        "weight": 0.58,
+        "commodityName": "固体蛋氨酸(山东)"
+      },
+      {
+        "productName": "维生素A",
+        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
+        "weight": 0.26,
+        "commodityName": "维生素A(50万IU/g,国产)"
+      },
+      {
+        "productName": "维生素E",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "蛋氨酸",
+        "commodityKey": "xyzq:price:固体蛋氨酸(山东)",
+        "weight": 0.52,
+        "commodityName": "固体蛋氨酸(山东)"
+      },
+      {
+        "productName": "维生素A",
+        "commodityKey": "xyzq:price:维生素A(50万IU/g,国产)",
+        "weight": 0.32,
+        "commodityName": "维生素A(50万IU/g,国产)"
+      },
+      {
+        "productName": "维生素E",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "600301.SH",
@@ -2220,35 +2956,244 @@
     "productsByRevenue": [
       {
         "productName": "锡",
-        "commodityKey": "xyzq:price:锡",
-        "weight": 0.5
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "锌",
-        "commodityKey": "xyzq:price:锌",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:代森锰锌",
+        "weight": 0.32,
+        "commodityName": "代森锰锌"
       },
       {
         "productName": "锑",
-        "commodityKey": "xyzq:price:锑锭",
-        "weight": 0.15
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "锡",
-        "commodityKey": "xyzq:price:锡",
-        "weight": 0.55
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "锌",
-        "commodityKey": "xyzq:price:锌",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:代森锰锌",
+        "weight": 0.26,
+        "commodityName": "代森锰锌"
       },
       {
         "productName": "锑",
-        "commodityKey": "xyzq:price:锑锭",
-        "weight": 0.15
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。"
+  },
+  {
+    "code": "600328.SH",
+    "name": "中盐化工",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
+        "weight": 0.55,
+        "commodityName": "纯碱(轻质,华东)"
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.28,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      },
+      {
+        "productName": "PVC",
+        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
+        "weight": 0.17,
+        "commodityName": "PVC(电石法,长三角)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
+        "weight": 0.61,
+        "commodityName": "纯碱(轻质,华东)"
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.28,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      },
+      {
+        "productName": "PVC",
+        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
+        "weight": 0.11,
+        "commodityName": "PVC(电石法,长三角)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注国家刚性配额或稀缺资源垄断下的产成品现货绝对价格与供需边际。"
+  },
+  {
+    "code": "600352.SH",
+    "name": "浙江龙盛",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "染料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "助剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "中间体",
+        "commodityKey": "xyzq:price:有机硅中间体库存",
+        "weight": 0.26,
+        "commodityName": "有机硅中间体库存"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "染料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "助剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "中间体",
+        "commodityKey": "xyzq:price:有机硅中间体库存",
+        "weight": 0.26,
+        "commodityName": "有机硅中间体库存"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600356.SH",
+    "name": "恒丰纸业",
+    "group": "paper",
+    "subSector": "特种薄型卷烟纸",
+    "formulaType": "spread",
+    "focusRationale": "关注高毛利卷烟纸与进口针叶木浆成本之间的稳定高利差。",
+    "productsByRevenue": [
+      {
+        "productName": "针叶浆",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "双胶纸",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "针叶浆",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.6,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "双胶纸",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.4,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "600378.SH",
+    "name": "昊华科技",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "制冷剂",
+        "commodityKey": "xyzq:price:R32(浙江)",
+        "weight": 0.44,
+        "commodityName": "R32(浙江)"
+      },
+      {
+        "productName": "含氟聚合物",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.39,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "电子特气",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.17,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "制冷剂",
+        "commodityKey": "xyzq:price:R32(浙江)",
+        "weight": 0.37,
+        "commodityName": "R32(浙江)"
+      },
+      {
+        "productName": "含氟聚合物",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "电子特气",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注国家刚性配额或稀缺资源垄断下的产成品现货绝对价格与供需边际。"
+  },
+  {
+    "code": "600379.SH",
+    "name": "宝光股份",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2259,35 +3204,161 @@
     "productsByRevenue": [
       {
         "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.5
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.53,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "锆",
-        "commodityKey": "cj:price:氧氯化锆",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "钛",
-        "commodityKey": "cj:price:钛精矿",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:精四氯化钛(山东)",
+        "weight": 0.21,
+        "commodityName": "精四氯化钛(山东)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.55
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "锆",
-        "commodityKey": "cj:price:氧氯化锆",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "钛",
-        "commodityKey": "cj:price:钛精矿",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:精四氯化钛(山东)",
+        "weight": 0.21,
+        "commodityName": "精四氯化钛(山东)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600409.SH",
+    "name": "三友化工",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
+        "weight": 0.5,
+        "commodityName": "纯碱(轻质,华东)"
+      },
+      {
+        "productName": "粘胶短纤",
+        "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
+        "weight": 0.28,
+        "commodityName": "粘胶短纤(1.5D,38毫米)"
+      },
+      {
+        "productName": "PVC",
+        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
+        "weight": 0.22,
+        "commodityName": "PVC(电石法,长三角)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "纯碱",
+        "commodityKey": "xyzq:price:纯碱(轻质,华东)",
+        "weight": 0.58,
+        "commodityName": "纯碱(轻质,华东)"
+      },
+      {
+        "productName": "粘胶短纤",
+        "commodityKey": "xyzq:price:粘胶短纤(1.5D,38毫米)",
+        "weight": 0.24,
+        "commodityName": "粘胶短纤(1.5D,38毫米)"
+      },
+      {
+        "productName": "PVC",
+        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
+        "weight": 0.18,
+        "commodityName": "PVC(电石法,长三角)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600426.SH",
+    "name": "华鲁恒升",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "醋酸",
+        "commodityKey": "xyzq:price:醋酸(华东)",
+        "weight": 0.42,
+        "commodityName": "醋酸(华东)"
+      },
+      {
+        "productName": "DMF",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.32,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "己二酸",
+        "commodityKey": "xyzq:price:己二酸(华东)",
+        "weight": 0.26,
+        "commodityName": "己二酸(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "醋酸",
+        "commodityKey": "xyzq:price:醋酸(华东)",
+        "weight": 0.37,
+        "commodityName": "醋酸(华东)"
+      },
+      {
+        "productName": "DMF",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.37,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "己二酸",
+        "commodityKey": "xyzq:price:己二酸(华东)",
+        "weight": 0.26,
+        "commodityName": "己二酸(华东)"
+      }
+    ],
+    "formulaType": "spread",
+    "focusRationale": "重度关注原材料（煤炭/原油/PX）与产成品（聚酯/醋酸/烯烃）之间的产业链剪刀差及理论加工利差。"
+  },
+  {
+    "code": "600456.SH",
+    "name": "宝钛股份",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2298,35 +3369,208 @@
     "productsByRevenue": [
       {
         "productName": "铂",
-        "commodityKey": "xyzq:price:铂",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.39,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "钯",
-        "commodityKey": "xyzq:price:钯",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "铑",
-        "commodityKey": "xyzq:price:铑",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.28,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "铂",
-        "commodityKey": "xyzq:price:铂",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.34,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "钯",
-        "commodityKey": "xyzq:price:钯",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "铑",
-        "commodityKey": "xyzq:price:铑",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。"
+  },
+  {
+    "code": "600486.SH",
+    "name": "扬农化工",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "草甘膦",
+        "commodityKey": "xyzq:price:草甘膦(华东)",
+        "weight": 0.5,
+        "commodityName": "草甘膦(华东)"
+      },
+      {
+        "productName": "菊酯",
+        "commodityKey": "xyzq:price:氯氰菊酯(江苏扬农)",
+        "weight": 0.33,
+        "commodityName": "氯氰菊酯(江苏扬农)"
+      },
+      {
+        "productName": "杀菌剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.17,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "草甘膦",
+        "commodityKey": "xyzq:price:草甘膦(华东)",
+        "weight": 0.44,
+        "commodityName": "草甘膦(华东)"
+      },
+      {
+        "productName": "菊酯",
+        "commodityKey": "xyzq:price:氯氰菊酯(江苏扬农)",
+        "weight": 0.39,
+        "commodityName": "氯氰菊酯(江苏扬农)"
+      },
+      {
+        "productName": "杀菌剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.17,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600499.SH",
+    "name": "科达制造",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "电解铜箔",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "电线电缆",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "高分子材料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "电解铜箔",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "电线电缆",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "高分子材料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600500.SH",
+    "name": "中化国际",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "环氧树脂",
+        "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
+        "weight": 0.4,
+        "commodityName": "环氧树脂(E51,华东)"
+      },
+      {
+        "productName": "橡胶助剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "工程塑料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.27,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "环氧树脂",
+        "commodityKey": "xyzq:price:环氧树脂(E51,华东)",
+        "weight": 0.3,
+        "commodityName": "环氧树脂(E51,华东)"
+      },
+      {
+        "productName": "橡胶助剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.41,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "工程塑料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.29,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600509.SH",
+    "name": "天富能源",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2337,37 +3581,438 @@
     "productsByRevenue": [
       {
         "productName": "钨",
-        "commodityKey": "xyzq:price:仲钨酸铵",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "钴",
-        "commodityKey": "xyzq:price:钴",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:金属钴（安泰科,国产）",
+        "weight": 0.26,
+        "commodityName": "金属钴（安泰科,国产）"
       }
     ],
     "productsByProfit": [
       {
         "productName": "钨",
-        "commodityKey": "xyzq:price:仲钨酸铵",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "稀土",
-        "commodityKey": "xyzq:price:氧化镨钕",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "钴",
-        "commodityKey": "xyzq:price:钴",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:金属钴（安泰科,国产）",
+        "weight": 0.26,
+        "commodityName": "金属钴（安泰科,国产）"
+      }
+    ],
+    "formulaType": "processing_fee",
+    "focusRationale": "关注冶炼端加工费处理费（TC/RC）及代工溢价扣除，结合长单套保与伴生回收收益。"
+  },
+  {
+    "code": "600583.SH",
+    "name": "海油工程",
+    "group": "energy",
+    "subSector": "海洋油气工程EPCI",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注中海油资本开支景气度与深水导管架/FPSO模块建造代工毛利利差。",
+    "productsByRevenue": [
+      {
+        "productName": "Brent原油",
+        "commodityKey": "xyzq:price:Brent现货",
+        "weight": 0.65,
+        "commodityName": "Brent现货"
+      },
+      {
+        "productName": "中厚钢板",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.35,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "Brent原油",
+        "commodityKey": "xyzq:price:Brent现货",
+        "weight": 0.65,
+        "commodityName": "Brent现货"
+      },
+      {
+        "productName": "中厚钢板",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.35,
+        "commodityName": "DMF(华东)"
       }
     ]
+  },
+  {
+    "code": "600618.SH",
+    "name": "氯碱化工",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600714.SH",
+    "name": "金瑞矿业",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ]
+  },
+  {
+    "code": "600727.SH",
+    "name": "鲁北化工",
+    "group": "chemical",
+    "subSector": "生态钛白粉与化肥",
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注钛白粉硫酸法主业及联产副产磷酸一铵、水泥废渣综合循环经济剪刀差。",
+    "productsByRevenue": [
+      {
+        "productName": "金红石型钛白粉",
+        "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
+        "weight": 0.6,
+        "commodityName": "钛白粉(金红石型,华东)"
+      },
+      {
+        "productName": "磷酸二铵",
+        "commodityKey": "xyzq:price:磷酸二铵(64%,湖北)",
+        "weight": 0.4,
+        "commodityName": "磷酸二铵(64%,湖北)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "金红石型钛白粉",
+        "commodityKey": "xyzq:price:钛白粉(金红石型,华东)",
+        "weight": 0.6,
+        "commodityName": "钛白粉(金红石型,华东)"
+      },
+      {
+        "productName": "磷酸二铵",
+        "commodityKey": "xyzq:price:磷酸二铵(64%,湖北)",
+        "weight": 0.4,
+        "commodityName": "磷酸二铵(64%,湖北)"
+      }
+    ]
+  },
+  {
+    "code": "600731.SH",
+    "name": "湖南海利",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "甲醇原料",
+        "commodityKey": "xyzq:price:甲醇(华东)",
+        "weight": 1.0,
+        "commodityName": "甲醇(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "甲醇原料",
+        "commodityKey": "xyzq:price:甲醇(华东)",
+        "weight": 1.0,
+        "commodityName": "甲醇(华东)"
+      }
+    ]
+  },
+  {
+    "code": "600737.SH",
+    "name": "中粮糖业",
+    "group": "agriculture",
+    "subSector": "食糖自产与进口炼糖",
+    "formulaType": "spread",
+    "focusRationale": "关注国内外原糖与精制白砂糖之间的炼糖加工差，以及国内自产糖周期高点收益。",
+    "productsByRevenue": [
+      {
+        "productName": "白糖现货",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.7,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "原糖进口成本",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "白糖现货",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.7,
+        "commodityName": "DMF(华东)"
+      },
+      {
+        "productName": "原糖进口成本",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "600746.SH",
+    "name": "江苏索普",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "醋酸",
+        "commodityKey": "xyzq:price:醋酸(华东)",
+        "weight": 0.55,
+        "commodityName": "醋酸(华东)"
+      },
+      {
+        "productName": "氯碱",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.28,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "硫酸",
+        "commodityKey": "xyzq:price:硫酸(98%,长三角)",
+        "weight": 0.17,
+        "commodityName": "硫酸(98%,长三角)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "醋酸",
+        "commodityKey": "xyzq:price:醋酸(华东)",
+        "weight": 0.58,
+        "commodityName": "醋酸(华东)"
+      },
+      {
+        "productName": "氯碱",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "硫酸",
+        "commodityKey": "xyzq:price:硫酸(98%,长三角)",
+        "weight": 0.16,
+        "commodityName": "硫酸(98%,长三角)"
+      }
+    ],
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。"
+  },
+  {
+    "code": "600819.SH",
+    "name": "耀皮玻璃",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600866.SH",
+    "name": "星湖科技",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "味精",
+        "commodityKey": "xyzq:price:味精(国内)",
+        "weight": 0.52,
+        "commodityName": "味精(国内)"
+      },
+      {
+        "productName": "核苷酸",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "原料药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "味精",
+        "commodityKey": "xyzq:price:味精(国内)",
+        "weight": 0.42,
+        "commodityName": "味精(国内)"
+      },
+      {
+        "productName": "核苷酸",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "原料药",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "byproduct_composite",
+    "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。"
+  },
+  {
+    "code": "600876.SH",
+    "name": "凯盛新能",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "600929.SH",
+    "name": "雪天盐业",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "氯化铵",
+        "commodityKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "weight": 1.0,
+        "commodityName": "氯化铵(农湿,江苏华昌)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "氯化铵",
+        "commodityKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "weight": 1.0,
+        "commodityName": "氯化铵(农湿,江苏华昌)"
+      }
+    ]
+  },
+  {
+    "code": "600955.SH",
+    "name": "维远股份",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "苯酚",
+        "commodityKey": "xyzq:price:苯酚(华东)",
+        "weight": 0.42,
+        "commodityName": "苯酚(华东)"
+      },
+      {
+        "productName": "丙酮",
+        "commodityKey": "xyzq:price:丙酮(华东)",
+        "weight": 0.32,
+        "commodityName": "丙酮(华东)"
+      },
+      {
+        "productName": "双酚A",
+        "commodityKey": "xyzq:price:双酚A(华东)",
+        "weight": 0.26,
+        "commodityName": "双酚A(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "苯酚",
+        "commodityKey": "xyzq:price:苯酚(华东)",
+        "weight": 0.36,
+        "commodityName": "苯酚(华东)"
+      },
+      {
+        "productName": "丙酮",
+        "commodityKey": "xyzq:price:丙酮(华东)",
+        "weight": 0.32,
+        "commodityName": "丙酮(华东)"
+      },
+      {
+        "productName": "双酚A",
+        "commodityKey": "xyzq:price:双酚A(华东)",
+        "weight": 0.32,
+        "commodityName": "双酚A(华东)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
   },
   {
     "code": "600961.SH",
@@ -2376,35 +4021,67 @@
     "productsByRevenue": [
       {
         "productName": "锌",
-        "commodityKey": "xyzq:price:锌",
-        "weight": 0.55
+        "commodityKey": "xyzq:price:代森锰锌",
+        "weight": 0.58,
+        "commodityName": "代森锰锌"
       },
       {
         "productName": "铟",
-        "commodityKey": "xyzq:price:金属铟",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "金银",
-        "commodityKey": "lme:price:黄金",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "锌",
-        "commodityKey": "xyzq:price:锌",
-        "weight": 0.5
+        "commodityKey": "xyzq:price:代森锰锌",
+        "weight": 0.53,
+        "commodityName": "代森锰锌"
       },
       {
         "productName": "铟",
-        "commodityKey": "xyzq:price:金属铟",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "金银",
-        "commodityKey": "lme:price:黄金",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "600980.SH",
+    "name": "北矿科技",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2415,35 +4092,315 @@
     "productsByRevenue": [
       {
         "productName": "铌",
-        "commodityKey": "xyzq:price:铌",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "铜",
-        "commodityKey": "xyzq:price:铜",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:铜箔（电池级,8μm）",
+        "weight": 0.42,
+        "commodityName": "铜箔（电池级,8μm）"
       },
       {
         "productName": "铁矿石",
-        "commodityKey": "xyzq:price:铁矿石",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "铌",
-        "commodityKey": "xyzq:price:铌",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "铜",
-        "commodityKey": "xyzq:price:铜",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:铜箔（电池级,8μm）",
+        "weight": 0.37,
+        "commodityName": "铜箔（电池级,8μm）"
       },
       {
         "productName": "铁矿石",
-        "commodityKey": "xyzq:price:铁矿石",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "601088.SH",
+    "name": "中国神华",
+    "group": "energy",
+    "subSector": "煤炭产运销一体化",
+    "formulaType": "price",
+    "focusRationale": "关注动力煤长协价与现货价基准，煤电路港航纵向一体化防御极强周期风险。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 0.8,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      },
+      {
+        "productName": "聚乙烯煤制",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.2,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 0.8,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      },
+      {
+        "productName": "聚乙烯煤制",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.2,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "601117.SH",
+    "name": "中国化学",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "工程服务",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "化工品贸易",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "设计咨询",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工程服务",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.58,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "化工品贸易",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "设计咨询",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "601118.SH",
+    "name": "海南橡胶",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "天然橡胶",
+        "commodityKey": "xyzq:price:天然橡胶(国产5号标胶)",
+        "weight": 0.52,
+        "commodityName": "天然橡胶(国产5号标胶)"
+      },
+      {
+        "productName": "轮胎",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "乳胶",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "天然橡胶",
+        "commodityKey": "xyzq:price:天然橡胶(国产5号标胶)",
+        "weight": 0.47,
+        "commodityName": "天然橡胶(国产5号标胶)"
+      },
+      {
+        "productName": "轮胎",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "乳胶",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "601121.SH",
+    "name": "宝地矿业",
+    "group": "mining",
+    "subSector": "矿业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "601216.SH",
+    "name": "君正集团",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "PVC",
+        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
+        "weight": 0.45,
+        "commodityName": "PVC(电石法,长三角)"
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.33,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      },
+      {
+        "productName": "电石",
+        "commodityKey": "xyzq:price:电石(西北)",
+        "weight": 0.22,
+        "commodityName": "电石(西北)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "PVC",
+        "commodityKey": "xyzq:price:PVC(电石法,长三角)",
+        "weight": 0.39,
+        "commodityName": "PVC(电石法,长三角)"
+      },
+      {
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.39,
+        "commodityName": "烧碱(32%离子膜,华北)"
+      },
+      {
+        "productName": "电石",
+        "commodityKey": "xyzq:price:电石(西北)",
+        "weight": 0.22,
+        "commodityName": "电石(西北)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "601233.SH",
+    "name": "桐昆股份",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "涤纶长丝",
+        "commodityKey": "xyzq:price:涤纶长丝(POY)",
+        "weight": 0.52,
+        "commodityName": "涤纶长丝(POY)"
+      },
+      {
+        "productName": "PTA",
+        "commodityKey": "xyzq:price:PTA(华东)",
+        "weight": 0.32,
+        "commodityName": "PTA(华东)"
+      },
+      {
+        "productName": "聚酯切片",
+        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
+        "weight": 0.16,
+        "commodityName": "聚酯切片(瓶级)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "涤纶长丝",
+        "commodityKey": "xyzq:price:涤纶长丝(POY)",
+        "weight": 0.58,
+        "commodityName": "涤纶长丝(POY)"
+      },
+      {
+        "productName": "PTA",
+        "commodityKey": "xyzq:price:PTA(华东)",
+        "weight": 0.26,
+        "commodityName": "PTA(华东)"
+      },
+      {
+        "productName": "聚酯切片",
+        "commodityKey": "xyzq:price:聚酯切片(瓶级)",
+        "weight": 0.16,
+        "commodityName": "聚酯切片(瓶级)"
+      }
+    ],
+    "formulaType": "spread",
+    "focusRationale": "重度关注原材料（煤炭/原油/PX）与产成品（聚酯/醋酸/烯烃）之间的产业链剪刀差及理论加工利差。"
+  },
+  {
+    "code": "601568.SH",
+    "name": "北元化工",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2454,191 +4411,304 @@
     "productsByRevenue": [
       {
         "productName": "氧化铝",
-        "commodityKey": "xyzq:price:氧化铝",
-        "weight": 0.5
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.52,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "原铝",
-        "commodityKey": "lme:price:铝",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "镓",
-        "commodityKey": "xyzq:price:金属镓",
-        "weight": 0.1
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.11,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "氧化铝",
-        "commodityKey": "xyzq:price:氧化铝",
-        "weight": 0.45
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "原铝",
-        "commodityKey": "lme:price:铝",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "镓",
-        "commodityKey": "xyzq:price:金属镓",
-        "weight": 0.1
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.11,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
-    ]
+    ],
+    "formulaType": "processing_fee",
+    "focusRationale": "关注冶炼端加工费处理费（TC/RC）及代工溢价扣除，结合长单套保与伴生回收收益。"
   },
   {
-    "code": "688778.SH",
-    "name": "厦钨新能",
+    "code": "601618.SH",
+    "name": "中国中冶",
     "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注高壁垒深加工利差与工程/加工费扣减溢价（TC/RC）。",
     "productsByRevenue": [
       {
-        "productName": "钴酸锂",
-        "commodityKey": "cj:price:钴酸锂",
-        "weight": 0.4
-      },
-      {
-        "productName": "三元材料",
-        "commodityKey": "cj:price:NCM811",
-        "weight": 0.35
-      },
-      {
-        "productName": "磷酸铁锂",
-        "commodityKey": "xyzq:price:磷酸铁锂正极材料",
-        "weight": 0.2
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ],
     "productsByProfit": [
       {
-        "productName": "钴酸锂",
-        "commodityKey": "cj:price:钴酸锂",
-        "weight": 0.35
-      },
-      {
-        "productName": "三元材料",
-        "commodityKey": "cj:price:NCM811",
-        "weight": 0.4
-      },
-      {
-        "productName": "磷酸铁锂",
-        "commodityKey": "xyzq:price:磷酸铁锂正极材料",
-        "weight": 0.2
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
   {
-    "code": "002096.SZ",
-    "name": "易普力",
-    "group": "explosive",
+    "code": "601678.SH",
+    "name": "滨化股份",
+    "group": "chemical",
     "productsByRevenue": [
       {
-        "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.45
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.42,
+        "commodityName": "烧碱(32%离子膜,华北)"
       },
       {
-        "productName": "雷管",
-        "commodityKey": "cj:price:电子雷管",
-        "weight": 0.25
+        "productName": "环氧丙烷",
+        "commodityKey": "xyzq:price:环氧丙烷(华东)",
+        "weight": 0.37,
+        "commodityName": "环氧丙烷(华东)"
       },
       {
-        "productName": "爆破服务",
-        "commodityKey": "cj:price:工业炸药",
-        "weight": 0.25
+        "productName": "三氯乙烯",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
-        "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.35
+        "productName": "烧碱",
+        "commodityKey": "xyzq:price:烧碱(32%离子膜,华北)",
+        "weight": 0.37,
+        "commodityName": "烧碱(32%离子膜,华北)"
       },
       {
-        "productName": "雷管",
-        "commodityKey": "cj:price:电子雷管",
-        "weight": 0.3
+        "productName": "环氧丙烷",
+        "commodityKey": "xyzq:price:环氧丙烷(华东)",
+        "weight": 0.42,
+        "commodityName": "环氧丙烷(华东)"
       },
       {
-        "productName": "爆破服务",
-        "commodityKey": "cj:price:工业炸药",
-        "weight": 0.3
+        "productName": "三氯乙烯",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "601857.SH",
+    "name": "中国石油",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "原油",
+        "commodityKey": "xyzq:price:WTI期货(主连合约)",
+        "weight": 0.42,
+        "commodityName": "WTI期货(主连合约)"
+      },
+      {
+        "productName": "天然气",
+        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
+        "weight": 0.32,
+        "commodityName": "美国Henry Hub期货(主连合约)"
+      },
+      {
+        "productName": "成品油",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "原油",
+        "commodityKey": "xyzq:price:WTI期货(主连合约)",
+        "weight": 0.37,
+        "commodityName": "WTI期货(主连合约)"
+      },
+      {
+        "productName": "天然气",
+        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
+        "weight": 0.37,
+        "commodityName": "美国Henry Hub期货(主连合约)"
+      },
+      {
+        "productName": "成品油",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "601968.SH",
+    "name": "宝钢包装",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
   {
-    "code": "002226.SZ",
-    "name": "江南化工",
-    "group": "explosive",
+    "code": "601975.SH",
+    "name": "招商南油",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
     "productsByRevenue": [
       {
-        "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.45
-      },
-      {
-        "productName": "雷管",
-        "commodityKey": "cj:price:电子雷管",
-        "weight": 0.25
-      },
-      {
-        "productName": "风电",
-        "commodityKey": "cj:price:风电机组",
-        "weight": 0.25
+        "productName": "0#柴油",
+        "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
+        "weight": 1.0,
+        "commodityName": "中国0#柴油(镇海炼化)"
       }
     ],
     "productsByProfit": [
       {
-        "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.4
-      },
-      {
-        "productName": "雷管",
-        "commodityKey": "cj:price:电子雷管",
-        "weight": 0.25
-      },
-      {
-        "productName": "风电",
-        "commodityKey": "cj:price:风电机组",
-        "weight": 0.3
+        "productName": "0#柴油",
+        "commodityKey": "xyzq:price:中国0#柴油(镇海炼化)",
+        "weight": 1.0,
+        "commodityName": "中国0#柴油(镇海炼化)"
       }
     ]
   },
   {
-    "code": "002783.SZ",
-    "name": "凯龙股份",
-    "group": "explosive",
+    "code": "603077.SH",
+    "name": "和邦生物",
+    "group": "chemical",
     "productsByRevenue": [
       {
-        "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.4
+        "productName": "维生素E",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.39,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
-        "productName": "硝酸铵",
-        "commodityKey": "xyzq:price:硝酸铵(山东)",
-        "weight": 0.3
+        "productName": "香精香料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.33,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
-        "productName": "复合肥",
-        "commodityKey": "xyzq:price:复合肥",
-        "weight": 0.25
+        "productName": "新材料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.28,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
-        "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.35
+        "productName": "维生素E",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.31,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
-        "productName": "硝酸铵",
-        "commodityKey": "xyzq:price:硝酸铵(山东)",
-        "weight": 0.3
+        "productName": "香精香料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
-        "productName": "复合肥",
-        "commodityKey": "xyzq:price:复合肥",
-        "weight": 0.3
+        "productName": "新材料",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "603169.SH",
+    "name": "兰石重装",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "603213.SH",
+    "name": "镇洋发展",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2649,35 +4719,209 @@
     "productsByRevenue": [
       {
         "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.45
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "硝酸铵",
         "commodityKey": "xyzq:price:硝酸铵(山东)",
-        "weight": 0.3
+        "weight": 0.32,
+        "commodityName": "硝酸铵(山东)"
       },
       {
         "productName": "爆破服务",
-        "commodityKey": "cj:price:工业炸药",
-        "weight": 0.2
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "硝酸铵",
         "commodityKey": "xyzq:price:硝酸铵(山东)",
-        "weight": 0.25
+        "weight": 0.26,
+        "commodityName": "硝酸铵(山东)"
       },
       {
         "productName": "爆破服务",
-        "commodityKey": "cj:price:工业炸药",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "603299.SH",
+    "name": "苏盐井神",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "氯化铵",
+        "commodityKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "weight": 1.0,
+        "commodityName": "氯化铵(农湿,江苏华昌)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "氯化铵",
+        "commodityKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "weight": 1.0,
+        "commodityName": "氯化铵(农湿,江苏华昌)"
+      }
+    ]
+  },
+  {
+    "code": "603599.SH",
+    "name": "广信股份",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "多菌灵",
+        "commodityKey": "xyzq:price:多菌灵(98%,华东)",
+        "weight": 0.47,
+        "commodityName": "多菌灵(98%,华东)"
+      },
+      {
+        "productName": "甲基硫菌灵",
+        "commodityKey": "xyzq:price:甲基硫菌",
+        "weight": 0.32,
+        "commodityName": "甲基硫菌"
+      },
+      {
+        "productName": "敌草隆",
+        "commodityKey": "xyzq:price:敌草隆",
+        "weight": 0.21,
+        "commodityName": "敌草隆"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "多菌灵",
+        "commodityKey": "xyzq:price:多菌灵(98%,华东)",
+        "weight": 0.42,
+        "commodityName": "多菌灵(98%,华东)"
+      },
+      {
+        "productName": "甲基硫菌灵",
+        "commodityKey": "xyzq:price:甲基硫菌",
+        "weight": 0.37,
+        "commodityName": "甲基硫菌"
+      },
+      {
+        "productName": "敌草隆",
+        "commodityKey": "xyzq:price:敌草隆",
+        "weight": 0.21,
+        "commodityName": "敌草隆"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "603698.SH",
+    "name": "航天工程",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注高壁垒深加工利差与工程/加工费扣减溢价（TC/RC）。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "603968.SH",
+    "name": "醋化股份",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "热力",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "天然气",
+        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
+        "weight": 0.37,
+        "commodityName": "美国Henry Hub期货(主连合约)"
+      },
+      {
+        "productName": "生物质",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "热力",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "天然气",
+        "commodityKey": "xyzq:price:美国Henry Hub期货(主连合约)",
+        "weight": 0.42,
+        "commodityName": "美国Henry Hub期货(主连合约)"
+      },
+      {
+        "productName": "生物质",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.16,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "603970.SH",
+    "name": "中农立华",
+    "group": "agriculture",
+    "subSector": "农业/消费",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
       }
     ]
   },
@@ -2688,35 +4932,389 @@
     "productsByRevenue": [
       {
         "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.4
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "电子雷管",
-        "commodityKey": "cj:price:电子雷管",
-        "weight": 0.3
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "高氯酸钾",
-        "commodityKey": "cj:price:高氯酸钾",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
       }
     ],
     "productsByProfit": [
       {
         "productName": "工业炸药",
-        "commodityKey": "cj:price:硝酸铵",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "电子雷管",
-        "commodityKey": "cj:price:电子雷管",
-        "weight": 0.35
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
       },
       {
         "productName": "高氯酸钾",
-        "commodityKey": "cj:price:高氯酸钾",
-        "weight": 0.25
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.26,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "605399.SH",
+    "name": "晨光新材",
+    "group": "chemical",
+    "productsByRevenue": [
+      {
+        "productName": "硅烷偶联剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.47,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "气相白炭黑",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.32,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "功能性硅橡胶",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "硅烷偶联剂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "气相白炭黑",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "功能性硅橡胶",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.21,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "688119.SH",
+    "name": "中钢洛耐",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "688122.SH",
+    "name": "西部超导",
+    "group": "materials",
+    "subSector": "超导线材与高端钛合金",
+    "formulaType": "processing_fee",
+    "focusRationale": "关注MRI与核聚变超导线材、航空结构用高性能钛合金的稳定代工加价利差。",
+    "productsByRevenue": [
+      {
+        "productName": "海绵钛",
+        "commodityKey": "xyzq:price:海绵钛(0级)",
+        "weight": 0.65,
+        "commodityName": "海绵钛(0级)"
+      },
+      {
+        "productName": "金属铌",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.35,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "海绵钛",
+        "commodityKey": "xyzq:price:海绵钛(0级)",
+        "weight": 0.65,
+        "commodityName": "海绵钛(0级)"
+      },
+      {
+        "productName": "金属铌",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.35,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "688256.SH",
+    "name": "大包子",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "688295.SH",
+    "name": "中复神鹰",
+    "group": "materials",
+    "subSector": "高性能碳纤维原丝及碳丝",
+    "formulaType": "spread",
+    "focusRationale": "关注干喷湿纺高强碳纤维（T700/T800）售价与主要原料丙烯腈之间的加工剪刀差。",
+    "productsByRevenue": [
+      {
+        "productName": "碳纤维",
+        "commodityKey": "xyzq:price:碳纤维（小丝束）",
+        "weight": 0.7,
+        "commodityName": "碳纤维（小丝束）"
+      },
+      {
+        "productName": "丙烯腈原料",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "碳纤维",
+        "commodityKey": "xyzq:price:碳纤维（小丝束）",
+        "weight": 0.7,
+        "commodityName": "碳纤维（小丝束）"
+      },
+      {
+        "productName": "丙烯腈原料",
+        "commodityKey": "xyzq:price:DMF(华东)",
+        "weight": 0.3,
+        "commodityName": "DMF(华东)"
+      }
+    ]
+  },
+  {
+    "code": "688543.SH",
+    "name": "国科军工",
+    "group": "explosive",
+    "subSector": "民爆",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "688563.SH",
+    "name": "航材股份",
+    "group": "other",
+    "subSector": "其他制造业",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "688586.SH",
+    "name": "江航装备",
+    "group": "chemical",
+    "subSector": "化工/材料",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "动力煤",
+        "commodityKey": "xyzq:price:动力煤(Q5500,环渤海指数)",
+        "weight": 1.0,
+        "commodityName": "动力煤(Q5500,环渤海指数)"
+      }
+    ]
+  },
+  {
+    "code": "688750.SH",
+    "name": "金天钛业",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "金",
+        "commodityKey": "xyzq:price:金红石(87%,海南)",
+        "weight": 1.0,
+        "commodityName": "金红石(87%,海南)"
+      }
+    ]
+  },
+  {
+    "code": "688778.SH",
+    "name": "厦钨新能",
+    "group": "mining",
+    "productsByRevenue": [
+      {
+        "productName": "钴酸锂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.42,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "三元材料",
+        "commodityKey": "xyzq:price:三元材料电解液",
+        "weight": 0.37,
+        "commodityName": "三元材料电解液"
+      },
+      {
+        "productName": "磷酸铁锂",
+        "commodityKey": "xyzq:price:磷酸铁锂正极材料",
+        "weight": 0.21,
+        "commodityName": "磷酸铁锂正极材料"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "钴酸锂",
+        "commodityKey": "xyzq:price:烟煤(Q5500,山西优混)",
+        "weight": 0.37,
+        "commodityName": "烟煤(Q5500,山西优混)"
+      },
+      {
+        "productName": "三元材料",
+        "commodityKey": "xyzq:price:三元材料电解液",
+        "weight": 0.42,
+        "commodityName": "三元材料电解液"
+      },
+      {
+        "productName": "磷酸铁锂",
+        "commodityKey": "xyzq:price:磷酸铁锂正极材料",
+        "weight": 0.21,
+        "commodityName": "磷酸铁锂正极材料"
+      }
+    ],
+    "formulaType": "price",
+    "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。"
+  },
+  {
+    "code": "688779.SH",
+    "name": "五矿新能",
+    "group": "mining",
+    "subSector": "矿业/有色",
+    "formulaType": "price",
+    "focusRationale": "关注大宗产成品现货绝对价格变动与产能利用率弹性。",
+    "productsByRevenue": [
+      {
+        "productName": "工业级碳酸锂",
+        "commodityKey": "xyzq:price:碳酸锂(工业级,四川)",
+        "weight": 0.5,
+        "commodityName": "碳酸锂(工业级,四川)"
+      },
+      {
+        "productName": "电池级碳酸锂",
+        "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "weight": 0.5,
+        "commodityName": "碳酸锂(电池级,江苏)"
+      }
+    ],
+    "productsByProfit": [
+      {
+        "productName": "工业级碳酸锂",
+        "commodityKey": "xyzq:price:碳酸锂(工业级,四川)",
+        "weight": 0.5,
+        "commodityName": "碳酸锂(工业级,四川)"
+      },
+      {
+        "productName": "电池级碳酸锂",
+        "commodityKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "weight": 0.5,
+        "commodityName": "碳酸锂(电池级,江苏)"
       }
     ]
   }

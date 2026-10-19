@@ -1,0 +1,2207 @@
+[
+  {
+    "code": "000519.SZ",
+    "name": "中兵红箭",
+    "industryKey": "explosive",
+    "industryLabel": "民爆",
+    "category": "民爆",
+    "summary": "中兵红箭（000519.SZ）：兵器工业特种装备与超硬材料龙头，军工特种含能材料与民用煤矿采剥周期及78号文矿山托管解耦，不受2026H1新疆煤炭控产影响，契合本质安全与高研发投入导向。（因数来源：特装规划、工信部十五规划）",
+    "keyPoints": [
+      "主营观察：工业炸药、电子雷管、爆破工程、爆破服务等",
+      "最大收入板块：特种装备，占比约44.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：工业炸药和电子雷管销量",
+      "专项跟踪：爆破工程订单",
+      "专项跟踪：现场混装和服务化占比"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "000655.SZ",
+    "name": "金岭矿业",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "金岭矿业（000655.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：铁精粉，占比约79.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "000703.SZ",
+    "name": "000703.SZ",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "PTA",
+        "sourceKey": "cj:price:PTA（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "己内酰胺(CPL)",
+        "sourceKey": "cj:price:己内酰胺（CPL）",
+        "in_db": false
+      },
+      {
+        "displayName": "PET切片",
+        "sourceKey": "cj:price:PET切片（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "涤纶长丝POY",
+        "sourceKey": "xyzq:price:涤纶长丝(POY)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "000707.SZ",
+    "name": "双环科技",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "双环科技（000707.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：重质及轻质纯碱，占比约54%",
+      "价格序列：轻质纯碱，最新同比-2.2%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "轻质纯碱",
+        "sourceKey": "cj:price:轻质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "重质纯碱",
+        "sourceKey": "cj:price:重质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "农用氯化铵",
+        "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "in_db": true
+      },
+      {
+        "displayName": "纯碱氨碱法价差",
+        "sourceKey": "cj:spread:纯碱-氨碱法价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "000758.SZ",
+    "name": "中色股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中色股份（000758.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：承包工程，占比约59.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "000762.SZ",
+    "name": "西藏矿业",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "西藏矿业（000762.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：碳酸锂，占比约38.2%",
+      "价格序列：电池级碳酸锂，最新同比96.1%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "电池级碳酸锂",
+        "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "in_db": true
+      },
+      {
+        "displayName": "工业级碳酸锂",
+        "sourceKey": "xyzq:price:碳酸锂(工业级,四川)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "000831.SZ",
+    "name": "中国稀土",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "中国稀土（000831.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：稀土氧化物，占比约42.8%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "000893.SZ",
+    "name": "亚钾国际",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "亚钾国际（000893.SZ）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：氯化钾，占比约98.2%",
+      "价格序列：氯化钾(青海盐湖60%)，最新同比-3.4%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "氯化钾(青海盐湖60%)",
+        "sourceKey": "cj:price:氯化钾（青海盐湖60%）",
+        "in_db": false
+      },
+      {
+        "displayName": "氯化钾(62%白钾市场价)",
+        "sourceKey": "xyzq:price:氯化钾(62%白钾，市场价)",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "000928.SZ",
+    "name": "中钢国际",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "中钢国际（000928.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：工程总承包，占比约89.2%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "000969.SZ",
+    "name": "安泰科技",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "安泰科技（000969.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：钢铁粉末及制品、特种粉末冶金材料及制品、先进功能材料及器件、高品质特钢及焊接材料等",
+      "最大收入板块：钢铁粉末及制品，占比约28.5%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "001280.SZ",
+    "name": "中国铀业",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "中国铀业（001280.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：天然铀，占比约31%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "002001.SZ",
+    "name": "002001.SZ",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "维生素A",
+        "sourceKey": "cj:price:维生素A（国产50万IU/g）",
+        "in_db": false
+      },
+      {
+        "displayName": "维生素E",
+        "sourceKey": "cj:price:维生素E（国产50%）",
+        "in_db": false
+      },
+      {
+        "displayName": "甲基麦芽酚",
+        "sourceKey": "xyzq:price:甲基麦芽酚(安徽)",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002046.SZ",
+    "name": "国机精工",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "国机精工（002046.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：特种及精密轴承、超硬材料磨具、供应链运营、金刚石材料等",
+      "最大收入板块：特种及精密轴承，占比约42.2%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "002053.SZ",
+    "name": "云南能投",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "云南能投（002053.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：原油、天然气、成品油、炼化产品等",
+      "最大收入板块：风电，占比约33.8%",
+      "价格序列：烧碱(隔膜32%)，最新同比-22.4%",
+      "专项跟踪：国际油价",
+      "专项跟踪：炼化价差",
+      "专项跟踪：库存重估"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "烧碱(隔膜32%)",
+        "sourceKey": "cj:price:32%隔膜烧碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "工业原盐",
+        "sourceKey": "cj:price:原盐（山东海盐）",
+        "in_db": false
+      },
+      {
+        "displayName": "NYMEX天然气",
+        "sourceKey": "cj:price:NYMEX天然气",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002064.SZ",
+    "name": "002064.SZ",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "纯MDI原料",
+        "sourceKey": "cj:price:纯MDI（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "己二酸",
+        "sourceKey": "xyzq:price:己二酸(华东)",
+        "in_db": true
+      },
+      {
+        "displayName": "氨纶40D",
+        "sourceKey": "cj:price:氨纶40D（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "氨纶价差",
+        "sourceKey": "cj:spread:氨纶价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002140.SZ",
+    "name": "东华科技",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "东华科技（002140.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：总承包收入、工程总承包收入、设计咨询收入、设计、技术性收入等",
+      "最大收入板块：总承包收入，占比约48.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "002149.SZ",
+    "name": "西部材料",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "西部材料（002149.SZ）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：钛制品，占比约37.8%",
+      "价格序列：海绵钛原料，最新同比-5.9%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "海绵钛原料",
+        "sourceKey": "cj:price:海绵钛（≥99.6%国产）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002155.SZ",
+    "name": "湖南黄金",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "湖南黄金（002155.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：黄金，占比约95%",
+      "价格序列：沪金连续，最新同比21%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "沪金连续",
+        "sourceKey": "tushare:price:沪金",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002182.SZ",
+    "name": "宝武镁业",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "宝武镁业（002182.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：铝合金深加工产品，占比约25.8%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "002312.SZ",
+    "name": "川发龙蟒",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "川发龙蟒（002312.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：肥料系列产品，占比约30.1%",
+      "价格序列：磷酸一铵MAP，最新同比34.8%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "磷酸一铵MAP",
+        "sourceKey": "cj:price:MAP（四川金河55%）",
+        "in_db": false
+      },
+      {
+        "displayName": "磷酸二铵DAP",
+        "sourceKey": "cj:price:DAP（西南工厂64%褐色）",
+        "in_db": false
+      },
+      {
+        "displayName": "金红石型钛白粉",
+        "sourceKey": "cj:price:钛白粉（金红石型）",
+        "in_db": false
+      },
+      {
+        "displayName": "磷酸一铵价差",
+        "sourceKey": "cj:spread:MAP价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002430.SZ",
+    "name": "杭氧股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "杭氧股份（002430.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：气体销售、空分设备、石化、工程总包等",
+      "最大收入板块：气体销售，占比约68%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "002601.SZ",
+    "name": "002601.SZ",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "金红石型钛白粉",
+        "sourceKey": "cj:price:钛白粉（金红石型）",
+        "in_db": false
+      },
+      {
+        "displayName": "锐钛型钛白粉",
+        "sourceKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）",
+        "in_db": false
+      },
+      {
+        "displayName": "钛白粉价差",
+        "sourceKey": "cj:spread:钛白粉价差",
+        "in_db": false
+      },
+      {
+        "displayName": "海绵钛",
+        "sourceKey": "cj:price:海绵钛（≥99.6%国产）",
+        "in_db": false
+      },
+      {
+        "displayName": "钛精矿",
+        "sourceKey": "cj:price:钛精矿（四川攀钢）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002683.SZ",
+    "name": "广东宏大",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "广东宏大（002683.SZ）：大矿服模式首创与领跑者，矿山施工总承包壹级资质。直接受益矿安78号文取缔碎片分包与非煤矿山整体托管大限，智慧穿爆装备契合十五规划危险岗位替代率60%目标，防务装备双轮协同。（因数来源：矿安78号文、工信部十五规划）",
+    "keyPoints": [
+      "主营观察：工业炸药、电子雷管、爆破工程、爆破服务等",
+      "最大收入板块：露天矿山采剥，占比约33%",
+      "价格序列：硝酸铵原料，最新同比5.3%",
+      "专项跟踪：工业炸药和电子雷管销量",
+      "专项跟踪：爆破工程订单",
+      "专项跟踪：现场混装和服务化占比"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "硝酸铵原料",
+        "sourceKey": "cj:price:硝酸铵（兴化）",
+        "in_db": false
+      },
+      {
+        "displayName": "硝酸原料",
+        "sourceKey": "cj:price:硝酸（安徽淮化）",
+        "in_db": false
+      },
+      {
+        "displayName": "硝酸铵价差",
+        "sourceKey": "cj:spread:硝酸铵价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "002709.SZ",
+    "name": "002709.SZ",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "电池级碳酸锂",
+        "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "in_db": true
+      },
+      {
+        "displayName": "工业级碳酸锂",
+        "sourceKey": "xyzq:price:碳酸锂(工业级,四川)",
+        "in_db": true
+      },
+      {
+        "displayName": "磷酸铁锂电解液",
+        "sourceKey": "xyzq:price:磷酸铁锂电解液",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "2689.HK",
+    "name": "2689.HK",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "废旧黄板纸",
+        "sourceKey": "wind:price:废旧黄板纸",
+        "in_db": false
+      },
+      {
+        "displayName": "箱板纸",
+        "sourceKey": "wind:price:箱板纸",
+        "in_db": false
+      },
+      {
+        "displayName": "瓦楞纸-玖龙",
+        "sourceKey": "wind:price:瓦楞纸-玖龙",
+        "in_db": false
+      },
+      {
+        "displayName": "白卡纸",
+        "sourceKey": "wind:price:白卡纸",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "300034.SZ",
+    "name": "钢研高纳",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "钢研高纳（300034.SZ）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：铸造高温合金制品，占比约29.9%",
+      "价格序列：金属钴原料，最新同比15.8%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "金属钴原料",
+        "sourceKey": "xyzq:price:金属钴(安泰科,国产)",
+        "in_db": false
+      },
+      {
+        "displayName": "硫酸镍原料",
+        "sourceKey": "xyzq:price:硫酸镍(电池级,安泰科,国产)",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "300402.SZ",
+    "name": "宝色股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "宝色股份（300402.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：压力容器，占比约91.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "300470.SZ",
+    "name": "中密控股",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中密控股（300470.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：原油、天然气、成品油、炼化产品等",
+      "最大收入板块：机械密封，占比约34.9%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：国际油价",
+      "专项跟踪：炼化价差",
+      "专项跟踪：库存重估"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "300527.SZ",
+    "name": "ST应急",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "ST应急（300527.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：重型机械化桥及浮桥装备、核应急移动处置设施与装备、特种应急救援专用车辆、重型机械化桥等",
+      "最大收入板块：重型机械化桥及浮桥装备，占比约58%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "300747.SZ",
+    "name": "锐科激光",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "锐科激光（300747.SZ）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：连续光纤激光器，占比约83.2%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "300962.SZ",
+    "name": "中金辐照",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中金辐照（300962.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：医疗保健及药品辐照灭菌，占比约62%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "301048.SZ",
+    "name": "金鹰重工",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "金鹰重工（301048.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：铁路工程机械、轨道工程装备销售、维修业务、配件销售等",
+      "最大收入板块：铁路工程机械，占比约44.5%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "301058.SZ",
+    "name": "中粮科工",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中粮科工（301058.SZ）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：机电工程系统交付、设计咨询、设备制造、工程承包业务等",
+      "最大收入板块：机电工程系统交付，占比约27.9%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "301090.SZ",
+    "name": "华润材料",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "华润材料（301090.SZ）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：聚酯产品，占比约99.8%",
+      "价格序列：聚酯切片PET，最新同比16.8%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "聚酯切片PET",
+        "sourceKey": "cj:price:PET切片（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "瓶级聚酯切片",
+        "sourceKey": "xyzq:price:聚酯切片(瓶级)",
+        "in_db": true
+      },
+      {
+        "displayName": "PTA原料",
+        "sourceKey": "cj:price:PTA（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "PET瓶级价差",
+        "sourceKey": "xyzq:spread:PET瓶级-PTA-MEG价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600038.SH",
+    "name": "中直股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中直股份（600038.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：航空、先进制造",
+      "最大收入板块：航空产品，占比约99.1%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600056.SH",
+    "name": "中国医药",
+    "industryKey": "agriculture",
+    "industryLabel": "农产品加工",
+    "category": "农业/消费",
+    "summary": "中国医药（600056.SH）主营业务覆盖农业/消费核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：医药商业、医药工业、医药工业：制剂药、大健康和电商等",
+      "最大收入板块：医药商业，占比约70.5%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600096.SH",
+    "name": "600096.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "磷酸二铵DAP",
+        "sourceKey": "cj:price:DAP（西南工厂64%褐色）",
+        "in_db": false
+      },
+      {
+        "displayName": "磷酸一铵MAP",
+        "sourceKey": "cj:price:MAP（四川金河55%）",
+        "in_db": false
+      },
+      {
+        "displayName": "尿素",
+        "sourceKey": "cj:price:尿素（华鲁恒升小颗粒）",
+        "in_db": false
+      },
+      {
+        "displayName": "磷酸一铵价差",
+        "sourceKey": "cj:spread:MAP价差",
+        "in_db": false
+      },
+      {
+        "displayName": "黄磷",
+        "sourceKey": "cj:price:黄磷（四川）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600129.SH",
+    "name": "太极集团",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "太极集团（600129.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：工业收入、医药工业、商业收入、医药商业等",
+      "最大收入板块：工业收入，占比约23.1%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600141.SH",
+    "name": "600141.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "黄磷",
+        "sourceKey": "cj:price:黄磷（四川）",
+        "in_db": false
+      },
+      {
+        "displayName": "草甘膦",
+        "sourceKey": "cj:price:草甘膦（长三角95%）",
+        "in_db": false
+      },
+      {
+        "displayName": "磷酸二铵DAP",
+        "sourceKey": "cj:price:DAP（西南工厂64%褐色）",
+        "in_db": false
+      },
+      {
+        "displayName": "三聚磷酸钠",
+        "sourceKey": "cj:price:三聚磷酸钠（兴发集团工业级95%）",
+        "in_db": false
+      },
+      {
+        "displayName": "有机硅DMC",
+        "sourceKey": "cj:price:甲基环硅氧烷",
+        "in_db": false
+      },
+      {
+        "displayName": "磷矿石",
+        "sourceKey": "cj:price:磷矿石（湖北28%）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600184.SH",
+    "name": "光电股份",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "光电股份（600184.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：光学玻璃产品，占比约39.2%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600195.SH",
+    "name": "中牧股份",
+    "industryKey": "agriculture",
+    "industryLabel": "农产品加工",
+    "category": "农业/消费",
+    "summary": "中牧股份（600195.SH）主营业务覆盖农业/消费核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化药、贸易收入、饲料、生物制品",
+      "最大收入板块：化药，占比约37.6%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600206.SH",
+    "name": "有研新材",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "有研新材（600206.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：高纯/超高纯金属材料，占比约77.9%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600217.SH",
+    "name": "中再资环",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中再资环（600217.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：再生塑料对标PP、电子废弃物拆解、废电拆解物、工业废弃物及深加工等",
+      "最大收入板块：电子废弃物拆解，占比约45.9%",
+      "价格序列：再生塑料对标PP，最新同比10.4%",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "再生塑料对标PP",
+        "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600251.SH",
+    "name": "冠农股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "制造业",
+    "summary": "冠农股份（600251.SH）主营业务覆盖制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "2025年收入25.15亿元、归母净利3.48亿元；2026Q1归母净利2.91亿元，同比57.3%。",
+      "主业端看番茄酱出口价格和销量、棉花/棉籽加工价差、白糖价格、汇率和加工季库存。",
+      "国投罗钾持股20.3%，2025年净利润约22.23亿元，冠农权益法贡献约4.50亿元，是利润中枢关键。",
+      "开都河水电持股25.28%，2025年净利润约1.37亿元，提供偏稳定权益法收益，后续看来水、电价和霍尔古吐投产。",
+      "估值要拆分农产品加工主业、国投罗钾权益资产和开都河水电权益资产，单一PE容易掩盖投资收益占比。"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600282.SH",
+    "name": "南钢股份",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "南钢股份（600282.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：钢铁，占比约49.4%",
+      "价格序列：冶金焦，最新同比24.6%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "冶金焦",
+        "sourceKey": "xyzq:price:冶金焦(一级，华北)",
+        "in_db": false
+      },
+      {
+        "displayName": "焦炭",
+        "sourceKey": "cj:price:焦炭（山西美锦）",
+        "in_db": false
+      },
+      {
+        "displayName": "煤焦油",
+        "sourceKey": "cj:price:煤焦油（山西）",
+        "in_db": false
+      },
+      {
+        "displayName": "焦精煤",
+        "sourceKey": "xyzq:price:焦精煤(太原)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "600309.SH",
+    "name": "600309.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "纯MDI",
+        "sourceKey": "cj:price:纯MDI（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "聚合MDI",
+        "sourceKey": "cj:price:聚合MDI（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "TDI",
+        "sourceKey": "cj:price:TDI（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "聚碳酸酯PC",
+        "sourceKey": "cj:price:PC",
+        "in_db": false
+      },
+      {
+        "displayName": "纯MDI价差",
+        "sourceKey": "cj:spread:纯MDI-纯MDI价差",
+        "in_db": false
+      },
+      {
+        "displayName": "聚合MDI价差",
+        "sourceKey": "cj:spread:聚合MDI-聚合MDI价差",
+        "in_db": false
+      },
+      {
+        "displayName": "TDI价差",
+        "sourceKey": "cj:spread:TDI价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600346.SH",
+    "name": "600346.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "PTA",
+        "sourceKey": "cj:price:PTA（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "对二甲苯PX",
+        "sourceKey": "cj:price:对二甲苯（PX）",
+        "in_db": false
+      },
+      {
+        "displayName": "PET切片",
+        "sourceKey": "cj:price:PET切片（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "涤纶长丝POY",
+        "sourceKey": "xyzq:price:涤纶长丝(POY)",
+        "in_db": true
+      },
+      {
+        "displayName": "PTA价差",
+        "sourceKey": "cj:spread:PTA价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600356.SH",
+    "name": "恒丰纸业",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "恒丰纸业（600356.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：烟草工业用纸，占比约53.1%",
+      "价格序列：白卡纸，最新同比1064%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "白卡纸",
+        "sourceKey": "wind:price:白卡纸",
+        "in_db": false
+      },
+      {
+        "displayName": "双胶纸",
+        "sourceKey": "wind:price:双胶纸",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600379.SH",
+    "name": "宝光股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "宝光股份（600379.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：真空灭弧室、电真空开关设备及高压开关柜、固封极柱及储能设备、精密配件及材料销售等",
+      "最大收入板块：真空灭弧室，占比约52%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600456.SH",
+    "name": "宝钛股份",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "宝钛股份（600456.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：钛产品，占比约92.4%",
+      "价格序列：海绵钛，最新同比-5.9%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "海绵钛",
+        "sourceKey": "cj:price:海绵钛（≥99.6%国产）",
+        "in_db": false
+      },
+      {
+        "displayName": "钛精矿",
+        "sourceKey": "cj:price:钛精矿（四川攀钢）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600509.SH",
+    "name": "天富能源",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "天富能源（600509.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：供电，占比约72.5%",
+      "价格序列：发电燃料无烟煤，最新同比25%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "发电燃料无烟煤",
+        "sourceKey": "cj:price:永城无烟末煤",
+        "in_db": false
+      },
+      {
+        "displayName": "NYMEX天然气",
+        "sourceKey": "cj:price:NYMEX天然气",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600583.SH",
+    "name": "海油工程",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "海油工程（600583.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：海洋工程总承包项目收入，占比约36.1%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600618.SH",
+    "name": "氯碱化工",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "氯碱化工（600618.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：氯产品，占比约37.7%",
+      "价格序列：烧碱(隔膜32%)，最新同比-22.4%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "烧碱(隔膜32%)",
+        "sourceKey": "cj:price:32%隔膜烧碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "离子膜烧碱",
+        "sourceKey": "cj:price:离子膜烧碱（99%）",
+        "in_db": false
+      },
+      {
+        "displayName": "PVC(电石法)",
+        "sourceKey": "cj:price:PVC（华东电石法）",
+        "in_db": false
+      },
+      {
+        "displayName": "二氯乙烷EDC",
+        "sourceKey": "cj:price:EDC（CFR东南亚）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600714.SH",
+    "name": "金瑞矿业",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "金瑞矿业（600714.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：锶盐产品，占比约4.7%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600727.SH",
+    "name": "鲁北化工",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "鲁北化工（600727.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：钛白粉，占比约61.4%",
+      "价格序列：金红石型钛白粉，最新同比15%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "金红石型钛白粉",
+        "sourceKey": "cj:price:钛白粉（金红石型）",
+        "in_db": false
+      },
+      {
+        "displayName": "锐钛型钛白粉",
+        "sourceKey": "cj:price:钛白粉（锐钛型，攀钢钒钛）",
+        "in_db": false
+      },
+      {
+        "displayName": "磷酸二铵DAP",
+        "sourceKey": "cj:price:DAP（西南工厂64%褐色）",
+        "in_db": false
+      },
+      {
+        "displayName": "二氯甲烷",
+        "sourceKey": "cj:price:二氯甲烷（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "三氯甲烷",
+        "sourceKey": "xyzq:price:三氯甲烷(华东)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "600731.SH",
+    "name": "湖南海利",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "湖南海利（600731.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：商品销售收入，占比约49.6%",
+      "价格序列：代森锰锌，最新同比16%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "代森锰锌",
+        "sourceKey": "cj:price:代森锰锌",
+        "in_db": false
+      },
+      {
+        "displayName": "液氯原料",
+        "sourceKey": "cj:price:液氯（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "烧碱原料",
+        "sourceKey": "cj:price:32%隔膜烧碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "甲醇原料",
+        "sourceKey": "xyzq:price:甲醇(华东)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "600737.SH",
+    "name": "中粮糖业",
+    "industryKey": "agriculture",
+    "industryLabel": "农产品加工",
+    "category": "农业/消费",
+    "summary": "中粮糖业（600737.SH）主营业务覆盖农业/消费核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：尿素、复合肥、钾肥、磷肥等",
+      "最大收入板块：食糖贸易，占比约45.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：肥价与渠道库存",
+      "专项跟踪：原料成本",
+      "专项跟踪：出口政策"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600819.SH",
+    "name": "耀皮玻璃",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "耀皮玻璃（600819.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：汽车玻璃，占比约27.4%",
+      "价格序列：重质纯碱原料，最新同比-1.7%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "重质纯碱原料",
+        "sourceKey": "cj:price:重质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "轻质纯碱",
+        "sourceKey": "cj:price:轻质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "纯碱氨碱法价差",
+        "sourceKey": "cj:spread:纯碱-氨碱法价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600876.SH",
+    "name": "凯盛新能",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "凯盛新能（600876.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：新能源玻璃，占比约49.9%",
+      "价格序列：重质纯碱原料，最新同比-1.7%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "重质纯碱原料",
+        "sourceKey": "cj:price:重质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "纯碱氨碱法价差",
+        "sourceKey": "cj:spread:纯碱-氨碱法价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600929.SH",
+    "name": "雪天盐业",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "雪天盐业（600929.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：各类食盐(生态井矿盐/海盐)，占比约46%",
+      "价格序列：轻质纯碱，最新同比-2.2%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "轻质纯碱",
+        "sourceKey": "cj:price:轻质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "重质纯碱",
+        "sourceKey": "cj:price:重质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "氯化铵",
+        "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "in_db": true
+      },
+      {
+        "displayName": "烧碱(隔膜32%)",
+        "sourceKey": "cj:price:32%隔膜烧碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "工业纯盐",
+        "sourceKey": "cj:price:原盐（山东海盐）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "600980.SH",
+    "name": "北矿科技",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "北矿科技（600980.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：矿冶装备，占比约37.2%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "600989.SH",
+    "name": "600989.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "LLDPE(煤制烯烃)",
+        "sourceKey": "cj:price:LLDPE（CFR中国）",
+        "in_db": false
+      },
+      {
+        "displayName": "PP聚丙烯",
+        "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）",
+        "in_db": false
+      },
+      {
+        "displayName": "甲醇",
+        "sourceKey": "cj:price:甲醇（长三角）",
+        "in_db": false
+      },
+      {
+        "displayName": "焦炭",
+        "sourceKey": "cj:price:焦炭（山西美锦）",
+        "in_db": false
+      },
+      {
+        "displayName": "煤头甲醇价差",
+        "sourceKey": "cj:spread:煤头甲醇价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "601088.SH",
+    "name": "中国神华",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中国神华（601088.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：煤炭收入，占比约54.3%",
+      "价格序列：动力煤，最新同比25%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "动力煤",
+        "sourceKey": "cj:price:永城无烟末煤",
+        "in_db": false
+      },
+      {
+        "displayName": "煤焦油",
+        "sourceKey": "cj:price:煤焦油（山西）",
+        "in_db": false
+      },
+      {
+        "displayName": "LLDPE(煤制烯烃)",
+        "sourceKey": "cj:price:LLDPE（CFR中国）",
+        "in_db": false
+      },
+      {
+        "displayName": "PP聚丙烯",
+        "sourceKey": "cj:price:PP（PP纤维注射级/CFR中国）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "601121.SH",
+    "name": "宝地矿业",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业",
+    "summary": "宝地矿业（601121.SH）主营业务覆盖矿业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：铁精粉，占比约76.7%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "601568.SH",
+    "name": "北元化工",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "北元化工（601568.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：基本化学原料制造业，占比约94.1%",
+      "价格序列：PVC(电石法)，最新同比-6.6%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "PVC(电石法)",
+        "sourceKey": "cj:price:PVC（华东电石法）",
+        "in_db": false
+      },
+      {
+        "displayName": "烧碱(隔膜32%)",
+        "sourceKey": "cj:price:32%隔膜烧碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "电石法PVC价差",
+        "sourceKey": "cj:spread:电石法PVC电石法价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "601618.SH",
+    "name": "中国中冶",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "中国中冶（601618.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：主体业务，占比约67.3%",
+      "价格序列：金属钴，最新同比15.8%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "金属钴",
+        "sourceKey": "xyzq:price:金属钴(安泰科,国产)",
+        "in_db": false
+      },
+      {
+        "displayName": "四氧化三钴",
+        "sourceKey": "xyzq:price:四氧化三钴(安泰科,国产)",
+        "in_db": false
+      },
+      {
+        "displayName": "硫酸镍",
+        "sourceKey": "xyzq:price:硫酸镍(电池级,安泰科,国产)",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "601968.SH",
+    "name": "宝钢包装",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "宝钢包装（601968.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：金属饮料罐，占比约97.1%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "601975.SH",
+    "name": "招商南油",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "招商南油（601975.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：原油、天然气、成品油、炼化产品等",
+      "最大收入板块：MR型外贸成品油运输，占比约54%",
+      "价格序列：布伦特原油，最新同比8%",
+      "专项跟踪：国际油价",
+      "专项跟踪：炼化价差",
+      "专项跟踪：库存重估"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "布伦特原油",
+        "sourceKey": "cj:price:布伦特原油",
+        "in_db": false
+      },
+      {
+        "displayName": "WTI原油",
+        "sourceKey": "cj:price:WTI原油",
+        "in_db": false
+      },
+      {
+        "displayName": "0#柴油",
+        "sourceKey": "xyzq:price:中国0#柴油(镇海炼化)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "603169.SH",
+    "name": "兰石重装",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "兰石重装（603169.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：传统能源装备，占比约43.4%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "603213.SH",
+    "name": "镇洋发展",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "镇洋发展（603213.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：氯碱类，占比约57.3%",
+      "价格序列：烧碱(隔膜32%)，最新同比-22.4%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "烧碱(隔膜32%)",
+        "sourceKey": "cj:price:32%隔膜烧碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "PVC(电石法)",
+        "sourceKey": "cj:price:PVC（华东电石法）",
+        "in_db": false
+      },
+      {
+        "displayName": "环氧氯丙烷ECH",
+        "sourceKey": "cj:price:环氧氯丙烷（华东）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "603225.SH",
+    "name": "603225.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "PTA",
+        "sourceKey": "cj:price:PTA（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "PET切片",
+        "sourceKey": "cj:price:PET切片（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "涤纶长丝POY",
+        "sourceKey": "xyzq:price:涤纶长丝(POY)",
+        "in_db": true
+      }
+    ]
+  },
+  {
+    "code": "603260.SH",
+    "name": "603260.SH",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "",
+    "summary": "",
+    "keyPoints": [],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "金属硅",
+        "sourceKey": "cj:price:金属硅",
+        "in_db": false
+      },
+      {
+        "displayName": "有机硅DMC",
+        "sourceKey": "cj:price:甲基环硅氧烷",
+        "in_db": false
+      },
+      {
+        "displayName": "有机硅价差",
+        "sourceKey": "cj:spread:有机硅价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "603299.SH",
+    "name": "苏盐井神",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "苏盐井神（603299.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：精制食用盐及工业纯盐，占比约48%",
+      "价格序列：轻质纯碱，最新同比-2.2%",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "轻质纯碱",
+        "sourceKey": "cj:price:轻质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "重质纯碱",
+        "sourceKey": "cj:price:重质纯碱（华东）",
+        "in_db": false
+      },
+      {
+        "displayName": "氯化铵",
+        "sourceKey": "xyzq:price:氯化铵(农湿,江苏华昌)",
+        "in_db": true
+      },
+      {
+        "displayName": "工业纯盐",
+        "sourceKey": "cj:price:原盐（山东海盐）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "603698.SH",
+    "name": "航天工程",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "航天工程（603698.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：工业气体运营业务，占比约25.6%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "603970.SH",
+    "name": "中农立华",
+    "industryKey": "agriculture",
+    "industryLabel": "农产品加工",
+    "category": "农业/消费",
+    "summary": "中农立华（603970.SH）主营业务覆盖农业/消费核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：草甘膦、吡虫啉、代森锰锌、草甘膦价差等",
+      "最大收入板块：农药制剂，占比约69.6%",
+      "价格序列：草甘膦，最新同比3.1%",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "草甘膦",
+        "sourceKey": "cj:price:草甘膦（长三角95%）",
+        "in_db": false
+      },
+      {
+        "displayName": "吡虫啉",
+        "sourceKey": "cj:price:吡虫啉",
+        "in_db": false
+      },
+      {
+        "displayName": "代森锰锌",
+        "sourceKey": "cj:price:代森锰锌",
+        "in_db": false
+      },
+      {
+        "displayName": "草甘膦价差",
+        "sourceKey": "cj:spread:草甘膦价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "688119.SH",
+    "name": "中钢洛耐",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "中钢洛耐（688119.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：耐火材料，占比约55.7%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "688122.SH",
+    "name": "西部超导",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "西部超导（688122.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：高端钛合金材料，占比约48.4%",
+      "价格序列：海绵钛原料，最新同比-5.9%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "海绵钛原料",
+        "sourceKey": "cj:price:海绵钛（≥99.6%国产）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "688256.SH",
+    "name": "大包子",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "大包子（688256.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：云端产品线，占比约100%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "688295.SH",
+    "name": "中复神鹰",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "中复神鹰（688295.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：丙烯腈原料、丙烯腈价差、高性能小丝束碳纤维(T700/T800)、超高强高模碳纤维(T1000/M40J)等",
+      "最大收入板块：高性能小丝束碳纤维(T700/T800)，占比约58%",
+      "价格序列：丙烯腈原料，最新同比15.4%",
+      "专项跟踪：主营拆分和毛利率变化",
+      "专项跟踪：价格/价差与库存周期",
+      "专项跟踪：现金流、资产负债率和资本开支"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "丙烯腈原料",
+        "sourceKey": "cj:price:丙烯腈",
+        "in_db": false
+      },
+      {
+        "displayName": "丙烯腈价差",
+        "sourceKey": "xyzq:spread:丙烯腈-丙烯-合成氨价差",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "688543.SH",
+    "name": "国科军工",
+    "industryKey": "explosive",
+    "industryLabel": "民爆",
+    "category": "民爆",
+    "summary": "国科军工（688543.SH）：军用固体推进剂与特种高能弹药装药龙头，属于国防核心配套，与普通煤炭采剥及78号文矿山托管完全隔离，受益国防新型装备放量与十五规划高研发费率鼓励。（因数来源：国防规划、工信部十五规划）",
+    "keyPoints": [
+      "主营观察：工业炸药、电子雷管、爆破工程、爆破服务等",
+      "最大收入板块：军品业务，占比约43.1%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：工业炸药和电子雷管销量",
+      "专项跟踪：爆破工程订单",
+      "专项跟踪：现场混装和服务化占比"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "688563.SH",
+    "name": "航材股份",
+    "industryKey": "other",
+    "industryLabel": "其他研报",
+    "category": "其他制造业",
+    "summary": "航材股份（688563.SH）主营业务覆盖其他制造业核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：航空成品件，占比约49.7%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "688586.SH",
+    "name": "江航装备",
+    "industryKey": "chemical",
+    "industryLabel": "化工",
+    "category": "化工/材料",
+    "summary": "江航装备（688586.SH）主营业务覆盖化工/材料核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：化工新材料、基础化工、化肥、氯碱等",
+      "最大收入板块：航空产品，占比约61.5%",
+      "结合财务与公告跟踪景气",
+      "专项跟踪：主产品-原料价差",
+      "专项跟踪：库存和开工率",
+      "专项跟踪：新材料项目投产"
+    ],
+    "has_pm": false,
+    "pm_items": []
+  },
+  {
+    "code": "688750.SH",
+    "name": "金天钛业",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "金天钛业（688750.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：高端航空航天钛合金棒材，占比约62%",
+      "价格序列：海绵钛原料，最新同比-5.9%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "海绵钛原料",
+        "sourceKey": "cj:price:海绵钛（≥99.6%国产）",
+        "in_db": false
+      }
+    ]
+  },
+  {
+    "code": "688779.SH",
+    "name": "五矿新能",
+    "industryKey": "mining",
+    "industryLabel": "矿业",
+    "category": "矿业/有色",
+    "summary": "五矿新能（688779.SH）主营业务覆盖矿业/有色核心产业链。具备一体化制造优势与深厚成本护城河，中长期成长动能充沛。",
+    "keyPoints": [
+      "主营观察：黄金、白银、电解铜、贵金属冶炼等",
+      "最大收入板块：正极材料，占比约99.7%",
+      "价格序列：工业级碳酸锂，最新同比96%",
+      "专项跟踪：金银铜价格",
+      "专项跟踪：加工费与回收率",
+      "专项跟踪：矿石库存和采购成本"
+    ],
+    "has_pm": true,
+    "pm_items": [
+      {
+        "displayName": "工业级碳酸锂",
+        "sourceKey": "xyzq:price:碳酸锂(工业级,四川)",
+        "in_db": true
+      },
+      {
+        "displayName": "电池级碳酸锂",
+        "sourceKey": "xyzq:price:碳酸锂(电池级,江苏)",
+        "in_db": true
+      },
+      {
+        "displayName": "硫酸钴",
+        "sourceKey": "xyzq:price:硫酸钴21%(安泰科,国产)",
+        "in_db": false
+      }
+    ]
+  }
+]
