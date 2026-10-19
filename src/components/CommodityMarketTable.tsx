@@ -52,6 +52,41 @@ export default function CommodityMarketTable() {
     return ["全部", ...Array.from(set)];
   }, [items]);
 
+  // 动态分析提取当前数据集中的最新信源与日期（完全数据驱动，后续数据更新自动生效）
+  const sourceDateInfo = useMemo(() => {
+    if (items.length === 0) {
+      return {
+        text: "国泰海通证券 (2026-10-16) · 兴业证券 (2026-10-02)",
+      };
+    }
+
+    const gthtDates = items
+      .filter((i) => i.source && i.source.includes("国泰海通"))
+      .map((i) => i.updateDate)
+      .filter(Boolean)
+      .sort();
+    const xyzqDates = items
+      .filter((i) => i.source && i.source.includes("兴业证券"))
+      .map((i) => i.updateDate)
+      .filter(Boolean)
+      .sort();
+
+    const latestGt = gthtDates.length > 0 ? gthtDates[gthtDates.length - 1] : "";
+    const latestXy = xyzqDates.length > 0 ? xyzqDates[xyzqDates.length - 1] : "";
+
+    if (latestGt && latestXy) {
+      return {
+        text: `国泰海通证券 (${latestGt}) · 兴业证券 (${latestXy})`,
+      };
+    }
+
+    const allDates = items.map((i) => i.updateDate).filter(Boolean).sort();
+    const maxDate = allDates[allDates.length - 1] || "2026-10-16";
+    return {
+      text: `权威研报大数据库 (${maxDate})`,
+    };
+  }, [items]);
+
   // 处理排序切换
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -183,7 +218,7 @@ export default function CommodityMarketTable() {
         {/* 权威信源标签 */}
         <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", color: "var(--text-muted, #888)" }}>
           <ShieldCheck size={14} style={{ color: "#10b981" }} />
-          <span>权威研报信源: <b>国泰海通证券 (2026-10-16)</b> · <b>兴业证券 (2026-10-02)</b></span>
+          <span>权威研报信源: <b>{sourceDateInfo.text}</b></span>
           <span style={{ fontSize: "11px", background: "rgba(16, 185, 129, 0.15)", color: "#10b981", padding: "1px 6px", borderRadius: "3px", fontWeight: 600 }}>高置信度更新</span>
         </div>
       </div>

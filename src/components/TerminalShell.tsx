@@ -1,5 +1,6 @@
-import { BarChart3, Activity, Monitor, Moon, Sun } from "lucide-react";
+import { useMemo } from "react";
 import type { ReactNode } from "react";
+import { BarChart3, Activity, Monitor, Moon, Sun } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useThemeMode } from "../context/ThemeModeContext";
 import type { AppData } from "../types";
@@ -41,6 +42,20 @@ function ThemeToggle() {
 export default function TerminalShell({ data, children }: TerminalShellProps) {
   const signalCount = data.signals.length;
   const strongSignals = data.signals.filter((s) => s.signalStrength === "strong").length;
+
+  // 动态分析商品价格序列中的最新跟踪日期
+  const latestDate = useMemo(() => {
+    let maxDate = "2026-10-16";
+    if (data.commodityPrices) {
+      const seriesList = Object.values(data.commodityPrices).slice(0, 50);
+      for (const series of seriesList) {
+        if (series && series.length > 0 && series[0]?.date && series[0].date > maxDate) {
+          maxDate = series[0].date;
+        }
+      }
+    }
+    return maxDate;
+  }, [data.commodityPrices]);
 
   return (
     <div className="terminal-shell">
@@ -100,7 +115,7 @@ export default function TerminalShell({ data, children }: TerminalShellProps) {
         </span>
         <span className="row gap-3">
           <Activity size={12} />
-          数据信源: <b>Tushare</b> (A股K线·财务) + <b>国泰海通/兴业证券</b> (大宗现货·价差 2026-10-16) · 状态: 实时校验
+          数据信源: <b>Tushare</b> (A股K线·财务) + <b>国泰海通/兴业证券</b> (大宗现货·价差 跟踪至 {latestDate}) · 状态: 实时校验
         </span>
       </div>
     </div>
