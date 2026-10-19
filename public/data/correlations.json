@@ -1,62 +1,872 @@
 [
   {
+    "code": "000554.SZ",
+    "name": "泰山石油",
+    "productName": "汽油",
+    "commodityName": "中国92#汽油(镇海炼化)",
+    "correlation60d": -0.1433,
+    "correlation120d": -0.1021,
+    "correlation250d": -0.1024,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000554.SZ",
+    "name": "泰山石油",
+    "productName": "柴油",
+    "commodityName": "中国0#柴油(镇海炼化)",
+    "correlation60d": -0.1425,
+    "correlation120d": -0.1036,
+    "correlation250d": -0.1032,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000554.SZ",
+    "name": "泰山石油",
+    "productName": "液化气",
+    "commodityName": "液化气",
+    "correlation60d": -0.052,
+    "correlation120d": -0.1242,
+    "correlation250d": -0.0396,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000731.SZ",
+    "name": "四川美丰",
+    "productName": "尿素",
+    "commodityName": "尿素（华鲁恒升小颗粒）",
+    "correlation60d": 0.095,
+    "correlation120d": -0.0607,
+    "correlation250d": -0.0402,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "000731.SZ",
+    "name": "四川美丰",
+    "productName": "复合肥",
+    "commodityName": "复合肥",
+    "correlation60d": 0.0337,
+    "correlation120d": -0.017,
+    "correlation250d": -0.0351,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "000731.SZ",
+    "name": "四川美丰",
+    "productName": "三聚氰胺",
+    "commodityName": "三聚氰胺",
+    "correlation60d": -0.23,
+    "correlation120d": -0.1741,
+    "correlation250d": 0.1562,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000792.SZ",
+    "name": "盐湖股份",
+    "productName": "氯化钾",
+    "commodityName": "氯化钾",
+    "correlation60d": 0.0812,
+    "correlation120d": 0.0419,
+    "correlation250d": 0.8644,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "000792.SZ",
+    "name": "盐湖股份",
+    "productName": "碳酸锂",
+    "commodityName": "碳酸锂",
+    "correlation60d": 0.6186,
+    "correlation120d": 0.4833,
+    "correlation250d": 0.7449,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000792.SZ",
+    "name": "盐湖股份",
+    "productName": "纯碱",
+    "commodityName": "纯碱",
+    "correlation60d": 0.0067,
+    "correlation120d": -0.0496,
+    "correlation250d": 0.7549,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000819.SZ",
+    "name": "岳阳兴长",
+    "productName": "MTBE",
+    "commodityName": "MTBE",
+    "correlation60d": -0.2437,
+    "correlation120d": -0.2124,
+    "correlation250d": -0.213,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "000819.SZ",
+    "name": "岳阳兴长",
+    "productName": "液化气",
+    "commodityName": "液化气",
+    "correlation60d": -0.1108,
+    "correlation120d": -0.0618,
+    "correlation250d": 0.0646,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000830.SZ",
+    "name": "鲁西化工",
+    "productName": "尿素",
+    "commodityName": "尿素（华鲁恒升小颗粒）",
+    "correlation60d": 0.0825,
+    "correlation120d": 0.0017,
+    "correlation250d": 0.0678,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "000830.SZ",
+    "name": "鲁西化工",
+    "productName": "复合肥",
+    "commodityName": "复合肥(45%CL,湖北)",
+    "correlation60d": 0.1293,
+    "correlation120d": 0.0457,
+    "correlation250d": 0.0444,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "000930.SZ",
+    "name": "中粮科技",
+    "productName": "味精",
+    "commodityName": "味精",
+    "correlation60d": -0.0973,
+    "correlation120d": 0.6968,
+    "correlation250d": 0.6968,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000990.SZ",
+    "name": "诚志股份",
+    "productName": "甲醇",
+    "commodityName": "甲醇",
+    "correlation60d": 0.0844,
+    "correlation120d": 0.1178,
+    "correlation250d": 0.0509,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002092.SZ",
+    "name": "中泰化学",
+    "productName": "PVC",
+    "commodityName": "PVC",
+    "correlation60d": 0.3435,
+    "correlation120d": 0.2405,
+    "correlation250d": 0.2416,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002092.SZ",
+    "name": "中泰化学",
+    "productName": "烧碱",
+    "commodityName": "烧碱",
+    "correlation60d": -0.0411,
+    "correlation120d": 0.066,
+    "correlation250d": 0.0041,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002092.SZ",
+    "name": "中泰化学",
+    "productName": "粘胶短纤",
+    "commodityName": "粘胶短纤",
+    "correlation60d": -0.157,
+    "correlation120d": -0.0991,
+    "correlation250d": -0.1083,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002100.SZ",
+    "name": "天康生物",
+    "productName": "生猪",
+    "commodityName": "生猪",
+    "correlation60d": 0.0859,
+    "correlation120d": -0.0041,
+    "correlation250d": 0.0145,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002136.SZ",
+    "name": "安纳达",
+    "productName": "钛白粉",
+    "commodityName": "钛白粉（金红石型）",
+    "correlation60d": -0.1492,
+    "correlation120d": -0.0676,
+    "correlation250d": 0.015,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002136.SZ",
+    "name": "安纳达",
+    "productName": "磷酸铁的生产",
+    "commodityName": "磷酸铁",
+    "correlation60d": 0.0817,
+    "correlation120d": 0.0838,
+    "correlation250d": 0.0373,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002258.SZ",
+    "name": "利尔化学",
+    "productName": "草铵膦",
+    "commodityName": "草铵膦",
+    "correlation60d": 0.0126,
+    "correlation120d": 0.0144,
+    "correlation250d": 0.0266,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002408.SZ",
+    "name": "齐翔腾达",
+    "productName": "甲乙酮",
+    "commodityName": "甲乙酮",
+    "correlation60d": 0.1663,
+    "correlation120d": 0.1041,
+    "correlation250d": -0.006,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002408.SZ",
+    "name": "齐翔腾达",
+    "productName": "顺酐",
+    "commodityName": "顺酐",
+    "correlation60d": -0.0964,
+    "correlation120d": -0.068,
+    "correlation250d": -0.0115,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002408.SZ",
+    "name": "齐翔腾达",
+    "productName": "丁二烯",
+    "commodityName": "丁二烯",
+    "correlation60d": -0.1151,
+    "correlation120d": -0.0711,
+    "correlation250d": -0.0378,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002469.SZ",
+    "name": "三维化学",
+    "productName": "草甘膦",
+    "commodityName": "草甘膦",
+    "correlation60d": 0.0659,
+    "correlation120d": 0.0086,
+    "correlation250d": -0.0074,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002493.SZ",
+    "name": "荣盛石化",
+    "productName": "PTA",
+    "commodityName": "PTA",
+    "correlation60d": 0.1705,
+    "correlation120d": 0.2148,
+    "correlation250d": 0.1682,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002493.SZ",
+    "name": "荣盛石化",
+    "productName": "PX",
+    "commodityName": "PX",
+    "correlation60d": -0.1974,
+    "correlation120d": -0.1208,
+    "correlation250d": -0.0199,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002597.SZ",
+    "name": "金禾实业",
+    "productName": "三氯蔗糖",
+    "commodityName": "三氯蔗糖",
+    "correlation60d": 0.189,
+    "correlation120d": 0.2194,
+    "correlation250d": 0.2367,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002648.SZ",
+    "name": "卫星化学",
+    "productName": "丙烯酸",
+    "commodityName": "丙烯酸",
+    "correlation60d": 0.2452,
+    "correlation120d": 0.2188,
+    "correlation250d": 0.1352,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002648.SZ",
+    "name": "卫星化学",
+    "productName": "丙烯酸酯",
+    "commodityName": "丙烯酸酯",
+    "correlation60d": 0.2624,
+    "correlation120d": 0.2043,
+    "correlation250d": 0.1446,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "002748.SZ",
+    "name": "世龙实业",
+    "productName": "烧碱",
+    "commodityName": "烧碱",
+    "correlation60d": 0.0995,
+    "correlation120d": 0.06,
+    "correlation250d": -0.0112,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002748.SZ",
+    "name": "世龙实业",
+    "productName": "液氯",
+    "commodityName": "液氯",
+    "correlation60d": 0.2549,
+    "correlation120d": 0.115,
+    "correlation250d": 0.0668,
+    "lastUpdated": "2026-06-05"
+  },
+  {
+    "code": "300927.SZ",
+    "name": "江天化学",
+    "productName": "甲醛",
+    "commodityName": "甲醛",
+    "correlation60d": -0.1886,
+    "correlation120d": -0.0911,
+    "correlation250d": -0.0249,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600028.SH",
+    "name": "中国石化",
+    "productName": "原油",
+    "commodityName": "原油",
+    "correlation60d": 0.3063,
+    "correlation120d": 0.2351,
+    "correlation250d": 0.1359,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600028.SH",
+    "name": "中国石化",
+    "productName": "汽油",
+    "commodityName": "中国92#汽油(镇海炼化)",
+    "correlation60d": -0.2473,
+    "correlation120d": -0.1461,
+    "correlation250d": -0.0786,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600028.SH",
+    "name": "中国石化",
+    "productName": "柴油",
+    "commodityName": "中国0#柴油(镇海炼化)",
+    "correlation60d": -0.2483,
+    "correlation120d": -0.1467,
+    "correlation250d": -0.079,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600160.SH",
+    "name": "巨化股份",
+    "productName": "制冷剂",
+    "commodityName": "R32（市场均价）",
+    "correlation60d": 0.086,
+    "correlation120d": 0.354,
+    "correlation250d": 0.229,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600230.SH",
+    "name": "沧州大化",
+    "productName": "TDI",
+    "commodityName": "TDI",
+    "correlation60d": 0.3293,
+    "correlation120d": 0.2801,
+    "correlation250d": 0.3408,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600230.SH",
+    "name": "沧州大化",
+    "productName": "聚碳酸酯",
+    "commodityName": "聚碳酸酯",
+    "correlation60d": 0.0494,
+    "correlation120d": 0.0505,
+    "correlation250d": 0.0437,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600230.SH",
+    "name": "沧州大化",
+    "productName": "烧碱",
+    "commodityName": "烧碱",
+    "correlation60d": 0.0128,
+    "correlation120d": 0.0477,
+    "correlation250d": 0.093,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600298.SH",
+    "name": "安琪酵母",
+    "productName": "蛋氨酸",
+    "commodityName": "蛋氨酸（固体北京）",
+    "correlation60d": -0.122,
+    "correlation120d": -0.0736,
+    "correlation250d": -0.0396,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600298.SH",
+    "name": "安琪酵母",
+    "productName": "维生素A",
+    "commodityName": "维生素A",
+    "correlation60d": -0.1286,
+    "correlation120d": -0.0115,
+    "correlation250d": -0.0052,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600299.SH",
+    "name": "安迪苏",
+    "productName": "蛋氨酸",
+    "commodityName": "蛋氨酸（固体北京）",
+    "correlation60d": 0.3615,
+    "correlation120d": 0.2523,
+    "correlation250d": 0.1959,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600299.SH",
+    "name": "安迪苏",
+    "productName": "维生素A",
+    "commodityName": "维生素A",
+    "correlation60d": 0.2128,
+    "correlation120d": 0.1185,
+    "correlation250d": 0.0941,
+    "lastUpdated": "2026-06-12"
+  },
+  {
     "code": "600328.SH",
     "name": "中盐化工",
     "productName": "纯碱",
     "commodityName": "纯碱",
-    "correlation60d": 0.23,
-    "correlation120d": 0.45,
-    "correlation250d": 0.52,
-    "lastUpdated": "2025-03-28"
+    "correlation60d": 0.1085,
+    "correlation120d": 0.1339,
+    "correlation250d": 0.1015,
+    "lastUpdated": "2026-06-12"
   },
   {
     "code": "600328.SH",
     "name": "中盐化工",
     "productName": "烧碱",
     "commodityName": "烧碱",
-    "correlation60d": 0.68,
-    "correlation120d": 0.71,
-    "correlation250d": 0.65,
-    "lastUpdated": "2025-03-28"
+    "correlation60d": 0.097,
+    "correlation120d": 0.0225,
+    "correlation250d": 0.0606,
+    "lastUpdated": "2026-06-12"
   },
   {
-    "code": "000830.SZ",
-    "name": "鲁西化工",
-    "productName": "尿素",
-    "commodityName": "尿素",
-    "correlation60d": 0.55,
-    "correlation120d": 0.62,
-    "correlation250d": 0.58,
-    "lastUpdated": "2025-03-28"
+    "code": "600328.SH",
+    "name": "中盐化工",
+    "productName": "PVC",
+    "commodityName": "PVC",
+    "correlation60d": 0.2649,
+    "correlation120d": 0.2257,
+    "correlation250d": 0.1913,
+    "lastUpdated": "2026-06-12"
   },
   {
-    "code": "000830.SZ",
-    "name": "鲁西化工",
-    "productName": "甲醇",
-    "commodityName": "甲醇",
-    "correlation60d": 0.31,
-    "correlation120d": 0.48,
-    "correlation250d": 0.55,
-    "lastUpdated": "2025-03-28"
+    "code": "600378.SH",
+    "name": "昊华科技",
+    "productName": "制冷剂",
+    "commodityName": "R32（市场均价）",
+    "correlation60d": 0.0036,
+    "correlation120d": 0.2531,
+    "correlation250d": 0.0482,
+    "lastUpdated": "2026-06-12"
   },
   {
-    "code": "000878.SZ",
-    "name": "云南铜业",
-    "productName": "铜",
-    "commodityName": "LME铜",
-    "correlation60d": 0.18,
-    "correlation120d": 0.42,
-    "correlation250d": 0.61,
-    "lastUpdated": "2025-03-28"
+    "code": "600409.SH",
+    "name": "三友化工",
+    "productName": "纯碱",
+    "commodityName": "纯碱",
+    "correlation60d": 0.1982,
+    "correlation120d": 0.1422,
+    "correlation250d": 0.0479,
+    "lastUpdated": "2026-06-12"
   },
   {
-    "code": "601061.SH",
-    "name": "中信金属",
-    "productName": "铜",
-    "commodityName": "LME铜",
-    "correlation60d": 0.25,
-    "correlation120d": 0.38,
-    "correlation250d": 0.49,
-    "lastUpdated": "2025-03-28"
+    "code": "600409.SH",
+    "name": "三友化工",
+    "productName": "粘胶短纤",
+    "commodityName": "粘胶短纤",
+    "correlation60d": -0.0325,
+    "correlation120d": -0.0348,
+    "correlation250d": -0.0167,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600409.SH",
+    "name": "三友化工",
+    "productName": "PVC",
+    "commodityName": "PVC",
+    "correlation60d": 0.1464,
+    "correlation120d": 0.203,
+    "correlation250d": 0.212,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600426.SH",
+    "name": "华鲁恒升",
+    "productName": "醋酸",
+    "commodityName": "醋酸",
+    "correlation60d": 0.1147,
+    "correlation120d": 0.0772,
+    "correlation250d": 0.0203,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "600426.SH",
+    "name": "华鲁恒升",
+    "productName": "DMF",
+    "commodityName": "DMF",
+    "correlation60d": 0.2061,
+    "correlation120d": 0.1198,
+    "correlation250d": 0.1196,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600426.SH",
+    "name": "华鲁恒升",
+    "productName": "己二酸",
+    "commodityName": "己二酸",
+    "correlation60d": -0.1419,
+    "correlation120d": -0.1166,
+    "correlation250d": -0.1094,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "600486.SH",
+    "name": "扬农化工",
+    "productName": "草甘膦",
+    "commodityName": "草甘膦",
+    "correlation60d": 0.1077,
+    "correlation120d": 0.1315,
+    "correlation250d": 0.0578,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600486.SH",
+    "name": "扬农化工",
+    "productName": "菊酯",
+    "commodityName": "菊酯",
+    "correlation60d": 0.1195,
+    "correlation120d": 0.0766,
+    "correlation250d": -0.0302,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600500.SH",
+    "name": "中化国际",
+    "productName": "环氧树脂",
+    "commodityName": "环氧树脂",
+    "correlation60d": 0.0533,
+    "correlation120d": 0.0146,
+    "correlation250d": 0.0148,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600500.SH",
+    "name": "中化国际",
+    "productName": "工程塑料",
+    "commodityName": "工程塑料",
+    "correlation60d": -0.22,
+    "correlation120d": -0.0744,
+    "correlation250d": -0.0216,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "600746.SH",
+    "name": "江苏索普",
+    "productName": "醋酸",
+    "commodityName": "醋酸",
+    "correlation60d": 0.2564,
+    "correlation120d": 0.1122,
+    "correlation250d": 0.009,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "600746.SH",
+    "name": "江苏索普",
+    "productName": "硫酸",
+    "commodityName": "硫酸",
+    "correlation60d": 0.1795,
+    "correlation120d": 0.0599,
+    "correlation250d": 0.0719,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600866.SH",
+    "name": "星湖科技",
+    "productName": "味精",
+    "commodityName": "味精",
+    "correlation60d": -0.0462,
+    "correlation120d": 0.676,
+    "correlation250d": 0.676,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600955.SH",
+    "name": "维远股份",
+    "productName": "苯酚",
+    "commodityName": "苯酚（华东）",
+    "correlation60d": -0.0033,
+    "correlation120d": 0.0251,
+    "correlation250d": 0.059,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600955.SH",
+    "name": "维远股份",
+    "productName": "丙酮",
+    "commodityName": "丙酮（华东）",
+    "correlation60d": 0.027,
+    "correlation120d": 0.1161,
+    "correlation250d": 0.0763,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600955.SH",
+    "name": "维远股份",
+    "productName": "双酚A",
+    "commodityName": "双酚A（华东）",
+    "correlation60d": -0.0318,
+    "correlation120d": -0.011,
+    "correlation250d": -0.0415,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601118.SH",
+    "name": "海南橡胶",
+    "productName": "天然橡胶",
+    "commodityName": "天然橡胶",
+    "correlation60d": 0.5015,
+    "correlation120d": 0.5551,
+    "correlation250d": 0.3893,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "601216.SH",
+    "name": "君正集团",
+    "productName": "PVC",
+    "commodityName": "PVC",
+    "correlation60d": 0.1216,
+    "correlation120d": 0.1265,
+    "correlation250d": 0.1262,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601216.SH",
+    "name": "君正集团",
+    "productName": "烧碱",
+    "commodityName": "烧碱",
+    "correlation60d": 0.0623,
+    "correlation120d": 0.0245,
+    "correlation250d": -0.0703,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601216.SH",
+    "name": "君正集团",
+    "productName": "电石",
+    "commodityName": "电石",
+    "correlation60d": -0.2329,
+    "correlation120d": -0.0891,
+    "correlation250d": -0.0666,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601233.SH",
+    "name": "桐昆股份",
+    "productName": "涤纶长丝",
+    "commodityName": "涤纶长丝",
+    "correlation60d": -0.0902,
+    "correlation120d": -0.0217,
+    "correlation250d": 0.0205,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "601233.SH",
+    "name": "桐昆股份",
+    "productName": "PTA",
+    "commodityName": "PTA",
+    "correlation60d": 0.1307,
+    "correlation120d": 0.2499,
+    "correlation250d": 0.1712,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "601233.SH",
+    "name": "桐昆股份",
+    "productName": "聚酯切片",
+    "commodityName": "聚酯切片",
+    "correlation60d": 0.0214,
+    "correlation120d": 0.0954,
+    "correlation250d": 0.0793,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601678.SH",
+    "name": "滨化股份",
+    "productName": "烧碱",
+    "commodityName": "烧碱",
+    "correlation60d": 0.1096,
+    "correlation120d": 0.1146,
+    "correlation250d": 0.0245,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601678.SH",
+    "name": "滨化股份",
+    "productName": "环氧丙烷",
+    "commodityName": "环氧丙烷",
+    "correlation60d": -0.0756,
+    "correlation120d": -0.0654,
+    "correlation250d": -0.0737,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "601857.SH",
+    "name": "中国石油",
+    "productName": "原油",
+    "commodityName": "原油",
+    "correlation60d": 0.636,
+    "correlation120d": 0.5256,
+    "correlation250d": 0.3806,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "601857.SH",
+    "name": "中国石油",
+    "productName": "天然气",
+    "commodityName": "NYMEX天然气",
+    "correlation60d": 0.1095,
+    "correlation120d": 0.0004,
+    "correlation250d": 0.0339,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "603599.SH",
+    "name": "广信股份",
+    "productName": "多菌灵",
+    "commodityName": "多菌灵",
+    "correlation60d": 0.0991,
+    "correlation120d": 0.0913,
+    "correlation250d": 0.0385,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "603599.SH",
+    "name": "广信股份",
+    "productName": "甲基硫菌灵",
+    "commodityName": "甲基硫菌灵",
+    "correlation60d": 0.0406,
+    "correlation120d": 0.0241,
+    "correlation250d": -0.0433,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "603599.SH",
+    "name": "广信股份",
+    "productName": "敌草隆",
+    "commodityName": "敌草隆",
+    "correlation60d": -0.1106,
+    "correlation120d": -0.0887,
+    "correlation250d": -0.0404,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "603968.SH",
+    "name": "醋化股份",
+    "productName": "天然气",
+    "commodityName": "NYMEX天然气",
+    "correlation60d": 0.0147,
+    "correlation120d": 0.1437,
+    "correlation250d": 0.1018,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "000629.SZ",
+    "name": "钒钛股份",
+    "productName": "钛白粉",
+    "commodityName": "钛白粉（金红石型）",
+    "correlation60d": -0.0986,
+    "correlation120d": -0.017,
+    "correlation250d": -0.0533,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600063.SH",
+    "name": "皖维高新",
+    "productName": "PVA",
+    "commodityName": "PVA",
+    "correlation60d": -0.2111,
+    "correlation120d": -0.2003,
+    "correlation250d": -0.0814,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "600063.SH",
+    "name": "皖维高新",
+    "productName": "醋酸乙烯",
+    "commodityName": "醋酸乙烯",
+    "correlation60d": -0.0379,
+    "correlation120d": -0.0122,
+    "correlation250d": 0.0087,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "688778.SH",
+    "name": "厦钨新能",
+    "productName": "磷酸铁锂",
+    "commodityName": "磷酸铁锂",
+    "correlation60d": 0.0971,
+    "correlation120d": 0.1001,
+    "correlation250d": -0.0236,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002783.SZ",
+    "name": "凯龙股份",
+    "productName": "硝酸铵",
+    "commodityName": "硝酸铵",
+    "correlation60d": 0.0701,
+    "correlation120d": 0.048,
+    "correlation250d": 0.0127,
+    "lastUpdated": "2026-06-12"
+  },
+  {
+    "code": "002783.SZ",
+    "name": "凯龙股份",
+    "productName": "复合肥",
+    "commodityName": "复合肥",
+    "correlation60d": 0.102,
+    "correlation120d": 0.0386,
+    "correlation250d": -0.0049,
+    "lastUpdated": "2026-06-18"
+  },
+  {
+    "code": "603227.SH",
+    "name": "雪峰科技",
+    "productName": "硝酸铵",
+    "commodityName": "硝酸铵",
+    "correlation60d": 0.2289,
+    "correlation120d": 0.218,
+    "correlation250d": 0.1145,
+    "lastUpdated": "2026-06-12"
   }
 ]
