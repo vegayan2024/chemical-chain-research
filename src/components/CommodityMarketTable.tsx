@@ -183,7 +183,7 @@ export default function CommodityMarketTable() {
         {/* 权威信源标签 */}
         <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", color: "var(--text-muted, #888)" }}>
           <ShieldCheck size={14} style={{ color: "#10b981" }} />
-          <span>权威研报信源: <b>兴业证券 (2026-08-28)</b> · <b>申万宏源 (2026-08-28)</b></span>
+          <span>权威研报信源: <b>国泰海通证券 (2026-10-16)</b> · <b>兴业证券 (2026-10-02)</b></span>
           <span style={{ fontSize: "11px", background: "rgba(16, 185, 129, 0.15)", color: "#10b981", padding: "1px 6px", borderRadius: "3px", fontWeight: 600 }}>高置信度更新</span>
         </div>
       </div>

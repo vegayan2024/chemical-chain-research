@@ -100,7 +100,7 @@ export default function TerminalShell({ data, children }: TerminalShellProps) {
         </span>
         <span className="row gap-3">
           <Activity size={12} />
-          数据信源: <b>Tushare</b> (A股K线·财务) + <b>AKShare</b> (大宗现货·主力期货) · 状态: 实时校验
+          数据信源: <b>Tushare</b> (A股K线·财务) + <b>国泰海通/兴业证券</b> (大宗现货·价差 2026-10-16) · 状态: 实时校验
         </span>
       </div>
     </div>
