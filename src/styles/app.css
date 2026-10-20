@@ -620,3 +620,418 @@
   }
 }
 
+/* ============================================================
+   背离信号预警雷达 · 公司聚合与细分下钻设计体系
+   ============================================================ */
+.alert-controls-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.alert-filter-tabs {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--space-3);
+}
+
+.alert-tab {
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-base);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-1);
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.alert-tab:hover {
+  color: var(--text);
+  border-color: var(--brand);
+}
+
+.alert-tab--active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-fg);
+}
+
+.alert-tab--active-positive {
+  background: var(--rise-soft);
+  border-color: var(--rise);
+  color: var(--rise);
+}
+
+.alert-tab--active-negative {
+  background: var(--fall-soft);
+  border-color: var(--fall);
+  color: var(--fall);
+}
+
+.alert-secondary-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.alert-strength-toggles {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.filter-hint {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+}
+
+.pill-btn {
+  padding: 3px 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  font-size: var(--fs-tiny);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.pill-btn:hover {
+  color: var(--text);
+  border-color: var(--border-hover);
+}
+
+.pill-btn--active {
+  background: var(--bg-raised);
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.alert-search-box {
+  min-width: 260px;
+}
+
+.alert-search-input {
+  width: 100%;
+  padding: 6px 12px;
+  background: var(--bg-base);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-1);
+  color: var(--text);
+  font-size: var(--fs-caption);
+}
+
+/* 公司聚合卡片 */
+.alert-company-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.alert-company-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2);
+  overflow: hidden;
+  transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+
+.alert-company-card:hover {
+  border-color: var(--border-hover);
+}
+
+.alert-company-card--positive {
+  border-left: 3px solid var(--rise);
+}
+
+.alert-company-card--negative {
+  border-left: 3px solid var(--fall);
+}
+
+.alert-company-card--strong {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.alert-company-card__header {
+  padding: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: var(--bg-panel);
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.alert-company-card__header:hover {
+  background: var(--bg-raised);
+}
+
+.company-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.company-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.company-name {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  color: var(--text);
+}
+
+.company-code {
+  font-family: var(--font-mono);
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+}
+
+.formula-type-tag {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  font-size: var(--fs-tiny);
+  padding: 2px 8px;
+  border-radius: var(--radius-1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.signal-badge {
+  font-size: var(--fs-tiny);
+  padding: 2px 8px;
+  border-radius: var(--radius-1);
+  font-weight: var(--fw-semibold);
+}
+
+.signal-badge--strong {
+  background: var(--rise-soft);
+  color: var(--rise);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.signal-badge--medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+.direction-badge {
+  font-size: var(--fs-tiny);
+  padding: 2px 8px;
+  border-radius: var(--radius-1);
+}
+
+.direction-badge--pos {
+  background: var(--rise-soft);
+  color: var(--rise);
+}
+
+.direction-badge--neg {
+  background: var(--fall-soft);
+  color: var(--fall);
+}
+
+.company-rationale-row {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.rationale-prefix {
+  color: var(--brand);
+  font-weight: var(--fw-medium);
+}
+
+.expand-trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--brand);
+  font-size: var(--fs-caption);
+  user-select: none;
+}
+
+.expand-chevron {
+  transition: transform var(--dur-fast) var(--ease);
+  display: inline-block;
+  font-size: 14px;
+}
+
+.expand-chevron--open {
+  transform: rotate(180deg);
+}
+
+/* 总结指标网格 */
+.alert-company-card__summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border);
+}
+
+.summary-metric-card {
+  background: var(--bg-base);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summary-metric-card--highlight {
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.summary-metric-card--prob {
+  background: rgba(56, 189, 248, 0.04);
+}
+
+.metric-label {
+  font-size: var(--fs-tiny);
+  color: var(--text-muted);
+}
+
+.metric-val {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  font-family: var(--font-mono);
+}
+
+.metric-subtext {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* 细分产品单独呈现区 */
+.subproduct-drilldown-panel {
+  background: var(--bg-base);
+  border-top: 1px solid var(--border);
+  padding: var(--space-4);
+}
+
+.drilldown-header {
+  margin-bottom: var(--space-3);
+}
+
+.drilldown-header h4 {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.drilldown-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.drilldown-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-1);
+}
+
+.drilldown-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-caption);
+}
+
+.drilldown-table th {
+  background: var(--bg-raised);
+  padding: 8px 12px;
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: var(--fw-medium);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.drilldown-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.drilldown-table tr:last-child td {
+  border-bottom: none;
+}
+
+.drilldown-table tr:hover td {
+  background: var(--bg-raised);
+}
+
+.impact-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-1);
+  font-weight: var(--fw-semibold);
+  font-family: var(--font-mono);
+}
+
+.impact-badge--pos {
+  background: var(--rise-soft);
+  color: var(--rise);
+}
+
+.impact-badge--neg {
+  background: var(--fall-soft);
+  color: var(--fall);
+}
+
+.micro-badge {
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 2px;
+}
+
+.micro-badge--pos {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.micro-badge--neg {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.drilldown-footer {
+  margin-top: var(--space-3);
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .alert-company-card__summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .alert-company-card__summary-grid {
+    grid-template-columns: 1fr;
+  }
+  .company-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+

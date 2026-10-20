@@ -173,6 +173,13 @@ def main():
                 div_type = "positive" if effective_comm_cum > stock_cum else "negative"
                 strength = "strong" if diff_score > 0.35 else ("medium" if diff_score > 0.20 else "weak")
                 
+                # 计算对利润预期的理论影响 = 利润权重 * 商品/价差变动率
+                profit_weight = pweight
+                profit_impact = round(profit_weight * effective_comm_cum, 4)
+                
+                # 概率估算：基于滚动相关性强度与背离剪刀差幅度 (50% ~ 95%)
+                prob = min(95.0, max(50.0, round(50.0 + 30.0 * abs(recent_corr) + 20.0 * min(1.0, diff_score), 1)))
+                
                 # 过滤极微弱噪音，确保信号高确定性
                 if strength in ["strong", "medium"]:
                     all_signals.append({
@@ -182,6 +189,9 @@ def main():
                         "focusRationale": rationale,
                         "productName": pname,
                         "commodityName": cname,
+                        "profitWeight": round(profit_weight, 2),
+                        "profitImpact": profit_impact,
+                        "probability": prob,
                         "divergenceType": div_type,
                         "divergenceScore": round(diff_score, 3),
                         "correlation": round(recent_corr, 2),
@@ -192,14 +202,73 @@ def main():
                         "signalStrength": strength
                     })
 
-    # 去重：同个公司保留得分最高的背离信号
-    unique_signals = {}
+    # 按公司聚合：将同一公司下的多个细分产品信号汇总在一起，并保留细分子项 items
+    company_groups = {}
     for s in all_signals:
-        key = s["code"]
-        if key not in unique_signals or s["divergenceScore"] > unique_signals[key]["divergenceScore"]:
-            unique_signals[key] = s
-            
-    filtered_signals = list(unique_signals.values())
+        c_code = s["code"]
+        if c_code not in company_groups:
+            company_groups[c_code] = {
+                "code": s["code"],
+                "name": s["name"],
+                "formulaType": s["formulaType"],
+                "focusRationale": s["focusRationale"],
+                "startDate": s["startDate"],
+                "endDate": s["endDate"],
+                "stockChange": s["stockChange"],
+                "items": []
+            }
+        company_groups[c_code]["items"].append(s)
+
+    # 计算公司层级的主导指标
+    filtered_signals = []
+    for c_code, g in company_groups.items():
+        items = g["items"]
+        # 按单项得分排序
+        items.sort(key=lambda x: -x["divergenceScore"])
+        top_item = items[0]
+        
+        # 综合背离类型：取最高权重或最高得分项的主导方向
+        total_impact = round(sum(it["profitImpact"] for it in items), 4)
+        avg_prob = round(sum(it["probability"] * it.get("profitWeight", 1.0) for it in items) / max(0.01, sum(it.get("profitWeight", 1.0) for it in items)), 1)
+        max_score = top_item["divergenceScore"]
+        top_strength = "strong" if any(it["signalStrength"] == "strong" for it in items) else "medium"
+        
+        company_signal = {
+            "code": g["code"],
+            "name": g["name"],
+            "formulaType": g["formulaType"],
+            "focusRationale": g["focusRationale"],
+            "productName": top_item["productName"] if len(items) == 1 else f"{top_item['productName']} 等 {len(items)} 个产品",
+            "commodityName": top_item["commodityName"] if len(items) == 1 else f"综合大宗基本面 ({len(items)}项)",
+            "divergenceType": top_item["divergenceType"],
+            "divergenceScore": max_score,
+            "correlation": top_item["correlation"],
+            "stockChange": g["stockChange"],
+            "commodityChange": top_item["commodityChange"],
+            "profitWeight": round(sum(it["profitWeight"] for it in items), 2),
+            "profitImpact": total_impact,
+            "probability": avg_prob,
+            "startDate": g["startDate"],
+            "endDate": g["endDate"],
+            "signalStrength": top_strength,
+            "items": [
+                {
+                    "productName": it["productName"],
+                    "commodityName": it["commodityName"],
+                    "profitWeight": it["profitWeight"],
+                    "commodityChange": it["commodityChange"],
+                    "stockChange": it["stockChange"],
+                    "divergenceType": it["divergenceType"],
+                    "divergenceScore": it["divergenceScore"],
+                    "correlation": it["correlation"],
+                    "profitImpact": it["profitImpact"],
+                    "probability": it["probability"],
+                    "signalStrength": it["signalStrength"]
+                }
+                for it in items
+            ]
+        }
+        filtered_signals.append(company_signal)
 
     # 按信号强度与得分排序
     strength_map = {"strong": 0, "medium": 1, "weak": 2}

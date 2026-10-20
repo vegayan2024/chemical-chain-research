@@ -4,64 +4,214 @@
     "name": "江苏索普",
     "formulaType": "byproduct_composite",
     "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。",
-    "productName": "硫酸",
-    "commodityName": "硫酸(98%,长三角)",
+    "productName": "硫酸 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 3.061,
     "correlation": 0.17,
     "stockChange": -0.067,
     "commodityChange": 2.994,
+    "profitWeight": 0.42,
+    "profitImpact": 0.5811,
+    "probability": 66.3,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "硫酸",
+        "commodityName": "硫酸(98%,长三角)",
+        "profitWeight": 0.16,
+        "commodityChange": 2.994,
+        "stockChange": -0.067,
+        "divergenceType": "positive",
+        "divergenceScore": 3.061,
+        "correlation": 0.17,
+        "profitImpact": 0.479,
+        "probability": 75.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "氯碱",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": -0.067,
+        "divergenceType": "positive",
+        "divergenceScore": 0.46,
+        "correlation": -0.05,
+        "profitImpact": 0.1021,
+        "probability": 60.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002430.SZ",
     "name": "杭氧股份",
     "formulaType": "processing_fee",
     "focusRationale": "关注现场管道气长期固定照付不议合同，以及零售液氧/液氮/液氩现货价差弹性。",
-    "productName": "液氩",
-    "commodityName": "液氩(河北)",
+    "productName": "液氩 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 2.573,
     "correlation": 0.17,
     "stockChange": 0.088,
     "commodityChange": 2.66,
+    "profitWeight": 0.7,
+    "profitImpact": 0.7063,
+    "probability": 67.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "液氩",
+        "commodityName": "液氩(河北)",
+        "profitWeight": 0.3,
+        "commodityChange": 2.66,
+        "stockChange": 0.088,
+        "divergenceType": "positive",
+        "divergenceScore": 2.573,
+        "correlation": 0.17,
+        "profitImpact": 0.798,
+        "probability": 75.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "液氧",
+        "commodityName": "液氧(江苏)",
+        "profitWeight": 0.4,
+        "commodityChange": -0.229,
+        "stockChange": 0.088,
+        "divergenceType": "negative",
+        "divergenceScore": 0.317,
+        "correlation": -0.2,
+        "profitImpact": -0.0917,
+        "probability": 62.2,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "000657.SZ",
     "name": "中钨高新",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "钨",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "钨 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "negative",
     "divergenceScore": 1.901,
     "correlation": 0.02,
     "stockChange": 2.294,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3929,
+    "probability": 70.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "钨",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": 2.294,
+        "divergenceType": "negative",
+        "divergenceScore": 1.901,
+        "correlation": 0.02,
+        "profitImpact": 0.165,
+        "probability": 70.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "硬质合金",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": 2.294,
+        "divergenceType": "negative",
+        "divergenceScore": 1.901,
+        "correlation": 0.02,
+        "profitImpact": 0.165,
+        "probability": 70.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "钼",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.16,
+        "commodityChange": 0.393,
+        "stockChange": 2.294,
+        "divergenceType": "negative",
+        "divergenceScore": 1.901,
+        "correlation": 0.02,
+        "profitImpact": 0.0629,
+        "probability": 70.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000962.SZ",
     "name": "东方钽业",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "钽",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "钽 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "negative",
     "divergenceScore": 1.508,
     "correlation": 0.04,
     "stockChange": 1.901,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3928,
+    "probability": 71.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "钽",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.53,
+        "commodityChange": 0.393,
+        "stockChange": 1.901,
+        "divergenceType": "negative",
+        "divergenceScore": 1.508,
+        "correlation": 0.04,
+        "profitImpact": 0.2082,
+        "probability": 71.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "铌",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": 1.901,
+        "divergenceType": "negative",
+        "divergenceScore": 1.508,
+        "correlation": 0.04,
+        "profitImpact": 0.1021,
+        "probability": 71.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "铍",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": 1.901,
+        "divergenceType": "negative",
+        "divergenceScore": 1.508,
+        "correlation": 0.04,
+        "profitImpact": 0.0825,
+        "probability": 71.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600206.SH",
@@ -75,25 +225,87 @@
     "correlation": -0.01,
     "stockChange": 1.512,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 70.4,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": 1.512,
+        "divergenceType": "negative",
+        "divergenceScore": 1.427,
+        "correlation": -0.01,
+        "profitImpact": 0.0849,
+        "probability": 70.4,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600955.SH",
     "name": "维远股份",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "丙酮",
-    "commodityName": "丙酮(华东)",
+    "productName": "丙酮 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 1.032,
     "correlation": -0.12,
     "stockChange": -0.155,
     "commodityChange": 0.877,
+    "profitWeight": 1.0,
+    "profitImpact": 0.5609,
+    "probability": 67.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "丙酮",
+        "commodityName": "丙酮(华东)",
+        "profitWeight": 0.32,
+        "commodityChange": 0.877,
+        "stockChange": -0.155,
+        "divergenceType": "positive",
+        "divergenceScore": 1.032,
+        "correlation": -0.12,
+        "profitImpact": 0.2806,
+        "probability": 73.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "双酚A",
+        "commodityName": "双酚A(华东)",
+        "profitWeight": 0.32,
+        "commodityChange": 0.488,
+        "stockChange": -0.155,
+        "divergenceType": "positive",
+        "divergenceScore": 0.643,
+        "correlation": -0.14,
+        "profitImpact": 0.1563,
+        "probability": 67.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "苯酚",
+        "commodityName": "苯酚(华东)",
+        "profitWeight": 0.36,
+        "commodityChange": 0.344,
+        "stockChange": -0.155,
+        "divergenceType": "positive",
+        "divergenceScore": 0.499,
+        "correlation": -0.05,
+        "profitImpact": 0.124,
+        "probability": 61.4,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600282.SH",
@@ -107,57 +319,194 @@
     "correlation": -0.02,
     "stockChange": -0.057,
     "commodityChange": 0.924,
+    "profitWeight": 1.0,
+    "profitImpact": 0.9237,
+    "probability": 70.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "焦精煤",
+        "commodityName": "焦精煤(太原)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.924,
+        "stockChange": -0.057,
+        "divergenceType": "positive",
+        "divergenceScore": 0.98,
+        "correlation": -0.02,
+        "profitImpact": 0.9237,
+        "probability": 70.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600961.SH",
     "name": "株冶集团",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "锌",
-    "commodityName": "代森锰锌",
+    "productName": "锌 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "negative",
     "divergenceScore": 0.936,
     "correlation": -0.02,
     "stockChange": 0.994,
     "commodityChange": 0.058,
+    "profitWeight": 1.0,
+    "profitImpact": 0.2152,
+    "probability": 66.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "锌",
+        "commodityName": "代森锰锌",
+        "profitWeight": 0.53,
+        "commodityChange": 0.058,
+        "stockChange": 0.994,
+        "divergenceType": "negative",
+        "divergenceScore": 0.936,
+        "correlation": -0.02,
+        "profitImpact": 0.0306,
+        "probability": 69.3,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "铟",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": 0.994,
+        "divergenceType": "negative",
+        "divergenceScore": 0.601,
+        "correlation": -0.07,
+        "profitImpact": 0.1021,
+        "probability": 64.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "金银",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": 0.994,
+        "divergenceType": "negative",
+        "divergenceScore": 0.601,
+        "correlation": -0.07,
+        "profitImpact": 0.0825,
+        "probability": 64.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600866.SH",
     "name": "星湖科技",
     "formulaType": "byproduct_composite",
     "focusRationale": "关注联产及副产物（如副产硫酸、伴生贵金属、尾气综合利用）带来的非对称超额现金流弹性贡献。",
-    "productName": "核苷酸",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "核苷酸 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.892,
     "correlation": -0.11,
     "stockChange": -0.499,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.2155,
+    "probability": 66.3,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "核苷酸",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.499,
+        "divergenceType": "positive",
+        "divergenceScore": 0.892,
+        "correlation": -0.11,
+        "profitImpact": 0.165,
+        "probability": 71.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "原料药",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.16,
+        "commodityChange": 0.393,
+        "stockChange": -0.499,
+        "divergenceType": "positive",
+        "divergenceScore": 0.892,
+        "correlation": -0.11,
+        "profitImpact": 0.0629,
+        "probability": 71.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "味精",
+        "commodityName": "味精(国内)",
+        "profitWeight": 0.42,
+        "commodityChange": -0.029,
+        "stockChange": -0.499,
+        "divergenceType": "positive",
+        "divergenceScore": 0.469,
+        "correlation": -0.01,
+        "profitImpact": -0.0124,
+        "probability": 59.5,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000819.SZ",
     "name": "岳阳兴长",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "液化气",
-    "commodityName": "液化气(华东)",
+    "productName": "液化气 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.879,
     "correlation": 0.03,
     "stockChange": -0.292,
     "commodityChange": 0.586,
+    "profitWeight": 0.65,
+    "profitImpact": 0.2413,
+    "probability": 63.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "液化气",
+        "commodityName": "液化气(华东)",
+        "profitWeight": 0.29,
+        "commodityChange": 0.586,
+        "stockChange": -0.292,
+        "divergenceType": "positive",
+        "divergenceScore": 0.879,
+        "correlation": 0.03,
+        "profitImpact": 0.17,
+        "probability": 68.5,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "聚丙烯",
+        "commodityName": "聚丙烯酰胺(浙江鑫甬)",
+        "profitWeight": 0.36,
+        "commodityChange": 0.198,
+        "stockChange": -0.292,
+        "divergenceType": "positive",
+        "divergenceScore": 0.49,
+        "correlation": 0.0,
+        "profitImpact": 0.0713,
+        "probability": 60.0,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002149.SZ",
@@ -171,25 +520,87 @@
     "correlation": -0.11,
     "stockChange": 0.769,
     "commodityChange": -0.1,
+    "profitWeight": 0.7,
+    "profitImpact": -0.07,
+    "probability": 70.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "海绵钛",
+        "commodityName": "海绵钛(0级)",
+        "profitWeight": 0.7,
+        "commodityChange": -0.1,
+        "stockChange": 0.769,
+        "divergenceType": "negative",
+        "divergenceScore": 0.869,
+        "correlation": -0.11,
+        "profitImpact": -0.07,
+        "probability": 70.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "688778.SH",
     "name": "厦钨新能",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "三元材料",
-    "commodityName": "三元材料电解液",
+    "productName": "三元材料 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.868,
     "correlation": 0.06,
     "stockChange": -0.187,
     "commodityChange": 0.681,
+    "profitWeight": 1.0,
+    "profitImpact": 0.5422,
+    "probability": 68.4,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "三元材料",
+        "commodityName": "三元材料电解液",
+        "profitWeight": 0.42,
+        "commodityChange": 0.681,
+        "stockChange": -0.187,
+        "divergenceType": "positive",
+        "divergenceScore": 0.868,
+        "correlation": 0.06,
+        "profitImpact": 0.286,
+        "probability": 69.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "磷酸铁锂",
+        "commodityName": "磷酸铁锂正极材料",
+        "profitWeight": 0.21,
+        "commodityChange": 0.528,
+        "stockChange": -0.187,
+        "divergenceType": "positive",
+        "divergenceScore": 0.715,
+        "correlation": 0.16,
+        "profitImpact": 0.1108,
+        "probability": 69.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "钴酸锂",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.187,
+        "divergenceType": "positive",
+        "divergenceScore": 0.58,
+        "correlation": -0.18,
+        "profitImpact": 0.1454,
+        "probability": 67.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "001280.SZ",
@@ -203,89 +614,301 @@
     "correlation": -0.08,
     "stockChange": -0.032,
     "commodityChange": 0.824,
+    "profitWeight": 0.4,
+    "profitImpact": 0.3296,
+    "probability": 69.6,
     "startDate": "2025-12-05",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "92#汽油",
+        "commodityName": "92#汽油新加坡FOB",
+        "profitWeight": 0.4,
+        "commodityChange": 0.824,
+        "stockChange": -0.032,
+        "divergenceType": "positive",
+        "divergenceScore": 0.856,
+        "correlation": -0.08,
+        "profitImpact": 0.3296,
+        "probability": 69.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000990.SZ",
     "name": "诚志股份",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "甲醇",
-    "commodityName": "甲醇(华东)",
+    "productName": "甲醇 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.759,
     "correlation": 0.09,
     "stockChange": -0.25,
     "commodityChange": 0.509,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4313,
+    "probability": 65.2,
     "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "甲醇",
+        "commodityName": "甲醇(华东)",
+        "profitWeight": 0.33,
+        "commodityChange": 0.509,
+        "stockChange": -0.25,
+        "divergenceType": "positive",
+        "divergenceScore": 0.759,
+        "correlation": 0.09,
+        "profitImpact": 0.1681,
+        "probability": 68.0,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "聚烯烃",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.39,
+        "commodityChange": 0.393,
+        "stockChange": -0.202,
+        "divergenceType": "positive",
+        "divergenceScore": 0.595,
+        "correlation": -0.06,
+        "profitImpact": 0.1532,
+        "probability": 63.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "清洁能源",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.28,
+        "commodityChange": 0.393,
+        "stockChange": -0.202,
+        "divergenceType": "positive",
+        "divergenceScore": 0.595,
+        "correlation": -0.06,
+        "profitImpact": 0.11,
+        "probability": 63.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600549.SH",
     "name": "厦门钨业",
     "formulaType": "processing_fee",
     "focusRationale": "关注冶炼端加工费处理费（TC/RC）及代工溢价扣除，结合长单套保与伴生回收收益。",
-    "productName": "钴",
-    "commodityName": "金属钴（安泰科,国产）",
+    "productName": "钴 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "negative",
     "divergenceScore": 0.759,
     "correlation": -0.05,
     "stockChange": 0.838,
     "commodityChange": 0.079,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3113,
+    "probability": 61.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "钴",
+        "commodityName": "金属钴（安泰科,国产）",
+        "profitWeight": 0.26,
+        "commodityChange": 0.079,
+        "stockChange": 0.838,
+        "divergenceType": "negative",
+        "divergenceScore": 0.759,
+        "correlation": -0.05,
+        "profitImpact": 0.0205,
+        "probability": 66.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "钨",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": 0.838,
+        "divergenceType": "negative",
+        "divergenceScore": 0.445,
+        "correlation": 0.01,
+        "profitImpact": 0.1454,
+        "probability": 59.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "稀土",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": 0.838,
+        "divergenceType": "negative",
+        "divergenceScore": 0.445,
+        "correlation": 0.01,
+        "profitImpact": 0.1454,
+        "probability": 59.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002096.SZ",
     "name": "易普力",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "工业炸药",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "工业炸药 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.745,
     "correlation": -0.04,
     "stockChange": -0.352,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3928,
+    "probability": 66.0,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工业炸药",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.36,
+        "commodityChange": 0.393,
+        "stockChange": -0.352,
+        "divergenceType": "positive",
+        "divergenceScore": 0.745,
+        "correlation": -0.04,
+        "profitImpact": 0.1414,
+        "probability": 66.0,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "雷管",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.32,
+        "commodityChange": 0.393,
+        "stockChange": -0.352,
+        "divergenceType": "positive",
+        "divergenceScore": 0.745,
+        "correlation": -0.04,
+        "profitImpact": 0.1257,
+        "probability": 66.0,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "爆破服务",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.32,
+        "commodityChange": 0.393,
+        "stockChange": -0.352,
+        "divergenceType": "positive",
+        "divergenceScore": 0.745,
+        "correlation": -0.04,
+        "profitImpact": 0.1257,
+        "probability": 66.0,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002748.SZ",
     "name": "世龙实业",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "液氯",
-    "commodityName": "液氯(山东)",
+    "productName": "液氯 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.734,
     "correlation": 0.11,
-    "stockChange": 1.016,
+    "stockChange": 0.265,
     "commodityChange": 1.75,
-    "startDate": "2024-10-25",
+    "profitWeight": 0.74,
+    "profitImpact": 0.3264,
+    "probability": 63.8,
+    "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "液氯",
+        "commodityName": "液氯(山东)",
+        "profitWeight": 0.26,
+        "commodityChange": 1.75,
+        "stockChange": 1.016,
+        "divergenceType": "positive",
+        "divergenceScore": 0.734,
+        "correlation": 0.11,
+        "profitImpact": 0.455,
+        "probability": 68.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "烧碱",
+        "commodityName": "烧碱(32%离子膜,华北)",
+        "profitWeight": 0.48,
+        "commodityChange": -0.268,
+        "stockChange": 0.265,
+        "divergenceType": "negative",
+        "divergenceScore": 0.533,
+        "correlation": 0.03,
+        "profitImpact": -0.1286,
+        "probability": 61.4,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000519.SZ",
     "name": "中兵红箭",
     "formulaType": "price",
     "focusRationale": "关注工业金刚石及培育钻石绝对售价，结合民爆器材防务订单转化为稳定现金流能力。",
-    "productName": "工业金刚石",
-    "commodityName": "DMF(华东)",
+    "productName": "工业金刚石 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.73,
     "correlation": -0.11,
     "stockChange": -0.305,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4252,
+    "probability": 67.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工业金刚石",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.425,
+        "stockChange": -0.305,
+        "divergenceType": "positive",
+        "divergenceScore": 0.73,
+        "correlation": -0.11,
+        "profitImpact": 0.2551,
+        "probability": 67.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "工业炸药",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.4,
+        "commodityChange": 0.425,
+        "stockChange": -0.305,
+        "divergenceType": "positive",
+        "divergenceScore": 0.73,
+        "correlation": -0.11,
+        "profitImpact": 0.1701,
+        "probability": 67.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002469.SZ",
@@ -299,41 +922,147 @@
     "correlation": -0.15,
     "stockChange": -0.332,
     "commodityChange": 0.393,
+    "profitWeight": 0.26,
+    "profitImpact": 0.1021,
+    "probability": 68.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "敌草快",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": -0.332,
+        "divergenceType": "positive",
+        "divergenceScore": 0.725,
+        "correlation": -0.15,
+        "profitImpact": 0.1021,
+        "probability": 68.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000554.SZ",
     "name": "泰山石油",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "液化气",
-    "commodityName": "液化气(华东)",
+    "productName": "液化气 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.694,
     "correlation": 0.12,
     "stockChange": -0.108,
     "commodityChange": 0.586,
+    "profitWeight": 1.0,
+    "profitImpact": 0.2518,
+    "probability": 58.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "液化气",
+        "commodityName": "液化气(华东)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.586,
+        "stockChange": -0.108,
+        "divergenceType": "positive",
+        "divergenceScore": 0.694,
+        "correlation": 0.12,
+        "profitImpact": 0.1231,
+        "probability": 67.5,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "柴油",
+        "commodityName": "中国0#柴油(镇海炼化)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.171,
+        "stockChange": -0.108,
+        "divergenceType": "positive",
+        "divergenceScore": 0.279,
+        "correlation": -0.03,
+        "profitImpact": 0.0632,
+        "probability": 56.5,
+        "signalStrength": "medium"
+      },
+      {
+        "productName": "汽油",
+        "commodityName": "中国92#汽油(镇海炼化)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.156,
+        "stockChange": -0.108,
+        "divergenceType": "positive",
+        "divergenceScore": 0.264,
+        "correlation": -0.03,
+        "profitImpact": 0.0655,
+        "probability": 56.2,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600028.SH",
     "name": "中国石化",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "原油",
-    "commodityName": "WTI期货(主连合约)",
+    "productName": "原油 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.69,
     "correlation": 0.35,
     "stockChange": -0.115,
     "commodityChange": 0.576,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3151,
+    "probability": 64.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "原油",
+        "commodityName": "WTI期货(主连合约)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.576,
+        "stockChange": -0.115,
+        "divergenceType": "positive",
+        "divergenceScore": 0.69,
+        "correlation": 0.35,
+        "profitImpact": 0.213,
+        "probability": 74.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "柴油",
+        "commodityName": "中国0#柴油(镇海炼化)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.171,
+        "stockChange": -0.115,
+        "divergenceType": "positive",
+        "divergenceScore": 0.286,
+        "correlation": -0.12,
+        "profitImpact": 0.0444,
+        "probability": 59.4,
+        "signalStrength": "medium"
+      },
+      {
+        "productName": "汽油",
+        "commodityName": "中国92#汽油(镇海炼化)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.156,
+        "stockChange": -0.115,
+        "divergenceType": "positive",
+        "divergenceScore": 0.271,
+        "correlation": -0.12,
+        "profitImpact": 0.0577,
+        "probability": 59.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "000960.SZ",
@@ -347,9 +1076,27 @@
     "correlation": -0.08,
     "stockChange": 0.724,
     "commodityChange": 0.058,
+    "profitWeight": 0.21,
+    "profitImpact": 0.0121,
+    "probability": 65.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "锌",
+        "commodityName": "代森锰锌",
+        "profitWeight": 0.21,
+        "commodityChange": 0.058,
+        "stockChange": 0.724,
+        "divergenceType": "negative",
+        "divergenceScore": 0.666,
+        "correlation": -0.08,
+        "profitImpact": 0.0121,
+        "probability": 65.7,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600301.SH",
@@ -363,25 +1110,74 @@
     "correlation": -0.02,
     "stockChange": 0.717,
     "commodityChange": 0.058,
+    "profitWeight": 0.26,
+    "profitImpact": 0.015,
+    "probability": 63.8,
     "startDate": "2025-08-15",
     "endDate": "2026-09-11",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "锌",
+        "commodityName": "代森锰锌",
+        "profitWeight": 0.26,
+        "commodityChange": 0.058,
+        "stockChange": 0.717,
+        "divergenceType": "negative",
+        "divergenceScore": 0.659,
+        "correlation": -0.02,
+        "profitImpact": 0.015,
+        "probability": 63.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "300758.SZ",
     "name": "七彩化学",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "有机颜料",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "有机颜料 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.655,
     "correlation": -0.02,
     "stockChange": -0.262,
     "commodityChange": 0.393,
+    "profitWeight": 0.79,
+    "profitImpact": 0.3104,
+    "probability": 63.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "有机颜料",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.262,
+        "divergenceType": "positive",
+        "divergenceScore": 0.655,
+        "correlation": -0.02,
+        "profitImpact": 0.165,
+        "probability": 63.7,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "高性能材料",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.262,
+        "divergenceType": "positive",
+        "divergenceScore": 0.655,
+        "correlation": -0.02,
+        "profitImpact": 0.1454,
+        "probability": 63.7,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "688295.SH",
@@ -395,9 +1191,27 @@
     "correlation": 0.21,
     "stockChange": 0.666,
     "commodityChange": 0.013,
+    "profitWeight": 0.7,
+    "profitImpact": 0.0092,
+    "probability": 69.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "碳纤维",
+        "commodityName": "碳纤维（小丝束）",
+        "profitWeight": 0.7,
+        "commodityChange": 0.013,
+        "stockChange": 0.666,
+        "divergenceType": "negative",
+        "divergenceScore": 0.653,
+        "correlation": 0.21,
+        "profitImpact": 0.0092,
+        "probability": 69.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002783.SZ",
@@ -411,73 +1225,241 @@
     "correlation": 0.02,
     "stockChange": -0.25,
     "commodityChange": 0.393,
+    "profitWeight": 0.36,
+    "profitImpact": 0.1414,
+    "probability": 63.4,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工业炸药",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.36,
+        "commodityChange": 0.393,
+        "stockChange": -0.25,
+        "divergenceType": "positive",
+        "divergenceScore": 0.643,
+        "correlation": 0.02,
+        "profitImpact": 0.1414,
+        "probability": 63.4,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600486.SH",
     "name": "扬农化工",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "杀菌剂",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "杀菌剂 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.643,
     "correlation": -0.03,
     "stockChange": -0.25,
     "commodityChange": 0.393,
+    "profitWeight": 0.56,
+    "profitImpact": 0.1344,
+    "probability": 62.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "杀菌剂",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.17,
+        "commodityChange": 0.393,
+        "stockChange": -0.25,
+        "divergenceType": "positive",
+        "divergenceScore": 0.643,
+        "correlation": -0.03,
+        "profitImpact": 0.0668,
+        "probability": 63.9,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "菊酯",
+        "commodityName": "氯氰菊酯(江苏扬农)",
+        "profitWeight": 0.39,
+        "commodityChange": 0.173,
+        "stockChange": -0.25,
+        "divergenceType": "positive",
+        "divergenceScore": 0.423,
+        "correlation": -0.1,
+        "profitImpact": 0.0676,
+        "probability": 61.5,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "300927.SZ",
     "name": "江天化学",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "甲醛",
-    "commodityName": "甲醛(河北)",
+    "productName": "甲醛 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.642,
     "correlation": -0.01,
     "stockChange": -0.133,
     "commodityChange": 0.509,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4417,
+    "probability": 62.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "甲醛",
+        "commodityName": "甲醛(河北)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.509,
+        "stockChange": -0.133,
+        "divergenceType": "positive",
+        "divergenceScore": 0.642,
+        "correlation": -0.01,
+        "profitImpact": 0.2138,
+        "probability": 63.0,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "多聚甲醛",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.133,
+        "divergenceType": "positive",
+        "divergenceScore": 0.526,
+        "correlation": -0.08,
+        "profitImpact": 0.1454,
+        "probability": 62.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "氯化物",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.133,
+        "divergenceType": "positive",
+        "divergenceScore": 0.526,
+        "correlation": -0.08,
+        "profitImpact": 0.0825,
+        "probability": 62.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600426.SH",
     "name": "华鲁恒升",
     "formulaType": "spread",
     "focusRationale": "重度关注原材料（煤炭/原油/PX）与产成品（聚酯/醋酸/烯烃）之间的产业链剪刀差及理论加工利差。",
-    "productName": "DMF",
-    "commodityName": "DMF(华东)",
+    "productName": "DMF 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.639,
     "correlation": 0.31,
-    "stockChange": -0.214,
+    "stockChange": -0.198,
     "commodityChange": 0.425,
-    "startDate": "2025-08-22",
+    "profitWeight": 1.0,
+    "profitImpact": 0.3182,
+    "probability": 65.4,
+    "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "DMF",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.425,
+        "stockChange": -0.214,
+        "divergenceType": "positive",
+        "divergenceScore": 0.639,
+        "correlation": 0.31,
+        "profitImpact": 0.1573,
+        "probability": 72.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "醋酸",
+        "commodityName": "醋酸(华东)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.294,
+        "stockChange": -0.198,
+        "divergenceType": "positive",
+        "divergenceScore": 0.492,
+        "correlation": -0.07,
+        "profitImpact": 0.1089,
+        "probability": 62.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "己二酸",
+        "commodityName": "己二酸(华东)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.2,
+        "stockChange": -0.198,
+        "divergenceType": "positive",
+        "divergenceScore": 0.398,
+        "correlation": 0.08,
+        "profitImpact": 0.052,
+        "probability": 60.3,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000655.SZ",
     "name": "金岭矿业",
     "formulaType": "price",
     "focusRationale": "关注铁精粉绝对市场现货价与品位溢价，机械化低开采成本提供极高毛利放大器。",
-    "productName": "铁精粉",
-    "commodityName": "DMF(华东)",
+    "productName": "铁精粉 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.638,
     "correlation": 0.12,
     "stockChange": -0.212,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4252,
+    "probability": 66.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "铁精粉",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.75,
+        "commodityChange": 0.425,
+        "stockChange": -0.212,
+        "divergenceType": "positive",
+        "divergenceScore": 0.638,
+        "correlation": 0.12,
+        "profitImpact": 0.3189,
+        "probability": 66.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "铜精矿",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.25,
+        "commodityChange": 0.425,
+        "stockChange": -0.212,
+        "divergenceType": "positive",
+        "divergenceScore": 0.638,
+        "correlation": 0.12,
+        "profitImpact": 0.1063,
+        "probability": 66.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002683.SZ",
@@ -491,9 +1473,27 @@
     "correlation": -0.02,
     "stockChange": -0.208,
     "commodityChange": 0.425,
+    "profitWeight": 0.6,
+    "profitImpact": 0.2551,
+    "probability": 63.4,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "乳化炸药",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.425,
+        "stockChange": -0.208,
+        "divergenceType": "positive",
+        "divergenceScore": 0.633,
+        "correlation": -0.02,
+        "profitImpact": 0.2551,
+        "probability": 63.4,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002140.SZ",
@@ -507,41 +1507,121 @@
     "correlation": 0.01,
     "stockChange": 0.047,
     "commodityChange": 0.679,
+    "profitWeight": 0.5,
+    "profitImpact": 0.3394,
+    "probability": 63.0,
     "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "乙二醇",
+        "commodityName": "乙二醇(华东)",
+        "profitWeight": 0.5,
+        "commodityChange": 0.679,
+        "stockChange": 0.047,
+        "divergenceType": "positive",
+        "divergenceScore": 0.632,
+        "correlation": 0.01,
+        "profitImpact": 0.3394,
+        "probability": 63.0,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "603227.SH",
     "name": "雪峰科技",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "工业炸药",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "工业炸药 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.63,
     "correlation": 0.07,
     "stockChange": -0.237,
     "commodityChange": 0.393,
+    "profitWeight": 0.74,
+    "profitImpact": 0.2907,
+    "probability": 64.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工业炸药",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.237,
+        "divergenceType": "positive",
+        "divergenceScore": 0.63,
+        "correlation": 0.07,
+        "profitImpact": 0.165,
+        "probability": 64.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "爆破服务",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.32,
+        "commodityChange": 0.393,
+        "stockChange": -0.237,
+        "divergenceType": "positive",
+        "divergenceScore": 0.63,
+        "correlation": 0.07,
+        "profitImpact": 0.1257,
+        "probability": 64.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002182.SZ",
     "name": "宝武镁业",
     "formulaType": "spread",
     "focusRationale": "关注电子电路铜箔加工费及与阴极铜之间的加工剪刀差。",
-    "productName": "阴极铜",
-    "commodityName": "DMF(华东)",
+    "productName": "阴极铜 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.625,
     "correlation": -0.06,
     "stockChange": -0.2,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3075,
+    "probability": 62.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "阴极铜",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.425,
+        "stockChange": -0.2,
+        "divergenceType": "positive",
+        "divergenceScore": 0.625,
+        "correlation": -0.06,
+        "profitImpact": 0.2551,
+        "probability": 64.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "环氧树脂",
+        "commodityName": "环氧树脂(E51,华东)",
+        "profitWeight": 0.4,
+        "commodityChange": 0.131,
+        "stockChange": -0.2,
+        "divergenceType": "positive",
+        "divergenceScore": 0.331,
+        "correlation": -0.08,
+        "profitImpact": 0.0524,
+        "probability": 59.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "301090.SZ",
@@ -555,105 +1635,348 @@
     "correlation": 0.42,
     "stockChange": -0.179,
     "commodityChange": 0.445,
+    "profitWeight": 1.0,
+    "profitImpact": 0.445,
+    "probability": 75.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "瓶级聚酯切片",
+        "commodityName": "聚酯切片(瓶级)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.445,
+        "stockChange": -0.179,
+        "divergenceType": "positive",
+        "divergenceScore": 0.624,
+        "correlation": 0.42,
+        "profitImpact": 0.445,
+        "probability": 75.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600111.SH",
     "name": "北方稀土",
     "formulaType": "price",
     "focusRationale": "关注国家刚性配额或稀缺资源垄断下的产成品现货绝对价格与供需边际。",
-    "productName": "稀土",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "稀土 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.624,
     "correlation": 0.11,
     "stockChange": -0.231,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3929,
+    "probability": 65.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "稀土",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.52,
+        "commodityChange": 0.393,
+        "stockChange": -0.231,
+        "divergenceType": "positive",
+        "divergenceScore": 0.624,
+        "correlation": 0.11,
+        "profitImpact": 0.2043,
+        "probability": 65.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "稀土永磁",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.231,
+        "divergenceType": "positive",
+        "divergenceScore": 0.624,
+        "correlation": 0.11,
+        "profitImpact": 0.1454,
+        "probability": 65.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "抛光粉",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.11,
+        "commodityChange": 0.393,
+        "stockChange": -0.231,
+        "divergenceType": "positive",
+        "divergenceScore": 0.624,
+        "correlation": 0.11,
+        "profitImpact": 0.0432,
+        "probability": 65.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000928.SZ",
     "name": "中钢国际",
     "formulaType": "processing_fee",
     "focusRationale": "关注钢铁大型EPC低碳减碳技改订单毛利与钢材大宗周期资本开支意愿。",
-    "productName": "热轧板卷",
-    "commodityName": "DMF(华东)",
+    "productName": "热轧板卷 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.613,
     "correlation": 0.25,
     "stockChange": -0.188,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4252,
+    "probability": 69.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "热轧板卷",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.425,
+        "stockChange": -0.188,
+        "divergenceType": "positive",
+        "divergenceScore": 0.613,
+        "correlation": 0.25,
+        "profitImpact": 0.2551,
+        "probability": 69.7,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "螺纹钢",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.4,
+        "commodityChange": 0.425,
+        "stockChange": -0.188,
+        "divergenceType": "positive",
+        "divergenceScore": 0.613,
+        "correlation": 0.25,
+        "profitImpact": 0.1701,
+        "probability": 69.7,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "601678.SH",
     "name": "滨化股份",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "烧碱",
-    "commodityName": "烧碱(32%离子膜,华北)",
+    "productName": "烧碱 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "negative",
     "divergenceScore": 0.613,
     "correlation": 0.02,
     "stockChange": 0.345,
     "commodityChange": -0.268,
+    "profitWeight": 0.79,
+    "profitImpact": 0.1102,
+    "probability": 62.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "烧碱",
+        "commodityName": "烧碱(32%离子膜,华北)",
+        "profitWeight": 0.37,
+        "commodityChange": -0.268,
+        "stockChange": 0.345,
+        "divergenceType": "negative",
+        "divergenceScore": 0.613,
+        "correlation": 0.02,
+        "profitImpact": -0.0991,
+        "probability": 62.7,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "环氧丙烷",
+        "commodityName": "环氧丙烷(华东)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.498,
+        "stockChange": 0.045,
+        "divergenceType": "positive",
+        "divergenceScore": 0.453,
+        "correlation": -0.12,
+        "profitImpact": 0.2093,
+        "probability": 62.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002226.SZ",
     "name": "江南化工",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "工业炸药",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "工业炸药 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.612,
     "correlation": 0.05,
     "stockChange": -0.219,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3928,
+    "probability": 63.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工业炸药",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.219,
+        "divergenceType": "positive",
+        "divergenceScore": 0.612,
+        "correlation": 0.05,
+        "profitImpact": 0.165,
+        "probability": 63.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "雷管",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": -0.219,
+        "divergenceType": "positive",
+        "divergenceScore": 0.612,
+        "correlation": 0.05,
+        "profitImpact": 0.1021,
+        "probability": 63.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "风电",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.32,
+        "commodityChange": 0.393,
+        "stockChange": -0.219,
+        "divergenceType": "positive",
+        "divergenceScore": 0.612,
+        "correlation": 0.05,
+        "profitImpact": 0.1257,
+        "probability": 63.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600299.SH",
     "name": "安迪苏",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "维生素E",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "维生素E 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.606,
     "correlation": 0.01,
     "stockChange": -0.213,
     "commodityChange": 0.393,
+    "profitWeight": 0.68,
+    "profitImpact": 0.0816,
+    "probability": 65.4,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "维生素E",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.16,
+        "commodityChange": 0.393,
+        "stockChange": -0.213,
+        "divergenceType": "positive",
+        "divergenceScore": 0.606,
+        "correlation": 0.01,
+        "profitImpact": 0.0629,
+        "probability": 62.3,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "蛋氨酸",
+        "commodityName": "固体蛋氨酸(山东)",
+        "profitWeight": 0.52,
+        "commodityChange": 0.036,
+        "stockChange": -0.213,
+        "divergenceType": "positive",
+        "divergenceScore": 0.249,
+        "correlation": 0.38,
+        "profitImpact": 0.0187,
+        "probability": 66.3,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "603968.SH",
     "name": "醋化股份",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "热力",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "热力 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.593,
     "correlation": 0.11,
     "stockChange": -0.2,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.239,
+    "probability": 60.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "热力",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.2,
+        "divergenceType": "positive",
+        "divergenceScore": 0.593,
+        "correlation": 0.11,
+        "profitImpact": 0.165,
+        "probability": 65.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "生物质",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.16,
+        "commodityChange": 0.393,
+        "stockChange": -0.2,
+        "divergenceType": "positive",
+        "divergenceScore": 0.593,
+        "correlation": 0.11,
+        "profitImpact": 0.0629,
+        "probability": 65.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "天然气",
+        "commodityName": "美国Henry Hub期货(主连合约)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.027,
+        "stockChange": -0.2,
+        "divergenceType": "positive",
+        "divergenceScore": 0.227,
+        "correlation": 0.02,
+        "profitImpact": 0.0111,
+        "probability": 55.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600714.SH",
@@ -667,57 +1990,181 @@
     "correlation": -0.07,
     "stockChange": 0.403,
     "commodityChange": -0.168,
+    "profitWeight": 1.0,
+    "profitImpact": -0.1683,
+    "probability": 63.5,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "金",
+        "commodityName": "金红石(87%,海南)",
+        "profitWeight": 1.0,
+        "commodityChange": -0.168,
+        "stockChange": 0.403,
+        "divergenceType": "negative",
+        "divergenceScore": 0.572,
+        "correlation": -0.07,
+        "profitImpact": -0.1683,
+        "probability": 63.5,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "605399.SH",
     "name": "晨光新材",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "硅烷偶联剂",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "硅烷偶联剂 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.572,
     "correlation": 0.08,
     "stockChange": -0.179,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3929,
+    "probability": 63.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "硅烷偶联剂",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.179,
+        "divergenceType": "positive",
+        "divergenceScore": 0.572,
+        "correlation": 0.08,
+        "profitImpact": 0.165,
+        "probability": 63.7,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "气相白炭黑",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.179,
+        "divergenceType": "positive",
+        "divergenceScore": 0.572,
+        "correlation": 0.08,
+        "profitImpact": 0.1454,
+        "probability": 63.7,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "功能性硅橡胶",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.179,
+        "divergenceType": "positive",
+        "divergenceScore": 0.572,
+        "correlation": 0.08,
+        "profitImpact": 0.0825,
+        "probability": 63.7,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000930.SZ",
     "name": "中粮科技",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "淀粉糖",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "淀粉糖 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.568,
     "correlation": 0.16,
     "stockChange": -0.175,
     "commodityChange": 0.393,
+    "profitWeight": 0.63,
+    "profitImpact": 0.2475,
+    "probability": 66.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "淀粉糖",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.42,
+        "commodityChange": 0.393,
+        "stockChange": -0.175,
+        "divergenceType": "positive",
+        "divergenceScore": 0.568,
+        "correlation": 0.16,
+        "profitImpact": 0.165,
+        "probability": 66.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "氨基酸",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.175,
+        "divergenceType": "positive",
+        "divergenceScore": 0.568,
+        "correlation": 0.16,
+        "profitImpact": 0.0825,
+        "probability": 66.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000762.SZ",
     "name": "西藏矿业",
     "formulaType": "price",
     "focusRationale": "关注扎布耶盐湖碳酸锂绝对价格及铬矿石现货溢价。",
-    "productName": "碳酸锂",
-    "commodityName": "碳酸锂(电池级,江苏)",
+    "productName": "碳酸锂 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.567,
     "correlation": 0.55,
     "stockChange": -0.018,
     "commodityChange": 0.549,
+    "profitWeight": 1.0,
+    "profitImpact": 0.5116,
+    "probability": 73.3,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "碳酸锂",
+        "commodityName": "碳酸锂(电池级,江苏)",
+        "profitWeight": 0.7,
+        "commodityChange": 0.549,
+        "stockChange": -0.018,
+        "divergenceType": "positive",
+        "divergenceScore": 0.567,
+        "correlation": 0.55,
+        "profitImpact": 0.3841,
+        "probability": 77.8,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "铬矿石",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.3,
+        "commodityChange": 0.425,
+        "stockChange": -0.018,
+        "divergenceType": "positive",
+        "divergenceScore": 0.443,
+        "correlation": 0.13,
+        "profitImpact": 0.1275,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002053.SZ",
@@ -731,9 +2178,27 @@
     "correlation": 0.08,
     "stockChange": -0.14,
     "commodityChange": 0.425,
+    "profitWeight": 0.45,
+    "profitImpact": 0.1913,
+    "probability": 63.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "PVC树脂",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.45,
+        "commodityChange": 0.425,
+        "stockChange": -0.14,
+        "divergenceType": "positive",
+        "divergenceScore": 0.565,
+        "correlation": 0.08,
+        "profitImpact": 0.1913,
+        "probability": 63.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600378.SH",
@@ -747,9 +2212,27 @@
     "correlation": -0.06,
     "stockChange": 0.675,
     "commodityChange": 0.111,
+    "profitWeight": 0.37,
+    "profitImpact": 0.0411,
+    "probability": 63.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "制冷剂",
+        "commodityName": "R32(浙江)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.111,
+        "stockChange": 0.675,
+        "divergenceType": "negative",
+        "divergenceScore": 0.564,
+        "correlation": -0.06,
+        "profitImpact": 0.0411,
+        "probability": 63.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "688122.SH",
@@ -763,25 +2246,87 @@
     "correlation": -0.08,
     "stockChange": -0.133,
     "commodityChange": 0.425,
+    "profitWeight": 0.35,
+    "profitImpact": 0.1488,
+    "probability": 63.5,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "金属铌",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.35,
+        "commodityChange": 0.425,
+        "stockChange": -0.133,
+        "divergenceType": "positive",
+        "divergenceScore": 0.558,
+        "correlation": -0.08,
+        "profitImpact": 0.1488,
+        "probability": 63.5,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "603977.SH",
     "name": "国泰集团",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "工业炸药",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "工业炸药 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.542,
     "correlation": 0.07,
     "stockChange": -0.149,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3929,
+    "probability": 62.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工业炸药",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.149,
+        "divergenceType": "positive",
+        "divergenceScore": 0.542,
+        "correlation": 0.07,
+        "profitImpact": 0.1454,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "电子雷管",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.149,
+        "divergenceType": "positive",
+        "divergenceScore": 0.542,
+        "correlation": 0.07,
+        "profitImpact": 0.1454,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "高氯酸钾",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": -0.149,
+        "divergenceType": "positive",
+        "divergenceScore": 0.542,
+        "correlation": 0.07,
+        "profitImpact": 0.1021,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002408.SZ",
@@ -795,25 +2340,87 @@
     "correlation": 0.08,
     "stockChange": 0.149,
     "commodityChange": 0.686,
+    "profitWeight": 0.18,
+    "profitImpact": 0.1235,
+    "probability": 63.3,
     "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "丁二烯",
+        "commodityName": "丁二烯(华东)",
+        "profitWeight": 0.18,
+        "commodityChange": 0.686,
+        "stockChange": 0.149,
+        "divergenceType": "positive",
+        "divergenceScore": 0.537,
+        "correlation": 0.08,
+        "profitImpact": 0.1235,
+        "probability": 63.3,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002057.SZ",
     "name": "中钢天源",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "四氧化三锰",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "四氧化三锰 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.533,
     "correlation": 0.07,
     "stockChange": -0.14,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3929,
+    "probability": 62.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "四氧化三锰",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.14,
+        "divergenceType": "positive",
+        "divergenceScore": 0.533,
+        "correlation": 0.07,
+        "profitImpact": 0.1454,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "稀土",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.14,
+        "divergenceType": "positive",
+        "divergenceScore": 0.533,
+        "correlation": 0.07,
+        "profitImpact": 0.1454,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "永磁材料",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.393,
+        "stockChange": -0.14,
+        "divergenceType": "positive",
+        "divergenceScore": 0.533,
+        "correlation": 0.07,
+        "profitImpact": 0.1021,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600063.SH",
@@ -827,9 +2434,27 @@
     "correlation": -0.06,
     "stockChange": -0.108,
     "commodityChange": 0.42,
+    "profitWeight": 0.26,
+    "profitImpact": 0.1092,
+    "probability": 62.3,
     "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "醋酸乙烯",
+        "commodityName": "醋酸乙烯(华东)",
+        "profitWeight": 0.26,
+        "commodityChange": 0.42,
+        "stockChange": -0.108,
+        "divergenceType": "positive",
+        "divergenceScore": 0.529,
+        "correlation": -0.06,
+        "profitImpact": 0.1092,
+        "probability": 62.3,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600129.SH",
@@ -843,121 +2468,382 @@
     "correlation": -0.09,
     "stockChange": -0.424,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 63.0,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.424,
+        "divergenceType": "positive",
+        "divergenceScore": 0.509,
+        "correlation": -0.09,
+        "profitImpact": 0.0849,
+        "probability": 63.0,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600392.SH",
     "name": "盛和资源",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "稀土",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "稀土 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.489,
     "correlation": 0.08,
     "stockChange": -0.096,
     "commodityChange": 0.393,
+    "profitWeight": 0.79,
+    "profitImpact": 0.3104,
+    "probability": 62.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "稀土",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.58,
+        "commodityChange": 0.393,
+        "stockChange": -0.096,
+        "divergenceType": "positive",
+        "divergenceScore": 0.489,
+        "correlation": 0.08,
+        "profitImpact": 0.2279,
+        "probability": 62.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "锆",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.096,
+        "divergenceType": "positive",
+        "divergenceScore": 0.489,
+        "correlation": 0.08,
+        "profitImpact": 0.0825,
+        "probability": 62.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "601117.SH",
     "name": "中国化学",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "工程服务",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "工程服务 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.485,
     "correlation": -0.02,
     "stockChange": -0.092,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.3929,
+    "probability": 60.2,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "工程服务",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.58,
+        "commodityChange": 0.393,
+        "stockChange": -0.092,
+        "divergenceType": "positive",
+        "divergenceScore": 0.485,
+        "correlation": -0.02,
+        "profitImpact": 0.2279,
+        "probability": 60.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "化工品贸易",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.092,
+        "divergenceType": "positive",
+        "divergenceScore": 0.485,
+        "correlation": -0.02,
+        "profitImpact": 0.0825,
+        "probability": 60.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "设计咨询",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.092,
+        "divergenceType": "positive",
+        "divergenceScore": 0.485,
+        "correlation": -0.02,
+        "profitImpact": 0.0825,
+        "probability": 60.2,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002597.SZ",
     "name": "金禾实业",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "甜味剂",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "甜味剂 等 3 个产品",
+    "commodityName": "综合大宗基本面 (3项)",
     "divergenceType": "positive",
     "divergenceScore": 0.482,
     "correlation": 0.05,
     "stockChange": -0.089,
     "commodityChange": 0.393,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0236,
+    "probability": 63.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "甜味剂",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.393,
+        "stockChange": -0.089,
+        "divergenceType": "positive",
+        "divergenceScore": 0.482,
+        "correlation": 0.05,
+        "profitImpact": 0.1454,
+        "probability": 61.3,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "甲乙基麦芽酚",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.393,
+        "stockChange": -0.089,
+        "divergenceType": "positive",
+        "divergenceScore": 0.482,
+        "correlation": 0.05,
+        "profitImpact": 0.0825,
+        "probability": 61.3,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "三氯蔗糖",
+        "commodityName": "三氯蔗糖",
+        "profitWeight": 0.42,
+        "commodityChange": -0.486,
+        "stockChange": -0.089,
+        "divergenceType": "negative",
+        "divergenceScore": 0.398,
+        "correlation": 0.32,
+        "profitImpact": -0.2043,
+        "probability": 67.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002136.SZ",
     "name": "安纳达",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "磷酸铁的生产",
-    "commodityName": "磷酸铁",
+    "productName": "磷酸铁的生产 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.481,
     "correlation": 0.07,
     "stockChange": 0.036,
     "commodityChange": 0.517,
+    "profitWeight": 0.66,
+    "profitImpact": 0.3001,
+    "probability": 61.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "磷酸铁的生产",
+        "commodityName": "磷酸铁",
+        "profitWeight": 0.33,
+        "commodityChange": 0.517,
+        "stockChange": 0.036,
+        "divergenceType": "positive",
+        "divergenceScore": 0.481,
+        "correlation": 0.07,
+        "profitImpact": 0.1705,
+        "probability": 61.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "销售",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.33,
+        "commodityChange": 0.393,
+        "stockChange": 0.036,
+        "divergenceType": "positive",
+        "divergenceScore": 0.357,
+        "correlation": 0.15,
+        "profitImpact": 0.1296,
+        "probability": 61.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000758.SZ",
     "name": "中色股份",
     "formulaType": "processing_fee",
     "focusRationale": "关注铅锌冶炼加工费及海外有色矿山EPC总承包回款进度。",
-    "productName": "锌锭",
-    "commodityName": "DMF(华东)",
+    "productName": "锌锭 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.471,
     "correlation": -0.09,
     "stockChange": -0.046,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4252,
+    "probability": 62.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "锌锭",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.425,
+        "stockChange": -0.046,
+        "divergenceType": "positive",
+        "divergenceScore": 0.471,
+        "correlation": -0.09,
+        "profitImpact": 0.2551,
+        "probability": 62.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "铅锭",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.4,
+        "commodityChange": 0.425,
+        "stockChange": -0.046,
+        "divergenceType": "positive",
+        "divergenceScore": 0.471,
+        "correlation": -0.09,
+        "profitImpact": 0.1701,
+        "probability": 62.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002046.SZ",
     "name": "国机精工",
     "formulaType": "processing_fee",
     "focusRationale": "关注风电及航天特种精密轴承加工费利差，以及超硬金刚石磨具渗透率。",
-    "productName": "人造金刚石",
-    "commodityName": "DMF(华东)",
+    "productName": "人造金刚石 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "negative",
     "divergenceScore": 0.458,
     "correlation": -0.23,
     "stockChange": 0.883,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4252,
+    "probability": 66.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "人造金刚石",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.425,
+        "stockChange": 0.883,
+        "divergenceType": "negative",
+        "divergenceScore": 0.458,
+        "correlation": -0.23,
+        "profitImpact": 0.2551,
+        "probability": 66.1,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "轴承特钢",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.4,
+        "commodityChange": 0.425,
+        "stockChange": 0.883,
+        "divergenceType": "negative",
+        "divergenceScore": 0.458,
+        "correlation": -0.23,
+        "profitImpact": 0.1701,
+        "probability": 66.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600737.SH",
     "name": "中粮糖业",
     "formulaType": "spread",
     "focusRationale": "关注国内外原糖与精制白砂糖之间的炼糖加工差，以及国内自产糖周期高点收益。",
-    "productName": "白糖现货",
-    "commodityName": "DMF(华东)",
+    "productName": "白糖现货 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.435,
     "correlation": 0.14,
     "stockChange": -0.009,
     "commodityChange": 0.425,
+    "profitWeight": 1.0,
+    "profitImpact": 0.4251,
+    "probability": 62.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "白糖现货",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.7,
+        "commodityChange": 0.425,
+        "stockChange": -0.009,
+        "divergenceType": "positive",
+        "divergenceScore": 0.435,
+        "correlation": 0.14,
+        "profitImpact": 0.2976,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "原糖进口成本",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.3,
+        "commodityChange": 0.425,
+        "stockChange": -0.009,
+        "divergenceType": "positive",
+        "divergenceScore": 0.435,
+        "correlation": 0.14,
+        "profitImpact": 0.1275,
+        "probability": 62.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600038.SH",
@@ -971,9 +2857,27 @@
     "correlation": -0.24,
     "stockChange": -0.329,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 65.4,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.329,
+        "divergenceType": "positive",
+        "divergenceScore": 0.414,
+        "correlation": -0.24,
+        "profitImpact": 0.0849,
+        "probability": 65.4,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600731.SH",
@@ -987,9 +2891,27 @@
     "correlation": -0.02,
     "stockChange": 0.11,
     "commodityChange": 0.509,
+    "profitWeight": 1.0,
+    "profitImpact": 0.5094,
+    "probability": 58.6,
     "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "甲醇原料",
+        "commodityName": "甲醇(华东)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.509,
+        "stockChange": 0.11,
+        "divergenceType": "positive",
+        "divergenceScore": 0.4,
+        "correlation": -0.02,
+        "profitImpact": 0.5094,
+        "probability": 58.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600352.SH",
@@ -1003,9 +2925,27 @@
     "correlation": -0.01,
     "stockChange": 0.107,
     "commodityChange": -0.283,
+    "profitWeight": 0.26,
+    "profitImpact": -0.0735,
+    "probability": 58.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "中间体",
+        "commodityName": "有机硅中间体库存",
+        "profitWeight": 0.26,
+        "commodityChange": -0.283,
+        "stockChange": 0.107,
+        "divergenceType": "negative",
+        "divergenceScore": 0.39,
+        "correlation": -0.01,
+        "profitImpact": -0.0735,
+        "probability": 58.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000792.SZ",
@@ -1019,9 +2959,27 @@
     "correlation": -0.02,
     "stockChange": 0.28,
     "commodityChange": -0.107,
+    "profitWeight": 0.11,
+    "profitImpact": -0.0118,
+    "probability": 58.3,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "纯碱",
+        "commodityName": "纯碱(轻质,华东)",
+        "profitWeight": 0.11,
+        "commodityChange": -0.107,
+        "stockChange": 0.28,
+        "divergenceType": "negative",
+        "divergenceScore": 0.387,
+        "correlation": -0.02,
+        "profitImpact": -0.0118,
+        "probability": 58.3,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600298.SH",
@@ -1035,9 +2993,27 @@
     "correlation": -0.11,
     "stockChange": 0.007,
     "commodityChange": 0.393,
+    "profitWeight": 0.16,
+    "profitImpact": 0.0629,
+    "probability": 60.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "维生素E",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.16,
+        "commodityChange": 0.393,
+        "stockChange": 0.007,
+        "divergenceType": "positive",
+        "divergenceScore": 0.386,
+        "correlation": -0.11,
+        "profitImpact": 0.0629,
+        "probability": 60.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "601975.SH",
@@ -1051,9 +3027,27 @@
     "correlation": 0.08,
     "stockChange": 0.552,
     "commodityChange": 0.171,
+    "profitWeight": 1.0,
+    "profitImpact": 0.1707,
+    "probability": 60.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "0#柴油",
+        "commodityName": "中国0#柴油(镇海炼化)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.171,
+        "stockChange": 0.552,
+        "divergenceType": "negative",
+        "divergenceScore": 0.381,
+        "correlation": 0.08,
+        "profitImpact": 0.1707,
+        "probability": 60.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "300470.SZ",
@@ -1067,9 +3061,27 @@
     "correlation": -0.01,
     "stockChange": -0.293,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 58.0,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.293,
+        "divergenceType": "positive",
+        "divergenceScore": 0.378,
+        "correlation": -0.01,
+        "profitImpact": 0.0849,
+        "probability": 58.0,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600217.SH",
@@ -1083,9 +3095,27 @@
     "correlation": 0.11,
     "stockChange": -0.285,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 60.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.285,
+        "divergenceType": "positive",
+        "divergenceScore": 0.37,
+        "correlation": 0.11,
+        "profitImpact": 0.0849,
+        "probability": 60.7,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "301058.SZ",
@@ -1099,25 +3129,74 @@
     "correlation": 0.03,
     "stockChange": -0.282,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 58.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.282,
+        "divergenceType": "positive",
+        "divergenceScore": 0.367,
+        "correlation": 0.03,
+        "profitImpact": 0.0849,
+        "probability": 58.1,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000629.SZ",
     "name": "钒钛股份",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "钒制品",
-    "commodityName": "烟煤(Q5500,山西优混)",
+    "productName": "钒制品 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "positive",
     "divergenceScore": 0.364,
     "correlation": 0.14,
     "stockChange": 0.028,
     "commodityChange": 0.393,
+    "profitWeight": 0.68,
+    "profitImpact": 0.2672,
+    "probability": 61.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "钒制品",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.52,
+        "commodityChange": 0.393,
+        "stockChange": 0.028,
+        "divergenceType": "positive",
+        "divergenceScore": 0.364,
+        "correlation": 0.14,
+        "profitImpact": 0.2043,
+        "probability": 61.6,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "钛精矿",
+        "commodityName": "烟煤(Q5500,山西优混)",
+        "profitWeight": 0.16,
+        "commodityChange": 0.393,
+        "stockChange": 0.028,
+        "divergenceType": "positive",
+        "divergenceScore": 0.364,
+        "correlation": 0.14,
+        "profitImpact": 0.0629,
+        "probability": 61.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "601857.SH",
@@ -1131,25 +3210,74 @@
     "correlation": 0.65,
     "stockChange": 0.215,
     "commodityChange": 0.576,
+    "profitWeight": 0.37,
+    "profitImpact": 0.213,
+    "probability": 76.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "原油",
+        "commodityName": "WTI期货(主连合约)",
+        "profitWeight": 0.37,
+        "commodityChange": 0.576,
+        "stockChange": 0.215,
+        "divergenceType": "positive",
+        "divergenceScore": 0.36,
+        "correlation": 0.65,
+        "profitImpact": 0.213,
+        "probability": 76.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "000731.SZ",
     "name": "四川美丰",
     "formulaType": "price",
     "focusRationale": "关注核心主营产品现货绝对价格走势及吨毛利边际弹性。",
-    "productName": "复合肥",
-    "commodityName": "复合肥",
+    "productName": "复合肥 等 2 个产品",
+    "commodityName": "综合大宗基本面 (2项)",
     "divergenceType": "negative",
     "divergenceScore": 0.354,
     "correlation": -0.07,
     "stockChange": 0.349,
     "commodityChange": -0.005,
+    "profitWeight": 0.79,
+    "profitImpact": -0.0023,
+    "probability": 61.5,
     "startDate": "2026-07-09",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "复合肥",
+        "commodityName": "复合肥",
+        "profitWeight": 0.37,
+        "commodityChange": -0.005,
+        "stockChange": 0.349,
+        "divergenceType": "negative",
+        "divergenceScore": 0.354,
+        "correlation": -0.07,
+        "profitImpact": -0.0018,
+        "probability": 59.2,
+        "signalStrength": "strong"
+      },
+      {
+        "productName": "尿素",
+        "commodityName": "尿素(山东)",
+        "profitWeight": 0.42,
+        "commodityChange": -0.001,
+        "stockChange": 0.349,
+        "divergenceType": "negative",
+        "divergenceScore": 0.351,
+        "correlation": -0.22,
+        "profitImpact": -0.0005,
+        "probability": 63.6,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "600583.SH",
@@ -1163,9 +3291,27 @@
     "correlation": 0.3,
     "stockChange": 0.073,
     "commodityChange": 0.425,
+    "profitWeight": 0.35,
+    "profitImpact": 0.1488,
+    "probability": 65.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "中厚钢板",
+        "commodityName": "DMF(华东)",
+        "profitWeight": 0.35,
+        "commodityChange": 0.425,
+        "stockChange": 0.073,
+        "divergenceType": "positive",
+        "divergenceScore": 0.353,
+        "correlation": 0.3,
+        "profitImpact": 0.1488,
+        "probability": 65.9,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "300402.SZ",
@@ -1179,9 +3325,27 @@
     "correlation": 0.26,
     "stockChange": -0.267,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 64.8,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "strong"
+    "signalStrength": "strong",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.267,
+        "divergenceType": "positive",
+        "divergenceScore": 0.352,
+        "correlation": 0.26,
+        "profitImpact": 0.0849,
+        "probability": 64.8,
+        "signalStrength": "strong"
+      }
+    ]
   },
   {
     "code": "002100.SZ",
@@ -1195,9 +3359,27 @@
     "correlation": -0.02,
     "stockChange": 0.152,
     "commodityChange": -0.197,
+    "profitWeight": 0.42,
+    "profitImpact": -0.0825,
+    "probability": 57.5,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "生猪",
+        "commodityName": "生猪价格",
+        "profitWeight": 0.42,
+        "commodityChange": -0.197,
+        "stockChange": 0.152,
+        "divergenceType": "negative",
+        "divergenceScore": 0.348,
+        "correlation": -0.02,
+        "profitImpact": -0.0825,
+        "probability": 57.5,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600980.SH",
@@ -1211,9 +3393,27 @@
     "correlation": -0.17,
     "stockChange": -0.261,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 62.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.261,
+        "divergenceType": "positive",
+        "divergenceScore": 0.346,
+        "correlation": -0.17,
+        "profitImpact": 0.0849,
+        "probability": 62.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "601216.SH",
@@ -1227,9 +3427,27 @@
     "correlation": -0.21,
     "stockChange": -0.178,
     "commodityChange": 0.168,
+    "profitWeight": 0.22,
+    "profitImpact": 0.0369,
+    "probability": 63.3,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "电石",
+        "commodityName": "电石(西北)",
+        "profitWeight": 0.22,
+        "commodityChange": 0.168,
+        "stockChange": -0.178,
+        "divergenceType": "positive",
+        "divergenceScore": 0.346,
+        "correlation": -0.21,
+        "profitImpact": 0.0369,
+        "probability": 63.3,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "688543.SH",
@@ -1243,9 +3461,27 @@
     "correlation": -0.2,
     "stockChange": -0.256,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 62.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.256,
+        "divergenceType": "positive",
+        "divergenceScore": 0.341,
+        "correlation": -0.2,
+        "profitImpact": 0.0849,
+        "probability": 62.7,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600876.SH",
@@ -1259,9 +3495,27 @@
     "correlation": 0.14,
     "stockChange": -0.255,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 61.0,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.255,
+        "divergenceType": "positive",
+        "divergenceScore": 0.34,
+        "correlation": 0.14,
+        "profitImpact": 0.0849,
+        "probability": 61.0,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600456.SH",
@@ -1275,9 +3529,27 @@
     "correlation": -0.14,
     "stockChange": -0.24,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 60.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.24,
+        "divergenceType": "positive",
+        "divergenceScore": 0.325,
+        "correlation": -0.14,
+        "profitImpact": 0.0849,
+        "probability": 60.7,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "603970.SH",
@@ -1291,9 +3563,27 @@
     "correlation": 0.07,
     "stockChange": -0.237,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 58.6,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.237,
+        "divergenceType": "positive",
+        "divergenceScore": 0.321,
+        "correlation": 0.07,
+        "profitImpact": 0.0849,
+        "probability": 58.6,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "601618.SH",
@@ -1307,9 +3597,27 @@
     "correlation": 0.06,
     "stockChange": -0.226,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 58.0,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.226,
+        "divergenceType": "positive",
+        "divergenceScore": 0.311,
+        "correlation": 0.06,
+        "profitImpact": 0.0849,
+        "probability": 58.0,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "603169.SH",
@@ -1323,9 +3631,27 @@
     "correlation": 0.02,
     "stockChange": -0.213,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 56.5,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.213,
+        "divergenceType": "positive",
+        "divergenceScore": 0.298,
+        "correlation": 0.02,
+        "profitImpact": 0.0849,
+        "probability": 56.5,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600251.SH",
@@ -1339,9 +3665,27 @@
     "correlation": 0.12,
     "stockChange": 0.201,
     "commodityChange": -0.074,
+    "profitWeight": 0.6,
+    "profitImpact": -0.0445,
+    "probability": 59.0,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "白糖",
+        "commodityName": "白糖",
+        "profitWeight": 0.6,
+        "commodityChange": -0.074,
+        "stockChange": 0.201,
+        "divergenceType": "negative",
+        "divergenceScore": 0.275,
+        "correlation": 0.12,
+        "profitImpact": -0.0445,
+        "probability": 59.0,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600056.SH",
@@ -1355,9 +3699,27 @@
     "correlation": -0.09,
     "stockChange": -0.187,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 58.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.187,
+        "divergenceType": "positive",
+        "divergenceScore": 0.272,
+        "correlation": -0.09,
+        "profitImpact": 0.0849,
+        "probability": 58.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600727.SH",
@@ -1371,9 +3733,27 @@
     "correlation": 0.1,
     "stockChange": -0.084,
     "commodityChange": 0.164,
+    "profitWeight": 0.6,
+    "profitImpact": 0.0985,
+    "probability": 57.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "金红石型钛白粉",
+        "commodityName": "钛白粉(金红石型,华东)",
+        "profitWeight": 0.6,
+        "commodityChange": 0.164,
+        "stockChange": -0.084,
+        "divergenceType": "positive",
+        "divergenceScore": 0.249,
+        "correlation": 0.1,
+        "profitImpact": 0.0985,
+        "probability": 57.9,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "601968.SH",
@@ -1387,9 +3767,27 @@
     "correlation": -0.02,
     "stockChange": -0.164,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 55.5,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.164,
+        "divergenceType": "positive",
+        "divergenceScore": 0.249,
+        "correlation": -0.02,
+        "profitImpact": 0.0849,
+        "probability": 55.5,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "688119.SH",
@@ -1403,9 +3801,27 @@
     "correlation": -0.13,
     "stockChange": -0.153,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 58.7,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.153,
+        "divergenceType": "positive",
+        "divergenceScore": 0.238,
+        "correlation": -0.13,
+        "profitImpact": 0.0849,
+        "probability": 58.7,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "601568.SH",
@@ -1419,9 +3835,27 @@
     "correlation": -0.01,
     "stockChange": -0.15,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 55.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.15,
+        "divergenceType": "positive",
+        "divergenceScore": 0.234,
+        "correlation": -0.01,
+        "profitImpact": 0.0849,
+        "probability": 55.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600819.SH",
@@ -1435,9 +3869,27 @@
     "correlation": 0.02,
     "stockChange": -0.148,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 55.3,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.148,
+        "divergenceType": "positive",
+        "divergenceScore": 0.233,
+        "correlation": 0.02,
+        "profitImpact": 0.0849,
+        "probability": 55.3,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "600195.SH",
@@ -1451,9 +3903,27 @@
     "correlation": 0.01,
     "stockChange": -0.141,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 54.9,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.141,
+        "divergenceType": "positive",
+        "divergenceScore": 0.226,
+        "correlation": 0.01,
+        "profitImpact": 0.0849,
+        "probability": 54.9,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "300034.SZ",
@@ -1467,9 +3937,27 @@
     "correlation": -0.06,
     "stockChange": -0.13,
     "commodityChange": 0.085,
+    "profitWeight": 1.0,
+    "profitImpact": 0.0849,
+    "probability": 56.1,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "动力煤",
+        "commodityName": "动力煤(Q5500,环渤海指数)",
+        "profitWeight": 1.0,
+        "commodityChange": 0.085,
+        "stockChange": -0.13,
+        "divergenceType": "positive",
+        "divergenceScore": 0.215,
+        "correlation": -0.06,
+        "profitImpact": 0.0849,
+        "probability": 56.1,
+        "signalStrength": "medium"
+      }
+    ]
   },
   {
     "code": "002092.SZ",
@@ -1483,8 +3971,26 @@
     "correlation": -0.35,
     "stockChange": -0.071,
     "commodityChange": 0.137,
+    "profitWeight": 0.21,
+    "profitImpact": 0.0287,
+    "probability": 64.5,
     "startDate": "2025-08-22",
     "endDate": "2026-09-18",
-    "signalStrength": "medium"
+    "signalStrength": "medium",
+    "items": [
+      {
+        "productName": "粘胶短纤",
+        "commodityName": "粘胶短纤(1.5D,38毫米)",
+        "profitWeight": 0.21,
+        "commodityChange": 0.137,
+        "stockChange": -0.071,
+        "divergenceType": "positive",
+        "divergenceScore": 0.208,
+        "correlation": -0.35,
+        "profitImpact": 0.0287,
+        "probability": 64.5,
+        "signalStrength": "medium"
+      }
+    ]
   }
 ]

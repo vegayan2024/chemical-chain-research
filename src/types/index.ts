@@ -41,6 +41,21 @@ export interface ProductMapping {
   weight: number;
 }
 
+/** 背离信号细分产品项 */
+export interface SubProductSignal {
+  productName: string;
+  commodityName: string;
+  profitWeight: number;
+  commodityChange: number;
+  stockChange: number;
+  divergenceType: "positive" | "negative";
+  divergenceScore: number;
+  correlation: number;
+  profitImpact: number;
+  probability: number;
+  signalStrength: "strong" | "medium" | "weak";
+}
+
 /** 背离信号 */
 export interface DivergenceSignal {
   code: string;
@@ -55,6 +70,12 @@ export interface DivergenceSignal {
   startDate: string;
   endDate: string;
   signalStrength: "strong" | "medium" | "weak";
+  profitWeight?: number;
+  profitImpact?: number;
+  probability?: number;
+  formulaType?: string;
+  focusRationale?: string;
+  items?: SubProductSignal[];
 }
 
 /** 相关性数据 */
