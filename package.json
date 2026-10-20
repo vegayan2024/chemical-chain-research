@@ -12,7 +12,9 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "data:fetch": "node scripts/fetch-data.mjs",
-    "data:divergence": "node scripts/calculate-divergence.mjs"
+    "data:divergence": "node scripts/calculate-divergence.mjs",
+    "pipeline": "python scripts/master_update_pipeline.py",
+    "verify": "python scripts/master_update_pipeline.py --verify-only"
   },
   "dependencies": {
     "echarts": "^6.0.0",
