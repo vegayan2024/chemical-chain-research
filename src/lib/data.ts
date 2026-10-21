@@ -173,38 +173,57 @@ function calculateCompanyCorrelation(
   return correlations;
 }
 
+/**
+ * 组装信号与相关性：以 Python 流水线产出的 divergence-signals.json / correlations.json 为唯一口径，
+ * 保证前端展示的就是经过勾稽核验的同一份数据；仅在文件缺失/为空时回退到客户端计算。
+ */
+function assembleSignalsAndCorrelations(
+  companies: Company[],
+  stockPrices: Record<string, PricePoint[]>,
+  commodityPrices: Record<string, PricePoint[]>,
+  precomputedSignals: DivergenceSignal[],
+  precomputedCorrelations: CorrelationData[],
+): { signals: DivergenceSignal[]; correlations: CorrelationData[] } {
+  const strengthOrder = { strong: 0, medium: 1, weak: 2 };
+  const needSignals = precomputedSignals.length === 0;
+  const needCorrelations = precomputedCorrelations.length === 0;
+
+  const fallbackSignals: DivergenceSignal[] = [];
+  const fallbackCorrelations: CorrelationData[] = [];
+  if (needSignals || needCorrelations) {
+    for (const company of companies) {
+      const companyStockPrices = stockPrices[company.code];
+      if (!companyStockPrices || companyStockPrices.length === 0) continue;
+      if (needSignals) fallbackSignals.push(...calculateCompanyDivergence(company, companyStockPrices, commodityPrices));
+      if (needCorrelations) fallbackCorrelations.push(...calculateCompanyCorrelation(company, companyStockPrices, commodityPrices));
+    }
+  }
+
+  const signals = [...(needSignals ? fallbackSignals : precomputedSignals)].sort(
+    (a, b) => strengthOrder[a.signalStrength] - strengthOrder[b.signalStrength] || b.divergenceScore - a.divergenceScore,
+  );
+  return { signals, correlations: needCorrelations ? fallbackCorrelations : precomputedCorrelations };
+}
+
 export async function loadAppData(options: FetchOptions = {}): Promise<AppData> {
-  const [companies, commodityPrices, stockPrices, valuationData, financialData] = await Promise.all([
+  const [companies, commodityPrices, stockPrices, valuationData, financialData, precomputedSignals, precomputedCorrelations] = await Promise.all([
     fetchOptionalJson<Company[]>("companies.json", [], options),
     fetchOptionalJson<Record<string, PricePoint[]>>("commodity-prices.json", {}, options),
     fetchOptionalJson<Record<string, PricePoint[]>>("stock-prices.json", {}, options),
     fetchOptionalJson<Record<string, ValuationData>>("valuation-data.json", {}, options),
     fetchOptionalJson<Record<string, FinancialData>>("financial-data.json", {}, options),
+    fetchOptionalJson<DivergenceSignal[]>("divergence-signals.json", [], options),
+    fetchOptionalJson<CorrelationData[]>("correlations.json", [], options),
   ]);
 
-  const allSignals: DivergenceSignal[] = [];
-  const allCorrelations: CorrelationData[] = [];
-
-  for (const company of companies) {
-    const companyStockPrices = stockPrices[company.code];
-    if (!companyStockPrices || companyStockPrices.length === 0) continue;
-
-    const signals = calculateCompanyDivergence(company, companyStockPrices, commodityPrices);
-    allSignals.push(...signals);
-
-    const correlations = calculateCompanyCorrelation(company, companyStockPrices, commodityPrices);
-    allCorrelations.push(...correlations);
-  }
-
-  const sortedSignals = allSignals.sort((a, b) => {
-    const strengthOrder = { strong: 0, medium: 1, weak: 2 };
-    return strengthOrder[a.signalStrength] - strengthOrder[b.signalStrength];
-  });
+  const { signals, correlations } = assembleSignalsAndCorrelations(
+    companies, stockPrices, commodityPrices, precomputedSignals, precomputedCorrelations,
+  );
 
   return {
     companies,
-    signals: sortedSignals,
-    correlations: allCorrelations,
+    signals,
+    correlations,
     commodityPrices,
     stockPrices,
     valuationData,
@@ -219,37 +238,24 @@ export async function loadAppData(options: FetchOptions = {}): Promise<AppData> 
 export async function loadAppDataLazy(options: FetchOptions = {}): Promise<AppData> {
   const cacheKey = options.cacheBust ?? 'default';
 
-  const [companies, commodityPrices, stockPrices, valuationData, financialData] = await Promise.all([
+  const [companies, commodityPrices, stockPrices, valuationData, financialData, precomputedSignals, precomputedCorrelations] = await Promise.all([
     lazyLoad(`companies-${cacheKey}`, () => fetchOptionalJson<Company[]>("companies.json", [], options)),
     lazyLoad(`commodity-prices-${cacheKey}`, () => fetchOptionalJson<Record<string, PricePoint[]>>("commodity-prices.json", {}, options)),
     lazyLoad(`stock-prices-${cacheKey}`, () => fetchOptionalJson<Record<string, PricePoint[]>>("stock-prices.json", {}, options)),
     lazyLoad(`valuation-data-${cacheKey}`, () => fetchOptionalJson<Record<string, ValuationData>>("valuation-data.json", {}, options)),
     lazyLoad(`financial-data-${cacheKey}`, () => fetchOptionalJson<Record<string, FinancialData>>("financial-data.json", {}, options)),
+    lazyLoad(`divergence-signals-${cacheKey}`, () => fetchOptionalJson<DivergenceSignal[]>("divergence-signals.json", [], options)),
+    lazyLoad(`correlations-${cacheKey}`, () => fetchOptionalJson<CorrelationData[]>("correlations.json", [], options)),
   ]);
 
-  const allSignals: DivergenceSignal[] = [];
-  const allCorrelations: CorrelationData[] = [];
-
-  for (const company of companies) {
-    const companyStockPrices = stockPrices[company.code];
-    if (!companyStockPrices || companyStockPrices.length === 0) continue;
-
-    const signals = calculateCompanyDivergence(company, companyStockPrices, commodityPrices);
-    allSignals.push(...signals);
-
-    const correlations = calculateCompanyCorrelation(company, companyStockPrices, commodityPrices);
-    allCorrelations.push(...correlations);
-  }
-
-  const sortedSignals = allSignals.sort((a, b) => {
-    const strengthOrder = { strong: 0, medium: 1, weak: 2 };
-    return strengthOrder[a.signalStrength] - strengthOrder[b.signalStrength];
-  });
+  const { signals, correlations } = assembleSignalsAndCorrelations(
+    companies, stockPrices, commodityPrices, precomputedSignals, precomputedCorrelations,
+  );
 
   return {
     companies,
-    signals: sortedSignals,
-    correlations: allCorrelations,
+    signals,
+    correlations,
     commodityPrices,
     stockPrices,
     valuationData,

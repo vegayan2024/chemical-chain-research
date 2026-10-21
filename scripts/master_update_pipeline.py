@@ -13,7 +13,7 @@
 [Phase 2] 公司与财报：141家上市公司业务结构、公式化模式与商品Key对齐
 [Phase 3] 股票时序对齐：同步高频日K线数据
 [Phase 4] 核心计算引擎：执行四大研报公式化背离雷达计算
-[Phase 5] 6大工业级勾稽核验：执行完整性、归一化、时序单调性与前端构建验证
+[Phase 5] 8大工业级勾稽复验：完整性、归一化、时序单调性、股票新鲜度、信号自洽与前端构建验证
 """
 
 import os
@@ -53,7 +53,7 @@ def verify_six_audits():
     """
     执行 6 大工业级勾稽核验体系
     """
-    print_banner("阶段 5: 执行 6 大工业级勾稽核验体系 (Six-Point Verification Protocol)")
+    print_banner("阶段 5: 执行 8 大工业级勾稽核验体系 (Eight-Point Verification Protocol)")
     results = {}
     
     # 1. 加载所有生成文件
@@ -169,9 +169,53 @@ def verify_six_audits():
         results["勾稽6_前端构建与元数据同步"] = {"status": "FAIL", "detail": f"信源同步: {source_aligned}, 前端编译: {build_passed}"}
 
     # ----------------------------------------------------
+    # 勾稽 7: 股票行情新鲜度（股票最新日期不得显著落后商品最新日期）
+    # 背离窗口终点 = min(股票, 商品)，股票滞后会让全部信号停留在旧日期
+    # ----------------------------------------------------
+    stock_last_dates = [pts[-1]["date"][:10] for pts in stocks.values() if pts]
+    max_stock_date = max(stock_last_dates) if stock_last_dates else "1970-01-01"
+    lag_days = (datetime.strptime(max_comm_date[:10], "%Y-%m-%d") - datetime.strptime(max_stock_date, "%Y-%m-%d")).days
+    lagging = [c for c, pts in stocks.items() if pts and (datetime.strptime(max_stock_date, "%Y-%m-%d") - datetime.strptime(pts[-1]["date"][:10], "%Y-%m-%d")).days > 7]
+    detail7 = f"股票最新 {max_stock_date} / 商品最新 {max_comm_date}，滞后 {lag_days} 天；个股自身滞后>7天: {len(lagging)} 只"
+    if lag_days <= 7 and not lagging:
+        results["勾稽7_股票行情新鲜度"] = {"status": "PASS", "detail": detail7}
+    else:
+        results["勾稽7_股票行情新鲜度"] = {"status": "WARN", "detail": detail7 + "（需先更新 terminal 仓库 K 线再跑流水线）"}
+
+    # ----------------------------------------------------
+    # 勾稽 8: 公司级信号内部一致性 + 前端消费口径一致
+    # ----------------------------------------------------
+    company_codes = {c["code"] for c in companies}
+    issues8 = []
+    for d in divergences:
+        if d["code"] not in company_codes:
+            issues8.append((d["code"], "孤儿信号"))
+        items = d.get("items", [])
+        if len({it["stockChange"] for it in items}) > 1:
+            issues8.append((d["code"], "同公司子项股价涨跌幅不一致"))
+        for it in items:
+            exp_type = "positive" if it["commodityChange"] > it["stockChange"] else "negative"
+            if exp_type != it["divergenceType"]:
+                issues8.append((d["code"], f"{it['productName']} 背离方向错误"))
+            if abs(abs(it["commodityChange"] - it["stockChange"]) - it["divergenceScore"]) > 0.002:
+                issues8.append((d["code"], f"{it['productName']} 背离度≠|Δ商品-Δ股价|"))
+    for r in correlations:
+        for f in ("correlation60d", "correlation120d", "correlation250d"):
+            if not -1.0 <= r.get(f, 0) <= 1.0:
+                issues8.append((r["code"], f"{f} 越界"))
+    with open(os.path.join(PROJECT_ROOT, "src", "lib", "data.ts"), "r", encoding="utf-8") as f:
+        data_ts = f.read()
+    if "divergence-signals.json" not in data_ts or "correlations.json" not in data_ts:
+        issues8.append(("frontend", "前端未读取流水线产出的信号/相关性文件，展示口径与核验口径不一致"))
+    if not issues8:
+        results["勾稽8_信号内部一致与前端口径"] = {"status": "PASS", "detail": f"{len(divergences)} 条公司信号方向/得分/股价区间自洽，前端直接消费流水线产出"}
+    else:
+        results["勾稽8_信号内部一致与前端口径"] = {"status": "FAIL", "detail": f"发现 {len(issues8)} 处问题: {issues8[:4]}"}
+
+    # ----------------------------------------------------
     # 输出复验报告
     # ----------------------------------------------------
-    print_banner("6 大工业级勾稽核验报告汇总")
+    print_banner("8 大工业级勾稽核验报告汇总")
     all_pass = True
     for k, v in results.items():
         symbol = "✅" if v["status"] == "PASS" else ("⚠️" if v["status"] == "WARN" else "❌")
@@ -181,7 +225,7 @@ def verify_six_audits():
 
     print("\n" + "-" * 70)
     if all_pass:
-        print("🎉 全部 6 大勾稽核验均 100% 通过！底层数据完整、算法模型严密、前端构建就绪！")
+        print("🎉 8 大勾稽核验无 FAIL 项！（WARN 项请按提示处理）")
     else:
         print("🚨 勾稽核验发现异常项，请检查上述失败明细并定位！")
     print("-" * 70)

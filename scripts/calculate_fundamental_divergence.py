@@ -13,7 +13,7 @@ import sys
 import os
 import json
 import math
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # 解决 Windows 终端编码
 if hasattr(sys.stdout, 'reconfigure'):
@@ -56,14 +56,41 @@ def calc_returns(prices, period=1):
             returns.append((prices[i] - prev) / prev)
     return returns
 
+# 统一周频口径：股票为日K、商品 418 个周频 + 129 个日频。
+# 原实现按"日期交集"对齐，导致日频商品的 52 窗口 = 52 个交易日(约 2.5 个月)，
+# 周频商品的 52 窗口 = 52 周(1 年)，同一公司不同产品的统计区间不一致。
+# 现统一重采样为 ISO 周最后一个观测值，再按周对齐。
+WEEKS_PER_YEAR = 52
+# 相关性窗口（周）：对应约 60 / 120 / 250 个交易日
+CORR_WINDOWS = {"correlation60d": 12, "correlation120d": 24, "correlation250d": 52}
+# 商品序列最新日期落后股票最新日期超过该天数，视为停更，不产生背离信号
+STALE_DAYS = 35
+# 副产品弹性放大仅对明确的副产物生效（避免"金"误匹配"金红石型钛白粉"等）
+BYPRODUCT_KEYWORDS = ["硫酸", "黄金", "白银", "渣"]
+SPREAD_KEYWORDS = ["价差", "利差", "剪刀差"]
+
+def to_weekly(pts):
+    """按 ISO 周取最后一个观测值，返回 {week_key: (date, value)}"""
+    out = {}
+    for p in pts:
+        d, v = p.get("date"), p.get("value")
+        if not d or v is None:
+            continue
+        y, w, _ = datetime.strptime(d[:10], "%Y-%m-%d").isocalendar()
+        key = (y, w)
+        if key not in out or d > out[key][0]:
+            out[key] = (d, v)
+    return out
+
 def align_series(stock_pts, comm_pts):
-    s_map = {p["date"]: p["value"] for p in stock_pts if "date" in p and "value" in p}
-    c_map = {p["date"]: p["value"] for p in comm_pts if "date" in p and "value" in p}
-    
-    all_dates = sorted(list(set(s_map.keys()) & set(c_map.keys())))
-    aligned_s = [s_map[d] for d in all_dates]
-    aligned_c = [c_map[d] for d in all_dates]
-    return aligned_s, aligned_c, all_dates
+    s_w = to_weekly(stock_pts)
+    c_w = to_weekly(comm_pts)
+    weeks = sorted(set(s_w) & set(c_w))
+    aligned_s = [s_w[k][1] for k in weeks]
+    aligned_c = [c_w[k][1] for k in weeks]
+    # 日期取股票所在周的最后交易日，保证同一公司各产品日期口径一致
+    dates = [s_w[k][0] for k in weeks]
+    return aligned_s, aligned_c, dates
 
 def main():
     print("=" * 70)
@@ -81,6 +108,7 @@ def main():
 
     all_signals = []
     all_correlations = []
+    stale_skipped = []
 
     print(f"载入监控公司: {len(companies)} 家")
     print(f"载入商品序列: {len(commodity_prices)} 个")
@@ -115,13 +143,16 @@ def main():
             if len(aligned_s) < 25:
                 continue
                 
-            # 计算 60d / 120d / 250d 相关性
+            # 周收益率相关性：12 / 24 / 52 周 ≈ 60 / 120 / 250 交易日
             s_ret = calc_returns(aligned_s)
             c_ret = calc_returns(aligned_c)
             
-            corr60 = round(pearson_corr(s_ret[-60:], c_ret[-60:]), 4) if len(s_ret) >= 60 else round(pearson_corr(s_ret, c_ret), 4)
-            corr120 = round(pearson_corr(s_ret[-120:], c_ret[-120:]), 4) if len(s_ret) >= 120 else round(pearson_corr(s_ret, c_ret), 4)
-            corr250 = round(pearson_corr(s_ret[-250:], c_ret[-250:]), 4) if len(s_ret) >= 250 else round(pearson_corr(s_ret, c_ret), 4)
+            corr_row = {}
+            for field, w in CORR_WINDOWS.items():
+                if len(s_ret) >= w:
+                    corr_row[field] = round(pearson_corr(s_ret[-w:], c_ret[-w:]), 4)
+                else:
+                    corr_row[field] = round(pearson_corr(s_ret, c_ret), 4)
             
             all_correlations.append({
                 "code": code,
@@ -129,23 +160,34 @@ def main():
                 "formulaType": formula_type,
                 "productName": pname,
                 "commodityName": cname,
-                "correlation60d": corr60,
-                "correlation120d": corr120,
-                "correlation250d": corr250,
-                "lastUpdated": dates[-1] if dates else "2026-10-16"
+                **corr_row,
+                "lastUpdated": dates[-1]
             })
+
+            # 停更保护：商品最新日期显著落后于股票最新日期，不产生背离信号
+            stock_last = datetime.strptime(c_stock[-1]["date"][:10], "%Y-%m-%d")
+            comm_last = datetime.strptime(c_comm[-1]["date"][:10], "%Y-%m-%d")
+            if (stock_last - comm_last).days > STALE_DAYS:
+                stale_skipped.append((code, ckey, c_comm[-1]["date"]))
+                continue
             
-            # 背离检测（取最近 52周 / 250交易日以内的窗口）
-            window = min(52, len(aligned_s))
-            if window < 15:
+            # 背离检测：按日历锚定统一 1 年窗口（股票最新日 - 364 天）
+            # 原实现取"最近 N 个对齐点"，商品序列中间缺周时窗口会被拉长到一年以上，
+            # 导致同一公司不同产品子项的股价涨跌幅不一致。
+            window_start = (stock_last - timedelta(days=364)).strftime("%Y-%m-%d")
+            idx = [i for i, d in enumerate(dates) if d >= window_start]
+            if len(idx) < 15:
                 continue
                 
-            recent_s = aligned_s[-window:]
-            recent_c = aligned_c[-window:]
-            recent_dates = dates[-window:]
+            recent_s = [aligned_s[i] for i in idx]
+            recent_c = [aligned_c[i] for i in idx]
+            recent_dates = [dates[i] for i in idx]
             
-            # 计算区间总体涨跌幅
-            s_start, s_end = recent_s[0], recent_s[-1]
+            # 股价区间涨跌幅：仅由股票自身周序列决定（公司内所有子项一致）
+            s_weekly = sorted(to_weekly(c_stock).values())
+            s_window = [v for d, v in s_weekly if d >= window_start]
+            s_start, s_end = s_window[0], s_window[-1]
+            s_start_date = next(d for d, _ in s_weekly if d >= window_start)
             c_start, c_end = recent_c[0], recent_c[-1]
             
             stock_cum = (s_end - s_start) / s_start if s_start else 0.0
@@ -154,9 +196,9 @@ def main():
             # 公式化逻辑调整：
             # 若是副产品型 (byproduct_composite) 且该商品是副产物（如硫酸），加大弹性倍数
             effective_comm_cum = comm_cum
-            if formula_type == "byproduct_composite" and any(k in cname for k in ["硫酸", "金", "银", "渣"]):
+            if formula_type == "byproduct_composite" and any(k in cname for k in BYPRODUCT_KEYWORDS):
                 effective_comm_cum = comm_cum * 1.25
-            elif formula_type == "spread" and any(k in cname for k in ["价差", "利差", "剪刀差"]):
+            elif formula_type == "spread" and any(k in cname for k in SPREAD_KEYWORDS):
                 effective_comm_cum = comm_cum * 1.15
                 
             r_s_ret = calc_returns(recent_s)
@@ -276,6 +318,7 @@ def main():
 
     print(f"\n计算结果统计:")
     print(f"  多周期相关性记录: {len(all_correlations)} 条")
+    print(f"  停更商品跳过背离检测: {len(stale_skipped)} 组 {stale_skipped[:5]}")
     print(f"  检出有效公司背离信号: {len(filtered_signals)} 家")
     print(f"    - 强背离 (Strong): {len([s for s in filtered_signals if s['signalStrength'] == 'strong'])} 家")
     print(f"    - 中等背离 (Medium): {len([s for s in filtered_signals if s['signalStrength'] == 'medium'])} 家")
@@ -290,6 +333,20 @@ def main():
     with open(corr_file, "w", encoding="utf-8") as f:
         json.dump(all_correlations, f, ensure_ascii=False, indent=2)
     print(f"  已更新: {corr_file}")
+
+    # 同步元数据：信号数量与股票最新日期（只重算信号时也保持勾稽6一致）
+    src_file = os.path.join(DATA_DIR, "data-sources.json")
+    if os.path.exists(src_file):
+        with open(src_file, "r", encoding="utf-8") as f:
+            sources = json.load(f)
+        cov = sources.setdefault("databaseCoverage", {})
+        cov["totalDivergenceSignals"] = len(filtered_signals)
+        stock_dates = [pts[-1]["date"][:10] for pts in stock_prices.values() if pts]
+        if stock_dates:
+            cov["stockLatestDate"] = max(stock_dates)
+        with open(src_file, "w", encoding="utf-8") as f:
+            json.dump(sources, f, ensure_ascii=False, indent=2)
+        print(f"  已同步: {src_file}")
 
     print("\n✅ 全量141家上市公司背离信号矩阵计算与验证完毕！")
 

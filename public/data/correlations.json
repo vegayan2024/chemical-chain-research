@@ -5,9 +5,9 @@
     "formulaType": "price",
     "productName": "工业金刚石",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1017,
-    "correlation120d": -0.0137,
-    "correlation250d": 0.104,
+    "correlation60d": 0.1159,
+    "correlation120d": -0.0515,
+    "correlation250d": -0.1322,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -16,9 +16,9 @@
     "formulaType": "price",
     "productName": "工业炸药",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1017,
-    "correlation120d": -0.0137,
-    "correlation250d": 0.104,
+    "correlation60d": 0.1159,
+    "correlation120d": -0.0515,
+    "correlation250d": -0.1322,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -27,9 +27,9 @@
     "formulaType": "price",
     "productName": "汽油",
     "commodityName": "中国92#汽油(镇海炼化)",
-    "correlation60d": -0.0255,
-    "correlation120d": -0.0388,
-    "correlation250d": -0.0717,
+    "correlation60d": -0.1879,
+    "correlation120d": -0.0312,
+    "correlation250d": -0.0671,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -38,9 +38,9 @@
     "formulaType": "price",
     "productName": "柴油",
     "commodityName": "中国0#柴油(镇海炼化)",
-    "correlation60d": -0.025,
-    "correlation120d": -0.0391,
-    "correlation250d": -0.0725,
+    "correlation60d": -0.1875,
+    "correlation120d": -0.0308,
+    "correlation250d": -0.0665,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -49,9 +49,9 @@
     "formulaType": "price",
     "productName": "液化气",
     "commodityName": "液化气(华东)",
-    "correlation60d": 0.119,
-    "correlation120d": 0.0623,
-    "correlation250d": 0.0178,
+    "correlation60d": 0.1903,
+    "correlation120d": 0.4073,
+    "correlation250d": 0.0753,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -60,9 +60,9 @@
     "formulaType": "price",
     "productName": "钒制品",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1445,
-    "correlation120d": 0.1002,
-    "correlation250d": -0.0565,
+    "correlation60d": -0.0563,
+    "correlation120d": 0.0077,
+    "correlation250d": 0.1097,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -71,9 +71,9 @@
     "formulaType": "price",
     "productName": "钛白粉",
     "commodityName": "钛白粉(金红石型,华东)",
-    "correlation60d": -0.1204,
-    "correlation120d": -0.0555,
-    "correlation250d": -0.0555,
+    "correlation60d": -0.1775,
+    "correlation120d": 0.1644,
+    "correlation250d": -0.0849,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -82,9 +82,9 @@
     "formulaType": "price",
     "productName": "钛精矿",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1445,
-    "correlation120d": 0.1002,
-    "correlation250d": -0.0565,
+    "correlation60d": -0.0563,
+    "correlation120d": 0.0077,
+    "correlation250d": 0.1097,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -93,9 +93,9 @@
     "formulaType": "price",
     "productName": "铁精粉",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.1672,
-    "correlation120d": 0.1118,
-    "correlation250d": 0.02,
+    "correlation60d": 0.2949,
+    "correlation120d": 0.4173,
+    "correlation250d": 0.1445,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -104,9 +104,9 @@
     "formulaType": "price",
     "productName": "铜精矿",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.1672,
-    "correlation120d": 0.1118,
-    "correlation250d": 0.02,
+    "correlation60d": 0.2949,
+    "correlation120d": 0.4173,
+    "correlation250d": 0.1445,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -115,9 +115,9 @@
     "formulaType": "price",
     "productName": "钨",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0436,
-    "correlation120d": 0.0773,
-    "correlation250d": -0.0011,
+    "correlation60d": 0.1961,
+    "correlation120d": 0.1089,
+    "correlation250d": 0.011,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -126,9 +126,9 @@
     "formulaType": "price",
     "productName": "硬质合金",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0436,
-    "correlation120d": 0.0773,
-    "correlation250d": -0.0011,
+    "correlation60d": 0.1961,
+    "correlation120d": 0.1089,
+    "correlation250d": 0.011,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -137,9 +137,9 @@
     "formulaType": "price",
     "productName": "钼",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0436,
-    "correlation120d": 0.0773,
-    "correlation250d": -0.0011,
+    "correlation60d": 0.1961,
+    "correlation120d": 0.1089,
+    "correlation250d": 0.011,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -148,9 +148,9 @@
     "formulaType": "spread",
     "productName": "纯碱",
     "commodityName": "纯碱库存",
-    "correlation60d": 0.2879,
-    "correlation120d": 0.219,
-    "correlation250d": -0.041,
+    "correlation60d": -0.0602,
+    "correlation120d": 0.4044,
+    "correlation250d": 0.3451,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -170,9 +170,9 @@
     "formulaType": "price",
     "productName": "尿素",
     "commodityName": "尿素(山东)",
-    "correlation60d": -0.219,
-    "correlation120d": -0.0648,
-    "correlation250d": 0.0355,
+    "correlation60d": -0.0431,
+    "correlation120d": 0.0913,
+    "correlation250d": 0.0683,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -181,9 +181,9 @@
     "formulaType": "price",
     "productName": "复合肥",
     "commodityName": "复合肥",
-    "correlation60d": -0.0709,
-    "correlation120d": 0.1821,
-    "correlation250d": 0.0732,
+    "correlation60d": -0.0213,
+    "correlation120d": 0.0058,
+    "correlation250d": -0.3054,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -192,9 +192,9 @@
     "formulaType": "price",
     "productName": "三聚氰胺",
     "commodityName": "三聚氰胺(四川)",
-    "correlation60d": -0.1542,
-    "correlation120d": -0.1614,
-    "correlation250d": 0.1434,
+    "correlation60d": -0.1705,
+    "correlation120d": -0.0144,
+    "correlation250d": -0.1928,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -203,9 +203,9 @@
     "formulaType": "processing_fee",
     "productName": "锌锭",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.0619,
-    "correlation120d": -0.0861,
-    "correlation250d": -0.0113,
+    "correlation60d": 0.2253,
+    "correlation120d": 0.1419,
+    "correlation250d": -0.0566,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -214,9 +214,9 @@
     "formulaType": "processing_fee",
     "productName": "铅锭",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.0619,
-    "correlation120d": -0.0861,
-    "correlation250d": -0.0113,
+    "correlation60d": 0.2253,
+    "correlation120d": 0.1419,
+    "correlation250d": -0.0566,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -225,9 +225,9 @@
     "formulaType": "price",
     "productName": "碳酸锂",
     "commodityName": "碳酸锂(电池级,江苏)",
-    "correlation60d": 0.5627,
-    "correlation120d": 0.5006,
-    "correlation250d": 0.2124,
+    "correlation60d": 0.255,
+    "correlation120d": 0.4348,
+    "correlation250d": 0.5982,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -236,9 +236,9 @@
     "formulaType": "price",
     "productName": "铬矿石",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.1015,
-    "correlation120d": 0.0713,
-    "correlation250d": 0.0051,
+    "correlation60d": -0.0039,
+    "correlation120d": 0.0642,
+    "correlation250d": 0.1276,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -247,9 +247,9 @@
     "formulaType": "price",
     "productName": "氯化钾",
     "commodityName": "氯化钾(60%粉,青海挂牌)",
-    "correlation60d": 0.0719,
-    "correlation120d": 0.0365,
-    "correlation250d": 0.0753,
+    "correlation60d": -0.09,
+    "correlation120d": -0.0793,
+    "correlation250d": 0.0885,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -258,9 +258,9 @@
     "formulaType": "price",
     "productName": "碳酸锂",
     "commodityName": "碳酸锂(电池级,江苏)",
-    "correlation60d": 0.6105,
-    "correlation120d": 0.5125,
-    "correlation250d": 0.7419,
+    "correlation60d": 0.3006,
+    "correlation120d": 0.3514,
+    "correlation250d": 0.6573,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -269,9 +269,9 @@
     "formulaType": "price",
     "productName": "纯碱",
     "commodityName": "纯碱(轻质,华东)",
-    "correlation60d": -0.0503,
-    "correlation120d": -0.0066,
-    "correlation250d": 0.7534,
+    "correlation60d": -0.166,
+    "correlation120d": -0.131,
+    "correlation250d": 0.0156,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -280,9 +280,9 @@
     "formulaType": "price",
     "productName": "聚丙烯",
     "commodityName": "聚丙烯酰胺(浙江鑫甬)",
-    "correlation60d": -0.0033,
-    "correlation120d": -0.0057,
-    "correlation250d": -0.102,
+    "correlation60d": 0.0,
+    "correlation120d": 0.0,
+    "correlation250d": 0.0061,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -291,9 +291,9 @@
     "formulaType": "price",
     "productName": "MTBE",
     "commodityName": "MTBE(石大胜华)",
-    "correlation60d": 0.1537,
-    "correlation120d": 0.1164,
-    "correlation250d": 0.0596,
+    "correlation60d": -0.1526,
+    "correlation120d": -0.0401,
+    "correlation250d": -0.0428,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -302,9 +302,9 @@
     "formulaType": "price",
     "productName": "液化气",
     "commodityName": "液化气(华东)",
-    "correlation60d": 0.0121,
-    "correlation120d": 0.0208,
-    "correlation250d": 0.0774,
+    "correlation60d": -0.2156,
+    "correlation120d": 0.0868,
+    "correlation250d": -0.0147,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -313,9 +313,9 @@
     "formulaType": "price",
     "productName": "尿素",
     "commodityName": "尿素(山东)",
-    "correlation60d": -0.0851,
-    "correlation120d": 0.0705,
-    "correlation250d": 0.0509,
+    "correlation60d": -0.2982,
+    "correlation120d": 0.0958,
+    "correlation250d": 0.1743,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -324,9 +324,9 @@
     "formulaType": "price",
     "productName": "复合肥",
     "commodityName": "复合肥",
-    "correlation60d": -0.0618,
-    "correlation120d": 0.2823,
-    "correlation250d": 0.1302,
+    "correlation60d": -0.1732,
+    "correlation120d": 0.2655,
+    "correlation250d": -0.1836,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -335,9 +335,9 @@
     "formulaType": "price",
     "productName": "氧化镝",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1014,
-    "correlation120d": -0.0503,
-    "correlation250d": -0.0435,
+    "correlation60d": -0.099,
+    "correlation120d": 0.052,
+    "correlation250d": -0.1013,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -346,9 +346,9 @@
     "formulaType": "price",
     "productName": "氧化铽",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1014,
-    "correlation120d": -0.0503,
-    "correlation250d": -0.0435,
+    "correlation60d": -0.099,
+    "correlation120d": 0.052,
+    "correlation250d": -0.1013,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -357,9 +357,9 @@
     "formulaType": "processing_fee",
     "productName": "铜",
     "commodityName": "铜箔（电池级,8μm）",
-    "correlation60d": 0.2501,
-    "correlation120d": 0.1319,
-    "correlation250d": 0.0339,
+    "correlation60d": 0.3191,
+    "correlation120d": 0.0336,
+    "correlation250d": 0.2906,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -368,9 +368,9 @@
     "formulaType": "processing_fee",
     "productName": "黄金",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0457,
-    "correlation120d": -0.0347,
-    "correlation250d": -0.0336,
+    "correlation60d": 0.003,
+    "correlation120d": 0.0549,
+    "correlation250d": -0.0666,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -379,9 +379,9 @@
     "formulaType": "processing_fee",
     "productName": "白银",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0457,
-    "correlation120d": -0.0347,
-    "correlation250d": -0.0336,
+    "correlation60d": 0.003,
+    "correlation120d": 0.0549,
+    "correlation250d": -0.0666,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -390,9 +390,9 @@
     "formulaType": "price",
     "productName": "氯化钾",
     "commodityName": "氯化钾(60%粉,青海挂牌)",
-    "correlation60d": 0.1546,
-    "correlation120d": 0.0887,
-    "correlation250d": -0.0038,
+    "correlation60d": -0.2316,
+    "correlation120d": -0.2278,
+    "correlation250d": -0.0408,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -401,9 +401,9 @@
     "formulaType": "price",
     "productName": "副产工业盐",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.358,
-    "correlation120d": 0.1998,
-    "correlation250d": 0.1092,
+    "correlation60d": 0.2489,
+    "correlation120d": 0.2664,
+    "correlation250d": 0.3739,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -412,9 +412,9 @@
     "formulaType": "price",
     "productName": "铁矿石",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1499,
-    "correlation120d": -0.0731,
-    "correlation250d": -0.0571,
+    "correlation60d": -0.1374,
+    "correlation120d": -0.0221,
+    "correlation250d": -0.1598,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -423,9 +423,9 @@
     "formulaType": "price",
     "productName": "钒钛",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1499,
-    "correlation120d": -0.0731,
-    "correlation250d": -0.0571,
+    "correlation60d": -0.1374,
+    "correlation120d": -0.0221,
+    "correlation250d": -0.1598,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -434,9 +434,9 @@
     "formulaType": "price",
     "productName": "磁铁矿",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1499,
-    "correlation120d": -0.0731,
-    "correlation250d": -0.0571,
+    "correlation60d": -0.1374,
+    "correlation120d": -0.0221,
+    "correlation250d": -0.1598,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -445,9 +445,9 @@
     "formulaType": "processing_fee",
     "productName": "热轧板卷",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.214,
-    "correlation120d": 0.1235,
-    "correlation250d": 0.0021,
+    "correlation60d": 0.3323,
+    "correlation120d": 0.452,
+    "correlation250d": 0.2797,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -456,9 +456,9 @@
     "formulaType": "processing_fee",
     "productName": "螺纹钢",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.214,
-    "correlation120d": 0.1235,
-    "correlation250d": 0.0021,
+    "correlation60d": 0.3323,
+    "correlation120d": 0.452,
+    "correlation250d": 0.2797,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -467,9 +467,9 @@
     "formulaType": "price",
     "productName": "淀粉糖",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1512,
-    "correlation120d": 0.1265,
-    "correlation250d": -0.0687,
+    "correlation60d": 0.4728,
+    "correlation120d": 0.4159,
+    "correlation250d": 0.1769,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -478,9 +478,9 @@
     "formulaType": "price",
     "productName": "味精",
     "commodityName": "味精(国内)",
-    "correlation60d": -0.0303,
-    "correlation120d": 0.621,
-    "correlation250d": 0.621,
+    "correlation60d": 0.3201,
+    "correlation120d": -0.0217,
+    "correlation250d": -0.0706,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -489,9 +489,9 @@
     "formulaType": "price",
     "productName": "氨基酸",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1512,
-    "correlation120d": 0.1265,
-    "correlation250d": -0.0687,
+    "correlation60d": 0.4728,
+    "correlation120d": 0.4159,
+    "correlation250d": 0.1769,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -500,9 +500,9 @@
     "formulaType": "price",
     "productName": "锡",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0031,
-    "correlation120d": 0.034,
-    "correlation250d": -0.008,
+    "correlation60d": 0.0655,
+    "correlation120d": -0.0104,
+    "correlation250d": -0.0224,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -511,9 +511,9 @@
     "formulaType": "price",
     "productName": "锌",
     "commodityName": "代森锰锌",
-    "correlation60d": -0.0689,
-    "correlation120d": -0.011,
-    "correlation250d": -0.0413,
+    "correlation60d": 0.2747,
+    "correlation120d": 0.2833,
+    "correlation250d": -0.1156,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -522,9 +522,9 @@
     "formulaType": "price",
     "productName": "铟",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0031,
-    "correlation120d": 0.034,
-    "correlation250d": -0.008,
+    "correlation60d": 0.0655,
+    "correlation120d": -0.0104,
+    "correlation250d": -0.0224,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -533,9 +533,9 @@
     "formulaType": "price",
     "productName": "钽",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.041,
-    "correlation120d": 0.0637,
-    "correlation250d": -0.0306,
+    "correlation60d": 0.0538,
+    "correlation120d": -0.1178,
+    "correlation250d": 0.0379,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -544,9 +544,9 @@
     "formulaType": "price",
     "productName": "铌",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.041,
-    "correlation120d": 0.0637,
-    "correlation250d": -0.0306,
+    "correlation60d": 0.0538,
+    "correlation120d": -0.1178,
+    "correlation250d": 0.0379,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -555,9 +555,9 @@
     "formulaType": "price",
     "productName": "铍",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.041,
-    "correlation120d": 0.0637,
-    "correlation250d": -0.0306,
+    "correlation60d": 0.0538,
+    "correlation120d": -0.1178,
+    "correlation250d": 0.0379,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -566,9 +566,9 @@
     "formulaType": "processing_fee",
     "productName": "黑钨精矿",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1248,
-    "correlation120d": -0.1514,
-    "correlation250d": -0.0607,
+    "correlation60d": 0.0704,
+    "correlation120d": -0.1349,
+    "correlation250d": -0.137,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -577,9 +577,9 @@
     "formulaType": "processing_fee",
     "productName": "金属钕",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1248,
-    "correlation120d": -0.1514,
-    "correlation250d": -0.0607,
+    "correlation60d": 0.0704,
+    "correlation120d": -0.1349,
+    "correlation250d": -0.137,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -588,9 +588,9 @@
     "formulaType": "price",
     "productName": "甲醇",
     "commodityName": "甲醇(华东)",
-    "correlation60d": 0.0438,
-    "correlation120d": 0.1552,
-    "correlation250d": 0.182,
+    "correlation60d": 0.0195,
+    "correlation120d": -0.0222,
+    "correlation250d": 0.0887,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -599,9 +599,9 @@
     "formulaType": "price",
     "productName": "聚烯烃",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0648,
-    "correlation120d": -0.0057,
-    "correlation250d": -0.0809,
+    "correlation60d": 0.0365,
+    "correlation120d": 0.0306,
+    "correlation250d": -0.0361,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -610,9 +610,9 @@
     "formulaType": "price",
     "productName": "清洁能源",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0648,
-    "correlation120d": -0.0057,
-    "correlation250d": -0.0809,
+    "correlation60d": 0.0365,
+    "correlation120d": 0.0306,
+    "correlation250d": -0.0361,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -621,9 +621,9 @@
     "formulaType": "price",
     "productName": "Brent原油",
     "commodityName": "Brent现货",
-    "correlation60d": 0.0193,
-    "correlation120d": -0.0753,
-    "correlation250d": -0.0222,
+    "correlation60d": -0.4464,
+    "correlation120d": -0.2044,
+    "correlation250d": -0.0908,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -632,9 +632,9 @@
     "formulaType": "price",
     "productName": "92#汽油",
     "commodityName": "92#汽油新加坡FOB",
-    "correlation60d": -0.0845,
-    "correlation120d": -0.0845,
-    "correlation250d": -0.0845,
+    "correlation60d": -0.2086,
+    "correlation120d": -0.1269,
+    "correlation250d": -0.1257,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -643,9 +643,9 @@
     "formulaType": "processing_fee",
     "productName": "人造金刚石",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1933,
-    "correlation120d": -0.1177,
-    "correlation250d": 0.0278,
+    "correlation60d": 0.1168,
+    "correlation120d": -0.0119,
+    "correlation250d": -0.2098,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -654,9 +654,9 @@
     "formulaType": "processing_fee",
     "productName": "轴承特钢",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.1933,
-    "correlation120d": -0.1177,
-    "correlation250d": 0.0278,
+    "correlation60d": 0.1168,
+    "correlation120d": -0.0119,
+    "correlation250d": -0.2098,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -665,9 +665,9 @@
     "formulaType": "spread",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": 0.0524,
-    "correlation120d": -0.001,
-    "correlation250d": -0.0152,
+    "correlation60d": -0.5955,
+    "correlation120d": -0.3176,
+    "correlation250d": 0.0408,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -676,9 +676,9 @@
     "formulaType": "spread",
     "productName": "PVC树脂",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.081,
-    "correlation120d": 0.0776,
-    "correlation250d": -0.0555,
+    "correlation60d": -0.1288,
+    "correlation120d": 0.1343,
+    "correlation250d": 0.1724,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -687,9 +687,9 @@
     "formulaType": "price",
     "productName": "四氧化三锰",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0982,
-    "correlation120d": 0.0762,
-    "correlation250d": -0.0909,
+    "correlation60d": 0.2157,
+    "correlation120d": 0.1113,
+    "correlation250d": 0.0889,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -698,9 +698,9 @@
     "formulaType": "price",
     "productName": "稀土",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0982,
-    "correlation120d": 0.0762,
-    "correlation250d": -0.0909,
+    "correlation60d": 0.2157,
+    "correlation120d": 0.1113,
+    "correlation250d": 0.0889,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -709,9 +709,9 @@
     "formulaType": "price",
     "productName": "永磁材料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0982,
-    "correlation120d": 0.0762,
-    "correlation250d": -0.0909,
+    "correlation60d": 0.2157,
+    "correlation120d": 0.1113,
+    "correlation250d": 0.0889,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -720,9 +720,9 @@
     "formulaType": "price",
     "productName": "PVC",
     "commodityName": "PVC(电石法,长三角)",
-    "correlation60d": 0.3499,
-    "correlation120d": 0.2449,
-    "correlation250d": 0.2472,
+    "correlation60d": 0.0208,
+    "correlation120d": 0.1567,
+    "correlation250d": 0.2991,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -731,9 +731,9 @@
     "formulaType": "price",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": -0.1907,
-    "correlation120d": 0.0263,
-    "correlation250d": -0.001,
+    "correlation60d": -0.2436,
+    "correlation120d": -0.4662,
+    "correlation250d": -0.2693,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -742,9 +742,9 @@
     "formulaType": "price",
     "productName": "粘胶短纤",
     "commodityName": "粘胶短纤(1.5D,38毫米)",
-    "correlation60d": -0.3206,
-    "correlation120d": -0.1524,
-    "correlation250d": -0.0953,
+    "correlation60d": -0.3337,
+    "correlation120d": -0.2072,
+    "correlation250d": -0.2928,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -753,9 +753,9 @@
     "formulaType": "price",
     "productName": "工业炸药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0001,
-    "correlation120d": -0.0577,
-    "correlation250d": -0.3026,
+    "correlation60d": -0.1598,
+    "correlation120d": -0.0339,
+    "correlation250d": -0.0289,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -764,9 +764,9 @@
     "formulaType": "price",
     "productName": "雷管",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0001,
-    "correlation120d": -0.0577,
-    "correlation250d": -0.3026,
+    "correlation60d": -0.1598,
+    "correlation120d": -0.0339,
+    "correlation250d": -0.0289,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -775,9 +775,9 @@
     "formulaType": "price",
     "productName": "爆破服务",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0001,
-    "correlation120d": -0.0577,
-    "correlation250d": -0.3026,
+    "correlation60d": -0.1598,
+    "correlation120d": -0.0339,
+    "correlation250d": -0.0289,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -786,9 +786,9 @@
     "formulaType": "price",
     "productName": "饲料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0233,
-    "correlation120d": 0.0857,
-    "correlation250d": 0.0479,
+    "correlation60d": 0.0794,
+    "correlation120d": 0.1423,
+    "correlation250d": 0.0288,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -797,9 +797,9 @@
     "formulaType": "price",
     "productName": "生猪",
     "commodityName": "生猪价格",
-    "correlation60d": 0.0011,
-    "correlation120d": -0.0485,
-    "correlation250d": -0.0034,
+    "correlation60d": -0.1694,
+    "correlation120d": 0.0238,
+    "correlation250d": -0.0186,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -808,9 +808,9 @@
     "formulaType": "price",
     "productName": "兽药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0233,
-    "correlation120d": 0.0857,
-    "correlation250d": 0.0479,
+    "correlation60d": 0.0794,
+    "correlation120d": 0.1423,
+    "correlation250d": 0.0288,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -819,9 +819,9 @@
     "formulaType": "price",
     "productName": "钛白粉",
     "commodityName": "钛白粉(金红石型,华东)",
-    "correlation60d": -0.1233,
-    "correlation120d": -0.1083,
-    "correlation250d": -0.0091,
+    "correlation60d": -0.4702,
+    "correlation120d": 0.0444,
+    "correlation250d": -0.0987,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -830,9 +830,9 @@
     "formulaType": "price",
     "productName": "磷酸铁的生产",
     "commodityName": "磷酸铁",
-    "correlation60d": 0.0539,
-    "correlation120d": 0.0516,
-    "correlation250d": -0.0079,
+    "correlation60d": -0.3944,
+    "correlation120d": 0.093,
+    "correlation250d": 0.0125,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -841,9 +841,9 @@
     "formulaType": "price",
     "productName": "销售",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1507,
-    "correlation120d": 0.0418,
-    "correlation250d": -0.0119,
+    "correlation60d": 0.0668,
+    "correlation120d": 0.0243,
+    "correlation250d": 0.1474,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -852,9 +852,9 @@
     "formulaType": "processing_fee",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0509,
-    "correlation120d": 0.0704,
-    "correlation250d": -0.1082,
+    "correlation60d": -0.0079,
+    "correlation120d": -0.0737,
+    "correlation250d": 0.0808,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -863,9 +863,9 @@
     "formulaType": "processing_fee",
     "productName": "乙二醇",
     "commodityName": "乙二醇(华东)",
-    "correlation60d": 0.018,
-    "correlation120d": 0.0723,
-    "correlation250d": 0.0662,
+    "correlation60d": -0.3718,
+    "correlation120d": 0.0398,
+    "correlation250d": 0.0537,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -874,9 +874,9 @@
     "formulaType": "processing_fee",
     "productName": "海绵钛",
     "commodityName": "海绵钛(0级)",
-    "correlation60d": -0.1341,
-    "correlation120d": -0.0435,
-    "correlation250d": -0.0397,
+    "correlation60d": -0.3877,
+    "correlation120d": -0.1477,
+    "correlation250d": -0.146,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -885,9 +885,9 @@
     "formulaType": "processing_fee",
     "productName": "电解镍",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.2676,
-    "correlation120d": -0.2112,
-    "correlation250d": -0.0637,
+    "correlation60d": -0.2959,
+    "correlation120d": -0.3377,
+    "correlation250d": -0.261,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -896,9 +896,9 @@
     "formulaType": "byproduct_composite",
     "productName": "黄金",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.0987,
-    "correlation120d": 0.0176,
-    "correlation250d": 0.0327,
+    "correlation60d": 0.1164,
+    "correlation120d": 0.2558,
+    "correlation250d": 0.0273,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -907,9 +907,9 @@
     "formulaType": "byproduct_composite",
     "productName": "锑锭",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.0987,
-    "correlation120d": 0.0176,
-    "correlation250d": 0.0327,
+    "correlation60d": 0.1164,
+    "correlation120d": 0.2558,
+    "correlation250d": 0.0273,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -918,9 +918,9 @@
     "formulaType": "spread",
     "productName": "阴极铜",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.0636,
-    "correlation120d": -0.0407,
-    "correlation250d": -0.0378,
+    "correlation60d": -0.0887,
+    "correlation120d": -0.0072,
+    "correlation250d": -0.0203,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -929,9 +929,9 @@
     "formulaType": "spread",
     "productName": "环氧树脂",
     "commodityName": "环氧树脂(E51,华东)",
-    "correlation60d": -0.0925,
-    "correlation120d": -0.0498,
-    "correlation250d": -0.0369,
+    "correlation60d": -0.5058,
+    "correlation120d": -0.1664,
+    "correlation250d": -0.1139,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -940,9 +940,9 @@
     "formulaType": "price",
     "productName": "工业炸药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0697,
-    "correlation120d": 0.0469,
-    "correlation250d": 0.0167,
+    "correlation60d": -0.0695,
+    "correlation120d": -0.05,
+    "correlation250d": 0.0356,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -951,9 +951,9 @@
     "formulaType": "price",
     "productName": "雷管",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0697,
-    "correlation120d": 0.0469,
-    "correlation250d": 0.0167,
+    "correlation60d": -0.0695,
+    "correlation120d": -0.05,
+    "correlation250d": 0.0356,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -962,9 +962,9 @@
     "formulaType": "price",
     "productName": "风电",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0697,
-    "correlation120d": 0.0469,
-    "correlation250d": 0.0167,
+    "correlation60d": -0.0695,
+    "correlation120d": -0.05,
+    "correlation250d": 0.0356,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -973,9 +973,9 @@
     "formulaType": "byproduct_composite",
     "productName": "黄金",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.122,
-    "correlation120d": -0.0828,
-    "correlation250d": -0.1198,
+    "correlation60d": -0.2852,
+    "correlation120d": -0.182,
+    "correlation250d": -0.1106,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -984,9 +984,9 @@
     "formulaType": "byproduct_composite",
     "productName": "白银",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.122,
-    "correlation120d": -0.0828,
-    "correlation250d": -0.1198,
+    "correlation60d": -0.2852,
+    "correlation120d": -0.182,
+    "correlation250d": -0.1106,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -995,9 +995,9 @@
     "formulaType": "byproduct_composite",
     "productName": "电解铜",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.122,
-    "correlation120d": -0.0828,
-    "correlation250d": -0.1198,
+    "correlation60d": -0.2852,
+    "correlation120d": -0.182,
+    "correlation250d": -0.1106,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1006,9 +1006,9 @@
     "formulaType": "price",
     "productName": "草铵膦",
     "commodityName": "草铵膦",
-    "correlation60d": 0.0027,
-    "correlation120d": 0.0092,
-    "correlation250d": 0.0156,
+    "correlation60d": -0.0509,
+    "correlation120d": -0.0567,
+    "correlation250d": 0.0244,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1017,9 +1017,9 @@
     "formulaType": "price",
     "productName": "氯氟吡氧乙酸",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1287,
-    "correlation120d": -0.0209,
-    "correlation250d": -0.0376,
+    "correlation60d": -0.1509,
+    "correlation120d": -0.2121,
+    "correlation250d": -0.1041,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1028,9 +1028,9 @@
     "formulaType": "price",
     "productName": "毒莠定",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1287,
-    "correlation120d": -0.0209,
-    "correlation250d": -0.0376,
+    "correlation60d": -0.1509,
+    "correlation120d": -0.2121,
+    "correlation250d": -0.1041,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1061,9 +1061,9 @@
     "formulaType": "price",
     "productName": "甲乙酮",
     "commodityName": "丁酮(华东)",
-    "correlation60d": 0.1544,
-    "correlation120d": 0.1426,
-    "correlation250d": 0.0749,
+    "correlation60d": -0.2601,
+    "correlation120d": 0.2049,
+    "correlation250d": 0.1343,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1072,9 +1072,9 @@
     "formulaType": "price",
     "productName": "顺酐",
     "commodityName": "顺酐(华东)",
-    "correlation60d": -0.1261,
-    "correlation120d": -0.0812,
-    "correlation250d": -0.104,
+    "correlation60d": -0.2969,
+    "correlation120d": -0.1292,
+    "correlation250d": -0.0703,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1083,9 +1083,9 @@
     "formulaType": "price",
     "productName": "丁二烯",
     "commodityName": "丁二烯(华东)",
-    "correlation60d": 0.1096,
-    "correlation120d": -0.0938,
-    "correlation250d": -0.1222,
+    "correlation60d": -0.4197,
+    "correlation120d": 0.0867,
+    "correlation250d": 0.0905,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1094,9 +1094,9 @@
     "formulaType": "processing_fee",
     "productName": "液氧",
     "commodityName": "液氧(江苏)",
-    "correlation60d": -0.1585,
-    "correlation120d": 0.045,
-    "correlation250d": -0.0082,
+    "correlation60d": 0.4681,
+    "correlation120d": -0.0449,
+    "correlation250d": -0.1612,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1105,9 +1105,9 @@
     "formulaType": "processing_fee",
     "productName": "液氮",
     "commodityName": "液氮(江苏)",
-    "correlation60d": -0.2427,
-    "correlation120d": -0.0977,
-    "correlation250d": -0.0935,
+    "correlation60d": 0.2088,
+    "correlation120d": -0.2937,
+    "correlation250d": -0.2339,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1116,9 +1116,9 @@
     "formulaType": "processing_fee",
     "productName": "液氩",
     "commodityName": "液氩(河北)",
-    "correlation60d": 0.1538,
-    "correlation120d": 0.1007,
-    "correlation250d": -0.0314,
+    "correlation60d": 0.7481,
+    "correlation120d": 0.31,
+    "correlation250d": 0.1871,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1127,9 +1127,9 @@
     "formulaType": "price",
     "productName": "草甘膦",
     "commodityName": "草甘膦(华东)",
-    "correlation60d": 0.1508,
-    "correlation120d": 0.0411,
-    "correlation250d": 0.034,
+    "correlation60d": -0.0177,
+    "correlation120d": 0.1881,
+    "correlation250d": 0.0964,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1138,9 +1138,9 @@
     "formulaType": "price",
     "productName": "敌草快",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1253,
-    "correlation120d": -0.1003,
-    "correlation250d": -0.0267,
+    "correlation60d": -0.3169,
+    "correlation120d": -0.2185,
+    "correlation250d": -0.1211,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1149,9 +1149,9 @@
     "formulaType": "price",
     "productName": "有机硅",
     "commodityName": "有机硅中间体库存",
-    "correlation60d": -0.177,
-    "correlation120d": -0.1581,
-    "correlation250d": -0.0435,
+    "correlation60d": -0.228,
+    "correlation120d": -0.22,
+    "correlation250d": -0.1963,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1160,9 +1160,9 @@
     "formulaType": "spread",
     "productName": "PTA",
     "commodityName": "PTA(华东)",
-    "correlation60d": -0.0634,
-    "correlation120d": -0.0667,
-    "correlation250d": 0.0216,
+    "correlation60d": -0.3232,
+    "correlation120d": 0.0334,
+    "correlation250d": 0.1162,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1171,9 +1171,9 @@
     "formulaType": "spread",
     "productName": "聚酯",
     "commodityName": "聚酯切片(瓶级)",
-    "correlation60d": -0.0102,
-    "correlation120d": 0.0721,
-    "correlation250d": 0.1341,
+    "correlation60d": -0.306,
+    "correlation120d": 0.1422,
+    "correlation250d": 0.0274,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1182,9 +1182,9 @@
     "formulaType": "spread",
     "productName": "PX",
     "commodityName": "PX(华东)",
-    "correlation60d": -0.0858,
-    "correlation120d": 0.0094,
-    "correlation250d": -0.0452,
+    "correlation60d": -0.2667,
+    "correlation120d": 0.0061,
+    "correlation250d": -0.1687,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1193,9 +1193,9 @@
     "formulaType": "price",
     "productName": "甜味剂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0559,
-    "correlation120d": -0.0008,
-    "correlation250d": -0.0594,
+    "correlation60d": 0.0651,
+    "correlation120d": 0.0713,
+    "correlation250d": 0.0446,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1204,9 +1204,9 @@
     "formulaType": "price",
     "productName": "三氯蔗糖",
     "commodityName": "三氯蔗糖",
-    "correlation60d": 0.1979,
-    "correlation120d": 0.2296,
-    "correlation250d": 0.2416,
+    "correlation60d": 0.3697,
+    "correlation120d": 0.5277,
+    "correlation250d": 0.3508,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1215,9 +1215,9 @@
     "formulaType": "price",
     "productName": "甲乙基麦芽酚",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0559,
-    "correlation120d": -0.0008,
-    "correlation250d": -0.0594,
+    "correlation60d": 0.0651,
+    "correlation120d": 0.0713,
+    "correlation250d": 0.0446,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1226,9 +1226,9 @@
     "formulaType": "price",
     "productName": "表面活性剂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0416,
-    "correlation120d": 0.0265,
-    "correlation250d": 0.0099,
+    "correlation60d": 0.0682,
+    "correlation120d": 0.0861,
+    "correlation250d": 0.0554,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1237,9 +1237,9 @@
     "formulaType": "price",
     "productName": "油脂化工",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0416,
-    "correlation120d": 0.0265,
-    "correlation250d": 0.0099,
+    "correlation60d": 0.0682,
+    "correlation120d": 0.0861,
+    "correlation250d": 0.0554,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1248,9 +1248,9 @@
     "formulaType": "price",
     "productName": "磺酸",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0416,
-    "correlation120d": 0.0265,
-    "correlation250d": 0.0099,
+    "correlation60d": 0.0682,
+    "correlation120d": 0.0861,
+    "correlation250d": 0.0554,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1259,9 +1259,9 @@
     "formulaType": "price",
     "productName": "丙烯酸",
     "commodityName": "丙烯酸(华东)",
-    "correlation60d": -0.0785,
-    "correlation120d": -0.1232,
-    "correlation250d": 0.0897,
+    "correlation60d": -0.0512,
+    "correlation120d": -0.2197,
+    "correlation250d": 0.189,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1270,9 +1270,9 @@
     "formulaType": "price",
     "productName": "丙烯酸酯",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.074,
-    "correlation120d": -0.0068,
-    "correlation250d": -0.0333,
+    "correlation60d": 0.0659,
+    "correlation120d": 0.0012,
+    "correlation250d": -0.0514,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1281,9 +1281,9 @@
     "formulaType": "price",
     "productName": "C3产品",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.074,
-    "correlation120d": -0.0068,
-    "correlation250d": -0.0333,
+    "correlation60d": 0.0659,
+    "correlation120d": 0.0012,
+    "correlation250d": -0.0514,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1292,9 +1292,9 @@
     "formulaType": "processing_fee",
     "productName": "乳化炸药",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.0195,
-    "correlation120d": 0.0058,
-    "correlation250d": -0.0368,
+    "correlation60d": 0.1757,
+    "correlation120d": 0.2214,
+    "correlation250d": 0.0233,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1303,9 +1303,9 @@
     "formulaType": "processing_fee",
     "productName": "硝酸铵",
     "commodityName": "硝酸铵(山东)",
-    "correlation60d": 0.0566,
-    "correlation120d": 0.0521,
-    "correlation250d": 0.061,
+    "correlation60d": -0.3493,
+    "correlation120d": -0.4501,
+    "correlation250d": -0.0187,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1314,9 +1314,9 @@
     "formulaType": "price",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": 0.0174,
-    "correlation120d": 0.0587,
-    "correlation250d": -0.0136,
+    "correlation60d": -0.2721,
+    "correlation120d": -0.1883,
+    "correlation250d": -0.0084,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1325,9 +1325,9 @@
     "formulaType": "price",
     "productName": "液氯",
     "commodityName": "液氯(山东)",
-    "correlation60d": 0.1143,
-    "correlation120d": 0.0965,
-    "correlation250d": 0.0433,
+    "correlation60d": -0.2606,
+    "correlation120d": -0.0473,
+    "correlation250d": 0.2003,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1336,9 +1336,9 @@
     "formulaType": "price",
     "productName": "双氧水",
     "commodityName": "双氧水(27.5%，山东)",
-    "correlation60d": -0.0152,
-    "correlation120d": -0.0289,
-    "correlation250d": -0.0104,
+    "correlation60d": -0.3943,
+    "correlation120d": -0.0008,
+    "correlation250d": -0.0286,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1347,9 +1347,9 @@
     "formulaType": "price",
     "productName": "工业炸药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0624,
-    "correlation120d": 0.0072,
-    "correlation250d": -0.063,
+    "correlation60d": 0.2115,
+    "correlation120d": -0.0015,
+    "correlation250d": 0.0285,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1358,9 +1358,9 @@
     "formulaType": "price",
     "productName": "硝酸铵",
     "commodityName": "硝酸铵(山东)",
-    "correlation60d": 0.0263,
-    "correlation120d": 0.0209,
-    "correlation250d": 0.0013,
+    "correlation60d": -0.5768,
+    "correlation120d": -0.3369,
+    "correlation250d": -0.0181,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1369,9 +1369,9 @@
     "formulaType": "price",
     "productName": "复合肥",
     "commodityName": "复合肥",
-    "correlation60d": -0.2994,
-    "correlation120d": 0.1279,
-    "correlation250d": 0.0238,
+    "correlation60d": -0.5189,
+    "correlation120d": 0.2031,
+    "correlation250d": -0.1837,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1380,9 +1380,9 @@
     "formulaType": "spread",
     "productName": "箱板纸",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.2965,
-    "correlation120d": -0.2063,
-    "correlation250d": -0.0481,
+    "correlation60d": -0.6031,
+    "correlation120d": -0.418,
+    "correlation250d": -0.2427,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1391,9 +1391,9 @@
     "formulaType": "spread",
     "productName": "瓦楞纸",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.2965,
-    "correlation120d": -0.2063,
-    "correlation250d": -0.0481,
+    "correlation60d": -0.6031,
+    "correlation120d": -0.418,
+    "correlation250d": -0.2427,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1402,9 +1402,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.063,
-    "correlation120d": -0.0813,
-    "correlation250d": 0.0203,
+    "correlation60d": -0.0657,
+    "correlation120d": 0.0594,
+    "correlation250d": -0.0209,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1413,9 +1413,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.2388,
-    "correlation120d": 0.1841,
-    "correlation250d": -0.0232,
+    "correlation60d": -0.3399,
+    "correlation120d": 0.2884,
+    "correlation250d": 0.2742,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1424,9 +1424,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0133,
-    "correlation120d": 0.0285,
-    "correlation250d": -0.1043,
+    "correlation60d": -0.526,
+    "correlation120d": -0.1019,
+    "correlation250d": -0.0095,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1435,9 +1435,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.1384,
-    "correlation120d": -0.0741,
-    "correlation250d": -0.0804,
+    "correlation60d": -0.2313,
+    "correlation120d": 0.0156,
+    "correlation250d": -0.0551,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1446,9 +1446,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0974,
-    "correlation120d": -0.0192,
-    "correlation250d": -0.004,
+    "correlation60d": 0.2778,
+    "correlation120d": 0.3338,
+    "correlation250d": -0.0073,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1457,9 +1457,9 @@
     "formulaType": "price",
     "productName": "有机颜料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0046,
-    "correlation120d": 0.0531,
-    "correlation250d": 0.0388,
+    "correlation60d": 0.1264,
+    "correlation120d": -0.0381,
+    "correlation250d": -0.0177,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1468,9 +1468,9 @@
     "formulaType": "price",
     "productName": "高性能材料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0046,
-    "correlation120d": 0.0531,
-    "correlation250d": 0.0388,
+    "correlation60d": 0.1264,
+    "correlation120d": -0.0381,
+    "correlation250d": -0.0177,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1479,9 +1479,9 @@
     "formulaType": "price",
     "productName": "中间体",
     "commodityName": "有机硅中间体库存",
-    "correlation60d": 0.1337,
-    "correlation120d": -0.0673,
-    "correlation250d": -0.2403,
+    "correlation60d": 0.3626,
+    "correlation120d": 0.2136,
+    "correlation250d": 0.1018,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1490,9 +1490,9 @@
     "formulaType": "price",
     "productName": "甲醛",
     "commodityName": "甲醛(河北)",
-    "correlation60d": 0.0029,
-    "correlation120d": -0.0065,
-    "correlation250d": 0.0132,
+    "correlation60d": 0.3913,
+    "correlation120d": 0.3299,
+    "correlation250d": -0.0188,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1501,9 +1501,9 @@
     "formulaType": "price",
     "productName": "多聚甲醛",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0745,
-    "correlation120d": 0.029,
-    "correlation250d": 0.0642,
+    "correlation60d": -0.2427,
+    "correlation120d": -0.2003,
+    "correlation250d": -0.0955,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1512,9 +1512,9 @@
     "formulaType": "price",
     "productName": "氯化物",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0745,
-    "correlation120d": 0.029,
-    "correlation250d": 0.0642,
+    "correlation60d": -0.2427,
+    "correlation120d": -0.2003,
+    "correlation250d": -0.0955,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1523,9 +1523,9 @@
     "formulaType": "price",
     "productName": "金",
     "commodityName": "金红石(87%,海南)",
-    "correlation60d": -0.0312,
-    "correlation120d": 0.0004,
-    "correlation250d": 0.0319,
+    "correlation60d": -0.2182,
+    "correlation120d": -0.1775,
+    "correlation250d": -0.0172,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1534,9 +1534,9 @@
     "formulaType": "price",
     "productName": "金",
     "commodityName": "金红石(87%,海南)",
-    "correlation60d": -0.0583,
-    "correlation120d": -0.1211,
-    "correlation250d": -0.023,
+    "correlation60d": 0.3329,
+    "correlation120d": -0.0422,
+    "correlation250d": -0.0453,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1545,9 +1545,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0003,
-    "correlation120d": 0.0328,
-    "correlation250d": -0.1029,
+    "correlation60d": -0.4181,
+    "correlation120d": -0.0444,
+    "correlation250d": 0.0542,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1556,9 +1556,9 @@
     "formulaType": "price",
     "productName": "瓶级聚酯切片",
     "commodityName": "聚酯切片(瓶级)",
-    "correlation60d": 0.3947,
-    "correlation120d": 0.3247,
-    "correlation250d": 0.2476,
+    "correlation60d": -0.4966,
+    "correlation120d": 0.3414,
+    "correlation250d": 0.4189,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1567,9 +1567,9 @@
     "formulaType": "price",
     "productName": "原油",
     "commodityName": "WTI期货(主连合约)",
-    "correlation60d": 0.3193,
-    "correlation120d": 0.2855,
-    "correlation250d": 0.1646,
+    "correlation60d": 0.1456,
+    "correlation120d": 0.3429,
+    "correlation250d": 0.3244,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1578,9 +1578,9 @@
     "formulaType": "price",
     "productName": "汽油",
     "commodityName": "中国92#汽油(镇海炼化)",
-    "correlation60d": -0.1231,
-    "correlation120d": -0.1287,
-    "correlation250d": -0.0578,
+    "correlation60d": -0.2991,
+    "correlation120d": -0.0907,
+    "correlation250d": -0.1765,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1589,9 +1589,9 @@
     "formulaType": "price",
     "productName": "柴油",
     "commodityName": "中国0#柴油(镇海炼化)",
-    "correlation60d": -0.1233,
-    "correlation120d": -0.1294,
-    "correlation250d": -0.0578,
+    "correlation60d": -0.2978,
+    "correlation120d": -0.0905,
+    "correlation250d": -0.1767,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1600,9 +1600,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.2356,
-    "correlation120d": -0.1113,
-    "correlation250d": -0.0356,
+    "correlation60d": -0.1053,
+    "correlation120d": 0.061,
+    "correlation250d": -0.0921,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1611,9 +1611,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0998,
-    "correlation120d": 0.0363,
-    "correlation250d": 0.0099,
+    "correlation60d": -0.4723,
+    "correlation120d": -0.3384,
+    "correlation250d": -0.086,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1622,9 +1622,9 @@
     "formulaType": "price",
     "productName": "PVA",
     "commodityName": "PVA(1799,四川维尼纶)",
-    "correlation60d": -0.1565,
-    "correlation120d": -0.1567,
-    "correlation250d": -0.0599,
+    "correlation60d": 0.2698,
+    "correlation120d": -0.308,
+    "correlation250d": -0.1666,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1633,9 +1633,9 @@
     "formulaType": "price",
     "productName": "醋酸乙烯",
     "commodityName": "醋酸乙烯(华东)",
-    "correlation60d": 0.0862,
-    "correlation120d": 0.1107,
-    "correlation250d": 0.0924,
+    "correlation60d": 0.3626,
+    "correlation120d": 0.0152,
+    "correlation250d": 0.0007,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1644,9 +1644,9 @@
     "formulaType": "price",
     "productName": "水泥",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0012,
-    "correlation120d": 0.029,
-    "correlation250d": -0.1233,
+    "correlation60d": 0.2111,
+    "correlation120d": 0.1298,
+    "correlation250d": 0.0277,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1655,9 +1655,9 @@
     "formulaType": "price",
     "productName": "稀土",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1236,
-    "correlation120d": 0.1196,
-    "correlation250d": 0.0242,
+    "correlation60d": 0.0841,
+    "correlation120d": 0.1763,
+    "correlation250d": 0.0895,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1666,9 +1666,9 @@
     "formulaType": "price",
     "productName": "稀土永磁",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1236,
-    "correlation120d": 0.1196,
-    "correlation250d": 0.0242,
+    "correlation60d": 0.0841,
+    "correlation120d": 0.1763,
+    "correlation250d": 0.0895,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1677,9 +1677,9 @@
     "formulaType": "price",
     "productName": "抛光粉",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1236,
-    "correlation120d": 0.1196,
-    "correlation250d": 0.0242,
+    "correlation60d": 0.0841,
+    "correlation120d": 0.1763,
+    "correlation250d": 0.0895,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1688,9 +1688,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0967,
-    "correlation120d": -0.0764,
-    "correlation250d": -0.0406,
+    "correlation60d": -0.1429,
+    "correlation120d": -0.094,
+    "correlation250d": -0.1027,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1699,9 +1699,9 @@
     "formulaType": "price",
     "productName": "制冷剂",
     "commodityName": "R32(浙江)",
-    "correlation60d": 0.108,
-    "correlation120d": 0.246,
-    "correlation250d": 0.2307,
+    "correlation60d": -0.2072,
+    "correlation120d": -0.2476,
+    "correlation250d": -0.1629,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1710,9 +1710,9 @@
     "formulaType": "price",
     "productName": "含氟聚合物",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1256,
-    "correlation120d": -0.0753,
-    "correlation250d": 0.0371,
+    "correlation60d": 0.0627,
+    "correlation120d": -0.1004,
+    "correlation250d": -0.1399,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1721,9 +1721,9 @@
     "formulaType": "price",
     "productName": "基础化工",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1256,
-    "correlation120d": -0.0753,
-    "correlation250d": 0.0371,
+    "correlation60d": 0.0627,
+    "correlation120d": -0.1004,
+    "correlation250d": -0.1399,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1732,9 +1732,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0311,
-    "correlation120d": -0.0172,
-    "correlation250d": -0.0106,
+    "correlation60d": 0.3954,
+    "correlation120d": 0.2841,
+    "correlation250d": 0.0817,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1743,9 +1743,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0052,
-    "correlation120d": 0.0458,
-    "correlation250d": -0.0574,
+    "correlation60d": -0.4824,
+    "correlation120d": -0.1231,
+    "correlation250d": 0.0236,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1754,9 +1754,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0172,
-    "correlation120d": 0.0539,
-    "correlation250d": -0.0067,
+    "correlation60d": 0.0809,
+    "correlation120d": 0.0011,
+    "correlation250d": -0.0029,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1765,9 +1765,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0683,
-    "correlation120d": 0.0578,
-    "correlation250d": -0.0638,
+    "correlation60d": -0.3376,
+    "correlation120d": -0.1188,
+    "correlation250d": 0.1001,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1776,9 +1776,9 @@
     "formulaType": "price",
     "productName": "TDI",
     "commodityName": "TDI(T80,华东)",
-    "correlation60d": 0.3025,
-    "correlation120d": 0.2642,
-    "correlation250d": 0.3244,
+    "correlation60d": -0.106,
+    "correlation120d": 0.1517,
+    "correlation250d": 0.0778,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1787,9 +1787,9 @@
     "formulaType": "price",
     "productName": "聚碳酸酯",
     "commodityName": "聚碳酸酯PC(科思创2805,华东)",
-    "correlation60d": 0.0256,
-    "correlation120d": 0.0303,
-    "correlation250d": 0.0662,
+    "correlation60d": -0.4749,
+    "correlation120d": 0.0434,
+    "correlation250d": 0.0305,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1798,9 +1798,9 @@
     "formulaType": "price",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": -0.0631,
-    "correlation120d": 0.0268,
-    "correlation250d": 0.0837,
+    "correlation60d": -0.1376,
+    "correlation120d": -0.1057,
+    "correlation250d": -0.1053,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1809,9 +1809,9 @@
     "formulaType": "price",
     "productName": "白糖",
     "commodityName": "白糖",
-    "correlation60d": 0.073,
-    "correlation120d": 0.08,
-    "correlation250d": -0.0065,
+    "correlation60d": 0.0193,
+    "correlation120d": -0.0069,
+    "correlation250d": 0.109,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1820,9 +1820,9 @@
     "formulaType": "price",
     "productName": "棉花",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.3511,
-    "correlation120d": 0.2875,
-    "correlation250d": 0.1101,
+    "correlation60d": 0.4599,
+    "correlation120d": 0.3727,
+    "correlation250d": 0.3412,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1831,9 +1831,9 @@
     "formulaType": "price",
     "productName": "焦精煤",
     "commodityName": "焦精煤(太原)",
-    "correlation60d": -0.0713,
-    "correlation120d": -0.0307,
-    "correlation250d": -0.025,
+    "correlation60d": 0.1283,
+    "correlation120d": 0.1012,
+    "correlation250d": 0.0142,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1842,9 +1842,9 @@
     "formulaType": "price",
     "productName": "蛋氨酸",
     "commodityName": "固体蛋氨酸(山东)",
-    "correlation60d": -0.1518,
-    "correlation120d": -0.1109,
-    "correlation250d": -0.0742,
+    "correlation60d": -0.3472,
+    "correlation120d": -0.164,
+    "correlation250d": -0.1576,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1853,9 +1853,9 @@
     "formulaType": "price",
     "productName": "维生素A",
     "commodityName": "维生素A(50万IU/g,国产)",
-    "correlation60d": -0.118,
-    "correlation120d": -0.0074,
-    "correlation250d": -0.0086,
+    "correlation60d": -0.2513,
+    "correlation120d": -0.0357,
+    "correlation250d": -0.132,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1864,9 +1864,9 @@
     "formulaType": "price",
     "productName": "维生素E",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0817,
-    "correlation120d": -0.0363,
-    "correlation250d": -0.0825,
+    "correlation60d": 0.0036,
+    "correlation120d": -0.0513,
+    "correlation250d": -0.096,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1875,9 +1875,9 @@
     "formulaType": "price",
     "productName": "蛋氨酸",
     "commodityName": "固体蛋氨酸(山东)",
-    "correlation60d": 0.3694,
-    "correlation120d": 0.2893,
-    "correlation250d": 0.2024,
+    "correlation60d": -0.0524,
+    "correlation120d": -0.0371,
+    "correlation250d": 0.3519,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1886,9 +1886,9 @@
     "formulaType": "price",
     "productName": "维生素A",
     "commodityName": "维生素A(50万IU/g,国产)",
-    "correlation60d": 0.2753,
-    "correlation120d": 0.1663,
-    "correlation250d": 0.1139,
+    "correlation60d": 0.3233,
+    "correlation120d": 0.3439,
+    "correlation250d": 0.251,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1897,9 +1897,9 @@
     "formulaType": "price",
     "productName": "维生素E",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0131,
-    "correlation120d": 0.0409,
-    "correlation250d": -0.0335,
+    "correlation60d": 0.1817,
+    "correlation120d": 0.1209,
+    "correlation250d": 0.0371,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1908,9 +1908,9 @@
     "formulaType": "byproduct_composite",
     "productName": "锡",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0707,
-    "correlation120d": 0.0336,
-    "correlation250d": -0.0406,
+    "correlation60d": 0.2045,
+    "correlation120d": 0.1483,
+    "correlation250d": 0.0382,
     "lastUpdated": "2026-09-11"
   },
   {
@@ -1919,9 +1919,9 @@
     "formulaType": "byproduct_composite",
     "productName": "锌",
     "commodityName": "代森锰锌",
-    "correlation60d": -0.0091,
-    "correlation120d": -0.0195,
-    "correlation250d": -0.0401,
+    "correlation60d": 0.2959,
+    "correlation120d": 0.2689,
+    "correlation250d": -0.016,
     "lastUpdated": "2026-09-11"
   },
   {
@@ -1930,9 +1930,9 @@
     "formulaType": "byproduct_composite",
     "productName": "锑",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0707,
-    "correlation120d": 0.0336,
-    "correlation250d": -0.0406,
+    "correlation60d": 0.2045,
+    "correlation120d": 0.1483,
+    "correlation250d": 0.0382,
     "lastUpdated": "2026-09-11"
   },
   {
@@ -1941,9 +1941,9 @@
     "formulaType": "price",
     "productName": "纯碱",
     "commodityName": "纯碱(轻质,华东)",
-    "correlation60d": 0.0463,
-    "correlation120d": 0.1462,
-    "correlation250d": 0.1008,
+    "correlation60d": -0.4061,
+    "correlation120d": -0.17,
+    "correlation250d": 0.0587,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1952,9 +1952,9 @@
     "formulaType": "price",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": 0.0027,
-    "correlation120d": -0.0104,
-    "correlation250d": 0.0526,
+    "correlation60d": -0.2221,
+    "correlation120d": 0.0092,
+    "correlation250d": 0.0383,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1963,9 +1963,9 @@
     "formulaType": "price",
     "productName": "PVC",
     "commodityName": "PVC(电石法,长三角)",
-    "correlation60d": 0.2276,
-    "correlation120d": 0.1964,
-    "correlation250d": 0.1952,
+    "correlation60d": -0.149,
+    "correlation120d": -0.1603,
+    "correlation250d": 0.158,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1974,9 +1974,9 @@
     "formulaType": "price",
     "productName": "染料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1106,
-    "correlation120d": -0.0725,
-    "correlation250d": -0.0424,
+    "correlation60d": -0.3292,
+    "correlation120d": -0.3207,
+    "correlation250d": -0.1072,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1985,9 +1985,9 @@
     "formulaType": "price",
     "productName": "助剂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1106,
-    "correlation120d": -0.0725,
-    "correlation250d": -0.0424,
+    "correlation60d": -0.3292,
+    "correlation120d": -0.3207,
+    "correlation250d": -0.1072,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -1996,9 +1996,9 @@
     "formulaType": "price",
     "productName": "中间体",
     "commodityName": "有机硅中间体库存",
-    "correlation60d": -0.0317,
-    "correlation120d": -0.0994,
-    "correlation250d": -0.052,
+    "correlation60d": 0.1178,
+    "correlation120d": 0.1523,
+    "correlation250d": 0.0204,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2007,9 +2007,9 @@
     "formulaType": "spread",
     "productName": "针叶浆",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.0946,
-    "correlation120d": -0.0652,
-    "correlation250d": -0.0992,
+    "correlation60d": -0.3492,
+    "correlation120d": -0.0277,
+    "correlation250d": -0.0836,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2018,9 +2018,9 @@
     "formulaType": "spread",
     "productName": "双胶纸",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.0946,
-    "correlation120d": -0.0652,
-    "correlation250d": -0.0992,
+    "correlation60d": -0.3492,
+    "correlation120d": -0.0277,
+    "correlation250d": -0.0836,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2029,9 +2029,9 @@
     "formulaType": "price",
     "productName": "制冷剂",
     "commodityName": "R32(浙江)",
-    "correlation60d": 0.0033,
-    "correlation120d": 0.1119,
-    "correlation250d": 0.0361,
+    "correlation60d": -0.2299,
+    "correlation120d": -0.2663,
+    "correlation250d": -0.1186,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2040,9 +2040,9 @@
     "formulaType": "price",
     "productName": "含氟聚合物",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0855,
-    "correlation120d": -0.0047,
-    "correlation250d": 0.0009,
+    "correlation60d": -0.0922,
+    "correlation120d": -0.125,
+    "correlation250d": -0.0759,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2051,9 +2051,9 @@
     "formulaType": "price",
     "productName": "电子特气",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0855,
-    "correlation120d": -0.0047,
-    "correlation250d": 0.0009,
+    "correlation60d": -0.0922,
+    "correlation120d": -0.125,
+    "correlation250d": -0.0759,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2062,9 +2062,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.1074,
-    "correlation120d": 0.0989,
-    "correlation250d": -0.0464,
+    "correlation60d": -0.0568,
+    "correlation120d": -0.021,
+    "correlation250d": 0.0193,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2073,9 +2073,9 @@
     "formulaType": "price",
     "productName": "稀土",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1389,
-    "correlation120d": 0.099,
-    "correlation250d": -0.0164,
+    "correlation60d": 0.2094,
+    "correlation120d": 0.0707,
+    "correlation250d": 0.0648,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2084,9 +2084,9 @@
     "formulaType": "price",
     "productName": "锆",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1389,
-    "correlation120d": 0.099,
-    "correlation250d": -0.0164,
+    "correlation60d": 0.2094,
+    "correlation120d": 0.0707,
+    "correlation250d": 0.0648,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2095,9 +2095,9 @@
     "formulaType": "price",
     "productName": "钛",
     "commodityName": "精四氯化钛(山东)",
-    "correlation60d": 0.0726,
-    "correlation120d": 0.0081,
-    "correlation250d": -0.0033,
+    "correlation60d": 0.056,
+    "correlation120d": 0.195,
+    "correlation250d": 0.1573,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2106,9 +2106,9 @@
     "formulaType": "price",
     "productName": "纯碱",
     "commodityName": "纯碱(轻质,华东)",
-    "correlation60d": 0.0979,
-    "correlation120d": 0.1689,
-    "correlation250d": 0.0449,
+    "correlation60d": -0.1581,
+    "correlation120d": 0.0191,
+    "correlation250d": 0.0557,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2117,9 +2117,9 @@
     "formulaType": "price",
     "productName": "粘胶短纤",
     "commodityName": "粘胶短纤(1.5D,38毫米)",
-    "correlation60d": -0.1613,
-    "correlation120d": -0.0201,
-    "correlation250d": -0.0262,
+    "correlation60d": -0.0582,
+    "correlation120d": 0.0254,
+    "correlation250d": -0.1917,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2128,9 +2128,9 @@
     "formulaType": "price",
     "productName": "PVC",
     "commodityName": "PVC(电石法,长三角)",
-    "correlation60d": -0.0077,
-    "correlation120d": 0.0858,
-    "correlation250d": 0.1593,
+    "correlation60d": -0.337,
+    "correlation120d": -0.2294,
+    "correlation250d": -0.0585,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2139,9 +2139,9 @@
     "formulaType": "spread",
     "productName": "醋酸",
     "commodityName": "醋酸(华东)",
-    "correlation60d": -0.0591,
-    "correlation120d": 0.2194,
-    "correlation250d": 0.1296,
+    "correlation60d": -0.084,
+    "correlation120d": -0.1071,
+    "correlation250d": -0.0891,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2150,9 +2150,9 @@
     "formulaType": "spread",
     "productName": "DMF",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.2618,
-    "correlation120d": 0.1875,
-    "correlation250d": 0.0977,
+    "correlation60d": 0.4245,
+    "correlation120d": 0.3201,
+    "correlation250d": 0.2685,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2161,9 +2161,9 @@
     "formulaType": "spread",
     "productName": "己二酸",
     "commodityName": "己二酸(华东)",
-    "correlation60d": 0.0065,
-    "correlation120d": 0.0698,
-    "correlation250d": -0.1014,
+    "correlation60d": 0.197,
+    "correlation120d": -0.0747,
+    "correlation250d": 0.0532,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2172,9 +2172,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.1388,
-    "correlation120d": -0.038,
-    "correlation250d": -0.0339,
+    "correlation60d": -0.4929,
+    "correlation120d": 0.0202,
+    "correlation250d": -0.0463,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2183,9 +2183,9 @@
     "formulaType": "byproduct_composite",
     "productName": "铂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0268,
-    "correlation120d": -0.0144,
-    "correlation250d": -0.0744,
+    "correlation60d": 0.1083,
+    "correlation120d": 0.0074,
+    "correlation250d": -0.0178,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2194,9 +2194,9 @@
     "formulaType": "byproduct_composite",
     "productName": "钯",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0268,
-    "correlation120d": -0.0144,
-    "correlation250d": -0.0744,
+    "correlation60d": 0.1083,
+    "correlation120d": 0.0074,
+    "correlation250d": -0.0178,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2205,9 +2205,9 @@
     "formulaType": "byproduct_composite",
     "productName": "铑",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0268,
-    "correlation120d": -0.0144,
-    "correlation250d": -0.0744,
+    "correlation60d": 0.1083,
+    "correlation120d": 0.0074,
+    "correlation250d": -0.0178,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2216,9 +2216,9 @@
     "formulaType": "price",
     "productName": "草甘膦",
     "commodityName": "草甘膦(华东)",
-    "correlation60d": 0.1375,
-    "correlation120d": 0.136,
-    "correlation250d": 0.0609,
+    "correlation60d": -0.1179,
+    "correlation120d": 0.2947,
+    "correlation250d": 0.1231,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2227,9 +2227,9 @@
     "formulaType": "price",
     "productName": "菊酯",
     "commodityName": "氯氰菊酯(江苏扬农)",
-    "correlation60d": -0.101,
-    "correlation120d": -0.0021,
-    "correlation250d": 0.0793,
+    "correlation60d": 0.0605,
+    "correlation120d": -0.4212,
+    "correlation250d": -0.0984,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2238,9 +2238,9 @@
     "formulaType": "price",
     "productName": "杀菌剂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0294,
-    "correlation120d": -0.0197,
-    "correlation250d": -0.0451,
+    "correlation60d": -0.0653,
+    "correlation120d": -0.0469,
+    "correlation250d": -0.0028,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2249,9 +2249,9 @@
     "formulaType": "price",
     "productName": "电解铜箔",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0898,
-    "correlation120d": -0.0102,
-    "correlation250d": 0.0342,
+    "correlation60d": -0.1297,
+    "correlation120d": -0.0948,
+    "correlation250d": -0.0884,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2260,9 +2260,9 @@
     "formulaType": "price",
     "productName": "电线电缆",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0898,
-    "correlation120d": -0.0102,
-    "correlation250d": 0.0342,
+    "correlation60d": -0.1297,
+    "correlation120d": -0.0948,
+    "correlation250d": -0.0884,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2271,9 +2271,9 @@
     "formulaType": "price",
     "productName": "高分子材料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0898,
-    "correlation120d": -0.0102,
-    "correlation250d": 0.0342,
+    "correlation60d": -0.1297,
+    "correlation120d": -0.0948,
+    "correlation250d": -0.0884,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2282,9 +2282,9 @@
     "formulaType": "price",
     "productName": "环氧树脂",
     "commodityName": "环氧树脂(E51,华东)",
-    "correlation60d": -0.0447,
-    "correlation120d": -0.0613,
-    "correlation250d": 0.0129,
+    "correlation60d": -0.3523,
+    "correlation120d": -0.2258,
+    "correlation250d": -0.0463,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2293,9 +2293,9 @@
     "formulaType": "price",
     "productName": "橡胶助剂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1012,
-    "correlation120d": 0.1209,
-    "correlation250d": 0.0076,
+    "correlation60d": 0.3489,
+    "correlation120d": 0.1017,
+    "correlation250d": 0.084,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2304,9 +2304,9 @@
     "formulaType": "price",
     "productName": "工程塑料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1012,
-    "correlation120d": 0.1209,
-    "correlation250d": 0.0076,
+    "correlation60d": 0.3489,
+    "correlation120d": 0.1017,
+    "correlation250d": 0.084,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2315,9 +2315,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0282,
-    "correlation120d": 0.0348,
-    "correlation250d": -0.0953,
+    "correlation60d": -0.1433,
+    "correlation120d": -0.0982,
+    "correlation250d": -0.011,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2326,9 +2326,9 @@
     "formulaType": "processing_fee",
     "productName": "钨",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0181,
-    "correlation120d": 0.0449,
-    "correlation250d": -0.0313,
+    "correlation60d": 0.2005,
+    "correlation120d": 0.0304,
+    "correlation250d": 0.0364,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2337,9 +2337,9 @@
     "formulaType": "processing_fee",
     "productName": "稀土",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0181,
-    "correlation120d": 0.0449,
-    "correlation250d": -0.0313,
+    "correlation60d": 0.2005,
+    "correlation120d": 0.0304,
+    "correlation250d": 0.0364,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2348,9 +2348,9 @@
     "formulaType": "processing_fee",
     "productName": "钴",
     "commodityName": "金属钴（安泰科,国产）",
-    "correlation60d": -0.0834,
-    "correlation120d": -0.0387,
-    "correlation250d": -0.0554,
+    "correlation60d": -0.2244,
+    "correlation120d": -0.2783,
+    "correlation250d": -0.1174,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2359,9 +2359,9 @@
     "formulaType": "processing_fee",
     "productName": "Brent原油",
     "commodityName": "Brent现货",
-    "correlation60d": 0.1874,
-    "correlation120d": 0.2936,
-    "correlation250d": 0.2738,
+    "correlation60d": 0.1623,
+    "correlation120d": 0.3174,
+    "correlation250d": 0.2627,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2370,9 +2370,9 @@
     "formulaType": "processing_fee",
     "productName": "中厚钢板",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.2754,
-    "correlation120d": 0.2028,
-    "correlation250d": 0.0347,
+    "correlation60d": 0.5358,
+    "correlation120d": 0.5603,
+    "correlation250d": 0.2345,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2381,9 +2381,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.01,
-    "correlation120d": 0.0094,
-    "correlation250d": 0.1346,
+    "correlation60d": -0.4955,
+    "correlation120d": -0.1275,
+    "correlation250d": 0.0435,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2392,9 +2392,9 @@
     "formulaType": "price",
     "productName": "金",
     "commodityName": "金红石(87%,海南)",
-    "correlation60d": -0.0734,
-    "correlation120d": -0.0237,
-    "correlation250d": 0.0297,
+    "correlation60d": -0.3171,
+    "correlation120d": -0.2971,
+    "correlation250d": -0.0745,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2403,9 +2403,9 @@
     "formulaType": "byproduct_composite",
     "productName": "金红石型钛白粉",
     "commodityName": "钛白粉(金红石型,华东)",
-    "correlation60d": 0.0724,
-    "correlation120d": 0.0349,
-    "correlation250d": 0.079,
+    "correlation60d": -0.4429,
+    "correlation120d": 0.3722,
+    "correlation250d": 0.0731,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2414,9 +2414,9 @@
     "formulaType": "byproduct_composite",
     "productName": "磷酸二铵",
     "commodityName": "磷酸二铵(64%,湖北)",
-    "correlation60d": -0.147,
-    "correlation120d": -0.0497,
-    "correlation250d": -0.0337,
+    "correlation60d": 0.1833,
+    "correlation120d": -0.2614,
+    "correlation250d": -0.2921,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2425,9 +2425,9 @@
     "formulaType": "price",
     "productName": "甲醇原料",
     "commodityName": "甲醇(华东)",
-    "correlation60d": -0.0587,
-    "correlation120d": 0.0101,
-    "correlation250d": -0.0826,
+    "correlation60d": -0.4875,
+    "correlation120d": 0.0318,
+    "correlation250d": 0.012,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2436,9 +2436,9 @@
     "formulaType": "spread",
     "productName": "白糖现货",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.1024,
-    "correlation120d": 0.1285,
-    "correlation250d": 0.0942,
+    "correlation60d": 0.2627,
+    "correlation120d": 0.3594,
+    "correlation250d": 0.1833,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2447,9 +2447,9 @@
     "formulaType": "spread",
     "productName": "原糖进口成本",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.1024,
-    "correlation120d": 0.1285,
-    "correlation250d": 0.0942,
+    "correlation60d": 0.2627,
+    "correlation120d": 0.3594,
+    "correlation250d": 0.1833,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2458,9 +2458,9 @@
     "formulaType": "byproduct_composite",
     "productName": "醋酸",
     "commodityName": "醋酸(华东)",
-    "correlation60d": 0.0141,
-    "correlation120d": 0.2321,
-    "correlation250d": 0.1779,
+    "correlation60d": -0.0551,
+    "correlation120d": 0.4274,
+    "correlation250d": 0.5339,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2469,9 +2469,9 @@
     "formulaType": "byproduct_composite",
     "productName": "氯碱",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0503,
-    "correlation120d": 0.0063,
-    "correlation250d": 0.0068,
+    "correlation60d": 0.0092,
+    "correlation120d": 0.0183,
+    "correlation250d": -0.0366,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2480,9 +2480,9 @@
     "formulaType": "byproduct_composite",
     "productName": "硫酸",
     "commodityName": "硫酸(98%,长三角)",
-    "correlation60d": 0.1537,
-    "correlation120d": 0.0485,
-    "correlation250d": 0.0654,
+    "correlation60d": 0.0,
+    "correlation120d": -0.0999,
+    "correlation250d": 0.2395,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2491,9 +2491,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0067,
-    "correlation120d": -0.0093,
-    "correlation250d": -0.0383,
+    "correlation60d": -0.0378,
+    "correlation120d": 0.2235,
+    "correlation250d": 0.0386,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2502,9 +2502,9 @@
     "formulaType": "byproduct_composite",
     "productName": "味精",
     "commodityName": "味精(国内)",
-    "correlation60d": 0.0356,
-    "correlation120d": 0.6388,
-    "correlation250d": 0.6388,
+    "correlation60d": 0.4457,
+    "correlation120d": 0.0302,
+    "correlation250d": -0.0278,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2513,9 +2513,9 @@
     "formulaType": "byproduct_composite",
     "productName": "核苷酸",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0761,
-    "correlation120d": 0.0584,
-    "correlation250d": 0.2286,
+    "correlation60d": -0.081,
+    "correlation120d": -0.0984,
+    "correlation250d": -0.1085,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2524,9 +2524,9 @@
     "formulaType": "byproduct_composite",
     "productName": "原料药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0761,
-    "correlation120d": 0.0584,
-    "correlation250d": 0.2286,
+    "correlation60d": -0.081,
+    "correlation120d": -0.0984,
+    "correlation250d": -0.1085,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2535,9 +2535,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.1386,
-    "correlation120d": 0.143,
-    "correlation250d": -0.0797,
+    "correlation60d": 0.6637,
+    "correlation120d": 0.3275,
+    "correlation250d": 0.0957,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2557,9 +2557,9 @@
     "formulaType": "price",
     "productName": "苯酚",
     "commodityName": "苯酚(华东)",
-    "correlation60d": -0.0564,
-    "correlation120d": -0.0129,
-    "correlation250d": 0.0442,
+    "correlation60d": -0.1644,
+    "correlation120d": -0.0873,
+    "correlation250d": -0.0352,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2568,9 +2568,9 @@
     "formulaType": "price",
     "productName": "丙酮",
     "commodityName": "丙酮(华东)",
-    "correlation60d": -0.1261,
-    "correlation120d": -0.0293,
-    "correlation250d": 0.0118,
+    "correlation60d": -0.469,
+    "correlation120d": -0.2961,
+    "correlation250d": -0.1258,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2579,9 +2579,9 @@
     "formulaType": "price",
     "productName": "双酚A",
     "commodityName": "双酚A(华东)",
-    "correlation60d": -0.1525,
-    "correlation120d": -0.1,
-    "correlation250d": -0.0843,
+    "correlation60d": -0.6412,
+    "correlation120d": -0.4228,
+    "correlation250d": -0.1474,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2590,9 +2590,9 @@
     "formulaType": "price",
     "productName": "锌",
     "commodityName": "代森锰锌",
-    "correlation60d": 0.0026,
-    "correlation120d": 0.0304,
-    "correlation250d": 0.0197,
+    "correlation60d": 0.1946,
+    "correlation120d": 0.209,
+    "correlation250d": -0.0632,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2601,9 +2601,9 @@
     "formulaType": "price",
     "productName": "铟",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0509,
-    "correlation120d": -0.021,
-    "correlation250d": 0.0113,
+    "correlation60d": 0.1185,
+    "correlation120d": -0.0416,
+    "correlation250d": -0.0438,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2612,9 +2612,9 @@
     "formulaType": "price",
     "productName": "金银",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.0509,
-    "correlation120d": -0.021,
-    "correlation250d": 0.0113,
+    "correlation60d": 0.1185,
+    "correlation120d": -0.0416,
+    "correlation250d": -0.0438,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2623,9 +2623,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.1793,
-    "correlation120d": -0.2266,
-    "correlation250d": -0.0908,
+    "correlation60d": -0.4369,
+    "correlation120d": 0.0125,
+    "correlation250d": -0.1131,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2634,9 +2634,9 @@
     "formulaType": "price",
     "productName": "铌",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1767,
-    "correlation120d": 0.1516,
-    "correlation250d": 0.0272,
+    "correlation60d": -0.1971,
+    "correlation120d": -0.0623,
+    "correlation250d": 0.1787,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2645,9 +2645,9 @@
     "formulaType": "price",
     "productName": "铜",
     "commodityName": "铜箔（电池级,8μm）",
-    "correlation60d": -0.0395,
-    "correlation120d": -0.0242,
-    "correlation250d": -0.0278,
+    "correlation60d": -0.1782,
+    "correlation120d": -0.1975,
+    "correlation250d": -0.0298,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2656,9 +2656,9 @@
     "formulaType": "price",
     "productName": "铁矿石",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1767,
-    "correlation120d": 0.1516,
-    "correlation250d": 0.0272,
+    "correlation60d": -0.1971,
+    "correlation120d": -0.0623,
+    "correlation250d": 0.1787,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2667,9 +2667,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0893,
-    "correlation120d": 0.0695,
-    "correlation250d": 0.1547,
+    "correlation60d": -0.0875,
+    "correlation120d": -0.0103,
+    "correlation250d": 0.0341,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2678,9 +2678,9 @@
     "formulaType": "price",
     "productName": "聚乙烯煤制",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.3012,
-    "correlation120d": 0.2266,
-    "correlation250d": 0.0934,
+    "correlation60d": 0.3856,
+    "correlation120d": 0.2022,
+    "correlation250d": 0.3206,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2689,9 +2689,9 @@
     "formulaType": "price",
     "productName": "工程服务",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0113,
-    "correlation120d": 0.0583,
-    "correlation250d": -0.031,
+    "correlation60d": -0.3129,
+    "correlation120d": -0.1577,
+    "correlation250d": -0.008,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2700,9 +2700,9 @@
     "formulaType": "price",
     "productName": "化工品贸易",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0113,
-    "correlation120d": 0.0583,
-    "correlation250d": -0.031,
+    "correlation60d": -0.3129,
+    "correlation120d": -0.1577,
+    "correlation250d": -0.008,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2711,9 +2711,9 @@
     "formulaType": "price",
     "productName": "设计咨询",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0113,
-    "correlation120d": 0.0583,
-    "correlation250d": -0.031,
+    "correlation60d": -0.3129,
+    "correlation120d": -0.1577,
+    "correlation250d": -0.008,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2722,9 +2722,9 @@
     "formulaType": "price",
     "productName": "天然橡胶",
     "commodityName": "天然橡胶(国产5号标胶)",
-    "correlation60d": 0.4034,
-    "correlation120d": 0.542,
-    "correlation250d": 0.4793,
+    "correlation60d": 0.5258,
+    "correlation120d": 0.6968,
+    "correlation250d": 0.6479,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2733,9 +2733,9 @@
     "formulaType": "price",
     "productName": "轮胎",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1196,
-    "correlation120d": 0.1044,
-    "correlation250d": -0.0506,
+    "correlation60d": -0.0106,
+    "correlation120d": 0.1794,
+    "correlation250d": 0.1102,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2744,9 +2744,9 @@
     "formulaType": "price",
     "productName": "乳胶",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1196,
-    "correlation120d": 0.1044,
-    "correlation250d": -0.0506,
+    "correlation60d": -0.0106,
+    "correlation120d": 0.1794,
+    "correlation250d": 0.1102,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2755,9 +2755,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0272,
-    "correlation120d": -0.0832,
-    "correlation250d": -0.0606,
+    "correlation60d": -0.3157,
+    "correlation120d": -0.0858,
+    "correlation250d": 0.0344,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2766,9 +2766,9 @@
     "formulaType": "price",
     "productName": "PVC",
     "commodityName": "PVC(电石法,长三角)",
-    "correlation60d": 0.1627,
-    "correlation120d": 0.128,
-    "correlation250d": 0.1289,
+    "correlation60d": -0.0314,
+    "correlation120d": -0.088,
+    "correlation250d": 0.1156,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2777,9 +2777,9 @@
     "formulaType": "price",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": -0.1739,
-    "correlation120d": -0.0058,
-    "correlation250d": -0.0785,
+    "correlation60d": -0.1716,
+    "correlation120d": -0.2185,
+    "correlation250d": -0.2105,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2788,9 +2788,9 @@
     "formulaType": "price",
     "productName": "电石",
     "commodityName": "电石(西北)",
-    "correlation60d": -0.2161,
-    "correlation120d": -0.0833,
-    "correlation250d": -0.0589,
+    "correlation60d": 0.0805,
+    "correlation120d": -0.2368,
+    "correlation250d": -0.2066,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2799,9 +2799,9 @@
     "formulaType": "spread",
     "productName": "涤纶长丝",
     "commodityName": "涤纶长丝(POY)",
-    "correlation60d": -0.044,
-    "correlation120d": 0.0143,
-    "correlation250d": -0.1809,
+    "correlation60d": 0.1019,
+    "correlation120d": 0.1235,
+    "correlation250d": -0.0934,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2810,9 +2810,9 @@
     "formulaType": "spread",
     "productName": "PTA",
     "commodityName": "PTA(华东)",
-    "correlation60d": -0.0437,
-    "correlation120d": -0.125,
-    "correlation250d": -0.0049,
+    "correlation60d": -0.4839,
+    "correlation120d": -0.0739,
+    "correlation250d": -0.0017,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2821,9 +2821,9 @@
     "formulaType": "spread",
     "productName": "聚酯切片",
     "commodityName": "聚酯切片(瓶级)",
-    "correlation60d": -0.1712,
-    "correlation120d": 0.0048,
-    "correlation250d": 0.0169,
+    "correlation60d": -0.3107,
+    "correlation120d": -0.0115,
+    "correlation250d": -0.0844,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2832,9 +2832,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0164,
-    "correlation120d": 0.0202,
-    "correlation250d": -0.0088,
+    "correlation60d": -0.5673,
+    "correlation120d": -0.1306,
+    "correlation250d": 0.0189,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2843,9 +2843,9 @@
     "formulaType": "processing_fee",
     "productName": "氧化铝",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0766,
-    "correlation120d": 0.0961,
-    "correlation250d": 0.0178,
+    "correlation60d": -0.1541,
+    "correlation120d": 0.0081,
+    "correlation250d": 0.0573,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2854,9 +2854,9 @@
     "formulaType": "processing_fee",
     "productName": "原铝",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0766,
-    "correlation120d": 0.0961,
-    "correlation250d": 0.0178,
+    "correlation60d": -0.1541,
+    "correlation120d": 0.0081,
+    "correlation250d": 0.0573,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2865,9 +2865,9 @@
     "formulaType": "processing_fee",
     "productName": "镓",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0766,
-    "correlation120d": 0.0961,
-    "correlation250d": 0.0178,
+    "correlation60d": -0.1541,
+    "correlation120d": 0.0081,
+    "correlation250d": 0.0573,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2876,9 +2876,9 @@
     "formulaType": "processing_fee",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0583,
-    "correlation120d": 0.1049,
-    "correlation250d": 0.0024,
+    "correlation60d": -0.0976,
+    "correlation120d": -0.0188,
+    "correlation250d": 0.063,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2887,9 +2887,9 @@
     "formulaType": "price",
     "productName": "烧碱",
     "commodityName": "烧碱(32%离子膜,华北)",
-    "correlation60d": 0.0209,
-    "correlation120d": 0.0898,
-    "correlation250d": 0.0205,
+    "correlation60d": -0.0547,
+    "correlation120d": -0.0061,
+    "correlation250d": -0.0447,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2898,9 +2898,9 @@
     "formulaType": "price",
     "productName": "环氧丙烷",
     "commodityName": "环氧丙烷(华东)",
-    "correlation60d": -0.06,
-    "correlation120d": -0.05,
-    "correlation250d": -0.0827,
+    "correlation60d": -0.1715,
+    "correlation120d": -0.1878,
+    "correlation250d": -0.0956,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2909,9 +2909,9 @@
     "formulaType": "price",
     "productName": "三氯乙烯",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0575,
-    "correlation120d": 0.0631,
-    "correlation250d": -0.0223,
+    "correlation60d": 0.0153,
+    "correlation120d": -0.0573,
+    "correlation250d": 0.0672,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2920,9 +2920,9 @@
     "formulaType": "price",
     "productName": "原油",
     "commodityName": "WTI期货(主连合约)",
-    "correlation60d": 0.6385,
-    "correlation120d": 0.5902,
-    "correlation250d": 0.4207,
+    "correlation60d": 0.5814,
+    "correlation120d": 0.7144,
+    "correlation250d": 0.6504,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2931,9 +2931,9 @@
     "formulaType": "price",
     "productName": "天然气",
     "commodityName": "美国Henry Hub期货(主连合约)",
-    "correlation60d": 0.0181,
-    "correlation120d": -0.0165,
-    "correlation250d": 0.0075,
+    "correlation60d": -0.2471,
+    "correlation120d": -0.2164,
+    "correlation250d": -0.0426,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2942,9 +2942,9 @@
     "formulaType": "price",
     "productName": "成品油",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0502,
-    "correlation120d": -0.0153,
-    "correlation250d": 0.062,
+    "correlation60d": -0.0163,
+    "correlation120d": 0.0642,
+    "correlation250d": 0.0732,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2953,9 +2953,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0222,
-    "correlation120d": 0.0325,
-    "correlation250d": -0.0626,
+    "correlation60d": -0.3241,
+    "correlation120d": -0.1762,
+    "correlation250d": -0.0571,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2964,9 +2964,9 @@
     "formulaType": "price",
     "productName": "0#柴油",
     "commodityName": "中国0#柴油(镇海炼化)",
-    "correlation60d": 0.084,
-    "correlation120d": 0.1202,
-    "correlation250d": 0.0885,
+    "correlation60d": 0.3431,
+    "correlation120d": 0.2636,
+    "correlation250d": 0.1141,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2975,9 +2975,9 @@
     "formulaType": "price",
     "productName": "维生素E",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0335,
-    "correlation120d": 0.0827,
-    "correlation250d": 0.0711,
+    "correlation60d": 0.2635,
+    "correlation120d": 0.142,
+    "correlation250d": 0.0472,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2986,9 +2986,9 @@
     "formulaType": "price",
     "productName": "香精香料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0335,
-    "correlation120d": 0.0827,
-    "correlation250d": 0.0711,
+    "correlation60d": 0.2635,
+    "correlation120d": 0.142,
+    "correlation250d": 0.0472,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -2997,9 +2997,9 @@
     "formulaType": "price",
     "productName": "新材料",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0335,
-    "correlation120d": 0.0827,
-    "correlation250d": 0.0711,
+    "correlation60d": 0.2635,
+    "correlation120d": 0.142,
+    "correlation250d": 0.0472,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3008,9 +3008,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.0182,
-    "correlation120d": -0.1187,
-    "correlation250d": -0.0968,
+    "correlation60d": 0.0459,
+    "correlation120d": 0.1943,
+    "correlation250d": 0.0448,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3019,9 +3019,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.0488,
-    "correlation120d": -0.0614,
-    "correlation250d": -0.2678,
+    "correlation60d": -0.3411,
+    "correlation120d": -0.2854,
+    "correlation250d": -0.0572,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3030,9 +3030,9 @@
     "formulaType": "price",
     "productName": "工业炸药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0849,
-    "correlation120d": 0.0259,
-    "correlation250d": -0.0955,
+    "correlation60d": -0.1747,
+    "correlation120d": 0.0122,
+    "correlation250d": 0.0589,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3041,9 +3041,9 @@
     "formulaType": "price",
     "productName": "硝酸铵",
     "commodityName": "硝酸铵(山东)",
-    "correlation60d": 0.1113,
-    "correlation120d": 0.1452,
-    "correlation250d": 0.0812,
+    "correlation60d": -0.9362,
+    "correlation120d": -0.3837,
+    "correlation250d": 0.114,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3052,9 +3052,9 @@
     "formulaType": "price",
     "productName": "爆破服务",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0849,
-    "correlation120d": 0.0259,
-    "correlation250d": -0.0955,
+    "correlation60d": -0.1747,
+    "correlation120d": 0.0122,
+    "correlation250d": 0.0589,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3074,9 +3074,9 @@
     "formulaType": "price",
     "productName": "多菌灵",
     "commodityName": "多菌灵(98%,华东)",
-    "correlation60d": 0.0741,
-    "correlation120d": 0.0846,
-    "correlation250d": 0.0593,
+    "correlation60d": 0.0,
+    "correlation120d": 0.0644,
+    "correlation250d": 0.041,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3085,9 +3085,9 @@
     "formulaType": "price",
     "productName": "甲基硫菌灵",
     "commodityName": "甲基硫菌",
-    "correlation60d": 0.0712,
-    "correlation120d": 0.0262,
-    "correlation250d": -0.045,
+    "correlation60d": -0.2462,
+    "correlation120d": -0.03,
+    "correlation250d": 0.0491,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3096,9 +3096,9 @@
     "formulaType": "price",
     "productName": "敌草隆",
     "commodityName": "敌草隆",
-    "correlation60d": -0.0726,
-    "correlation120d": -0.0638,
-    "correlation250d": -0.0312,
+    "correlation60d": 0.1195,
+    "correlation120d": -0.1996,
+    "correlation250d": -0.0868,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3107,9 +3107,9 @@
     "formulaType": "processing_fee",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.1307,
-    "correlation120d": -0.0577,
-    "correlation250d": -0.0053,
+    "correlation60d": 0.1494,
+    "correlation120d": 0.0174,
+    "correlation250d": -0.1448,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3118,9 +3118,9 @@
     "formulaType": "price",
     "productName": "热力",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1162,
-    "correlation120d": 0.0237,
-    "correlation250d": 0.0137,
+    "correlation60d": 0.0543,
+    "correlation120d": 0.1773,
+    "correlation250d": 0.0867,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3129,9 +3129,9 @@
     "formulaType": "price",
     "productName": "天然气",
     "commodityName": "美国Henry Hub期货(主连合约)",
-    "correlation60d": -0.0172,
-    "correlation120d": 0.0644,
-    "correlation250d": 0.0962,
+    "correlation60d": -0.1254,
+    "correlation120d": -0.0947,
+    "correlation250d": 0.0543,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3140,9 +3140,9 @@
     "formulaType": "price",
     "productName": "生物质",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.1162,
-    "correlation120d": 0.0237,
-    "correlation250d": 0.0137,
+    "correlation60d": 0.0543,
+    "correlation120d": 0.1773,
+    "correlation250d": 0.0867,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3151,9 +3151,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": 0.052,
-    "correlation120d": 0.0376,
-    "correlation250d": -0.017,
+    "correlation60d": -0.4865,
+    "correlation120d": -0.1768,
+    "correlation250d": 0.0132,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3162,9 +3162,9 @@
     "formulaType": "price",
     "productName": "工业炸药",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0622,
-    "correlation120d": -0.0162,
-    "correlation250d": -0.1026,
+    "correlation60d": 0.292,
+    "correlation120d": 0.2134,
+    "correlation250d": 0.0472,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3173,9 +3173,9 @@
     "formulaType": "price",
     "productName": "电子雷管",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0622,
-    "correlation120d": -0.0162,
-    "correlation250d": -0.1026,
+    "correlation60d": 0.292,
+    "correlation120d": 0.2134,
+    "correlation250d": 0.0472,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3184,9 +3184,9 @@
     "formulaType": "price",
     "productName": "高氯酸钾",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0622,
-    "correlation120d": -0.0162,
-    "correlation250d": -0.1026,
+    "correlation60d": 0.292,
+    "correlation120d": 0.2134,
+    "correlation250d": 0.0472,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3195,9 +3195,9 @@
     "formulaType": "price",
     "productName": "硅烷偶联剂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0808,
-    "correlation120d": 0.0574,
-    "correlation250d": 0.0076,
+    "correlation60d": 0.0238,
+    "correlation120d": -0.09,
+    "correlation250d": 0.1027,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3206,9 +3206,9 @@
     "formulaType": "price",
     "productName": "气相白炭黑",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0808,
-    "correlation120d": 0.0574,
-    "correlation250d": 0.0076,
+    "correlation60d": 0.0238,
+    "correlation120d": -0.09,
+    "correlation250d": 0.1027,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3217,9 +3217,9 @@
     "formulaType": "price",
     "productName": "功能性硅橡胶",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": 0.0808,
-    "correlation120d": 0.0574,
-    "correlation250d": 0.0076,
+    "correlation60d": 0.0238,
+    "correlation120d": -0.09,
+    "correlation250d": 0.1027,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3228,9 +3228,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.1325,
-    "correlation120d": -0.0529,
-    "correlation250d": -0.0006,
+    "correlation60d": -0.1122,
+    "correlation120d": 0.116,
+    "correlation250d": -0.129,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3239,9 +3239,9 @@
     "formulaType": "processing_fee",
     "productName": "海绵钛",
     "commodityName": "海绵钛(0级)",
-    "correlation60d": -0.2722,
-    "correlation120d": -0.2354,
-    "correlation250d": 0.0472,
+    "correlation60d": -0.5434,
+    "correlation120d": -0.4292,
+    "correlation250d": -0.2852,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3250,9 +3250,9 @@
     "formulaType": "processing_fee",
     "productName": "金属铌",
     "commodityName": "DMF(华东)",
-    "correlation60d": -0.0968,
-    "correlation120d": -0.0529,
-    "correlation250d": 0.0148,
+    "correlation60d": -0.2759,
+    "correlation120d": 0.0168,
+    "correlation250d": -0.0712,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3261,9 +3261,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.048,
-    "correlation120d": 0.0196,
-    "correlation250d": -0.0612,
+    "correlation60d": 0.0832,
+    "correlation120d": -0.2498,
+    "correlation250d": -0.0304,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3272,9 +3272,9 @@
     "formulaType": "spread",
     "productName": "碳纤维",
     "commodityName": "碳纤维（小丝束）",
-    "correlation60d": 0.2005,
-    "correlation120d": 0.0099,
-    "correlation250d": 0.0438,
+    "correlation60d": 0.6689,
+    "correlation120d": 0.4534,
+    "correlation250d": 0.2124,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3283,9 +3283,9 @@
     "formulaType": "spread",
     "productName": "丙烯腈原料",
     "commodityName": "DMF(华东)",
-    "correlation60d": 0.2909,
-    "correlation120d": 0.2302,
-    "correlation250d": 0.1204,
+    "correlation60d": -0.2467,
+    "correlation120d": -0.2331,
+    "correlation250d": 0.3346,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3294,9 +3294,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.1841,
-    "correlation120d": -0.2015,
-    "correlation250d": -0.1818,
+    "correlation60d": 0.4946,
+    "correlation120d": 0.2924,
+    "correlation250d": -0.0745,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3305,9 +3305,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.2012,
-    "correlation120d": -0.1691,
-    "correlation250d": -0.1541,
+    "correlation60d": 0.1812,
+    "correlation120d": 0.22,
+    "correlation250d": -0.111,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3316,9 +3316,9 @@
     "formulaType": "price",
     "productName": "动力煤",
     "commodityName": "动力煤(Q5500,环渤海指数)",
-    "correlation60d": -0.2834,
-    "correlation120d": -0.1322,
-    "correlation250d": -0.0795,
+    "correlation60d": -0.0773,
+    "correlation120d": 0.1073,
+    "correlation250d": -0.2074,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3327,9 +3327,9 @@
     "formulaType": "price",
     "productName": "金",
     "commodityName": "金红石(87%,海南)",
-    "correlation60d": 0.1056,
-    "correlation120d": 0.0794,
-    "correlation250d": 0.0794,
+    "correlation60d": -0.1987,
+    "correlation120d": 0.2179,
+    "correlation250d": 0.1207,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3338,9 +3338,9 @@
     "formulaType": "price",
     "productName": "钴酸锂",
     "commodityName": "烟煤(Q5500,山西优混)",
-    "correlation60d": -0.1614,
-    "correlation120d": -0.0752,
-    "correlation250d": -0.0522,
+    "correlation60d": -0.3349,
+    "correlation120d": -0.1602,
+    "correlation250d": -0.1243,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3349,9 +3349,9 @@
     "formulaType": "price",
     "productName": "三元材料",
     "commodityName": "三元材料电解液",
-    "correlation60d": 0.0393,
-    "correlation120d": 0.0314,
-    "correlation250d": -0.0536,
+    "correlation60d": -0.0378,
+    "correlation120d": -0.2801,
+    "correlation250d": 0.099,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3360,9 +3360,9 @@
     "formulaType": "price",
     "productName": "磷酸铁锂",
     "commodityName": "磷酸铁锂正极材料",
-    "correlation60d": 0.1444,
-    "correlation120d": 0.0962,
-    "correlation250d": -0.0232,
+    "correlation60d": 0.0,
+    "correlation120d": 0.0,
+    "correlation250d": 0.2275,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3371,9 +3371,9 @@
     "formulaType": "price",
     "productName": "工业级碳酸锂",
     "commodityName": "碳酸锂(工业级,四川)",
-    "correlation60d": 0.3592,
-    "correlation120d": 0.3343,
-    "correlation250d": 0.1432,
+    "correlation60d": 0.1793,
+    "correlation120d": 0.3147,
+    "correlation250d": 0.4546,
     "lastUpdated": "2026-09-18"
   },
   {
@@ -3382,9 +3382,9 @@
     "formulaType": "price",
     "productName": "电池级碳酸锂",
     "commodityName": "碳酸锂(电池级,江苏)",
-    "correlation60d": 0.3647,
-    "correlation120d": 0.3277,
-    "correlation250d": 0.1716,
+    "correlation60d": 0.1798,
+    "correlation120d": 0.3233,
+    "correlation250d": 0.4618,
     "lastUpdated": "2026-09-18"
   }
 ]

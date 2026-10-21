@@ -36,7 +36,8 @@
     "totalCompanies": 141,
     "totalCommodities": 591,
     "totalTimeSeries": 547,
-    "totalDivergenceSignals": 93,
-    "latestDataDate": "2026-10-16"
+    "totalDivergenceSignals": 96,
+    "latestDataDate": "2026-10-16",
+    "stockLatestDate": "2026-09-18"
   }
 }
