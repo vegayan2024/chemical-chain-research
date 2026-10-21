@@ -1036,6 +1036,111 @@
   background: var(--bg-raised);
 }
 
+/* 相关性热力图与底部吸附固定栏 */
+.correlation-heatmap-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.heatmap-sticky-commodity-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border-strong);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.45);
+  padding: var(--space-3) var(--space-4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.sticky-bar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.sticky-bar__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+}
+
+.sticky-bar__badge {
+  font-size: var(--fs-tiny);
+  padding: 1px 6px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  border-radius: var(--radius-1);
+  font-weight: var(--fw-medium);
+}
+
+.sticky-bar__focus-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-caption);
+  color: var(--text-strong);
+}
+
+.sticky-bar__chips-container {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  padding: 4px 2px 8px 2px;
+  scrollbar-width: thin;
+}
+
+.sticky-bar__chips-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.sticky-bar__chips-container::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 2px;
+}
+
+.commodity-chip {
+  flex-shrink: 0;
+  padding: 3px 10px;
+  background: var(--bg-base);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  font-size: var(--fs-tiny);
+  color: var(--text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.commodity-chip:hover {
+  border-color: var(--border-hover);
+  color: var(--text-strong);
+}
+
+.commodity-chip--active {
+  background: var(--brand);
+  color: var(--brand-fg) !important;
+  border-color: var(--brand) !important;
+  font-weight: var(--fw-bold);
+  box-shadow: 0 0 10px rgba(245, 165, 36, 0.5);
+  transform: scale(1.05);
+}
+
+.commodity-chip--related {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+
 .impact-badge {
   display: inline-block;
   padding: 2px 8px;

@@ -5,9 +5,11 @@ interface EChartProps {
   option: echarts.EChartsCoreOption;
   height?: number | string;
   className?: string;
+  onEvents?: Record<string, (params: any) => void>;
+  onChartReady?: (chart: echarts.ECharts) => void;
 }
 
-export default function EChart({ option, height = 400, className }: EChartProps) {
+export default function EChart({ option, height = 400, className, onEvents, onChartReady }: EChartProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<echarts.ECharts | null>(null);
 
@@ -16,6 +18,10 @@ export default function EChart({ option, height = 400, className }: EChartProps)
 
     const chart = echarts.init(containerRef.current, undefined, { renderer: "canvas" });
     chartRef.current = chart;
+
+    if (onChartReady) {
+      onChartReady(chart);
+    }
 
     const observer = new ResizeObserver(() => {
       chart.resize();
@@ -30,8 +36,24 @@ export default function EChart({ option, height = 400, className }: EChartProps)
   }, []);
 
   useEffect(() => {
-    chartRef.current?.setOption(option, { notMerge: true });
+    if (!chartRef.current) return;
+    chartRef.current.setOption(option, { notMerge: true });
   }, [option]);
+
+  useEffect(() => {
+    const chart = chartRef.current;
+    if (!chart || !onEvents) return;
+
+    for (const [eventName, handler] of Object.entries(onEvents)) {
+      chart.on(eventName, handler);
+    }
+
+    return () => {
+      for (const [eventName, handler] of Object.entries(onEvents)) {
+        chart.off(eventName, handler);
+      }
+    };
+  }, [onEvents]);
 
   return (
     <div
