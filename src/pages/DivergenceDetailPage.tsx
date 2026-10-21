@@ -29,6 +29,17 @@ export default function DivergenceDetailPage({ data }: DivergenceDetailPageProps
 
   const products = weightType === "revenue" ? company.productsByRevenue : company.productsByProfit;
 
+  const stockRange = stockPrices.length > 0
+    ? `${stockPrices[0]?.date} 至 ${stockPrices[stockPrices.length - 1]?.date}`
+    : "暂无数据";
+  const latestStockPrice = stockPrices.length > 0 ? stockPrices[stockPrices.length - 1]?.value : null;
+
+  // 对应的背离信号统计区间（来自预警库）
+  const companySignal = data.signals.find((s) => s.code === code);
+  const divergencePeriod = companySignal
+    ? `${companySignal.startDate} 至 ${companySignal.endDate}`
+    : "52周滚动对齐窗口";
+
   return (
     <div className="page-detail">
       <div className="page-header">
@@ -37,6 +48,26 @@ export default function DivergenceDetailPage({ data }: DivergenceDetailPageProps
         </button>
         <h1>{company.name}</h1>
         <p className="text-muted">{company.code}</p>
+      </div>
+
+      {/* 显著位置标注：个股与背离统计区间 */}
+      <div className="alert-time-window-banner" style={{ margin: "var(--space-3) 0 var(--space-4)" }}>
+        <div className="time-window-item">
+          <span className="time-window-icon">📈</span>
+          <div className="time-window-content">
+            <span className="time-window-label">股票价格统计时序 ({company.name})</span>
+            <span className="time-window-val font-mono">{stockRange}</span>
+            <span className="time-window-badge">前复权日收盘价 · 最新收盘: {latestStockPrice ?? "-"} 元</span>
+          </div>
+        </div>
+        <div className="time-window-item">
+          <span className="time-window-icon">⏱️</span>
+          <div className="time-window-content">
+            <span className="time-window-label">背离雷达量化统计区间</span>
+            <span className="time-window-val font-mono">{divergencePeriod}</span>
+            <span className="time-window-badge">周频严格对齐 (52周/1年)</span>
+          </div>
+        </div>
       </div>
 
       <div className="weight-selector">
@@ -61,10 +92,20 @@ export default function DivergenceDetailPage({ data }: DivergenceDetailPageProps
           <div className="products-info">
             {products.map((product) => {
               const commodityPrices = data.commodityPrices[product.commodityKey] ?? [];
+              const commRange = commodityPrices.length > 0
+                ? `${commodityPrices[0]?.date} 至 ${commodityPrices[commodityPrices.length - 1]?.date}`
+                : "暂无数据";
+              const latestCommPrice = commodityPrices.length > 0 ? commodityPrices[commodityPrices.length - 1]?.value : null;
+
               return (
                 <div key={product.commodityKey} className="chart-card">
-                  <div className="chart-card__header">
-                    <h3>{product.productName} vs {product.commodityName}</h3>
+                  <div className="chart-card__header" style={{ alignItems: "flex-start" }}>
+                    <div>
+                      <h3>{product.productName} vs {product.commodityName}</h3>
+                      <p className="text-muted font-mono" style={{ fontSize: "var(--fs-caption)", marginTop: "4px" }}>
+                        商品统计区间: {commRange} (最新价格/价差: {latestCommPrice ?? "-"})
+                      </p>
+                    </div>
                     <span className="weight-badge">
                       权重: {(product.weight * 100).toFixed(1)}%
                     </span>

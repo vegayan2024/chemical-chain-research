@@ -634,6 +634,64 @@
   gap: var(--space-3);
 }
 
+/* 统计区间显著提示横幅 */
+.alert-time-window-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.time-window-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2);
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.time-window-item:hover {
+  border-color: var(--border-hover);
+}
+
+.time-window-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.time-window-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.time-window-label {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+  font-weight: var(--fw-medium);
+}
+
+.time-window-val {
+  font-size: var(--fs-body);
+  color: var(--text-strong);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.01em;
+}
+
+.time-window-badge {
+  font-size: var(--fs-tiny);
+  color: var(--brand);
+  background: var(--brand-soft);
+  padding: 1px 6px;
+  border-radius: var(--radius-1);
+  align-self: flex-start;
+  margin-top: 2px;
+}
+
 .alert-filter-tabs {
   display: flex;
   gap: var(--space-2);

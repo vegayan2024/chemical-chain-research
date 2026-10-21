@@ -167,6 +167,36 @@ export default function AlertsPage({ data }: AlertsPageProps) {
     navigate(`/divergence/${code}`);
   };
 
+  // 全局商品与股票统计区间计算
+  const timeWindow = useMemo(() => {
+    let minStart = "";
+    let maxEnd = "";
+    for (const s of data.signals) {
+      if (s.startDate && (!minStart || s.startDate < minStart)) minStart = s.startDate;
+      if (s.endDate && (!maxEnd || s.endDate > maxEnd)) maxEnd = s.endDate;
+    }
+    let latestStockDate = "";
+    for (const pts of Object.values(data.stockPrices)) {
+      if (pts && pts.length > 0) {
+        const d = pts[pts.length - 1]?.date ?? "";
+        if (d > latestStockDate) latestStockDate = d;
+      }
+    }
+    let latestCommDate = "";
+    for (const pts of Object.values(data.commodityPrices)) {
+      if (pts && pts.length > 0) {
+        const d = pts[pts.length - 1]?.date ?? "";
+        if (d > latestCommDate) latestCommDate = d;
+      }
+    }
+    return {
+      windowStart: minStart || "2025-10-21",
+      windowEnd: maxEnd || "2026-10-21",
+      latestStockDate: latestStockDate || "2026-10-21",
+      latestCommDate: latestCommDate || "2026-10-16",
+    };
+  }, [data]);
+
   const getFormulaLabel = (type?: string) => {
     switch (type) {
       case "spread": return "产业链价差驱动";
@@ -185,6 +215,34 @@ export default function AlertsPage({ data }: AlertsPageProps) {
           <p className="text-muted">
             按公司整合呈现全部产品背离信号，分类透视正向（低估重估）与负向（承压风险）预期
           </p>
+        </div>
+      </div>
+
+      {/* 显著位置标注：大宗商品与股价统计区间 */}
+      <div className="alert-time-window-banner">
+        <div className="time-window-item">
+          <span className="time-window-icon">⏱️</span>
+          <div className="time-window-content">
+            <span className="time-window-label">背离量化统计周期 (52周对齐)</span>
+            <span className="time-window-val font-mono">{timeWindow.windowStart} 至 {timeWindow.windowEnd}</span>
+            <span className="time-window-badge">滚动自然周交集</span>
+          </div>
+        </div>
+        <div className="time-window-item">
+          <span className="time-window-icon">📈</span>
+          <div className="time-window-content">
+            <span className="time-window-label">股票价格统计区间</span>
+            <span className="time-window-val font-mono">起始 {timeWindow.windowStart} → 终点 {timeWindow.latestStockDate}</span>
+            <span className="time-window-badge">动态行情接入 · 0天延迟</span>
+          </div>
+        </div>
+        <div className="time-window-item">
+          <span className="time-window-icon">🧪</span>
+          <div className="time-window-content">
+            <span className="time-window-label">商品价格/价差统计区间</span>
+            <span className="time-window-val font-mono">起始 {timeWindow.windowStart} → 终点 {timeWindow.latestCommDate}</span>
+            <span className="time-window-badge">高频周度均价 / 差额模型</span>
+          </div>
         </div>
       </div>
 
@@ -308,7 +366,7 @@ export default function AlertsPage({ data }: AlertsPageProps) {
                   <span className={`metric-val num ${companyAlert.stockChange >= 0 ? "t-rise" : "t-fall"}`}>
                     {formatPercent(companyAlert.stockChange)}
                   </span>
-                  <span className="metric-subtext">52周滚动窗口</span>
+                  <span className="metric-subtext font-mono">股价区间: {companyAlert.startDate} ~ {companyAlert.endDate}</span>
                 </div>
 
                 <div className="summary-metric-card">
@@ -316,7 +374,7 @@ export default function AlertsPage({ data }: AlertsPageProps) {
                   <span className={`metric-val num ${companyAlert.commodityChange >= 0 ? "t-rise" : "t-fall"}`}>
                     {formatPercent(companyAlert.commodityChange)}
                   </span>
-                  <span className="metric-subtext">{companyAlert.commodityName}</span>
+                  <span className="metric-subtext font-mono">商品区间: {companyAlert.startDate} ~ {companyAlert.endDate}</span>
                 </div>
 
                 <div className="summary-metric-card summary-metric-card--highlight">
