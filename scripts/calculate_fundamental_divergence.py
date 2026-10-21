@@ -48,9 +48,24 @@ def pearson_corr(x, y):
 
 def calc_returns(prices, period=1):
     returns = []
+    if not prices or len(prices) <= period:
+        return returns
+    # 检查序列是否包含非正数（如化工加工亏损价差、利差）
+    has_non_positive = any(p <= 0 for p in prices)
+    if has_non_positive:
+        # 对可能含负值的价差序列，使用一阶差分除以标准差标准化，避免负值分母导致收益率方向反转
+        n = len(prices)
+        mean_p = sum(prices) / n
+        var_p = sum((p - mean_p) ** 2 for p in prices) / n
+        std_p = math.sqrt(var_p) if var_p > 0 else 1.0
+        scale = std_p if std_p > 1e-4 else 1.0
+        for i in range(period, len(prices)):
+            returns.append((prices[i] - prices[i - period]) / scale)
+        return returns
+
     for i in range(period, len(prices)):
         prev = prices[i - period]
-        if prev == 0:
+        if prev <= 0:
             returns.append(0.0)
         else:
             returns.append((prices[i] - prev) / prev)
@@ -189,40 +204,63 @@ def main():
             s_start, s_end = s_window[0], s_window[-1]
             s_start_date = next(d for d, _ in s_weekly if d >= window_start)
             c_start, c_end = recent_c[0], recent_c[-1]
-            
             stock_cum = (s_end - s_start) / s_start if s_start else 0.0
-            comm_cum = (c_end - c_start) / c_start if c_start else 0.0
-            
+
+            # 区分绝对价格与价差/加工费/零负值指标，防止分母崩溃与符号反转 (#01)
+            is_spread_metric = (
+                formula_type in ("spread", "processing_fee")
+                or any(k in cname for k in SPREAD_KEYWORDS)
+                or c_start <= 0
+            )
+            if is_spread_metric:
+                c_delta = c_end - c_start
+                # 使用历史滚动标准差进行量纲缩放映射 (1 个标准差改善对应约 15% 弹性变动)
+                c_mean = sum(recent_c) / len(recent_c)
+                c_var = sum((x - c_mean) ** 2 for x in recent_c) / len(recent_c)
+                c_std = math.sqrt(c_var)
+                if c_std > 1e-4:
+                    comm_cum = (c_delta / c_std) * 0.15
+                elif abs(c_mean) > 1e-4:
+                    comm_cum = c_delta / abs(c_mean)
+                else:
+                    comm_cum = 0.0
+            else:
+                comm_cum = (c_end - c_start) / c_start if c_start > 0 else 0.0
+
             # 公式化逻辑调整：
-            # 若是副产品型 (byproduct_composite) 且该商品是副产物（如硫酸），加大弹性倍数
             effective_comm_cum = comm_cum
             if formula_type == "byproduct_composite" and any(k in cname for k in BYPRODUCT_KEYWORDS):
                 effective_comm_cum = comm_cum * 1.25
             elif formula_type == "spread" and any(k in cname for k in SPREAD_KEYWORDS):
                 effective_comm_cum = comm_cum * 1.15
-                
+
             r_s_ret = calc_returns(recent_s)
             r_c_ret = calc_returns(recent_c)
             recent_corr = pearson_corr(r_s_ret, r_c_ret)
-            
-            # 背离触发条件：
-            # 1. 方向相反 (stock_cum 与 effective_comm_cum 符号相反) 且 差值 > 15%
-            # 2. 或 同向但幅度严重脱节 (差值 > 35%)
-            is_opposite = (stock_cum * effective_comm_cum < 0)
+
+            # 背离触发与连续分级 (消除集合漏斗死锁与断层 #03)
             diff_score = abs(effective_comm_cum - stock_cum)
-            
-            if (is_opposite and diff_score > 0.15) or (diff_score > 0.35):
+            max_move = max(abs(stock_cum), abs(effective_comm_cum))
+
+            # 变动显著性过滤：至少一方变动 >= 10% 且 差值 >= 10%
+            if max_move >= 0.10 and diff_score >= 0.10:
                 div_type = "positive" if effective_comm_cum > stock_cum else "negative"
-                strength = "strong" if diff_score > 0.35 else ("medium" if diff_score > 0.20 else "weak")
-                
+
+                # 若方向相反，给予 1.15 倍反向共振加成
+                is_opposite = (stock_cum * effective_comm_cum < 0)
+                dir_bonus = 1.15 if is_opposite else 1.0
+                effective_score = diff_score * dir_bonus
+
+                strength = "strong" if effective_score >= 0.30 else ("medium" if effective_score >= 0.18 else "weak")
+
                 # 计算对利润预期的理论影响 = 利润权重 * 商品/价差变动率
                 profit_weight = pweight
                 profit_impact = round(profit_weight * effective_comm_cum, 4)
-                
+
                 # 概率估算：基于滚动相关性强度与背离剪刀差幅度 (50% ~ 95%)
-                prob = min(95.0, max(50.0, round(50.0 + 30.0 * abs(recent_corr) + 20.0 * min(1.0, diff_score), 1)))
-                
-                # 过滤极微弱噪音，确保信号高确定性
+                prob = min(95.0, max(50.0, round(50.0 + 30.0 * abs(recent_corr) + 20.0 * min(1.0, effective_score), 1)))
+
+                # 过滤微弱噪音，保留强背离与中等背离
                 if strength in ["strong", "medium"]:
                     all_signals.append({
                         "code": code,

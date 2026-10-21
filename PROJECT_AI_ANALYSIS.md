@@ -66,47 +66,56 @@
 ## 3. 核心投研量化模型与数学定义 (Quantitative Models)
 
 ### 3.1 四大研报公式化基本面指标引擎 (`calculate_fundamental_divergence.py`)
-针对不同化工品及周期细分行业的盈利本质，系统将投资逻辑提炼为四大公式类型（`formulaType`）：
+针对不同化工品及周期细分行业的盈利本质，系统将投资逻辑提炼为四大公式类型（`formulaType`），并采用区间单品变动率直接加权（消除全局定基指数基准日 $t_0$ 的权重漂移偏差）：
 
 1. **绝对价格型 (`price`)**：
-   - 适用：大宗同质化商品、涨价弹性核心标的。
-   - 代理价格指数：
-     $$I_{\text{proxy}}(t) = \sum_{i=1}^n w_i \cdot \frac{P_i(t)}{P_i(t_0)}$$
-     其中 $w_i$ 为该产品占公司主营的利润权重（或营收权重），$\sum w_i = 1.0$。
+   - 适用：大宗同质化商品、上游资源品及涨价弹性核心标的。
+   - 单品区间变动率与公司合成基本面收益率：
+     $$R_{C,i}(t_{\text{start}} \to t_{\text{end}}) = \frac{P_i(t_{\text{end}}) - P_i(t_{\text{start}})}{P_i(t_{\text{start}})}, \quad R_C = \sum_{i=1}^n w_i \cdot R_{C,i}$$
+     其中 $w_i \ge 0$ 为该产品占公司主营的稳态利润权重（或营收权重），$\sum w_i = 1.0$。
 2. **产业链价差型 (`spread`)**：
-   - 适用：赚取加工裂解毛利的企业（如炼化、PTA、氯碱、MDI）。
-   - 跟踪产品与原料剪刀差变动率，扣除理论单耗成本：
-     $$\text{Spread}(t) = P_{\text{product}}(t) - \sum_{k} \alpha_k \cdot P_{\text{raw}, k}(t)$$
+   - 适用：赚取加工裂解毛利的企业（如炼化、PTA、氯碱、MDI、煤头/油头/气头烯烃）。必须按公司实际工艺路线绑定专属价差 Key。
+   - 原始价差定义：
+     $$\text{Spread}_i(t) = P_{\text{product}, i}(t) - \sum_{k} \alpha_{i,k} \cdot P_{\text{raw}, i, k}(t)$$
+   - **跨零/负值抗毁型变动率公式（严禁以 $\text{Spread}(t_{\text{start}})$ 直接做分母）**：
+     - 当存在对应主产品基准价 $P_{\text{product}, i}(t_{\text{start}}) > 0$ 时，计算边际毛利率变动（Margin Expansion）：
+       $$R_{C,i} = \frac{\text{Spread}_i(t_{\text{end}}) - \text{Spread}_i(t_{\text{start}})}{P_{\text{product}, i}(t_{\text{start}})}$$
+     - 当无单一主产品基准价或价差为负时，采用历史滚动标准差 $\sigma_{\text{spread}, i}$ 进行波动率归一化映射：
+       $$R_{C,i} = \frac{\text{Spread}_i(t_{\text{end}}) - \text{Spread}_i(t_{\text{start}})}{\sigma_{\text{spread}, i}} \times \lambda_{\text{vol}} \quad (\text{默认经验量纲系数 } \lambda_{\text{vol}} = 0.15)$$
 3. **加工费/处理费型 (`processing_fee`)**：
-   - 适用：代工与冶炼企业（如铜冶炼 TC/RC、锂电代工）。
-   - 直接跟踪利差与加工收益率，规避原材料价格波动引起的虚假繁荣。
+   - 适用：代工与冶炼企业（如铜冶炼 TC/RC、锂电材料代工）。
+   - 采用与 spread 相同的标准化变动率公式，规避原材料价格暴涨引起的营收虚假繁荣与分母极端值。
 4. **副产品综合弹性型 (`byproduct_composite`)**：
-   - 适用：主产品保本或微利，但副产品（如铜冶炼副产硫酸、氯碱副产液氯/双氧水、钛白粉副产硫酸亚铁）暴涨带来的利润暴增模型。
+   - 适用：主产品保本或微利，但副产品（如铜冶炼副产硫酸、氯碱副产液氯/双氧水、钛白粉副产硫酸亚铁）暴涨带来的利润弹性模型。
+   - 按单吨主产品伴生副产品配比系数合成综合弹性变动率（副产品乘数加成）。
 
-### 3.2 背离信号判定算法 (`divergence-calculator.ts`)
-两个时间序列：股票价格序列 $S = \{s_1, \dots, s_N\}$ 与大宗指标序列 $C = \{c_1, \dots, c_N\}$（按日期交集严格对齐）。
+### 3.2 背离信号判定算法 (`divergence-calculator.ts` & Python 引擎同步)
+对于股票价格序列 $S = \{s_1, \dots, s_N\}$ 与大宗指标序列 $C = \{c_1, \dots, c_N\}$：
 
-1. **相关性计算 (Pearson Correlation)**：
-   $$r(S, C) = \frac{\sum (s_i - \bar{s})(c_i - \bar{c})}{\sqrt{\sum (s_i - \bar{s})^2 \sum (c_i - \bar{c})^2}}$$
-2. **累积收益率 (Cumulative Returns)**：
-   $$R_S = \frac{s_{\text{end}} - s_{\text{start}}}{s_{\text{start}}}, \quad R_C = \frac{c_{\text{end}} - c_{\text{start}}}{c_{\text{start}}}$$
-3. **背离条件触发器**：
-   - 条件一（方向背离）：$R_S \times R_C < 0$ 或 $|R_S - R_C| \ge 15\%$
-   - 条件二（变动显著性）：$\max(|R_S|, |R_C|) \ge 10\%$
-   - 条件三（相关性阈值）：滑动窗口相关性处于脱轨状态
-4. **背离强度分级**：
-   - 强背离 (`strong`)：背离度 $|R_S - R_C| \ge 30\%$ 且处于极端方向相反。
-   - 中背离 (`medium`)：背离度在 $20\% \sim 30\%$ 之间。
-   - 弱背离 (`weak`)：背离度在 $10\% \sim 20\%$ 之间。
-5. **背离类型定义**：
-   - **正向背离 (`positive`)**：商品涨、股价跌（潜在修复/低估机会，或成本挤压验证期）。
-   - **负向背离 (`negative`)**：商品跌、股价涨（潜在估值泡沫或预期跑在大宗前面）。
+1. **混频重采样与收益率相关性计算 (Weekly Return Pearson Correlation)**：
+   鉴于大宗商品含周频序列而股票为日频序列，先将两者按自然周（周五收盘/最新周度值）对齐，并转换为一阶对数/差分收益率序列 $\Delta r_{S,\tau}, \Delta r_{C,\tau}$，消除一阶单整 $I(1)$ 水平价格序列的伪回归：
+   $$r(\Delta r_S, \Delta r_C) = \frac{\sum (\Delta r_{S,\tau} - \overline{\Delta r}_S)(\Delta r_{C,\tau} - \overline{\Delta r}_C)}{\sqrt{\sum (\Delta r_{S,\tau} - \overline{\Delta r}_S)^2 \sum (\Delta r_{C,\tau} - \overline{\Delta r}_C)^2}}$$
+2. **区间累积变动率与核心背离差值**：
+   - 股票区间收益率：$R_S = \frac{s_{\text{end}} - s_{\text{start}}}{s_{\text{start}}}$
+   - 原始背离差值：$\text{Diff} = R_C - R_S$
+3. **无断层背离触发器与连续分级（消除集合漏斗死锁）**：
+   - **前置有效门槛**：$\max(|R_S|, |R_C|) \ge 10\%$ 且 $|\text{Diff}| \ge 10\%$（过滤股商横盘微幅震荡噪音）。
+   - **反向共振加成系数**：若股商方向完全相反（$R_S \times R_C < 0$），赋予加成系数 $\gamma = 1.15$；若同向但幅度严重脱节（如商品涨 45%、股价仅涨 5%），赋予系数 $\gamma = 1.0$。
+   - **有效背离得分**：$\text{Score} = |\text{Diff}| \times \gamma \times 100$
+   - **背离强度连续分级**：
+     - **强背离 (`strong`)**：$\text{Score} \ge 30$
+     - **中背离 (`medium`)**：$18 \le \text{Score} < 30$
+     - **弱背离 (`weak`)**：$10 \le \text{Score} < 18$
+4. **背离类型定义**：
+   - **正向背离 (`positive`)**：$\text{Diff} > 0$（商品/价差走势显著强于股价，潜在基本面拐点与低估机会）。
+   - **负向背离 (`negative`)**：$\text{Diff} < 0$（股价走势显著强于商品/价差，潜在估值透支或股价泡沫预警）。
 
-### 3.3 估值与财务勾稽辅助筛选 (`valuation-data.json`, `financial-data.json`)
-- **PB/PE 历史百分位**：判断股价是否处于 5 年历史 20% 分位以内。
-- **低位时间探测**：标记股价处于历史 20% 低位区间持续超过 2 年的标的。
-- **扣非净利润同比**：验证基本面是否已出现拐点。
-- **资产负债率安全边界**：剔除财务杠杆过高、现金流濒临断裂的伪弹性标的。
+### 3.3 估值与财务安全边界辅助筛选 (`valuation-data.json`, `financial-data.json`)
+遵循周期股反身性规律（**周期底部盈利极低导致 PE 极高或亏损，周期顶部利润暴增导致 PE 极低**）：
+- **PB（市净率）历史百分位（核心底部锚）**：判断股价 PB 是否处于 5 年历史 20% 分位以内（**严禁在周期底部使用低 PE 过滤**）。
+- **低位横盘时间探测**：标记股价与 PB 处于历史 20% 低位区间持续超过 2 年的筑底标的。
+- **现金流与偿债安全边界**：剔除资产负债率过高且经营性现金流持续失血（如经营活动现金流量净额 $< 0$ 且 货币资金 / 短期有息负债 $< 0.8$）的伪弹性高危标的。
+- **季报拐点右侧印证（可选辅助）**：利用扣非净利润环比改善或毛利率环比抬升作为高频价差传导至财务报表的右侧确认信号。
 
 ---
 
